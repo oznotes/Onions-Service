@@ -12,10 +12,35 @@ namespace Device
         public MainForm()
         {
             InitializeComponent();
+            MainSetup();
+
+        }
+        public void MainSetup()
+
+        {
             this.Text = "Onions Service Database - Home";
             if (File.Exists("devices.dat"))
+            {
                 loadContacts("devices.dat");
+
+            }
+            else
+            {
+                MessageBox.Show("No Data Found");
+                toolStripCompleteJOB.Enabled = false;
+                toolStripButtonRemove.Enabled = false;
+            }
+            if (File.Exists("completed.dat"))
+            {
+                toolStripButtonCompleted.Enabled = true;
+
+            }
+            else
+            {
+                toolStripButtonCompleted.Enabled = false;
+            }
         }
+       
 
         private void toolStripButtonAdd_Click(object sender, EventArgs e)
         {
@@ -29,22 +54,36 @@ namespace Device
         /// </summary>
         private void loadContacts(string datasource)
         {
-    
-            string[] contacts = File.ReadAllLines(datasource);
-            
-            if (contacts.Length!=0)
+            string[] contacts;
+            if (File.Exists(datasource))
             {
-                dataGridView.Rows.Clear();
-                foreach (string contact in contacts)
+                toolStripCompleteJOB.Enabled = true;
+                toolStripButtonRemove.Enabled = true;
+                
+                contacts = File.ReadAllLines(datasource);
+                if (contacts.Length != 0)
                 {
-                    string[] contactInfo = contact.Split('|');
-                    dataGridView.Rows.Add(contactInfo);
+                    dataGridView.Rows.Clear();
+                    foreach (string contact in contacts)
+                    {
+                        string[] contactInfo = contact.Split('|');
+                        dataGridView.Rows.Add(contactInfo);
+                    }
                 }
-           
+                else
+                {
+                    MessageBox.Show("No Data Found!");
+                }
             }
             else
             {
-                MessageBox.Show("No Data Found!");
+                MessageBox.Show("No File Found!");
+
+                dataGridView.Rows.Clear();
+                dataGridView.Refresh();
+                toolStripCompleteJOB.Enabled = false;
+                toolStripButtonRemove.Enabled = false;
+
             }
 
         }
@@ -80,17 +119,17 @@ namespace Device
         public void complete_selected(string cell)
 
         {
-            string contactFileData = String.Empty; //These are all the new contacts
-            string[] contacts = File.ReadAllLines("devices.dat"); //These are all the old contacts
-            if (contacts.Length != 0)
+            string DeviceData = String.Empty; //These are all the new contacts
+            string[] device = File.ReadAllLines("devices.dat"); //These are all the old contacts
+            if (device.Length != 0)
             {
                 int index = dataGridView.SelectedRows[0].Index; //Gets the index of the deleted row
-                for (int i = 0; i < contacts.Count(); i++) // Line
+                for (int i = 0; i < device.Count(); i++) // Line
                 {
                     if (index == i)
-                        contactFileData += contacts[i] + "|" + cell + System.Environment.NewLine;
+                        DeviceData += device[i] + "|" + cell + System.Environment.NewLine;
                 }
-                File.AppendAllText("completed.dat", contactFileData); //Saves the contact file without the removed contact
+                File.AppendAllText("completed.dat", DeviceData); //Saves the contact file without the removed contact
                 dataGridView.Rows.Remove(dataGridView.SelectedRows[0]);// get the first line back again 
             }
             else
@@ -102,8 +141,11 @@ namespace Device
         private void toolStripButtonCompleted_Click(object sender, EventArgs e)
         {
             // show another for with data gridview
-            loadContacts("completed.dat");
+
             this.Text = "Onions Service Database - Completed JOBS";
+            loadContacts("completed.dat");
+            
+            // group  disabled.
             toolStripCompleteJOB.Enabled = false;
             toolStripButtonRemove.Enabled = false;
             toolStripButtonCompleted.Enabled = false;
@@ -145,11 +187,9 @@ namespace Device
         {
             // Home.
             loadContacts("devices.dat");
-            toolStripCompleteJOB.Enabled = true;
-            toolStripButtonRemove.Enabled = true;
-            toolStripButtonCompleted.Enabled = true;
-
             this.Text = "Onions Service Database - Home";
+            MainSetup();
+
         }
     }
 }

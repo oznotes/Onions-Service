@@ -16,15 +16,17 @@ namespace Device
         {
             string contactFileContents = String.Empty;
             if (File.Exists("devices.dat"))
+            {
                 contactFileContents = File.ReadAllText("devices.dat") + System.Environment.NewLine;
+            }      
             contactFileContents += textBoxFirstName.Text + "|" +
-                                   textBoxMiddleName.Text + "|" +
                                    textBoxLastName.Text + "|" +
-                                   textBoxMobilePhone.Text + "|" +
+                                   textBoxPhoneNumber.Text + "|" +
+                                   textBoxeMail.Text + "|" +
                                    textBoxDeviceBrand.Text + "|" +
                                    textBoxDeviceModel.Text + "|" +
-                                   textBoxWorkPhone.Text + "|" +
-                                   textBoxEmail.Text;
+                                   textBoxDeviceIMEI.Text + "|" +
+                                   textBoxDeviceProblem.Text;
             File.WriteAllText("devices.dat", contactFileContents);
             this.Close();
 

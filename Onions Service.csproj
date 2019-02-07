@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C3DE6BC5-58B1-4E41-92E1-E85259A44E74}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Onion</RootNamespace>
-    <AssemblyName>Onion Service Database</AssemblyName>
+    <RootNamespace>Onions</RootNamespace>
+    <AssemblyName>Onions Service Database</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -50,6 +50,12 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>profile_u1B_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -110,7 +116,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="profile_u1B_icon.ico" />
-    <None Include="Resources\people.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
@@ -123,6 +128,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
