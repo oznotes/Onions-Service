@@ -37,7 +37,7 @@ namespace Device
 
         private void textBoxDeviceModel_Click(object sender, EventArgs e)
         {
-            Console.WriteLine(this.textBoxDeviceBrand.Text.ToString());
+            //Console.WriteLine(this.textBoxDeviceBrand.Text.ToString());
             if (this.textBoxDeviceBrand.Text.ToString() == "APPLE")
             {
                 this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[] {
