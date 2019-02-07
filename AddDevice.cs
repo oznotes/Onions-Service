@@ -15,11 +15,14 @@ namespace Device
         private void Add_Click(object sender, EventArgs e)
         {
             string contactFileContents = String.Empty;
+            string today = DateTime.Today.ToString("dd/MM/yyyy");
+
             if (File.Exists("devices.dat"))
             {
                 contactFileContents = File.ReadAllText("devices.dat") + System.Environment.NewLine;
             }      
-            contactFileContents += textBoxFirstName.Text + "|" +
+            contactFileContents += today + "|" +
+                                   textBoxFirstName.Text + "|" +
                                    textBoxLastName.Text + "|" +
                                    textBoxPhoneNumber.Text + "|" +
                                    textBoxeMail.Text + "|" +

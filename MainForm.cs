@@ -73,6 +73,8 @@ namespace Device
                 else
                 {
                     MessageBox.Show("No Data Found!");
+                    dataGridView.Rows.Clear();
+                    dataGridView.Refresh();
                 }
             }
             else
@@ -119,7 +121,8 @@ namespace Device
         public void complete_selected(string cell)
 
         {
-            string DeviceData = String.Empty; //These are all the new contacts
+            string CompletedDevices = String.Empty; //These are all the new contacts
+            string PendingDevices = String.Empty;
             string[] device = File.ReadAllLines("devices.dat"); //These are all the old contacts
             if (device.Length != 0)
             {
@@ -127,10 +130,18 @@ namespace Device
                 for (int i = 0; i < device.Count(); i++) // Line
                 {
                     if (index == i)
-                        DeviceData += device[i] + "|" + cell + System.Environment.NewLine;
+                    {
+                        CompletedDevices += device[i] + "|" + cell + System.Environment.NewLine;
+                    }
+                    else
+                    {
+                        PendingDevices += device[i] + System.Environment.NewLine;
+                    }
                 }
-                File.AppendAllText("completed.dat", DeviceData); //Saves the contact file without the removed contact
-                dataGridView.Rows.Remove(dataGridView.SelectedRows[0]);// get the first line back again 
+                File.AppendAllText("completed.dat", CompletedDevices); //Saves the completed.dat file with completed device.
+                File.WriteAllText("devices.dat", PendingDevices); //Saves the devices.dat file after removed device.
+                dataGridView.Rows.Remove(dataGridView.SelectedRows[0]);// get the first line back again .
+
             }
             else
             {
@@ -175,11 +186,10 @@ namespace Device
             }
             //************************************
             //Debug Purpose 
-            //Console.WriteLine(CompletedDevices[8]);
+            //Console.WriteLine(CompletedDevices[9]);
             //Console.WriteLine(string.Join("\t", CompletedDevices.Cast<string>().ToArray()));
             //***********************************
-            complete_selected(CompletedDevices[8]);
-            remove_selected();
+            complete_selected(CompletedDevices[9]);
 
         }
 
@@ -191,5 +201,6 @@ namespace Device
             MainSetup();
 
         }
+
     }
 }

@@ -30,13 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripHome = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButtonAdd = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButtonRemove = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButtonCompleted = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripCompleteJOB = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.Done = new System.Windows.Forms.ToolStripMenuItem();
+            this.ColumnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnFirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnLastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnPhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,12 +53,6 @@
             this.ColumnIMEI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnProblem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Done = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripHome = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonAdd = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonRemove = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonCompleted = new System.Windows.Forms.ToolStripButton();
-            this.toolStripCompleteJOB = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
@@ -73,24 +74,65 @@
             this.toolStripSeparator5});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(839, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(972, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripHome
+            // 
+            this.toolStripHome.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripHome.Image = ((System.Drawing.Image)(resources.GetObject("toolStripHome.Image")));
+            this.toolStripHome.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripHome.Name = "toolStripHome";
+            this.toolStripHome.Size = new System.Drawing.Size(44, 22);
+            this.toolStripHome.Text = "Home";
+            this.toolStripHome.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
             this.toolStripSeparator6.Size = new System.Drawing.Size(6, 25);
             // 
+            // toolStripButtonAdd
+            // 
+            this.toolStripButtonAdd.BackColor = System.Drawing.SystemColors.Control;
+            this.toolStripButtonAdd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButtonAdd.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonAdd.Image")));
+            this.toolStripButtonAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonAdd.Name = "toolStripButtonAdd";
+            this.toolStripButtonAdd.Size = new System.Drawing.Size(101, 22);
+            this.toolStripButtonAdd.Text = "New Registration";
+            this.toolStripButtonAdd.Click += new System.EventHandler(this.toolStripButtonAdd_Click);
+            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
+            // toolStripButtonRemove
+            // 
+            this.toolStripButtonRemove.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButtonRemove.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonRemove.Image")));
+            this.toolStripButtonRemove.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonRemove.Name = "toolStripButtonRemove";
+            this.toolStripButtonRemove.Size = new System.Drawing.Size(91, 22);
+            this.toolStripButtonRemove.Text = "Delete Selected";
+            this.toolStripButtonRemove.Click += new System.EventHandler(this.toolStripButtonRemove_Click);
+            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButtonCompleted
+            // 
+            this.toolStripButtonCompleted.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButtonCompleted.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonCompleted.Image")));
+            this.toolStripButtonCompleted.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonCompleted.Name = "toolStripButtonCompleted";
+            this.toolStripButtonCompleted.Size = new System.Drawing.Size(70, 22);
+            this.toolStripButtonCompleted.Text = "Completed";
+            this.toolStripButtonCompleted.Click += new System.EventHandler(this.toolStripButtonCompleted_Click);
             // 
             // toolStripSeparator3
             // 
@@ -102,6 +144,18 @@
             this.toolStripSeparator4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripCompleteJOB
+            // 
+            this.toolStripCompleteJOB.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripCompleteJOB.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripCompleteJOB.Image = ((System.Drawing.Image)(resources.GetObject("toolStripCompleteJOB.Image")));
+            this.toolStripCompleteJOB.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripCompleteJOB.Name = "toolStripCompleteJOB";
+            this.toolStripCompleteJOB.Size = new System.Drawing.Size(110, 22);
+            this.toolStripCompleteJOB.Text = "Complete Selected";
+            this.toolStripCompleteJOB.ToolTipText = "Complete JOBS";
+            this.toolStripCompleteJOB.Click += new System.EventHandler(this.toolStripCompleteJOB_Click);
             // 
             // toolStripSeparator5
             // 
@@ -117,6 +171,7 @@
             this.dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnDate,
             this.ColumnFirstName,
             this.ColumnLastName,
             this.ColumnPhoneNumber,
@@ -133,9 +188,24 @@
             this.dataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView.RowHeadersVisible = false;
             this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView.Size = new System.Drawing.Size(839, 460);
+            this.dataGridView.Size = new System.Drawing.Size(972, 460);
             this.dataGridView.TabIndex = 1;
             this.dataGridView.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView_CellMouseUp);
+            // 
+            // Done
+            // 
+            this.Done.Name = "Done";
+            this.Done.Size = new System.Drawing.Size(32, 19);
+            // 
+            // ColumnDate
+            // 
+            this.ColumnDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.ColumnDate.FillWeight = 150F;
+            this.ColumnDate.HeaderText = "Date in Service";
+            this.ColumnDate.Name = "ColumnDate";
+            this.ColumnDate.ReadOnly = true;
+            this.ColumnDate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColumnDate.Width = 115;
             // 
             // ColumnFirstName
             // 
@@ -203,69 +273,11 @@
             this.ColumnPrice.Name = "ColumnPrice";
             this.ColumnPrice.Width = 65;
             // 
-            // Done
-            // 
-            this.Done.Name = "Done";
-            this.Done.Size = new System.Drawing.Size(32, 19);
-            // 
-            // toolStripHome
-            // 
-            this.toolStripHome.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripHome.Image = ((System.Drawing.Image)(resources.GetObject("toolStripHome.Image")));
-            this.toolStripHome.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripHome.Name = "toolStripHome";
-            this.toolStripHome.Size = new System.Drawing.Size(44, 22);
-            this.toolStripHome.Text = "Home";
-            this.toolStripHome.Click += new System.EventHandler(this.toolStripButton1_Click);
-            // 
-            // toolStripButtonAdd
-            // 
-            this.toolStripButtonAdd.BackColor = System.Drawing.SystemColors.Control;
-            this.toolStripButtonAdd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButtonAdd.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonAdd.Image")));
-            this.toolStripButtonAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonAdd.Name = "toolStripButtonAdd";
-            this.toolStripButtonAdd.Size = new System.Drawing.Size(101, 22);
-            this.toolStripButtonAdd.Text = "New Registration";
-            this.toolStripButtonAdd.Click += new System.EventHandler(this.toolStripButtonAdd_Click);
-            // 
-            // toolStripButtonRemove
-            // 
-            this.toolStripButtonRemove.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButtonRemove.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonRemove.Image")));
-            this.toolStripButtonRemove.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonRemove.Name = "toolStripButtonRemove";
-            this.toolStripButtonRemove.Size = new System.Drawing.Size(91, 22);
-            this.toolStripButtonRemove.Text = "Delete Selected";
-            this.toolStripButtonRemove.Click += new System.EventHandler(this.toolStripButtonRemove_Click);
-            // 
-            // toolStripButtonCompleted
-            // 
-            this.toolStripButtonCompleted.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButtonCompleted.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonCompleted.Image")));
-            this.toolStripButtonCompleted.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonCompleted.Name = "toolStripButtonCompleted";
-            this.toolStripButtonCompleted.Size = new System.Drawing.Size(70, 22);
-            this.toolStripButtonCompleted.Text = "Completed";
-            this.toolStripButtonCompleted.Click += new System.EventHandler(this.toolStripButtonCompleted_Click);
-            // 
-            // toolStripCompleteJOB
-            // 
-            this.toolStripCompleteJOB.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripCompleteJOB.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripCompleteJOB.Image = ((System.Drawing.Image)(resources.GetObject("toolStripCompleteJOB.Image")));
-            this.toolStripCompleteJOB.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripCompleteJOB.Name = "toolStripCompleteJOB";
-            this.toolStripCompleteJOB.Size = new System.Drawing.Size(110, 22);
-            this.toolStripCompleteJOB.Text = "Complete Selected";
-            this.toolStripCompleteJOB.ToolTipText = "Complete JOBS";
-            this.toolStripCompleteJOB.Click += new System.EventHandler(this.toolStripCompleteJOB_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(839, 485);
+            this.ClientSize = new System.Drawing.Size(972, 485);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.toolStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -295,6 +307,9 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripButton toolStripCompleteJOB;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripButton toolStripHome;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnFirstName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnLastName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPhoneNumber;
@@ -304,8 +319,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnIMEI;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnProblem;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPrice;
-        private System.Windows.Forms.ToolStripButton toolStripHome;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
     }
 }
 
