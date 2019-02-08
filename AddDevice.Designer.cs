@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddDeviceForm));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -337,6 +336,7 @@
             this.textBoxDeviceModel.Size = new System.Drawing.Size(263, 20);
             this.textBoxDeviceModel.TabIndex = 8;
             this.textBoxDeviceModel.Click += new System.EventHandler(this.textBoxDeviceModel_Click);
+            this.textBoxDeviceModel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxDeviceModel_MouseClick);
             // 
             // textBoxDeviceIMEI
             // 
@@ -399,7 +399,6 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AddDeviceForm";
