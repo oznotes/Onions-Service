@@ -7,10 +7,10 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Onions Service Database")]
 [assembly: AssemblyDescription("Onions Service Database")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("GSM Fabrica")]
+[assembly: AssemblyCompany("Ozgur Oz")]
 [assembly: AssemblyProduct("Onion Service")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
-[assembly: AssemblyTrademark("Ozgur Oz")]
+[assembly: AssemblyTrademark("GS/\\/\\F/\\BRI</\\")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
@@ -31,5 +31,6 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.3")]
-[assembly: AssemblyFileVersion("1.0.0.3")]
+[assembly: AssemblyVersion("1.0.0.4")]
+[assembly: AssemblyFileVersion("1.0.0.4")]
+
