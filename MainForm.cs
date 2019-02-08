@@ -186,7 +186,7 @@ namespace Device
         {
             // we are checking checked items to complete.
             // Row_N is from selected item
-            // TODO : Check for price availability 
+            // TODO : Check for price availability | Done.
             int countColumn = dataGridView.ColumnCount;
             int countROW = dataGridView.RowCount;
             int price;
@@ -197,6 +197,7 @@ namespace Device
                 data = (string)dataGridView[i, Row_N].Value;
                 CompletedDevices.Add(data);
             }
+
             // Check the price cell if its stable .
             try
             {
@@ -217,9 +218,11 @@ namespace Device
             //Console.WriteLine(CompletedDevices[9]);
             //Console.WriteLine(string.Join("\t", CompletedDevices.Cast<string>().ToArray()));
             //***********************************
+            //New Way just remove from 
+            //var NineItems = CompletedDevices.Take(9);
+            //Console.WriteLine(String.Join("|", NineItems));
             complete_selected(CompletedDevices[9]);
             MainSetup();
-
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
