@@ -189,12 +189,28 @@ namespace Device
             // TODO : Check for price availability 
             int countColumn = dataGridView.ColumnCount;
             int countROW = dataGridView.RowCount;
+            int price;
             string data;
             List<string> CompletedDevices = new List<string>(); // we will save to another database
             for (int i = 0; i < countColumn; i++)
             {
                 data = (string)dataGridView[i, Row_N].Value;
                 CompletedDevices.Add(data);
+            }
+            // Check the price cell if its stable .
+            try
+            {
+                price = int.Parse(CompletedDevices[9]);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Enter Price in numbers !");
+                return;
+            }
+            catch (ArgumentNullException)
+            {
+                MessageBox.Show("Enter Price information !");
+                return;
             }
             //************************************
             //Debug Purpose 
