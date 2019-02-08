@@ -43,7 +43,7 @@ namespace Device
 
         private void textBoxDeviceModel_MouseClick(object sender, MouseEventArgs e)
         {
-            Console.WriteLine(this.textBoxDeviceBrand.Text.ToString());
+            //Console.WriteLine(this.textBoxDeviceBrand.Text.ToString());
             if (this.textBoxDeviceBrand.Text.ToString() == "APPLE")
             {
                 this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
@@ -88,6 +88,17 @@ namespace Device
                     "Stream", "Liquid E","neoTouch P400", "beTouch E400", "neoTouch P300", "beTouch E110",
                     "Liquid", "neoTouch","beTouch E200", "beTouch E100", "beTouch E101", "DX650", "M900", "F900", "X960", "DX900"
                 });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "AMAZON")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Fire HD 10 (2017)", "Fire HD 8 (2017)", "Fire 7 (2017)", "Fire HD 10",
+                    "Fire HD 8", "Fire 7", "Fire HDX 8.9 (2014)", "Fire HD 7", "Fire HD 6",
+                    "Fire Phone", "Kindle Fire HDX 8.9", "Kindle Fire HDX", "Kindle Fire HD (2013)",
+                    "Kindle Fire HD 8.9 LTE", "Kindle Fire HD 8.9", "Kindle Fire HD", "Kindle Fire"
+                });
+
             }
             else
             {
