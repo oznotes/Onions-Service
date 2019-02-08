@@ -46,6 +46,7 @@ namespace Device
             //Console.WriteLine(this.textBoxDeviceBrand.Text.ToString());
             if (this.textBoxDeviceBrand.Text.ToString() == "APPLE")
             {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
                 this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
                 {
                     "iPad Pro 12.9 (2018)", "iPad Pro 11", "iPhone XS Max", "iPhone XS", "iPhone XR",
@@ -65,6 +66,7 @@ namespace Device
 
             else if (this.textBoxDeviceBrand.Text.ToString() == "ACER")
             {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
                 this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
                 {
                     "Chromebook Tab 10", "Iconia Talk S", "Liquid Z6 Plus", "Liquid Z6",
@@ -91,6 +93,7 @@ namespace Device
             }
             else if (this.textBoxDeviceBrand.Text.ToString() == "AMAZON")
             {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
                 this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
                 {
                     "Fire HD 10 (2017)", "Fire HD 8 (2017)", "Fire 7 (2017)", "Fire HD 10",
