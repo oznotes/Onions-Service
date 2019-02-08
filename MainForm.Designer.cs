@@ -20,6 +20,7 @@
             base.Dispose(disposing);
         }
 
+
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -42,7 +43,6 @@
             this.toolStripCompleteJOB = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.Done = new System.Windows.Forms.ToolStripMenuItem();
             this.ColumnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnFirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnLastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,6 +53,7 @@
             this.ColumnIMEI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnProblem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Done = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
@@ -190,12 +191,10 @@
             this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView.Size = new System.Drawing.Size(972, 460);
             this.dataGridView.TabIndex = 1;
+            this.dataGridView.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellEndEdit);
             this.dataGridView.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView_CellMouseUp);
-            // 
-            // Done
-            // 
-            this.Done.Name = "Done";
-            this.Done.Size = new System.Drawing.Size(32, 19);
+            this.dataGridView.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dataGridView_DataBindingComplete);
+            this.dataGridView.SelectionChanged += new System.EventHandler(this.dataGridView_SelectionChanged);
             // 
             // ColumnDate
             // 
@@ -272,6 +271,11 @@
             this.ColumnPrice.HeaderText = "Price";
             this.ColumnPrice.Name = "ColumnPrice";
             this.ColumnPrice.Width = 65;
+            // 
+            // Done
+            // 
+            this.Done.Name = "Done";
+            this.Done.Size = new System.Drawing.Size(32, 19);
             // 
             // MainForm
             // 

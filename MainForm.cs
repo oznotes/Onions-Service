@@ -9,10 +9,21 @@ namespace Device
     public partial class MainForm : Form
     {
         int Row_N;
+        private int currentRow;
+        private bool resetRow = false;
+
         public MainForm()
         {
             InitializeComponent();
             MainSetup();
+            // deleted out all the binding code of the grid to focus on the interesting stuff
+
+            dataGridView.CellEndEdit += new DataGridViewCellEventHandler(dataGridView_CellEndEdit);
+
+            // Use the DataBindingComplete event to attack the SelectionChanged, 
+            // avoiding infinite loops and other nastiness.
+            dataGridView.DataBindingComplete += new DataGridViewBindingCompleteEventHandler(dataGridView_DataBindingComplete);
+
 
         }
         public void MainSetup()
@@ -165,7 +176,6 @@ namespace Device
 
         private void dataGridView_CellMouseUp(object sender, DataGridViewCellMouseEventArgs e)
         {   //Update the ROW ID with the mouse event 
-
             int column = dataGridView.CurrentCell.ColumnIndex;
             Row_N = dataGridView.CurrentCell.RowIndex;
         }
@@ -174,7 +184,7 @@ namespace Device
         {
             // we are checking checked items to complete.
             // Row_N is from selected item
-            // Check for price availability 
+            // TODO : Check for price availability 
             int countColumn = dataGridView.ColumnCount;
             int countROW = dataGridView.RowCount;
             string data;
@@ -199,8 +209,26 @@ namespace Device
             loadContacts("devices.dat");
             this.Text = "Onions Service Database - Home";
             MainSetup();
-
         }
 
+        private void dataGridView_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            resetRow = true;
+            currentRow = e.RowIndex;
+        }
+
+        private void dataGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            dataGridView.SelectionChanged += new EventHandler(dataGridView_SelectionChanged);
+        }
+
+        private void dataGridView_SelectionChanged(object sender, EventArgs e)
+        {
+            if (resetRow)
+            {
+                resetRow = false;
+                dataGridView.CurrentCell = dataGridView.Rows[currentRow].Cells[0];
+            }
+        }
     }
 }
