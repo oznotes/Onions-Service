@@ -37,7 +37,7 @@ namespace Device
             }
             else
             {
-                MessageBox.Show("No Data Found");
+                MessageBox.Show("No File Found");
                 toolStripCompleteJOB.Enabled = false;
                 toolStripButtonRemove.Enabled = false;
             }
@@ -84,6 +84,8 @@ namespace Device
                 else
                 {
                     MessageBox.Show("No Data Found!");
+                    toolStripCompleteJOB.Enabled = false;
+                    toolStripButtonRemove.Enabled = false;
                     dataGridView.Rows.Clear();
                     dataGridView.Refresh();
                 }
@@ -200,6 +202,7 @@ namespace Device
             //Console.WriteLine(string.Join("\t", CompletedDevices.Cast<string>().ToArray()));
             //***********************************
             complete_selected(CompletedDevices[9]);
+            MainSetup();
 
         }
 
