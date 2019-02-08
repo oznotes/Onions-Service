@@ -124,6 +124,21 @@ namespace Device
 
                 });
             }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "COOLPAD")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Cool Play 8", "Mega 5A", "Note 6", "Cool 2",
+                    "Cool Play 6", "Cool M7", "NX1", "Defiant",
+                    "Note 5 Lite", "Cool1 dual", "Conjr", "Cool S1",
+                    "Note 3s", "Mega 3", "Note 5", "Modena 2",
+                    "Mega", "Torino", "Note 3 Plus", "Max",
+                    "Porto S", "Torino S", "Note 3 Lite", "Roar",
+                    "Note 3", "Shine", "Modena", "Porto",
+                    "3632"
+                });
+            }
 
             else if (this.textBoxDeviceBrand.Text.ToString() == "HUAWEI")
             {
