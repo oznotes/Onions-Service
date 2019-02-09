@@ -2146,6 +2146,808 @@ namespace Device
                     "Noir A950", "Noir A500",
                 });
             }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "SAMSUNG")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Galaxy M20", "Galaxy M10", "Galaxy A8s", "Galaxy A6s",
+                    "Galaxy A9 (2018)", "Galaxy A7 (2018)", "Galaxy Note9", "Galaxy Watch",
+                    "Galaxy J6+", "Galaxy J4 Core", "Galaxy J4+", "Galaxy J2 Core",
+                    "Galaxy Tab S4 10.5", "Galaxy Tab A 10.5", "Galaxy On6", "Galaxy J7 (2018)",
+                    "Galaxy J3 (2018)", "Galaxy A8 Star (A9 Star)", "Galaxy S Light Luxury", "Galaxy J8",
+                    "Galaxy J6", "Galaxy J4", "Galaxy A6+ (2018)", "Galaxy A6 (2018)",
+                    "Galaxy J7 Duo", "Galaxy J7 Prime 2", "Galaxy S9+", "Galaxy S9",
+                    "Galaxy J2 Pro (2018)", "Galaxy A8+ (2018)", "Galaxy A8 (2018)", "Galaxy J2 (2017)",
+                    "Galaxy Tab Active 2", "Galaxy Tab A 8.0 (2017)", "Galaxy C7 (2017)", "Gear Sport",
+                    "Galaxy Note8", "Galaxy S8 Active", "Galaxy J7 V", "Galaxy Note FE",
+                    "Galaxy J7 Max", "Galaxy J7 Pro", "Galaxy J7 (2017)", "Galaxy J5 (2017)",
+                    "Galaxy J3 (2017)", "Galaxy Folder2", "Z4", "Galaxy S8",
+                    "Galaxy S8+", "Gear S3 classic LTE", "Galaxy C5 Pro", "Galaxy Xcover 4",
+                    "Galaxy Tab S3 9.7", "Galaxy J1 mini prime", "Galaxy J3 Emerge", "Galaxy C7 Pro",
+                    "Galaxy A7 (2017)", "Galaxy A5 (2017)", "Galaxy A3 (2017)", "Galaxy Grand Prime Plus",
+                    "Galaxy J2 Prime", "Galaxy C9 Pro", "Galaxy C10", "Galaxy A8 (2016)",
+                    "Galaxy On8", "Galaxy On7 (2016)", "Gear S3 classic", "Gear S3 frontier",
+                    "Gear S3 frontier LTE", "Galaxy J5 Prime", "Galaxy J7 Prime", "Z2",
+                    "Galaxy Note7 (USA)", "Galaxy Note7", "Galaxy On7 Pro", "Galaxy On5 Pro",
+                    "Galaxy Tab J", "Galaxy J Max", "Galaxy J2 Pro (2016)", "Galaxy J2 (2016)",
+                    "Z3 Corporate", "Galaxy Xcover 3 G389F", "Galaxy S7 active", "Galaxy J3 Pro",
+                    "Galaxy C7", "Galaxy C5", "Galaxy A9 Pro (2016)", "Galaxy J7 (2016)",
+                    "Galaxy J5 (2016)", "Galaxy Tab A 10.1 (2016)", "Galaxy Tab A 7.0 (2016)", "Galaxy S7",
+                    "Galaxy S7 edge", "Galaxy S7 edge (USA)", "Galaxy S7 (USA)", "Galaxy J1 Nxt",
+                    "Gear S2 classic 3G", "Galaxy Tab E 8.0", "Galaxy J1 (2016)", "Galaxy A9 (2016)",
+                    "Galaxy A7 (2016)", "Galaxy A5 (2016)", "Galaxy A3 (2016)", "Galaxy Express Prime",
+                    "Galaxy J3 (2016)", "Galaxy View", "Galaxy On7", "Galaxy On5",
+                    "Z3", "Galaxy J1 Ace", "Gear S2 classic", "Gear S2",
+                    "Gear S2 3G", "Galaxy Note5 (USA)", "Galaxy Note5", "Galaxy Note5 Duos",
+                    "Galaxy S6 edge+ (USA)", "Galaxy S6 edge+", "Galaxy S6 edge+ Duos", "Galaxy S5 Neo",
+                    "Galaxy S4 mini I9195I", "Galaxy Folder", "Galaxy Tab S2 9.7", "Galaxy Tab S2 8.0",
+                    "Galaxy A8 Duos", "Galaxy A8", "Galaxy V Plus", "Galaxy J7",
+                    "Galaxy J7 Nxt", "Galaxy J5", "Galaxy Tab 4 10.1 (2015)", "Galaxy Tab E 9.6",
+                    "Guru Plus ", "Metro 360", "Xcover 550", "Galaxy S6 active",
+                    "Galaxy Tab 3 V", "Galaxy Tab A 9.7 & S Pen", "Galaxy Tab A 9.7", "Galaxy Tab A 8.0 & S Pen",
+                    "Galaxy Tab A 8.0", "Galaxy Xcover 3", "Galaxy S6 edge (USA)", "Galaxy S6 (USA)",
+                    "Galaxy S6 edge", "Galaxy S6 Plus", "Galaxy S6 Duos", "Galaxy S6",
+                    "Galaxy J1 4G", "Galaxy J1", "Galaxy J2", "Galaxy Tab 3 Lite 7.0 VE",
+                    "Z1", "Galaxy A7 Duos", "Galaxy A7", "Galaxy Grand Max",
+                    "Galaxy E7", "Galaxy E5", "Galaxy Core Prime", "Galaxy A5 Duos",
+                    "Galaxy A5", "Galaxy A3 Duos", "Galaxy A3", "Galaxy S5 Plus",
+                    "Galaxy Pocket 2", "Galaxy V", "Galaxy Grand Prime Duos TV", "Galaxy Grand Prime",
+                    "Galaxy Ace Style LTE G357", "Galaxy Note Edge", "Galaxy C5", "Galaxy A9 Pro (2016)",
+                    "Galaxy J7 (2016)", "Galaxy J5 (2016)", "Galaxy Tab A 10.1 (2016)", "Galaxy Tab A 7.0 (2016)",
+                    "Galaxy S7", "Galaxy S7 edge", "Galaxy S7 edge (USA)", "Galaxy S7 (USA)",
+                    "Galaxy J1 Nxt", "Gear S2 classic 3G", "Galaxy Tab E 8.0", "Galaxy J1 (2016)",
+                    "Galaxy A9 (2016)", "Galaxy A7 (2016)", "Galaxy A5 (2016)", "Galaxy A3 (2016)",
+                    "Galaxy Express Prime", "Galaxy J3 (2016)", "Galaxy View", "Galaxy On7",
+                    "Galaxy On5", "Z3", "Galaxy J1 Ace", "Gear S2 classic",
+                    "Gear S2", "Gear S2 3G", "Galaxy Note5 (USA)", "Galaxy Note5",
+                    "Galaxy Note5 Duos", "Galaxy S6 edge+ (USA)", "Galaxy S6 edge+", "Galaxy S6 edge+ Duos",
+                    "Galaxy S5 Neo", "Galaxy S4 mini I9195I", "Galaxy Folder", "Galaxy Tab S2 9.7",
+                    "Galaxy Tab S2 8.0", "Galaxy A8 Duos", "Galaxy A8", "Galaxy V Plus",
+                    "Galaxy J7", "Galaxy J7 Nxt", "Galaxy J5", "Galaxy Tab 4 10.1 (2015)",
+                    "Galaxy Tab E 9.6", "Guru Plus ", "Metro 360", "Xcover 550",
+                    "Galaxy S6 active", "Galaxy Tab 3 V", "Galaxy Tab A 9.7 & S Pen", "Galaxy Tab A 9.7",
+                    "Galaxy Tab A 8.0 & S Pen", "Galaxy Tab A 8.0", "Galaxy Xcover 3", "Galaxy S6 edge (USA)",
+                    "Galaxy S6 (USA)", "Galaxy S6 edge", "Galaxy S6 Plus", "Galaxy S6 Duos",
+                    "Galaxy S6", "Galaxy J1 4G", "Galaxy J1", "Galaxy J2",
+                    "Galaxy Tab 3 Lite 7.0 VE", "Z1", "Galaxy A7 Duos", "Galaxy A7",
+                    "Galaxy Grand Max", "Galaxy E7", "Galaxy E5", "Galaxy Core Prime",
+                    "Galaxy A5 Duos", "Galaxy A5", "Galaxy A3 Duos", "Galaxy A3",
+                    "Galaxy S5 Plus", "Galaxy Pocket 2", "Galaxy V", "Galaxy Grand Prime Duos TV",
+                    "Galaxy Grand Prime", "Galaxy Ace Style LTE G357", "Galaxy Note Edge", "Galaxy Grand 2",
+                    "I9230 Galaxy Golden", "Galaxy Express 2", "C3590", "I9506 Galaxy S4",
+                    "Galaxy Light", "Galaxy Round G910S", "Galaxy Fresh S7390", "Galaxy Core Plus",
+                    "Galaxy Fame Lite Duos S6792L", "Galaxy Fame Lite S6790", "Galaxy Star Pro S7260", "Galaxy Note 10.1 (2014)",
+                    "Galaxy Note 3", "Ch@t 333", "Galaxy Prevail 2", "Gravity Q T289",
+                    "ATIV S Neo", "Galaxy S4 zoom", "Galaxy S II TV", "Galaxy Ace 3",
+                    "I9190 Galaxy S4 mini", "I9295 Galaxy S4 Active", "Galaxy Tab 3 8.0", "Galaxy Tab 3 10.1 P5220",
+                    "Galaxy Tab 3 10.1 P5200", "Galaxy Tab 3 10.1 P5210", "Galaxy Exhibit T599", "Galaxy Core I8260",
+                    "Galaxy Tab 3 7.0 WiFi", "Galaxy Tab 3 7.0", "Galaxy Mega 6.3 I9200", "Galaxy Mega 5.8 I9150",
+                    "Galaxy Trend II Duos S7572", "Galaxy Win I8550", "Galaxy Pocket Neo S5310", "Galaxy Star S5280",
+                    "I9505 Galaxy S4", "I9500 Galaxy S4", "I9502 Galaxy S4", "Galaxy S4 CDMA",
+                    "Galaxy Note 8.0", "Galaxy Note 8.0 Wi-Fi", "Galaxy Y Plus S5303", "Rex 90 S5292",
+                    "Rex 80 S5222R", "Rex 70 S3802", "Rex 60 C3312R", "Metro E2202",
+                    "E1282T", "E1207T", "Galaxy Young S6310", "Galaxy Fame S6810",
+                    "Galaxy Express I8730", "S7710 Galaxy Xcover 2", "I9105 Galaxy S II Plus", "Ativ Odyssey I930",
+                    "Galaxy Grand I9082", "Galaxy Grand I9080", "Star Deluxe Duos S5292", "Galaxy Note LTE 10.1 N8020",
+                    "A997 Rugby III", "Galaxy Axiom R830", "Galaxy Stratosphere II I415", "Galaxy Discover S730M",
+                    "Galaxy Pop SHV-E220", "Galaxy Premier I9260", "Google Nexus 10 P8110", "Ativ Tab P8510",
+                    "Comment 2 R390C", "I8190 Galaxy S III mini", "Galaxy Music S6010", "Galaxy Music Duos S6012",
+                    "Galaxy Rugby Pro I547", "Galaxy Express I437", "Ch@t 357", "I9305 Galaxy S III",
+                    "Galaxy Victory 4G LTE L300", "Galaxy S Relay 4G T699", "Champ Neo Duos C3262", "Galaxy Pocket Duos S5302",
+                    "Galaxy Note II N7100", "Galaxy Note II CDMA", "Ativ S I8750", "Galaxy Camera GC100",
+                    "Galaxy Rush M830", "Galaxy Stellar 4G I200", "Galaxy Reverb M950", "Galaxy Tab 2 7.0 I705",
+                    "Galaxy Note 10.1 N8000", "Galaxy Note 10.1 N8010", "Array M390", "Galaxy S Lightray 4G R940",
+                    "Galaxy S Duos S7562", "Manhattan E3300", "E2262", "E1260B",
+                    "E1200 Pusha", "E2252", "Galaxy Chat B5330", "U485 Intensity III",
+                    "Galaxy I8250", "Galaxy Ace Advance S6800", "Galaxy Ace Duos S6802", "Galaxy Appeal I827",
+                    "Galaxy Tab 8.9 4G P7320T", "C3780", "C3782 Evan", "Galaxy Proclaim S720C",
+                    "Omnia M S7530", "I9500 Fraser", "Focus 2 I667", "Galaxy S III T999",
+                    "Galaxy S III I747", "Galaxy S III CDMA", "I9300 Galaxy S III", "E2350B",
+                    "U380 Brightside", "Galaxy Player 70 Plus", "Galaxy Pocket plus S5301", "Galaxy Pocket S5300",
+                    "I8530 Galaxy Beam", "Galaxy Tab 2 10.1 P5110", "Galaxy Tab 2 10.1 CDMA", "Galaxy Tab 2 10.1 P5100",
+                    "Rugby Smart I847", "W999", "Galaxy Ace II X S7560M", "Galaxy Ace 2 I8160",
+                    "Galaxy mini 2 S6500", "Galaxy Ace Duos I589", "Galaxy Pop Plus S5570i", "Galaxy Tab 2 7.0 P3110",
+                    "Galaxy Tab 2 7.0 P3100", "I9070 Galaxy S Advance", "C3312 Duos", "Star 3 s5220",
+                    "Star 3 Duos S5222", "Galaxy Nexus I9250M", "Galaxy Attain 4G", "Galaxy S Blaze 4G T769",
+                    "Galaxy Tab 7.7 LTE I815", "Galaxy Nexus LTE L700", "Exhilarate i577", "Galaxy S II Skyrocket HD I757",
+                    "Galaxy Note T879", "Galaxy Note I717", "Galaxy M Style M340S", "Galaxy Ace Plus S7500",
+                    "I929 Galaxy S II Duos", "Galaxy Y Duos S6102", "Galaxy Y Pro Duos B5512", "E2600",
+                    "M370", "R680 Repp", "I110 Illusion", "E1050",
+                    "E1232B", "E1230", "Focus S I937", "Focus Flash I677",
+                    "Galaxy S II Skyrocket i727", "C3330 Champ 2", "Exhibit II 4G T679", "C3350",
+                    "C3520", "Galaxy Nexus i515", "Galaxy Nexus I9250", "I9100G Galaxy S II",
+                    "I405 Stratosphere", "R730 Transfix", "i927 Captivate Glide", "DoubleTime I857",
+                    "M930 Transform Ultra", "P6210 Galaxy Tab 7.0 Plus", "P6200 Galaxy Tab 7.0 Plus", "Omnia W I8350",
+                    "Galaxy S II HD LTE", "Ch@t 527", "P6810 Galaxy Tab 7.7", "P6800 Galaxy Tab 7.7",
+                    "Galaxy Note N7000", "Galaxy S II I777", "Galaxy S II X T989D", "Galaxy S II T989",
+                    "Galaxy S II Epic 4G Touch", "S8600 Wave 3", "Wave M S7250", "Wave Y S5380",
+                    "Galaxy S II LTE i727R", "Galaxy S II LTE I9210", "Galaxy Tab 8.9 LTE I957", "Galaxy W I8150",
+                    "Galaxy M Pro B7800", "Galaxy Y Pro B5510", "Galaxy Y TV S5367", "Galaxy Y S5360",
+                    "Gravity TXT T379", "Galaxy Q T589R", "S5610", "S3770",
+                    "S5690 Galaxy Xcover", "Galaxy S II 4G I9100M", "I9103 Galaxy R", "R720 Admire",
+                    "Convoy 2", "Conquer 4G", "R640 Character", "R380 Freeform III",
+                    "Trender", "Gravity SMART", "Exhibit 4G", "C414",
+                    "E1195", "E1190", "C3560", "Dart T499",
+                    "C3322", "R260 Chrono", "E2232", "E1182",
+                    "I9001 Galaxy S Plus", "DuosTV I6712", "C6712 Star II DUOS", "Ch@t 222",
+                    "Ch@t 220", "M580 Replenish", "Galaxy Prevail", "M220L Galaxy Neo",
+                    "Google Nexus S I9020A", "Google Nexus S I9023", "E2230", "P1010 Galaxy Tab Wi-Fi",
+                    "P7500 Galaxy Tab 10.1 3G", "Galaxy Tab 10.1 LTE I905", "Galaxy Tab 10.1 P7510", "Galaxy Tab 8.9 P7300",
+                    "Galaxy Tab 8.9 P7310", "Google Nexus S 4G", "M260 Factor", "S3850 Corby II",
+                    "Galaxy Pro B7510", "I9100 Galaxy S II", "E2652W Champ Duos", "E2652 Champ Duos",
+                    "S5780 Wave 578", "P7100 Galaxy Tab 10.1v", "Galaxy S WiFi 5.0", "Ch@t 350",
+                    "E3213 Hero", "E3210", "E2330", "I9003 Galaxy SL",
+                    "Galaxy Ace S5830I", "Galaxy Ace S5830", "Galaxy Fit S5670", "Galaxy Gio S5660",
+                    "Galaxy Mini S5570", "Galaxy Pop i559", "Galaxy S 4G T959", "S5260 Star II",
+                    "I997 Infuse 4G", "R910 Galaxy Indulge", "Droid Charge I510", "Google Nexus S",
+                    "M190S Galaxy S Hoppin", "Ch@t 335", "C3630", "C3530",
+                    "I9010 Galaxy S Giorgio Armani", "A817 Solstice II", "A667 Evergreen", "E2530",
+                    "I100 Gem", "R710 Suede", "U750 Zeal", "Continuum I400",
+                    "Ch@t 322 Wi-Fi", "Ch@t 322", "E1252", "Breeze B209",
+                    "Hero Plus B159", "W169 Duos", "Mpower Muzik 219", "Mpower Txt M369",
+                    "Mpower TV S239", "E1225 Dual Sim Shift", "Guru E1081T", "Focus",
+                    "I8700 Omnia 7", "S5750 Wave575", "S8530 Wave II", "M210S Wave2",
+                    "Galaxy Tab T-Mobile T849", "P1000 Galaxy Tab", "Galaxy Tab CDMA P100", "Galaxy Tab 4G LTE",
+                    "T249", "R580 Profile", "R570 Messenger III", "I909 Galaxy S",
+                    "A200K Nori F", "A220 F Nori", "M130K Galaxy K", "Mesmerize i500",
+                    "M920 Transform", "R360 Freeform II", "Guru Dual 26", "Galaxy 551",
+                    "Xcover 271", "R900 Craft", "S7230E Wave 723", "C3750",
+                    "C3752", "M130L Galaxy U", "E2152", "S5530",
+                    "U360 Gusto", "Fascinate", "Vibrant", "A927 Flight II",
+                    "T669 Gravity T", "T479 Gravity 3", ":) Smiley", "C5010 Squash",
+                    "i897 Captivate", "B7350 Omnia PRO 4", "B6520 Omnia PRO 5", "U320 Haven",
+                    "U460 Intensity II", "M350 Seek", "Epic 4G", "Acclaim",
+                    "Intercept", "R360 Messenger Touch", "i225 Exec", "M570 Restore",
+                    "R351 Freeform", "T369", "S5330 Wave533", "S5250 Wave525",
+                    "I5500 Galaxy 5", "I5801 Galaxy Apollo", "I5800 Galaxy 3", "B7722",
+                    "A847 Rugby II", "C3300K Champ", "W960 AMOLED 3D", "M110S Galaxy S",
+                    "Galaxy A", "I9000 Galaxy S", "I6500U Galaxy", "S3370",
+                    "Metro TV", "E1170", "Corby TV F339", "S3650W Corby",
+                    "W9705", "A687 Strive", "A697 Sunburst", "S8500 Wave",
+                    "I8520 Galaxy Beam", "B3410W Ch@t", "M3710 Corby Beat", "E2370 Xcover",
+                    "E2550 Monte Slider", "C3200 Monte Bar", "S5620 Monte", "S5550 Shark 2",
+                    "S3550 Shark 3", "S5350 Shark", "E1150", "C6112",
+                    "M2520 Beat Techno", "C3510 Genoa", "M5650 Lindy", "S7070 Diva",
+                    "C3730C", "S5150 Diva folder", "C5130", "B5722",
+                    "M3310L", "M3310", "A897 Mythic", "S5500 Eco",
+                    "T139", "A797 Flight", "B3410", "M715 T*OMNIA II",
+                    "A886 Forever", "S5560 Marvel", "S5630C", "I5700 Galaxy Spica",
+                    "E1390", "E1160", "E2130", "E1130B",
+                    "T401G", "B7620 Giorgio Armani", "T939 Behold 2", "M8920",
+                    "W880 AMOLED 12M", "Vodafone 360 H1", "Vodafone 360 M1", "B5310 CorbyPRO",
+                    "B3210 CorbyTXT", "F480i", "B7330 OmniaPRO", "E1085T",
+                    "E1080T", "S5510", "S5230W Star WiFi", "S7550 Blue Earth",
+                    "S3650 Corby", "C5030", "T659 Scarlet", "B3310",
+                    "C3212", "U450 DoubleTake", "i220 Code", "R860 Caliber",
+                    "R520 Trill", "M900 Moment", "i350 Intrepid", "M850 Instinct HD",
+                    "U450 Intensity", "U960 Rogue", "S3100", "A887 Solstice",
+                    "E2120", "S5233T", "I6220 Star TV", "S9110",
+                    "T469 Gravity 2", "T559 Comeback", "T746 Impact", "S5600v Blade",
+                    "S6700", "C5510", "M2510", "M2310",
+                    "W850", "S8000 Jet", "I8000 Omnia II", "B7610 OmniaPRO",
+                    "B7320 OmniaPRO", "B7300 OmniaLITE", "M8910 Pixon12", "E1107 Crest Solar",
+                    "M2710 Beat Twist", "S5050", "T349", "S5200",
+                    "i637 Jack", "S3310", "C3060R", "A167",
+                    "A177", "I7500 Galaxy", "J165", "I6210",
+                    "E1360", "E1210", "A657", "A877 Impression",
+                    "A257 Magnet", "Propel Pro", "B2100 Xplorer", "S5230 Star",
+                    "S5600 Preston", "i8910 Omnia HD", "S8300 UltraTOUCH", "M7600 Beat DJ",
+                    "M6710 Beat DISC", "S7350 Ultra s", "S7220 Ultra b", "C5220",
+                    "S3500", "S3110", "P250", "i7410",
+                    "T929 Memoir", "C3050 Stratus", "C3010", "C3110",
+                    "C6625", "E1310", "E1120", "E1100",
+                    "E1070", "E2210B", "E1125", "E2100B",
+                    "B520", "B5702", "C5212", "SCH-W699",
+                    "W259 Duos", "W299 Duos", "S9402 Ego", "S3030 Tobi",
+                    "U810 Renown", "i770 Saga", "A867 Eternity", "A777",
+                    "T919 Behold", "T459 Gravity", "E2510", "T219",
+                    "E1410", "U450 Intensity", "U960 Rogue", "S3100",
+                    "A887 Solstice", "E2120", "S5233T", "I6220 Star TV",
+                    "S9110", "T469 Gravity 2", "T559 Comeback", "T746 Impact",
+                    "S5600v Blade", "S6700", "C5510", "M2510",
+                    "M2310", "W850", "S8000 Jet", "I8000 Omnia II",
+                    "B7610 OmniaPRO", "B7320 OmniaPRO", "B7300 OmniaLITE", "M8910 Pixon12",
+                    "E1107 Crest Solar", "M2710 Beat Twist", "S5050", "T349",
+                    "S5200", "i637 Jack", "S3310", "C3060R",
+                    "A167", "A177", "I7500 Galaxy", "J165",
+                    "I6210", "E1360", "E1210", "A657",
+                    "A877 Impression", "A257 Magnet", "Propel Pro", "B2100 Xplorer",
+                    "S5230 Star", "S5600 Preston", "i8910 Omnia HD", "S8300 UltraTOUCH",
+                    "M7600 Beat DJ", "M6710 Beat DISC", "S7350 Ultra s", "S7220 Ultra b",
+                    "C5220", "S3500", "S3110", "P250",
+                    "i7410", "T929 Memoir", "C3050 Stratus", "C3010",
+                    "C3110", "C6625", "E1310", "E1120",
+                    "E1100", "E1070", "E2210B", "E1125",
+                    "E2100B", "B520", "B5702", "C5212",
+                    "SCH-W699", "W259 Duos", "W299 Duos", "S9402 Ego",
+                    "S3030 Tobi", "U810 Renown", "i770 Saga", "A867 Eternity",
+                    "A777", "T919 Behold", "T459 Gravity", "E2510",
+                    "T219", "E1410", "G800", "C500",
+                    "Serenata", "D880 Duos", "i780", "i560",
+                    "i550", "F330", "F250", "i450",
+                    "Armani", "J610", "P260", "J400",
+                    "J750", "A737", "A517", "T639",
+                    "T509", "T439", "T429", "T409",
+                    "T739 Katalyst", "T729 Blast", "T539 Beat", "L600",
+                    "Z630", "G600", "M610", "M600",
+                    "M110", "B500", "B100", "S730i",
+                    "S720i", "J200", "L760", "F700",
+                    "E950", "F210", "F200", "i620",
+                    "A411", "ZV60", "Z240", "Z170",
+                    "J600", "i400", "U700", "U600",
+                    "U300", "U100", "i710", "i520",
+                    "F520", "F510", "P110", "E840",
+                    "E830", "E740", "E590", "E230",
+                    "E210", "E200", "C520", "C450",
+                    "C275", "C270", "C260", "C250",
+                    "i600", "i617 BlackJack II", "i607 BlackJack", "F500",
+                    "F300", "P940", "P930", "E790",
+                    "E490", "E480", "E390", "X550",
+                    "X540", "E250", "X520", "X530",
+                    "C300", "M300", "E690", "E570",
+                    "E420", "X830", "E890", "E898",
+                    "P310", "Z720", "Z650i", "Z620",
+                    "Z370", "Z360", "P200", "S501i",
+                    "S401i", "X510", "X500", "D840",
+                    "C400", "C240", "C180", "C170",
+                    "C160", "C140", "D830", "D900i",
+                    "D900", "X820", "C130", "E500",
+                    "E380", "D870", "D780 flip", "E900",
+                    "Z400", "Z550", "i320", "i310",
+                    "ZV50", "ZV40", "Z560", "P920",
+                    "P900", "P910", "T629", "D520",
+                    "D300", "Z710", "Z600", "Z520",
+                    "Z350", "Z230", "Z330", "Z310",
+                    "Z150", "X680", "X630", "X300",
+                    "X210", "X160", "E870", "E780",
+                    "i300x", "D820", "D810", "D800",
+                    "Z540", "Z510", "P300", "E770",
+                    "E370", "E360", "ZV30", "ZV10",
+                    "Z320i", "S400i", "S500i", "E860",
+                    "Serene", "D600", "P850", "E730",
+                    "D510", "X700", "X670", "X660",
+                    "X490", "X650", "X200", "X150",
+                    "Z500", "Z300", "Z130", "Z140",
+                    "D550", "P860", "Z700", "D730",
+                    "i750", "D720", "E760", "E750",
+                    "E720", "i300", "E880", "E350",
+                    "E640", "E620", "E530", "E340",
+                    "X810", "X800", "C120", "C230",
+                    "C210", "X640", "X480", "X620",
+                    "X140", "S410i", "S342i", "SCH-B100",
+                    "D500", "P730", "P710", "D488",
+                    "D428", "E630", "E850", "E810",
+                    "E800", "Z110", "D710", "C200",
+                    "i530", "i505", "i500", "i250",
+                    "i700", "X910", "X900", "X610",
+                    "X460", "X120", "E330", "E310",
+                    "E300", "C110", "Z107", "Z105",
+                    "E610", "E600", "P510", "E410",
+                    "X450", "X430", "P705", "D410",
+                    "X600", "X100", "E715", "E700",
+                    "C100", "D700", "P500", "E105",
+                    "E100", "X410", "X400", "S200",
+                    "E400", "D100", "Watch Phone", "V200",
+                    "Z100", "P100", "P400", "T700",
+                    "T500", "S500", "S300", "T400",
+                    "T200", "V100", "S100", "Q300",
+                    "A800", "A500", "T100", "Q200",
+                    "N620", "N500", "N400", "Q105",
+                    "N300", "A400", "A300", "R220",
+                    "R210", "R200", "A200", "Q100",
+                    "N105", "N100", "M100", "A110",
+                    "A100", "SGH-2400", "SGH-2200", "SGH-2100",
+                    "SGH-810", "SGH-800", "SGH-600", "SGH-500",
+                    "SGH-250", "Galaxy Tab 3 Plus 10.1 P8220", "Galaxy F", "Galaxy Grand 3",
+                    "Galaxy S7 mini", "Galaxy J5 Prime (2017)", "Galaxy On5 (2016)", "Galaxy S9 Active"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "SHARP")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Aquos Zero", "Aquos R2 compact", "Aquos D10", "Aquos B10",
+                    "Aquos C10", "Aquos S3 High", "Aquos R2", "Aquos S3",
+                    "Aquos S3 mini", "Pi", "R1S", "Aquos S2",
+                    "Z3", "Z2", "MS1", "Aquos Xx",
+                    "Aquos Crystal 2", "Aquos Crystal", "SH530U", "SE-02",
+                    "Aquos SH80F", "Aquos SH8298U", "FX", "AQUOS  941SH",
+                    "940SH", "936SH", "934SH", "930SH",
+                    "923SH", "825SH", "SX862", "GX18",
+                    "880SH", "GX34", "GX33", "705SH",
+                    "904", "770SH", "550SH", "GX29",
+                    "903", "703", "GX17", "GX40",
+                    "902", "802", "TM200", "GX25/GZ200",
+                    "TM150", "TM100", "V801SH", "GX30",
+                    "GX15/GZ100", "GX22", "GX20", "GX10i",
+                    "GX10", "GX1"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "SONIM")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "XP8", "XP7", "XP6", "XP3400 Armor",
+                    "XP5300 Force 3G", "XP3340 Sentinel", "XP3300 Force", "XP1300 Core",
+                    "XP3 Sentinel", "XP2.10 Spirit", "XP3.20 Quest Pro", "XP3.20 Quest",
+                    "XP3 Enduro", "XP1"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "SONY")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Xperia XZ3", "Xperia XA2 Plus", "Xperia XZ2 Premium", "Xperia XZ2",
+                    "Xperia XZ2 Compact", "Xperia XA2 Ultra", "Xperia XA2", "Xperia L2",
+                    "Xperia R1 (Plus)", "Xperia XZ1", "Xperia XA1 Plus", "Xperia XZ1 Compact",
+                    "Xperia L1", "Xperia XZs", "Xperia XZ Premium", "Xperia XA1 Ultra",
+                    "Xperia XA1", "Xperia X Compact", "Xperia XZ", "Xperia E5",
+                    "Xperia XA Ultra", "Xperia X Performance", "Xperia X", "Xperia XA Dual",
+                    "Xperia XA", "Xperia Z5 Premium Dual", "Xperia Z5 Premium", "Xperia Z5 Dual",
+                    "Xperia Z5", "Xperia Z5 Compact", "Xperia M5 Dual", "Xperia M5",
+                    "Xperia C5 Ultra Dual", "Xperia C5 Ultra", "Xperia Z4v", "Xperia Z3+ dual",
+                    "Xperia Z3+", "Xperia C4 Dual", "Xperia C4", "Xperia M4 Aqua Dual",
+                    "Xperia M4 Aqua", "Xperia Z4 Tablet WiFi", "Xperia Z4 Tablet LTE", "Xperia E4g",
+                    "Xperia E4g Dual", "Xperia E4 Dual", "Xperia E4", "Xperia E3 Dual",
+                    "Xperia E3", "Xperia Z3 Tablet Compact", "Xperia Z3 Dual", "Xperia Z3v",
+                    "Xperia Z3", "Xperia Z3 Compact", "Xperia M2 Aqua", "Xperia C3 Dual",
+                    "Xperia C3", "Xperia Z2a", "Xperia T3", "SmartWatch 3 SWR50",
+                    "SmartWatch 2 SW2", "Xperia M2", "Xperia M2 dual", "Xperia Z2 Tablet LTE",
+                    "Xperia Z2 Tablet Wi-Fi", "Xperia Z2", "Xperia E1 dual", "Xperia E1",
+                    "Xperia T2 Ultra dual", "Xperia T2 Ultra", "Xperia Z1s", "Xperia Z1 Compact",
+                    "Xperia Z1", "Xperia Z Ultra", "Xperia C", "Xperia M",
+                    "Xperia ZR", "Xperia L", "Xperia SP", "Xperia Tablet Z LTE",
+                    "Xperia Tablet Z Wi-Fi", "Xperia Z", "Xperia ZL", "Xperia E dual",
+                    "Xperia E", "Xperia T LTE", "Xperia Tablet S 3G", "Xperia Tablet S",
+                    "Xperia V", "Xperia J", "Xperia TX", "Xperia T",
+                    "Xperia SL", "Xperia tipo dual", "Xperia tipo", "Xperia miro",
+                    "Xperia go", "Xperia acro S", "Xperia SX SO-05D", "Xperia GX SO-04D",
+                    "Xperia acro HD SO-03D", "Xperia acro HD SOI12", "Xperia neo L", "Xperia sola",
+                    "Xperia U", "Xperia P", "Xperia S", "Xperia ion HSPA",
+                    "Xperia ion LTE", "Tablet P", "Tablet P 3G", "Tablet S 3G",
+                    "Tablet S", "CMD Z7", "CMD J70", "Xperia LT29i Hayabusa",
+                    "CMD J7", "CMD MZ5", "CMD J6", "CMD J5",
+                    "CMD Z5", "CMD CD5", "CMD C1", "CMD Z1 plus",
+                    "CMD Z1", "CM-DX 2000", "CM-DX 1000", "Xperia Z4 Compact",
+                    "Xperia C670X", "D 2403", "Xperia Z4 Ultra", "Xperia E1 II",
+                    "Xperia X Premium", "Xperia M Ultra", "Xperia H8541", "Xperia X Ultra"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "SONY ERICSSON")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Xperia Arc S", "Xperia neo V", "Live with Walkman", "Xperia ray",
+                    "Xperia active", "txt", "Mix Walkman", "txt pro",
+                    "Xperia mini", "Xperia mini pro", "WT18i", "W8",
+                    "Xperia PLAY", "Xperia pro", "Xperia Neo", "Xperia Arc",
+                    "Xperia PLAY CDMA", "A8i", "Xperia X8", "Cedar",
+                    "Yendo", "BRAVIA S004", "S003", "Zylo",
+                    "Spiro", "Xperia X10 mini pro", "Xperia X10 mini", "Vivaz pro",
+                    "Aspen", "Vivaz", "Hazel", "Elm",
+                    "Xperia Pureness", "Xperia X10", "Xperia X2", "Jalou D&G edition",
+                    "Jalou", "T715", "C901 GreenHeart", "J105 Naite",
+                    "Satio (Idou)", "Aino", "Yari", "S312",
+                    "W205", "T707", "W995", "C903",
+                    "C901", "W395"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "SPICE")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Smart Pulse (M-9010)", "Fire One (Mi-FX-1)", "N-300", "Smart Flo 508 (Mi-508)",
+                    "Smart Flo 503 (Mi-503)", "Smart Flo 359 (Mi-359)", "Smart Flo 358 (Mi-358)", "Stellar 439 (Mi-439)",
+                    "Stellar 361 (Mi-361)", "Stellar 507 (Mi-507)", "Stellar 509 (Mi-509)", "Stellar 600 (Mi-600)",
+                    "Stellar 526 (Mi-526)", "Stellar 520 (Mi-520)", "Stellar 520n (Mi-520n)", "Stellar 440 (Mi-440)",
+                    "Stellar 470 (Mi-470)", "Mi-449 3G", "Mi-451 3G", "Mi-498 Dream Uno",
+                    "Mi-506 Stellar Mettle Icon", "Mi-356 Smart Flo Mettle 3.5X", "Mi-426 Smart Flo Mettle 4.0X", "Mi-438 Stellar Glide",
+                    "Mi-504 Smart Flo Mettle 5X", "Mi-451 Smartflo Poise", "Mi-496 Spice Coolpad 2", "Mi-423 Smart Flo Ivory 2",
+                    "Mi-349 Smart Flo Edge", "Mi-550 Pinnacle Stylus", "Mi-502n Smart FLO Pace3", "Mi-492 Stellar Virtuoso Pro+",
+                    "Mi-437 Stellar Nhance 2", "Mi-436 Stellar Glamour", "Mi-354 Smartflo Space", "Mi-525 Pinnacle FHD",
+                    "Mi-515 Coolpad", "Mi-510 Stellar Prime", "Mi-505 Stellar Horizon Pro", "Mi-491 Stellar Virtuoso Pro",
+                    "Mi-450 Smartflo Ivory", "Mi-422 Smartflo Pace", "Mi-353 Stellar Jazz", "Mi-725 Stellar Slatepad",
+                    "Mi-502 Smartflo Pace2", "Mi-535 Stellar Pinnacle Pro", "Mi-530 Stellar Pinnacle", "Mi-1010 Stellar Pad",
+                    "Mi-495 Stellar Virtuoso", "Mi-500 Stellar Horizon", "Mi-285 Stellar", "M-5665 T2",
+                    "M-5566 Flo Entertainer", "M-5900 Flo TV Pro", "M-6688 Flo Magic", "M-5460 Flo",
+                    "M-5455 Flo", "M-5365 Boss Killer", "M-5400 Boss TV", "M-5200 Boss Don",
+                    "M-5390 Boss Double XL", "M-5250 Boss Item", "M-5363 Boss", "Mi-355 Stellar Craze",
+                    "Mi-425 Stellar", "M-6868N FLO ME", "M-5600 FLO TV", "Mi-280",
+                    "Mi-350", "M-6900 Knight", "M-6868", "M-6700",
+                    "M-9000 Popkorn", "M-6450", "M-5750", "M-5350",
+                    "M-5180", "M-5115", "M-4262", "Mi-720",
+                    "Mi-410", "M-6800 FLO", "Mi-270", "Mi-310",
+                    "M-4250", "M-5170", "QT-65", "M-5262",
+                    "QT-58", "QT-61", "M-5454", "M-5161n",
+                    "QT-95", "M-67 3D", "QT-68", "M-4580n",
+                    "Mi-300", "M-6 Sports", "M-6363", "QT-56",
+                    "G-6565", "QT-52", "QT-60", "M-5161",
+                    "M-5055", "S-7000", "QT-50", "M-6262",
+                    "S-1200", "M-4242", "M-940n", "S-5010",
+                    "D-6666", "M 4580", "S-5110", "S-5420",
+                    "S-6005", "D-1111", "M-5252", "KT-5353"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "T-MOBILE")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Revvl", "Prism II", "Concord", "myTouch Q 2",
+                    "myTouch 2", "Prism", "Move Balance", "Arizona",
+                    "myTouch 4G Slide", "Vivacity", "Energy", "SpringBoard",
+                    "myTouch Q", "myTouch", "G-Slate", "G2x",
+                    "Move", "Sidekick 4G", "Vairy Text II", "Vibe E200",
+                    "Comet", "myTouch 4G", "G2", "myTouch 3G Slide",
+                    "Garminfone", "Pulse Mini", "myTouch 3G Fender Edition", "HD2",
+                    "Tap", "Pulse", "Vairy Text", "Vairy Touch II",
+                    "G2 Touch", "Dash 3G", "myTouch 3G 1.2", "myTouch 3G",
+                    "MDA Vario V", "MDA Compact V", "Sidekick LX 2009", "Shadow 2",
+                    "Vairy Touch", "MDA Basic", "G1", "Shadow",
+                    "MDA Vario IV", "MDA Compact IV", "Sidekick", "Sidekick Slide",
+                    "Sidekick LX", "Sidekick 3", "Wing", "Dash",
+                    "myTouch qwerty"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "TECNO")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Camon 11 Pro", "Camon 11", "Pop 1s", "Pop 1 Pro",
+                    "Pop 1", "F2 LTE", "F2", "Pop 1 Lite",
+                    "Pouvoir 2 Pro", "Pouvoir 2", "Pouvoir 1", "Spark Pro",
+                    "Spark Plus", "Spark CM", "Spark 2", "Spark",
+                    "Camon X Pro", "Camon X", "Camon CX Manchester City LE", "Camon CX Air",
+                    "Camon CX", "Camon CM", "Phantom 8", "Phantom 6 Plus",
+                    "Phantom 6"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "TOSHIBA")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Excite Go", "Excite 7c AT7-B8", "Excite Pro", "Excite Write",
+                    "Excite Pure", "Excite 10 SE", "Excite 13 AT335", "Excite 10 AT305",
+                    "Excite 7.7 AT275", "Excite AT200", "Thrive 7", "Windows Phone IS12T",
+                    "Thrive", "K01", "TG02", "TG01",
+                    "G810", "G910 / G920", "G450", "G710",
+                    "G900", "G500", "TS605", "TX80",
+                    "TS32", "TS705", "TS608", "TX62",
+                    "904T", "903T", "705T", "TS921",
+                    "TS808", "TS803", "TS10"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "UNNECTO")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Bolt", "Neo V", "Quattro S", "Quattro V",
+                    "Drone XS", "Primo 2G", "Omnia", "Swift",
+                    "Quattro X", "Drone XL", "Drone X", "Air 5.5",
+                    "Air 5.0", "Air 4.5", "Rush", "Quattro Z",
+                    "Drone Z", "Quattro", "Blaze", "Drone",
+                    "Tap", "Pro Z", "Pro", "Edge",
+                    "Shell", "Pebble", "Drift", "Eco",
+                    "Primo 3G", "Primo"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "VERTU")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Signature Touch (2015)", "Aster", "Signature Touch", "Constellation 2013",
+                    "Ti", "Constellation", "Ascent Ferrari GT", "Constellation Quest",
+                    "Ascent 2010", "Constellation Ayxta", "Ascent Ti Damascus Steel", "Signature S",
+                    "Ascent Ti", "Constellation 2006", "Diamond", "Ascent",
+                    "Signature"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "VERYKOOL")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "s5702 Royale Quattro", "s5037 Apollo Quattro", "s5036 Apollo", "s5200 Orion",
+                    "s5031 Bolt Turbo", "sl5029 Bolt Pro LTE", "s5029 Bolt Pro", "s5205 Orion Pro",
+                    "s6005X Cyprus Pro", "s5527 Alpha Pro", "s5528 Cosmo", "SL5565 Rocket",
+                    "T7445", "s4009 Crystal", "s5526 Alpha", "s5034 Spear Jr.",
+                    "s5035 Spear", "s5028 Bolt", "s5027 Bolt Pro", "s5007 Lotus Plus",
+                    "s4513 Luna II", "SL5560 Maverick Pro", "s5021 Wave Pro", "s5019 Wave",
+                    "s4008 Leo V", "Sl5200 Eclipse", "sl5050 Phantom", "s6004 Cyprus Jr.",
+                    "s5524 Maverick III Jr.", "s5525 Maverick III", "Kolorpad LTE TL8010", "s4007 Leo IV",
+                    "s6005 Cyprus II", "s5530 Maverick II", "s5030 Helix II", "SL5011 Spark LTE",
+                    "SL6010 Cyprus LTE", "s5025 Helix", "s5020 Giant", "s5001 Lotus",
+                    "SL4502 Fusion II", "SL5550 Maverick LTE", "s5518Q Maverick", "s5017Q Dorado",
+                    "sl5009 Jet", "R28 Denali", "T7440 Kolorpad II", "s5017 Dorado",
+                    "s3504 Mystic II", "s5518 Maverick", "s5012 Orbit", "SL4500 Fusion",
+                    "i330 Sunray", "s4510 Luna", "s5014 Atlas", "s6001 Cyprus",
+                    "s5015 Spark II", "s4010 Gazelle", "s4002 Leo", "s3501 Lynx",
+                    "R27", "s5511 Juno Quatro", "s5510 Juno", "s354",
+                    "SL5000 Quantum", "s401", "s352", "s351",
+                    "i129", "s505", "s450", "T742",
+                    "s353", "R80L Granite II", "i240", "i603",
+                    "i128", "i133", "s400", "i127",
+                    "s470", "i316", "RS90", "i126",
+                    "RS75", "i607", "s732", "s758",
+                    "s350", "R623", "i601", "i121C",
+                    "i121", "R25", "s735", "s135",
+                    "i320", "i315N", "s635", "s728",
+                    "i625", "i130", "R800", "i123",
+                    "s757", "i675", "i674", "i672",
+                    "R16", "s700", "i605", "i604",
+                    "i125", "S815", "R23", "R620",
+                    "i285", "i725", "CD611", "i800",
+                    "i720", "i705", "R80", "R13",
+                    "s810", "i650", "i610", "i600",
+                    "i410", "i310", "i315", "i305",
+                    "i277", "i280", "i270", "i122",
+                    "i119", "i117", "i115"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "VIVO")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Y89", "NEX Dual Display", "Y93 (Mediatek)", "Y93s",
+                    "Y95", "Z1 Lite", "Y93", "Y91 (Mediatek)",
+                    "Y91", "Y81i", "Z3", "Z3i",
+                    "Y71i", "V11i", "Y97", "X23",
+                    "V11 (V11 Pro)", "Y83 Pro", "V9 6GB", "Z1i",
+                    "NEX S", "NEX A", "Z1", "Y83",
+                    "Y81", "X21i", "Y53i", "Y71",
+                    "V9 Youth", "V9", "X21 UD", "X21",
+                    "V7", "X20 Plus", "X20 Plus UD", "X20",
+                    "V7+", "Y65", "Y69", "Y53",
+                    "X9s Plus", "X9s", "V5s", "Y25",
+                    "Y55L (vivo 1603)", "Y55s", "V5 Lite (vivo 1609)", "V5 Plus",
+                    "Y67", "Xplay6", "X9 Plus", "X9",
+                    "V5", "X7 Plus", "X7", "V3Max",
+                    "V3", "X6S Plus", "X6S", "Xplay5 Elite",
+                    "Xplay5", "Y51", "X6", "X6Plus",
+                    "V1", "Y15S", "V1 Max", "Y31",
+                    "Y35", "Y37", "X5Max Platinum Edition", "X5Pro",
+                    "X5Max+", "X5Max", "Y11", "X5",
+                    "Xplay3S", "Xshot", "X3S", "Y28",
+                    "Y27", "Y22", "Y15", "Xplay7"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "VODAFONE")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Smart E9", "Smart X9", "Smart N9", "Smart N9 lite",
+                    "Smart Tab N8", "Smart E8", "Smart V8", "Smart N8",
+                    "Tab Prime 7", "Smart Turbo 7", "Smart Platinum 7", "Smart ultra 7",
+                    "Smart prime 7", "Smart first 7", "Smart speed 6", "Smart ultra 6",
+                    "Tab Prime 6", "Smart prime 6", "Smart first 6", "Smart 4 max",
+                    "Smart Tab 4G", "Smart 4G", "Smart 4 turbo", "Smart 4 power",
+                    "Smart 4", "Smart 4 mini", "Smart Tab III 10.1", "Smart Tab III 7",
+                    "Chat 655", "Smart Mini", "Smart III 975", "Smart Tab II 10",
+                    "Smart Tab II 7", "V860 Smart II", "Smart Tab 10", "Smart Tab 7",
+                    "155", "555 Blue", "858 Smart", "945",
+                    "553", "360 H2", "845", "547",
+                    "546", "543", "350 Messaging", "345 Text",
+                    "248", "247 Solar", "246", "250",
+                    "150", "1240", "840", "541",
+                    "540", "340", "360 H1", "360 M1",
+                    "533 Crystal", "1231", "V-X760", "Indie",
+                    "835", "736", "735", "235",
+                    "V720", "533", "830i", "526",
+                    "332", "231", "1210", "725",
+                    "810", "716", "527", "511",
+                    "228", "710", "227", "226",
+                    "225"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "WIKO")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "View2 Go", "View2 Plus", "View Max", "View2 Pro",
+                    "View2", "View Prime", "View XL", "View",
+                    "WIM", "WIM Lite", "Upulse", "Upulse lite",
+                    "Tommy2 Plus", "Tommy2", "Harry", "Jerry2",
+                    "Jerry", "Kenny", "Lenny3 Max", "Lenny4",
+                    "Lenny4 Plus", "Ufeel fab", "Ufeel go", "Ufeel",
+                    "U Feel Prime", "U Feel Lite", "Tommy", "Sunny2 Plus",
+                    "Sunny2", "Sunny", "Sunny Max", "Robby2",
+                    "Robby", "Lenny3", "Fever SE", "Pulp Fab 4G",
+                    "Pulp Fab", "Pulp", "Pulp 4G", "Fever 4G",
+                    "Lenny2", "Rainbow Jam", "Rainbow Jam 4G", "Rainbow Lite 4G",
+                    "Selfy 4G", "Rainbow UP 4G", "Sunset2", "Bloom2",
+                    "Ridge 4G", "Ridge Fab 4G", "Highway Star 4G", "Highway Pure 4G",
+                    "Lenny", "Birdy", "Goa", "Jimmy",
+                    "Getaway", "Rainbow 4G", "Rainbow", "Highway 4G",
+                    "Highway Signs", "Wax", "Highway"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "XIAOMI")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Redmi Go", "Redmi Note 7", "Mi Play", "Black Shark Helo",
+                    "Mi Mix 3", "Redmi Note 6 Pro", "Mi 8 Pro", "Mi 8 Lite",
+                    "Pocophone F1", "Mi A2 (Mi 6X)", "Mi A2 Lite (Redmi 6 Pro)", "Mi Max 3",
+                    "Mi Pad 4", "Mi Pad 4 Plus", "Redmi 6", "Redmi 6A",
+                    "Mi 8 Explorer", "Mi 8", "Mi 8 SE", "Redmi S2 (Redmi Y2)",
+                    "Mi Mix 2S", "Redmi Note 5 AI Dual Camera", "Redmi Note 5 Pro", "Black Shark",
+                    "Redmi Note 5 (Redmi 5 Plus)", "Redmi 5", "Redmi 5A", "Redmi Y1 (Note 5A)",
+                    "Redmi Y1 Lite", "Mi Note 3", "Mi Mix 2", "Mi A1 (Mi 5X)",
+                    "Mi Max 2", "Redmi 4 (4X)", "Mi 6", "Mi Pad 3",
+                    "Mi 5c", "Redmi Note 4X", "Redmi Note 4", "Redmi 4A",
+                    "Redmi 4 (China)", "Redmi 4 Prime", "Mi 6 Plus", "Mi Mix",
+                    "Mi Note 2", "Mi 5s Plus", "Mi 5s", "Redmi Note 4 (MediaTek)",
+                    "Redmi Pro", "Redmi 3x", "Redmi 3s Prime", "Redmi 3s",
+                    "Redmi 3 Pro", "Mi 5", "Mi Max", "Mi 4s",
+                    "Redmi Note 3", "Redmi 3", "Redmi Note Prime", "Mi Pad 2",
+                    "Redmi Note 3 (MediaTek)", "Mi 4c", "Redmi Note 2", "Redmi 2 Pro",
+                    "Redmi 2 Prime", "Mi 4i", "Mi Note Pro", "Mi Note",
+                    "Redmi 2A", "Redmi 2", "Mi 4 LTE", "Redmi Note 4G",
+                    "Mi 4", "Mi Pad 7.9", "Redmi Note", "Mi 3",
+                    "Redmi 1S", "Redmi", "Mi 2A", "Mi 2S",
+                    "Mi 2", "Mi 1S", "Mi 6c", "Mi Note Plus",
+                    "Redmi Pro 2"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "XOLO")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Era 2X", "Era 2", "Era 1X", "Era X",
+                    "Era 4K", "Era 4G", "One HD", "Black 3GB",
+                    "Black 1X", "Black", "Era", "Cube 5.0",
+                    "Prime", "LT2000", "A1010", "Win Q1000",
+                    "8X-1020", "Q700 Club", "Q520s", "Q900s Plus",
+                    "Omega 5.5", "Omega 5.0", "Opus 3", "Q710s",
+                    "Q1020", "One", "Q2100", "Opus HD",
+                    "Play 8X-1100", "Q510s", "Q700s plus", "Q1000s plus",
+                    "Q610s", "A1000s", "Play 8X-1200", "Hive 8X-1000",
+                    "A550S IPS", "Q900s", "Q500s IPS", "A700s",
+                    "Play 6X-1000", "Q2000L", "Win Q900s", "Q1000 Opus2",
+                    "Q1011", "Q1200", "Q600s", "A500S Lite",
+                    "Q900T", "Q1010i", "A510s", "Q2500",
+                    "A500 Club", "Q1010", "Q1100", "Q700s",
+                    "Q3000", "LT900", "Q1000 Opus", "Play Tegra Note",
+                    "Q500", "Q800 X-Edition", "A500S IPS", "Q2000",
+                    "Q900", "A600", "A500L", "Q700i",
+                    "Play Tab 7.0", "Tab", "Q1000s", "A500S",
+                    "Play", "Q600", "X1000", "X910",
+                    "X500", "Q1000", "Q800", "Q700",
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "YEZZ")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Max 1", "Andy 4E7", "Andy 5E5", "Epic T",
+                    "Andy 4E4", "4.5EL LTE", "5M", "C21",
+                    "Andy 5EI3 (2016)", "Andy 5E3", "Andy 4.7T", "Andy 5M LTE",
+                    "CC40", "Andy 5.5M LTE VR", "Monte Carlo 55 LTE VR", "Monte Carlo 55 LTE",
+                    "Classic C23A", "Andy 4E3I", "Andy 5E2I", "Andy 4EI2",
+                    "Andy 3.5EI2", "Andy 6EL LTE", "Andy 5E LTE", "Andy C5E LTE",
+                    "Andy 5EI3", "Andy 4EL2 LTE", "Classic Z51", "Andy 5EL LTE",
+                    "Andy 4.5EL LTE", "Andy 3.5EI3", "Classic C60", "Andy 4E LTE",
+                    "Andy 4E2I", "Andy 3.5E2I", "Z50", "ZC20",
+                    "Billy 5S LTE", "Andy C5ML", "Andy C5QL", "Classic C50",
+                    "Classic C22", "Classic C21A", "Monaco 47", "Billy 4",
+                    "Andy 5T", "Andy C5VP", "Andy C5V", "Andy 5.5EI",
+                    "Andy 4.5M", "Billy 4.7", "Andy 4EI", "Andy 3.5EH",
+                    "Andy 5EI", "Andy 3.5EI", "Andy 6Q", "Classic C21",
+                    "Andy A5QP", "Andy AZ4.5", "Epic T7FD", "Andy A3.5EP",
+                    "Epic T7ED", "Andy A6M 1GB", "Andy A6M", "Andy A4M",
+                    "Andy A4E", "Andy A5 1GB", "Andy A4.5 1GB", "Andy A4.5",
+                    "Andy A4", "Andy A3.5", "Classic CC10", "Andy A5",
+                    "Epic T7", "Classic C30", "Bonito YZ500", "Exclusive Z10",
+                    "Andy 3G 3.5 YZ1110", "Andy 3G 4.0 YZ1120", "Ritmo 3 TV YZ433", "Ritmo 2 YZ420",
+                    "Andy 3G 2.8 YZ11", "Classic C20", "Chico 2 YZ201", "Andy YZ1100",
+                    "Fashion F10", "Bono 3G YZ700", "Moda YZ600", "Ritmo YZ400",
+                    "Zenior YZ888", "Clasico YZ300", "Chico YZ200"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "YOTA")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "YotaPhone 3", "YotaPhone 2", "YotaPhone"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "YU")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Ace", "Yureka 2", "Yunique 2", "Yureka Black",
+                    "Yunique Plus", "Yureka S", "Yunicorn", "Yureka Note",
+                    "Yutopia", "Yunique", "Yuphoria", "Yureka Plus",
+                    "Yureka"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "ZTE")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "nubia Red Magic Mars", "nubia X", "nubia Z18", "Axon 9 Pro",
+                    "nubia Red Magic", "nubia Z18 mini", "nubia V18", "nubia N3",
+                    "Blade V9 Vita", "Blade V9", "Tempo Go", "Blade A3",
+                    "Blade A6", "Maven 2", "Blade X", "Axon M",
+                    "nubia Z17s", "nubia Z17 miniS", "nubia Z17 lite", "Blade Z Max",
+                    "Blade Force", "Tempo X", "Blade A601", "Grand X View 2",
+                    "Blade V7 Plus", "Quartz", "nubia N2", "nubia M2",
+                    "nubia M2 lite", "nubia M2 Play", "nubia Z17", "Axon 7s",
+                    "Max XL", "nubia Z17 mini", "Blade A520", "nubia N1 lite",
+                    "Blade V8 Mini", "Blade V8 Lite", "Blade A2 Plus", "Hawkeye",
+                    "Blade V8 Pro", "Blade V8", "Axon 7 Max", "Grand X4",
+                    "Blade V7 Max", "nubia Z11 mini S", "Axon 7 mini", "Warp 7",
+                    "Zmax Pro", "nubia N1", "nubia Z11 Max", "Axon 7",
+                    "nubia Z11", "Blade L110 (A110)", "Grand X Max 2", "nubia Z11 mini",
+                    "Blade L5 Plus", "Blade V Plus", "Blade A610", "Blade A512",
+                    "Blade A452", "Blade V7", "Blade A2", "Blade A910",
+                    "Blade V7 Lite", "Axon Max", "nubia Prague S", "Grand X 3",
+                    "Avid Plus", "Blade X9", "Blade X5", "Blade X3",
+                    "Axon Watch", "Axon", "Blade S7", "Axon mini",
+                    "Zmax 2", "Axon Elite", "nubia My Prague", "Axon Lux",
+                    "Boost Max+", "Blade A460", "Blade D6", "Axon Pro",
+                    "Blade A410", "Obsidian", "Grand X2", "Sonata 2",
+                    "Blade Apex 3", "Maven", "Blade Q Pro", "Blade Qlux 4G",
+                    "nubia Z9", "Blade S6 Plus", "nubia Z9 Max", "nubia Z9 mini",
+                    "Open L", "Grand S3", "Blade L3 Plus", "Blade L3",
+                    "Blade G Lux", "Blade G", "V5 Lux", "Blade S6",
+                    "Imperial II", "Grand X Max+", "Star 2", "Grand X Plus Z826",
+                    "Speed", "Grand S II", "Grand S Pro", "Zinger",
+                    "Grand Xmax", "Zmax", "Blade Vec 4G", "Blade Vec 3G",
+                    "Kis 3 Max", "nubia Z5S mini NX405H", "nubia Z7", "nubia Z7 Max",
+                    "nubia Z7 mini", "Blade L2", "Kis 3", "Blade G2",
+                    "Redbull V5 V9180", "Star 1", "nubia X6", "Grand Memo II LTE",
+                    "Open C", "Open II", "Iconic Phablet", "Sonata 4G",
+                    "Grand S II S291", "nubia Z5S", "nubia Z5S mini NX403A", "Grand S Flex",
+                    "Blade Q Maxi", "Blade Q", "Blade Q Mini", "Warp 4G",
+                    "Blade V", "Blade G V880G", "Reef", "Imperial",
+                    "Vital N9810", "Grand X Pro", "Grand X2 In", "Grand X Quad V987",
+                    "Blade III Pro", "Geek V975", "Grand Memo V9815", "Open",
+                    "Blade C V807", "Director", "V81", "Grand S",
+                    "Avid 4G", "V889M", "V887", "Kis III V790",
+                    "Groove X501", "nubia Z5", "Flash", "Anthem 4G",
+                    "Warp Sequent", "Grand Era U895", "Blade III", "Grand X IN",
+                    "N880E", "Grand X LTE T82", "Grand X V970", "U880E",
+                    "Score M", "Light Tab 300", "V96", "PF 100",
+                    "T98", "Light Tab 3 V9S", "Era", "PF112 HD",
+                    "Skate Acqua", "Orbit", "Kis V788", "V880E",
+                    "Nova 3.5", "Nova 4 V8000", "Nova Messenger", "Style Q",
+                    "Style Messanger", "V875", "Blade II V880+", "N910",
+                    "PF200", "Optik", "Light Tab 2 V9A", "Light Tab V9C",
+                    "FTV Phone", "Chorus", "Memo", "Tania",
+                    "Warp", "Score", "Avail", "V9+",
+                    "V9", "N721", "Skate", "V821",
+                    "Amigo", "Racer II", "U900", "Libra",
+                    "Rio", "Blade", "Sage", "X990D",
+                    "N290", "N280", "R230", "R228 Dual SIM",
+                    "R228", "R221", "R220", "S213",
+                    "Salute F350", "F107", "E N72", "Racer",
+                    "F951", "X990", "Bingo", "X760",
+                    "E811", "Raise", "Xiang", "A261",
+                    "S302", "F233", "F912", "F952",
+                    "F928", "F870", "F600", "F103",
+                    "F101", "F100", "Coral200 Sollar"
+                });
+            }
             else
             {
                 this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
