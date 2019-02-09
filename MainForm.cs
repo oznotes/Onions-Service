@@ -16,15 +16,8 @@ namespace Device
         {
             InitializeComponent();
             MainSetup();
-            // deleted out all the binding code of the grid to focus on the interesting stuff
-
             dataGridView.CellEndEdit += new DataGridViewCellEventHandler(dataGridView_CellEndEdit);
-
-            // Use the DataBindingComplete event to attack the SelectionChanged, 
-            // avoiding infinite loops and other nastiness.
             dataGridView.DataBindingComplete += new DataGridViewBindingCompleteEventHandler(dataGridView_DataBindingComplete);
-
-
         }
         public void MainSetup()
 
@@ -51,15 +44,12 @@ namespace Device
                 toolStripButtonCompleted.Enabled = false;
             }
         }
-       
-
         private void toolStripButtonAdd_Click(object sender, EventArgs e)
         {
             AddDeviceForm addContactForm = new AddDeviceForm();
             addContactForm.ShowDialog();
             loadContacts("devices.dat");
         }
-
         /// <summary>
         /// Load from devices.dat to -> Data Grid View 
         /// </summary>
@@ -98,9 +88,7 @@ namespace Device
                 dataGridView.Refresh();
                 toolStripCompleteJOB.Enabled = false;
                 toolStripButtonRemove.Enabled = false;
-
             }
-
         }
 
         private void toolStripButtonRemove_Click(object sender, EventArgs e)
@@ -122,13 +110,11 @@ namespace Device
                 }
                 File.WriteAllText("devices.dat", contactFileData); //Saves the contact file without the removed contact
                 dataGridView.Rows.Remove(dataGridView.SelectedRows[0]);// get the first line back again .
-
             }
             else
             {
                 MessageBox.Show("No Data Found");
             }
-            
         }
 
         public void complete_selected(string cell)
@@ -154,7 +140,6 @@ namespace Device
                 File.AppendAllText("completed.dat", CompletedDevices); //Saves the completed.dat file with completed device.
                 File.WriteAllText("devices.dat", PendingDevices); //Saves the devices.dat file after removed device.
                 dataGridView.Rows.Remove(dataGridView.SelectedRows[0]);// get the first line back again .
-
             }
             else
             {
@@ -165,15 +150,12 @@ namespace Device
         private void toolStripButtonCompleted_Click(object sender, EventArgs e)
         {
             // show another for with data gridview
-
             this.Text = "Onions Service Database - Completed JOBS";
             loadContacts("completed.dat");
-            
             // group  disabled.
             toolStripCompleteJOB.Enabled = false;
             toolStripButtonRemove.Enabled = false;
             toolStripButtonCompleted.Enabled = false;
-            
         }
 
         private void dataGridView_CellMouseUp(object sender, DataGridViewCellMouseEventArgs e)
@@ -186,7 +168,6 @@ namespace Device
         {
             // we are checking checked items to complete.
             // Row_N is from selected item
-            // TODO : Check for price availability | Done.
             int countColumn = dataGridView.ColumnCount;
             int countROW = dataGridView.RowCount;
             int price;
@@ -213,14 +194,6 @@ namespace Device
                 MessageBox.Show("Enter Price information !");
                 return;
             }
-            //************************************
-            //Debug Purpose 
-            //Console.WriteLine(CompletedDevices[9]);
-            //Console.WriteLine(string.Join("\t", CompletedDevices.Cast<string>().ToArray()));
-            //***********************************
-            //New Way just remove from 
-            //var NineItems = CompletedDevices.Take(9);
-            //Console.WriteLine(String.Join("|", NineItems));
             complete_selected(CompletedDevices[9]);
             MainSetup();
         }

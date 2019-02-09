@@ -718,6 +718,197 @@ namespace Device
                     "nuvifone M20"
                 });
             }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "GIGABYTE")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "GSmart Essence 4", "GSmart Classic Lite", "GSmart Essence", "GSmart Classic",
+                    "GSmart Guru GX", "GSmart Mika MX", "GSmart Roma RX", "GSmart Akta A4",
+                    "GSmart Mika M3", "GSmart GX2", "GSmart Guru (White Edition)", "GSmart T4 (Lite Edition)",
+                    "GSmart Arty A3", "GSmart Mika M2", "GSmart T4", "GSmart Saga S3",
+                    "GSmart Rey R3", "GSmart Guru", "GSmart Alto A2", "GSmart Roma R2",
+                    "GSmart Aku A1", "GSmart Tuku T2", "GSmart Maya M1 v2", "GSmart Sierra S1",
+                    "GSmart Simba SX1", "GSmart Maya M1", "GSmart Rio R1", "GSmart GS202",
+                    "GSmart G1362", "GSmart G1355", "GSmart G1345", "GSmart G1342 Houston",
+                    "GSmart M3447", "GSmart G1310", "GSmart G1317 Rola", "GSmart G1315 Skate",
+                    "GSmart S1205", "GSmart G1305 Boston", "GSmart MS802", "GSmart MW702",
+                    "GSmart S1200", "GSmart MS820", "GSmart MW998", "GSmart MS800",
+                    "GSmart MW700", "GSmart", "GSmart i350", "GSmart q60",
+                    "GSmart t600", "GSmart i120", "GSmart i300", "GSmart 2005",
+                    "GSmart i", "GSmart i (128)", "g-YoYo", "g-Cam",
+                    "Barbie", "g-re (b)", "g-re (o)", "Snoopy",
+                    "Keroro", "Doraemon", "g-X5"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "GIONEE")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "F205", "S11S", "S11", "S11 lite",
+                    "M7 Plus", "M7 Power", "M7", "X1s",
+                    "X1", "P8 Max", "A1 Lite", "S10",
+                    "S10B", "S10C", "M6s Plus", "A1 Plus",
+                    "A1", "F5", "M2017", "Steel 2",
+                    "P7", "S9", "P7 Max", "F103 Pro",
+                    "S6s", "M6 Plus", "M6", "S6 Pro",
+                    "P5 Mini", "W909", "S8", "Marathon M5 mini",
+                    "Marathon M5 enjoy", "Marathon M5 Plus", "Marathon M5 lite", "Pioneer P5W",
+                    "S6", "Elife S Plus", "F103", "Elife E8",
+                    "S5.1 Pro", "Marathon M4", "Marathon M5", "Pioneer P4S",
+                    "Elife S7", "Pioneer P3S", "Pioneer P2M", "Pioneer P2S",
+                    "S96", "L800", "L700", "Marathon M3",
+                    "Elife S5.1", "Pioneer P6", "Pioneer P5L", "Pioneer P4",
+                    "Ctrl V6L", "Ctrl V5", "Elife S5.5", "Elife E7 Mini",
+                    "Elife E7", "Elife E6", "Elife E5", "Elife E3",
+                    "M2", "Gpad G5", "Gpad G4", "Gpad G3",
+                    "Gpad G2", "Gpad G1", "Pioneer P3", "Pioneer P2",
+                    "Pioneer P1", "Ctrl V1", "Ctrl V2", "Ctrl V3",
+                    "Ctrl V4s", "Ctrl V4", "Dream D1"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "GOOGLE")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Pixel 3 XL", "Pixel 3", "Pixel 2", "Pixel 2 XL",
+                    "Pixel XL", "Pixel", "Pixel C"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "HAIER")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "C300", "Hurricane", "G8", "L8",
+                    "I6", "L7", "G7", "G51",
+                    "U69", "U60", "U56", "U53",
+                    "K3", "A66", "V730", "V700",
+                    "M320+", "M306", "M300", "M180",
+                    "M160", "M150", "A7", "M600 Black Pearl",
+                    "P8", "A600", "M2000", "M1200",
+                    "M1100", "M1000", "M80", "M260",
+                    "N90", "N70", "N60", "T3000",
+                    "V280", "F1100", "L1000", "P7",
+                    "V7000", "V6200", "V6100", "V6000",
+                    "P6", "V2000", "V200", "V190",
+                    "V160", "V100", "Z300", "Z100",
+                    "V1000", "P5", "Z7100", "Z7000",
+                    "Z3000", "Z8000", "D6000"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "HONOR")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "View 20", "Magic 2", "Play 8A", "10 Lite",
+                    "8C", "8X", "8X Max", "Note 10",
+                    "9N (9i)", "Play", "7s", "10",
+                    "7A", "7C", "9 Lite", "7X",
+                    "View 10", "6C Pro", "9", "6A (Pro)",
+                    "8 Pro", "Magic", "V8", "Pad 2",
+                    "6X", "Holly 3", "Note 8", "8",
+                    "5A", "5c", "Holly 2 Plus", "5X",
+                    "7i", "7", "Bee", "4C",
+                    "6 Plus", "4X", "Holly", "4 Play",
+                    "3C Play", "6", "3X Pro", "3C 4G",
+                    "3X G750", "3C", "3", "2",
+                    "U8860"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "HP")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Elite x3", "Slate 17", "Pro Slate 12", "Pro Slate 10 EE G1",
+                    "Pro Slate 8", "Slate6 VoiceTab II", "10 Plus", "7 VoiceTab",
+                    "7 Plus", "8", "Slate7 VoiceTab Ultra", "Slate7 VoiceTab",
+                    "Slate6 VoiceTab", "Slate8 Pro", "Slate10 HD", "Slate7 Extreme",
+                    "Slate7 Plus", "Slate 7", "TouchPad 4G", "Veer 4G",
+                    "Veer", "Pre 3 CDMA", "Pre 3", "TouchPad",
+                    "iPAQ Glisten", "iPAQ Voice Messenger", "iPAQ Data Messenger", "iPAQ 910c",
+                    "iPAQ 610c", "iPAQ 514", "iPAQ rw6815", "iPAQ rw6828",
+                    "iPAQ rw6818", "iPAQ hw6915", "iPAQ hw6910", "iPAQ hw6515",
+                    "iPAQ hw6510", "iPAQ h6325", "iPAQ h6320", "iPAQ h6315",
+                    "iPAQ h6310"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "HTC")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Desire 12s", "Exodus 1", "U12 life", "U12+",
+                    "Desire 12+", "Desire 12", "U11 Eyes", "U11+",
+                    "U11 Life", "U11", "One X10", "U Ultra",
+                    "U Play", "10 evo", "Desire 650", "Desire 10 Pro",
+                    "Desire 10 Compact", "Desire 10 Lifestyle", "One A9s", "Desire 728 Ultra",
+                    "Desire 628", "One M9 Prime Camera", "Desire 830", "One S9",
+                    "10 Lifestyle", "10", "Desire 825", "Desire 630",
+                    "Desire 530", "Desire 625", "One X9", "One M9s",
+                    "Desire 828 dual sim", "Desire 728 dual sim", "One E9s dual sim", "Butterfly 3",
+                    "One A9", "One M9+ Supreme Camera", "Desire 626 (USA)", "Desire 626s",
+                    "Desire 526", "Desire 520", "One ME", "Desire 820G+ dual sim",
+                    "Desire 326G dual sim", "One M9+", "One M8s", "One E9+",
+                    "One E9", "One M9", "Desire 820s dual sim", "Desire 626G+",
+                    "Desire 626", "Desire 526G+ dual sim ", "Desire 826 dual sim", "Desire 320",
+                    "Desire 620G dual sim", "Desire 620", "Nexus 9", "Desire 816G dual sim",
+                    "One (M8 Eye)", "Desire Eye", "Desire 612", "Desire 820q dual sim",
+                    "Desire 820 dual sim", "Desire 820", "One (E8) CDMA", "Desire 510",
+                    "One (M8) for Windows", "One (M8) for Windows (CDMA)", "Butterfly 2", "One Remix",
+                    "One (M8) dual sim", "Desire 516 dual sim", "One (E8)", "One mini 2",
+                    "Desire 616 dual sim", "Desire 210 dual sim", "One (M8) CDMA", "One (M8)",
+                    "Desire 310 dual sim", "Desire 310", "Desire 816 dual sim", "Desire 816",
+                    "Desire 610", "Desire 501 dual sim", "Desire 700", "Desire 700 dual sim",
+                    "Desire 601 dual sim", "Desire 501", "One Max", "Desire 300",
+                    "Desire 601", "Desire 500", "One mini", "Desire L",
+                    "Desire P", "Desire Q", "8XT", "Butterfly S",
+                    "Desire 200", "Desire 600 dual sim", "First", "One Dual Sim",
+                    "One", "Desire U", "Desire 400 dual sim", "Butterfly",
+                    "DROID DNA", "One SV CDMA", "One SV", "Desire SV",
+                    "One VX", "One X+", "Windows Phone 8X CDMA", "Windows Phone 8X",
+                    "Windows Phone 8S", "One ST", "One SC", "Desire X",
+                    "Desire VT", "Desire XC", "Desire VC", "Desire V",
+                    "Desire C", "J", "DROID Incredible 4G LTE", "Evo 4G LTE",
+                    "One XC", "One X", "One X AT&T", "One XL",
+                    "One S C2", "One S", "Velocity 4G Vodafone", "One V",
+                    "Velocity 4G", "Titan II", "Rezound", "Vivid",
+                    "EVO Design 4G", "Sensation XL", "Explorer", "Amaze 4G",
+                    "Raider 4G", "Rhyme", "Hero S", "Rhyme CDMA",
+                    "Sensation XE", "Jetstream", "Lead", "Titan",
+                    "Radar", "Panache", "Glacier", "Status",
+                    "Trophy", "DROID Incredible 2", "Sensation 4G", "Sensation",
+                    "EVO 3D", "EVO 3D CDMA", "Prime", "HD7S",
+                    "Merge", "Incredible S", "Desire S", "Wildfire S",
+                    "Salsa", "ChaCha", "Flyer", "Flyer Wi-Fi",
+                    "EVO View 4G", "Inspire 4G", "Freestyle", "ThunderBolt 4G",
+                    "EVO Shift 4G", "Gratia", "HD7", "7 Pro",
+                    "7 Surround", "7 Mozart", "7 Trophy", "Arrive",
+                    "Desire HD", "Desire Z", "Paradise", "Evo 4G+",
+                    "Aria", "Wildfire CDMA", "Wildfire", "Desire",
+                    "HD mini", "Legend", "Rider", "Google Nexus One",
+                    "Smart", "HD2", "Evo 4G", "Droid Incredible",
+                    "DROID ERIS", "Pure", "Tattoo", "Touch2",
+                    "Hero CDMA", "Hero", "Ozone", "Snap",
+                    "Schubert", "Magic", "Tilt2", "Touch Pro2 CDMA",
+                    "Touch Pro2", "Touch Diamond2 CDMA", "Touch Diamond2", "Dream",
+                    "Touch Cruise 09", "MAX 4G", "Touch HD T8285", "Touch HD",
+                    "Touch 3G", "Touch Viva", "S740", "Touch Pro CDMA",
+                    "Touch Pro", "Touch Diamond CDMA", "Touch Diamond", "Advantage X7510",
+                    "P3470", "Touch Cruise", "Touch Dual", "P6500",
+                    "S730", "TyTN II", "S630", "Touch",
+                    "P6300", "Shift", "Advantage X7500", "S710",
+                    "P3350", "P3400", "P4350", "P3600i",
+                    "P3600", "P3300", "S620", "S310",
+                    "TyTN", "MTeoR", "Ville", "Zeta",
+                    "A12", "Desire HD2", "Ignite", "Primo",
+                    "Tiara", "One M8 Prime", "One (M8i)"
+                });
+            }
             else if (this.textBoxDeviceBrand.Text.ToString() == "HUAWEI")
             {
                 this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
@@ -754,7 +945,413 @@ namespace Device
                     "T161L", "T330", "T201", "T552",
                     "Ascend W3", "G10", "Mulan"
                 });
-
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "I-MATE")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "810-F", "Ultimate 9502", "Ultimate 8502", "JAMA 201",
+                    "JAMA 101", "JAMA", "Ultimate 9150", "Ultimate 8150",
+                    "Ultimate 7150", "Ultimate 6150", "Ultimate 5150", "JAQ4",
+                    "PDAL", "JAQ3", "SPL", "JAQ",
+                    "JASJAM", "SPJAS", "Smartflip", "JAMin",
+                    "JASJAR", "K-JAM", "SP5", "SP5m",
+                    "SP4m", "JAM Black", "JAM", "PDA2",
+                    "PDA2k", "SP3i", "SP3", "Pocket PC",
+                    "Smartphone2", "Smartphone"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "I-MOBILE")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "i858", "8500", "5230", "Hitz 2206",
+                    "5220", "TV658 Touch&Move", "Hitz 212", "Hitz 210",
+                    "TV650 Touch", "TV550 Touch", "TV 630", "TV 628",
+                    "TV 620", "TV 536", "638CG", "Hitz 232CG",
+                    "TV 535", "627", "TV 533", "TV 530",
+                    "TV 523", "522", "320", "319",
+                    "TV 626", "902", "625", "903",
+                    "613", "520", "518", "510",
+                    "318", "315", "202", "201",
+                    "101"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "ICEMOBILE")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "G8 LTE", "Mash", "G8", "Prime 5.0 Plus",
+                    "Prime 5.0", "Prime 4.0 Plus", "Gravity 4.0", "Rock 2.4",
+                    "Prime 5.5", "Prime 3.5", "Prime 4.0", "Apollo Touch 3G",
+                    "Apollo 3G", "G7 Pro", "G3", "Prime 4.5",
+                    "Charm II", "G10", "Gravity Pro", "Sol III",
+                    "Hydro", "Rock Bold", "G2", "Gprime Extreme",
+                    "G7", "G5", "Tropical 3", "Quattro",
+                    "Prime Plus", "Submarine", "Charm", "Apollo Touch",
+                    "Apollo", "Sol II", "Diamond Dust", "Blizzard",
+                    "Rock Lite", "Cenior", "Acqua", "Prime",
+                    "Rock Mini", "Twilight II", "Fuego", "Hurricane II",
+                    "Sol", "Twister", "Wave", "Tornado II",
+                    "Storm", "Clima II", "Flurry II", "Shine",
+                    "Crystal", "Comet II", "Viento II", "Rock",
+                    "Tropical", "Tropical II", "Rainbow II", "Rainbow",
+                    "Twilight"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "INFINIX")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Smart 2 HD", "Hot 6X", "Note 5 Stylus", "S3X",
+                    "Hot 6", "Note 5", "Smart 2 Pro", "Smart 2",
+                    "Hot 6 Pro", "Hot S3", "Zero 5 Pro", "Zero 5",
+                    "Hot 5 Lite", "Hot 5", "Note 4 Pro", "Note 4",
+                    "Smart", "Zero 4 Plus", "Zero 4", "S2 Pro",
+                    "Hot 4 Pro", "Hot 4", "Note 3 Pro", "Note 3",
+                    "Hot S"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "INNOSTREAM")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "INNO A20", "INNO P10", "INNO A10", "INNO 75",
+                    "INNO 50", "INNO 36", "INNO 79", "INNO 78",
+                    "INNO 30", "INNO 55", "INNO 70", "INNO 99",
+                    "INNO 90", "INNO 89", "INNO 80", "INNO 120",
+                    "INNO 110", "INNO 100"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "INQ")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Cloud Touch", "Cloud Q", "Chat 3G", "Mini 3G", 
+                    "iNQ1"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "INTEX")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Aqua Craze", "Aqua GenX", "Aqua Ace", "Aqua Trend",
+                    "IRist Smartwatch", "Aqua 4G+", "Aqua Xtreme II", "Aqua Y2 Remote",
+                    "Aqua Xtreme", "Aqua Star L", "Aqua Star 2", "Aqua Speed",
+                    "Aqua Power", "Aqua Power +", "Aqua 4.5E",
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "JOLLA")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Jolla C", "Tablet", "Jolla"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "KARBONN")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Titanium Mach Two S360", "Titanium Wind W4", "Titanium S99", "Sparkle V",
+                    "Titanium S19", "Smart A12 Star", "Titanium S1 Plus", "Titanium Hexa",
+                    "Titanium Octane Plus", "Titanium Octane", "Titanium X", "A16",
+                    "A12+", "Titanium S5 Plus", "S7 Titanium", "S9 Titanium",
+                    "A10", "A5", "A37", "A34",
+                    "A25", "A7 Star", "A4+", "A2+",
+                    "A27 Retina", "A111", "A6", "A4",
+                    "A3", "A2", "S5 Titanium", "S1 Titanium",
+                    "Smart Tab 9", "Smart Tab 8", "Smart Tab 10", "Smart Tab2",
+                    "Smart Tab 7", "KT21 Express", "K65 Buzz", "K9 Jumbo",
+                    "A9", "KT62", "K52 Groovster", "K309 Boombastic",
+                    "K4+ Titan", "K707 Spy II", "K451+ Sound Wave", "K102+ Flair",
+                    "KC540 Blaze", "K1+ Stereo", "A1+", "A21",
+                    "A11", "K36+ Jumbo Mini", "K101+ Media Champ", "K440",
+                    "A9+", "K11+", "A15", "A30"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "KYOCERA")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "DuraForce Pro 2", "DuraForce Pro", "DuraForce XD", "DuraForce",
+                    "Hydro Life", "Brigadier", "Hydro Elite", "Hydro Xtrm",
+                    "Torque E6710", "Hydro C5170", "Rise C5155", "Milano C5121",
+                    "Milano C5120", "Presto S1350", "Brio", "Echo",
+                    "DuraCore E4210", "DuraMax", "E4600", "Solo E4000",
+                    "E3500", "E2500", "S1600", "TG 200"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "LAVA")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Z92", "Z81", "Z60s", "Z61",
+                    "Z91 (2GB)", "Z91", "Z50", "Z90",
+                    "Z80", "Z60", "A97 2GB+", "A44",
+                    "A77", "Z25", "Z10", "X28 Plus",
+                    "A73", "X19", "A55", "A50",
+                    "X50 Plus", "X41 Plus", "A51", "A76+",
+                    "A97", "X28", "P7+", "A48",
+                    "X38", "A32", "A68", "X50",
+                    "X17", "X81", "X46", "A89",
+                    "A82", "A79", "A59", "A67",
+                    "V2 s", "V2 3GB", "A76", "A72",
+                    "X11", "A88", "Iris Fuel F2", "A71",
+                    "P7", "V5", "X3", "Iris Atom 3",
+                    "Iris Atom", "X10", "Iris Atom 2X", "Iris Atom X",
+                    "Fuel F1", "Iris Fuel F1 Mini", "Flair E2", "Pixel V2",
+                    "Iris Atom 2", "Flair Z1", "Pixel V1", "Flair P1i",
+                    "Iris X1 Atom S", "Icon", "Iris X1 Grand", "Iris X1 mini",
+                    "Iris Alfa", "Iris X8", "Iris 470", "Iris 465",
+                    "Iris 401", "Iris 350", "Iris 348", "Iris 325 Style",
+                    "Iris Fuel 60", "Iris Win1", "Iris 250", "Iris 400s",
+                    "Iris 352 Flair", "Iris 404 Flair", "Iris 400Q", "Iris 410",
+                    "Iris Fuel 50", "Iris 310 Style", "Iris 360 Music", "Iris 460",
+                    "Iris X5", "Iris Pro 30+", "Iris 402e", "Iris 350m",
+                    "3G 412", "Iris X1", "3G 415", "3G 354",
+                    "Iris 504q+", "Iris 356", "Iris 450 Colour", "Iris 406Q",
+                    "Iris 550Q", "Iris Pro 20", "Iris Pro 30", "Iris 401e",
+                    "Iris 349S", "Iris 349+", "Iris 404e", "Iris 503e",
+                    "Iris 506Q", "Iris 505", "Iris 504q", "3G 402+",
+                    "3G 402", "Iris 405+", "Iris 503"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "LEECO")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Le Pro 3 AI Edition", "Le Pro3 Elite", "Le S3", "Le Pro3",
+                    "Le Max 2", "Le 2 Pro", "Le 2", "Le Max",
+                    "Le 1s"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "LENOVO")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "S5 Pro GT", "Z5s", "Z5 Pro GT", "Z5 Pro",
+                    "S5 Pro", "K5 Pro", "K9", "Z5",
+                    "K5 Note (2018)", "A5", "K5", "K5 play",
+                    "S5", "K320t", "moto tab", "Tab 7 Essential",
+                    "Tab 7", "K8 Plus", "K8", "K8 Note",
+                    "Tab 4 10 Plus", "Tab 4 10", "Tab 4 8 Plus", "Tab 4 8",
+                    "Tab3 8 Plus", "ZUK Edge", "A6600 Plus", "A6600",
+                    "B", "A Plus", "P2", "K6 Note",
+                    "K6 Power", "K6", "Yoga Tab 3 Plus", "Vibe A",
+                    "C2 Power", "C2", "Phab2 Plus", "Phab2",
+                    "Phab2 Pro", "ZUK Z2", "Vibe C", "ZUK Z2 Pro",
+                    "Tab3 10", "Tab3 8", "Tab3 7", "Vibe K5 Plus",
+                    "Vibe K5", "A7000 Turbo", "Vibe P1 Turbo", "K5 Note",
+                    "Lemon 3", "Vibe S1 Lite", "Vibe K4 Note", "Vibe X3 c78",
+                    "Vibe X3", "A3690", "Yoga Tab 3 Pro", "Yoga Tab 3 8.0",
+                    "A1000", "Phab", "Phab Plus", "Vibe P1",
+                    "A6010 Plus", "A6010", "Vibe P1m", "Vibe S1",
+                    "ZUK Z1", "A2010", "A616", "A3900",
+                    "K80", "S60", "A6000 Plus", "A1900",
+                    "K3 Note", "Vibe Shot", "A7000 Plus", "A7000",
+                    "A5000", "Tab 2 A10-70", "Tab 2 A8-50", "P70",
+                    "Tab 2 A7-30", "Tab 2 A7-20", "Tab 2 A7-10", "A6000",
+                    "P90", "Vibe X2 Pro", "K3", "Golden Warrior Note 8",
+                    "A916", "A319", "S856", "S580",
+                    "S90 Sisley", "A606", "Yoga Tablet 2 Pro", "Yoga Tablet 2 10.1",
+                    "Yoga Tablet 2 8.0 ", "Tab S8", "Vibe X2", "Vibe Z2",
+                    "A850+", "Vibe Z2 Pro", "Golden Warrior A8", "Golden Warrior S8",
+                    "S939", "S750", "A889", "A680",
+                    "A316i", "A328", "A536", "A526",
+                    "A10-70 A7600", "A8-50 A5500", "A7-50 A3500", "A7-30 A3300",
+                    "Yoga Tablet 10 HD+", "S860", "S850", "S660",
+                    "A880", "A859", "S930", "S650",
+                    "Vibe Z K910", "Yoga Tablet 10", "Yoga Tablet 8", "A630",
+                    "A516", "Vibe X S960", "S5000", "A850",
+                    "A706", "P780", "S820", "A390",
+                    "A369i", "A269i", "S920", "IdeaTab S6000H",
+                    "IdeaTab S6000F", "IdeaTab S6000L", "IdeaTab S6000", "IdeaTab A3000",
+                    "IdeaTab A1000", "K900", "S890", "IdeaTab A2107",
+                    "A830", "A820", "A800", "A789",
+                    "A690", "S720", "P770", "A60+",
+                    "S560", "S880", "A660", "K860",
+                    "P700i", "A65", "A335", "A185",
+                    "S800", "Q350", "Q330", "A336",
+                    "E156", "LePhone S2", "A60", "K800",
+                    "IdeaPad S2", "LePad S2010", "LePad S2007", "LePad S2005",
+                    "IdeaPad A1", "IdeaPad K1", "ThinkPad", "A5860",
+                    "ideapad", "Vibe Z3 Pro", "ZUK Z1 mini"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "LG")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Q9", "V40 ThinQ", "Watch W7", "Tribute Empire",
+                    "Candy", "G7 Fit", "G7 One", "Q8",
+                    "K11 Plus", "Q Stylo 4", "Q Stylus", "V35 ThinQ",
+                    "Q7", "G7 ThinQ", "V30S ThinQ", "Zone 4",
+                    "K30", "K10 (2018)", "K8 (2018)", "Aristo 2",
+                    "X4+", "V30", "Q8 (2017)", "Q6",
+                    "G Pad IV 8.0 FHD", "X venture", "G6", "X power2",
+                    "Watch Sport", "Watch Style", "Stylo 3 Plus", "Stylus 3",
+                    "Harmony", "K20 plus", "K10 (2017)", "K8 (2017)",
+                    "K7 (2017)", "K4 (2017)", "K3 (2017)", "G Pad III 10.1 FHD",
+                    "U", "V20", "X Skin", "X5",
+                    "X max", "X mach", "G Pad III 8.0 FHD", "G Pad X 8.0",
+                    "X power", "X style", "Stylus 2 Plus", "Stylo 2",
+                    "K5", "K3", "G5 SE", "G5",
+                    "X cam", "X screen", "K8", "Stylus 2",
+                    "K10", "K7", "K4", "G Pad II 8.3 LTE",
+                    "Ray", "G Vista 2", "G Watch R W110", "Watch Urbane W150",
+                    "Watch Urbane 2nd Edition LTE", "V10", "Nexus 5X", "Zero",
+                    "G Pad II 10.1", "G Pad II 8.0 LTE", "Wine Smart", "Tribute 2",
+                    "Bello II", "G4 Beat", "G360", "G350",
+                    "G4c", "G4 Dual", "G4", "G Stylo",
+                    "G4 Stylus", "AKA", "Watch Urbane LTE", "G Watch W100",
+                    "Magna", "Spirit", "Leon", "Joy",
+                    "G Flex2", "Tribute", "L Prime", "G2 Lite",
+                    "G3 Dual-LTE", "G3 Screen", "F60", "L60",
+                    "L60 Dual", "G3 Stylus", "L Bello", "L Fino",
+                    "G Pad 8.0 LTE", "G Vista", "G3 A", "G Pad 7.0 LTE",
+                    "L50", "L30", "L20", "G Vista (CDMA)",
+                    "G3 LTE-A", "G3 S Dual", "G3 S", "L65 D280",
+                    "G3 (CDMA)", "G3", "450", "L35",
+                    "Volt", "G Pad 10.1 LTE", "G Pad 10.1", "G Pad 8.0",
+                    "G Pad 7.0", "L80", "L80 Dual", "Lucid 3 VS876",
+                    "L65 Dual D285", "G Pad 8.3 LTE", "F70 D315", "G2 mini LTE (Tegra)",
+                    "G2 mini LTE", "G2 mini", "L90 Dual D410", "L90 D405",
+                    "L70 D320N", "L70 Dual D325", "L45 Dual X132", "L40 D160",
+                    "L40 Dual D170", "G Pro 2", "Optimus L4 II Tri E470", "Optimus L1 II Tri E475",
+                    "Optimus F3Q", "GX F310L", "Nexus 5", "G Flex",
+                    "Fireweb", "G Pro Lite", "G Pro Lite Dual", "Optimus L2 II E435",
+                    "Vu 3 F300L", "G Pad 8.3", "G2", "Optimus L9 II",
+                    "Enact VS890", "Optimus GJ E975W", "Optimus L4 II Dual E445", "Optimus L4 II E440",
+                    "Optimus Zone VS410", "Optimus F3", "Lucid2 VS870", "Optimus F7",
+                    "Optimus F6", "Optimus F5", "Optimus G Pro E985", "Optimus L7 II Dual P715",
+                    "Optimus L7 II P710", "Optimus L5 II Dual E455", "Optimus L5 II E460", "Optimus L3 II Dual E435",
+                    "Optimus L3 II E430", "Optimus L1 II E410", "Nexus 4 E960", "A390",
+                    "A395", "C299", "Tri Chip C333", "Spectrum II 4G VS930",
+                    "Mach LS860", "Optimus L9 P769", "Optimus Vu II", "Optimus Vu II F200",
+                    "Optimus G E970", "Optimus G LS970", "Optimus G E975", "Intuition VS950",
+                    "Splendor US730", "Escape P870", "Optimus L5 Dual E615", "Optimus L9 P760",
+                    "Motion 4G MS770", "Optimus Vu P895", "Optimus L3 E405", "C199",
+                    "T385", "T375 Cookie Smart", "Optimus Elite LS696", "T370 Cookie Smart",
+                    "Optimus LTE2", "Optimus True HD LTE P936", "Xpression C395", "Lucid 4G VS840",
+                    "Optimus M+ MS695", "Optimus 4X HD P880", "Optimus 3D Max P720", "Optimus 3D Cube SU870",
+                    "Optimus L7 P700", "Optimus L5 E610", "Optimus Vu F100S", "Optimus LTE Tag",
+                    "Optimus L3 E400", "Optimus Pad LTE", "Rumor Reflex  LN272", "Connect 4G MS840",
+                    "Viper 4G LTE LS840", "Spectrum VS920", "X350", "Prada 3.0",
+                    "Nitro HD", "Optimus 4G LTE P935", "Optimus 2 AS680", "Extravert VN271",
+                    "DoublePlay", "Enlighten VS700", "S367", "Jil Sander Mobile",
+                    "Optimus Slider", "Optimus LTE SU640", "Optimus LTE LU6200", "Optimus EX SU880",
+                    "Optimus Q2 LU6500", "Optimus Hub E510", "Optimus Sol E730", "Optimus Net Dual",
+                    "Optimus Net", "Esteem MS910", "Marquee LS855", "Optimus Black (White version)",
+                    "Optimus Pro C660", "S365", "A350", "A258",
+                    "A250", "A270", "A230", "A290",
+                    "A190", "A200", "T515 Cookie Duo", "T510",
+                    "T505", "EGO T500", "EGO Wi-Fi", "C375 Cookie Tweet",
+                    "C365", "C360", "A100", "Optimus Big LU6800",
+                    "Cosmos 2", "US760 Genesis", "Phoenix P505", "Thrive P506",
+                    "Thrill 4G P925", "T315", "Optimus 3D P920", "Optimus Pad V900",
+                    "A180", "A165", "A160", "A140",
+                    "Optimus Chat C550", "Optimus Me P350", "Optimus Black P970", "Optimus 2X SU660",
+                    "Optimus 2X", "Optimus Mach LU3000", "Revolution", "X335",
+                    "C310", "Cookie WiFi T310i", "GU200", "A120",
+                    "A155", "S310", "P525", "P520",
+                    "Axis", "Apex", "Cosmos Touch VN270", "Vortex VS660",
+                    "C320 InTouch Lady", "GT550 Encore", "GS390 Prime", "Quantum",
+                    "C900 Optimus 7Q ", "E900 Optimus 7", "Town C300", "Optimus Chic E720",
+                    "Octane", "Optimus M", "Optimus S", "Optimus T",
+                    "Optimus One P500", "GW910", "A130", "GW370 Rumour Plus",
+                    "GD550 Pure", "KS365", "GM650s", "Scarlet II TV",
+                    "Flick T320", "Cookie 3G T320", "Wink 3G T320", "C710 Aloha",
+                    "Cookie Style T310", "Wink Style T310", "Cookie Lite T300", "C105",
+                    "GX300", "GU292", "GM360 Viewty Snap", "Fathom VS750",
+                    "Vu Plus", "GT400 Viewty Smile", "SU420 Cafe", "Optimus Z",
+                    "SU920", "KM570 Cookie Gig", "Optimus Q LU2300", "GX500",
+                    "GT950 Arena", "KH3900 Joypop", "GB280", "GS155",
+                    "GS107", "GS106", "KP108", "GD350",
+                    "KH5200 Andro-1", "GT540 Optimus", "GS290 Cookie Fresh", "GT405",
+                    "GW990", "GS500 Cookie Plus", "GX200", "KF305",
+                    "GW880", "GD880 Mini", "Wink Plus GT350i", "Etna C330",
+                    "Town GT350", "KU2100", "GD580 Lollipop", "GS200",
+                    "GS190", "GW820 eXpo", "GD710 Shine II", "GU230 Dimsun",
+                    "GB160", "GU285", "8575 Samba", "KM555E",
+                    "GD310 ", "GD510 Pop", "BL20 New Chocolate", "CF360",
+                    "GW620", "GM750", "BL40 New Chocolate", "GW300",
+                    "GB270", "GB190", "GB109", "GB170",
+                    "GW550", "KB775 Scarlet", "GT500 Puccini", "GT505",
+                    "GW520", "GD900 Crystal", "GC900 Viewty Smart", "GB230 Julia",
+                    "GD330", "KS660", "GB125", "Xenon GR500",
+                    "GB210", "GM200 Brio", "KC560", "KM900 Arena",
+                    "GM730 Eigen", "KC910i Renoir", "GB250", "GB220",
+                    "GB102", "KT770", "GB130", "GM310",
+                    "GM210", "KM330", "GB110", "GB106",
+                    "GD910", "CT810 Incite", "KP152", "KS500",
+                    "KF900 Prada", "KC780", "KP500 Cookie", "KP501 Cookie",
+                    "KP502 Cookie", "KC910 Renoir", "KB770", "CB630 Invision",
+                    "KP270", "KF311", "CP150", "KP265",
+                    "KP260", "KP199", "KP170", "GT365 Neon",
+                    "KS360", "Univa E510", "KF390", "KF350",
+                    "KF245", "KF240", "U370", "HB620T",
+                    "KC550", "KF757 Secret", "KF750 Secret", "KF755 Secret",
+                    "CU915 Vu", "KF700", "KF600", "KF510",
+                    "KT610", "KP320", "KT520", "KM710",
+                    "MG295", "KF310", "KF300", "KM500",
+                    "KM386", "KM380", "KM338", "KG375",
+                    "KP235", "KP220", "KP215", "KP210",
+                    "KP130", "KP110", "KP105", "KP100",
+                    "KU385", "KU380", "U960", "KG290",
+                    "KG288", "KS20", "KU990 Viewty", "KE990 Viewty",
+                    "KE590", "KE500", "KG280", "KG275",
+                    "MG160", "KU580", "KE850 Prada", "KE970 Shine",
+                    "KU970 Shine", "KE770 Shine", "CU720 Shine", "KU950",
+                    "KS10", "KU311", "Trax CU575", "CU515",
+                    "CU500V", "CE110", "KU250", "KE260",
+                    "KE800", "KE820", "KU800", "U830",
+                    "L343i", "L600v", "KP200", "KP202",
+                    "CU500", "U400", "U310", "U300",
+                    "KG800", "KG810", "KE600", "KG330",
+                    "KG320", "KG300", "CG180", "KG270",
+                    "KG200", "KG195", "KG920", "KU730",
+                    "U900", "V9000", "KG245", "KG240",
+                    "KG225", "KG220", "KG210", "KG190",
+                    "KG130", "KG120", "KG110", "C2600",
+                    "U890", "U8550", "M6100", "C2500",
+                    "C1150", "S5300", "S5200", "S5100",
+                    "S5000", "U880", "P7200", "B2250",
+                    "B2070", "B2050", "M4410", "M4330",
+                    "M4300", "F3000", "F2410", "F2250",
+                    "L342i", "L341i", "C3400", "C3380",
+                    "C3320", "C3310", "C3300", "U8380",
+                    "U8360", "U8330", "U8290", "U8210",
+                    "U8200", "U8180", "B2150", "B2100",
+                    "B2000", "F2400", "F1200", "F7250",
+                    "A7150", "L5100", "C2200", "C2100",
+                    "G1800", "G1700", "G1610", "F2300",
+                    "F2100", "L3100", "C3100", "G3100",
+                    "L1100", "C1400", "C1200", "C1100",
+                    "G1600", "T5100", "G7200", "G7120",
+                    "U8150", "U8138", "U8120", "U8110",
+                    "U8100", "G7100", "G7070", "G7050",
+                    "G7030", "G1500", "G5500", "G5400",
+                    "G5310", "G5300", "G8000", "G7020",
+                    "W7020", "G7000", "W7000", "G5200",
+                    "W5200", "G3000", "W3000", "B1200",
+                    "LG 510w", "LG-600", "LG-500", "LG-200",
+                    "Fantasy E740", "E2", "X3", "Optimus LTE",
+                    "G4 Pro"
+                });
             }
             else
             {
