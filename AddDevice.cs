@@ -2046,6 +2046,106 @@ namespace Device
                     "S388", "S308", "W6610", "W8578",
                 });
             }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "PLUM")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Tag 2 3G", "Phantom 2", "Optimax 13", "Flipper 2",
+                    "Ram 8", "Gator 5", "Tag 3G", "Optimax 11",
+                    "Optimax 12", "Optimax 2", "Compass 2", "Flipper (2018)",
+                    "Axe 4", "Compass LTE", "Gator 4", "Phantom",
+                    "Ram 6", "Ram 7 - 3G", "Play", "Compass",
+                    "Hero", "Gator 3", "Axe Plus 2", "Optimax 10",
+                    "Optimax 8.0", "Optimax 7.0", "Ram 4", "Star",
+                    "Might Plus II", "Axe LTE", "Check LTE", "Boot 2",
+                    "Ram 3G", "Sync 4.0b", "Gator Plus II", "Ram Plus",
+                    "Coach Pro", "Trigger Plus III", "Might LTE", "Sync 5.0",
+                    "Sync 4.0", "Sync 3.5", "Might Pro", "Coach Plus II",
+                    "Link Plus", "Trigger Plus", "Trigger Pro", "Gator",
+                    "Z708", "Coach Plus", "Pilot Plus", "Might Plus",
+                    "Check Plus", "Axe Plus", "Boot", "Slick",
+                    "Trigger Z104", "Bar 3G", "Velocity II", "Sync",
+                    "Axe II", "Ten 3G", "Link II", "Volt 3G",
+                    "Mouse", "Dazzle", "Ram", "Z710",
+                    "Trigger", "Glow", "Panther", "Caliber II",
+                    "Signal", "Hammer", "Flipper", "Debut",
+                    "Link", "Might", "Axe", "Capacity",
+                    "Wicked", "Flix", "Orbit", "Velocity",
+                    "Caliber", "Switch", "Galactic", "Tracer II",
+                    "Tingle", "Geo", "Genius", "Blast",
+                    "Whiz", "Stubby", "Stubby II", "Strike",
+                    "Profile", "Inspire", "Spare", "Boom",
+                    "Snap", "Buzz", "Tweek", "Kazzom",
+                    "Trip", "Trion", "Bubby"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "POSH")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Memo Pro LTE L600", "Equal Plus X700", "Ultra Max LTE L550", "Kick Pro LTE L520",
+                    "Optima LTE L530", "Icon HD X551", "Volt LTE L540", "Volt Max LTE L640",
+                    "Equal Pro LTE L700", "Primo Plus C353", "Kick X511", "Kick Lite S410",
+                    "Icon S510", "Titan Max HD E550", "Ultra 5.0 LTE L500", "Micro X S240",
+                    "Titan Max HD E600", "Titan HD E500", "Equal S700", "Equal Lite W700",
+                    "Memo S580", "Orion Max X550", "Orion Pro X500", "Revel Pro X510",
+                    "Revel S500", "Orion S450", "Pegasus 4G S400", "Orion Mini S350",
+                    "Pegasus Plus C351", "Lynx A100"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "PRESTIGIO")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "MultiPhone 5508 Duo", "MultiPhone 5504 Duo", "MultiPhone 5503 Duo", "MultiPhone 8500 Duo",
+                    "MultiPhone 8400 Duo", "MultiPad 4 Quantum 10.1 3G", "MultiPad 4 Quantum 9.7 Colombia", "MultiPad 4 Ultra Quad 8.0 3G",
+                    "MultiPhone 7600 Duo", "MultiPhone 7500", "MultiPhone 5501 Duo", "MultiPhone 5500 Duo",
+                    "MultiPhone 5451 Duo", "MultiPhone 5450 Duo", "MultiPhone 3400 Duo", "MultiPhone 5430 Duo",
+                    "MultiPhone 5400 Duo", "MultiPhone 5300 Duo", "MultiPhone 5044 Duo", "MultiPhone 5000 Duo",
+                    "MultiPhone 4505 Duo", "MultiPhone 4500 Duo", "MultiPhone 4322 Duo", "MultiPhone 4300 Duo",
+                    "MultiPhone 4055 Duo", "MultiPhone 4044 Duo", "MultiPhone 4040 Duo", "MultiPhone 3540 Duo",
+                    "MultiPad 4 Ultimate 8.0 3G", "MultiPad 7.0 Prime Duo 3G", "Multipad 4 Quantum 10.1", "Multipad 4 Quantum 9.7",
+                    "Multipad 4 Quantum 7.85", "MultiPad Note 8.0 3G", "MultiPad 2 Pro Duo 8.0 3G", "MultiPad 2 Ultra Duo 8.0 3G",
+                    "MultiPad 2 Ultra Duo 8.0", "MultiPad 10.1 Ultimate 3G", "MultiPad 10.1 Ultimate", "MultiPad 7.0 Prime 3G",
+                    "MultiPad 2 Prime Duo 8.0", "MultiPad 7.0 Ultra Duo", "MultiPad 8.0 Ultra Duo", "MultiPad 9.7 Ultra Duo",
+                    "MultiPad 7.0 Prime Duo", "MultiPad 8.0 Pro Duo", "MultiPad 7.0 Pro Duo", "MultiPad 8.0 HD",
+                    "MultiPad 7.0 Ultra + New", "MultiPad 7.0 HD +", "MultiPad 7.0 HD", "MultiPad 7.0 Ultra +",
+                    "MultiPad 7.0 Ultra", "MultiPad 7.0 Prime +", "MultiPad 7.0 Prime", "MultiPad 7.0 Pro"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "QMOBILE")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Noir A1", "Noir E2", "J7 Pro", "M6",
+                    "M6 Lite", "King Kong Max", "Energy X2", "M350 Pro",
+                    "E1", "Noir S6 Plus", "Noir J7", "Noir Z12 Pro",
+                    "Noir Z14", "Noir LT680", "Noir LT700 Pro", "Noir S4",
+                    "Noir LT750", "Noir i6 Metal HD", "Noir A6", "Noir S9",
+                    "Noir Z9 Plus", "Noir Z12", "Noir Z10", "Noir E8",
+                    "Noir S2", "Noir S5", "Linq L15", "Noir Z9",
+                    "A1", "Noir S1", "Power3", "T50 Bolt",
+                    "T200 Bolt", "Noir X950", "QTab V10", "Explorer 3G",
+                    "Noir i8", "Noir X450", "Noir Z8 Plus", "Noir X350",
+                    "Noir LT600", "Noir M300", "W1", "Noir Z8",
+                    "Noir A750", "Linq X70", "Noir Z7", "Linq L10",
+                    "Noir LT250", "Noir LT150", "Noir X600", "Noir X700",
+                    "Noir X900", "Noir X60", "Noir X80", "Noir X90",
+                    "Noir X550", "Linq X300", "Linq X100", "Noir X35",
+                    "Noir X400", "Noir X500", "M800", "Noir i7",
+                    "Noir M90", "Noir X800", "B100TV", "Noir A115 ATV",
+                    "Noir i10", "B800", "Noir A8i", "Noir Z5",
+                    "Noir i12", "Noir Z6", "QTab X50", "Noir A120",
+                    "E990 Sirocco Edition", "Noir A110", "Noir i9", "Noir i6",
+                    "Noir A75", "Noir i5i", "Noir i5", "Noir A550",
+                    "Noir V4", "Noir Z4", "Noir Z3", "Noir A15 3D",
+                    "Noir A950", "Noir A500",
+                });
+            }
             else
             {
                 this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
