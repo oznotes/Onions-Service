@@ -541,6 +541,81 @@ namespace Device
                     "B25"
                 });
             }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "CELKON")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "A403", "Campus Prime", "Millennia Everest", "Millennia Hero",
+                    "Millennia Xplore", "Q455L", "2GB Xpress", "A35k Remote",
+                    "Q3K Power", "Q5K Power", "Q452", "A402",
+                    "Q54+", "Q519", "Q450", "Q405",
+                    "A518", "A407", "A359", "A355",
+                    "Campus Buddy A404", "Millennia OCTA510", "Win 400", "Campus Whizz Q42",
+                    "Millennia Epic Q550", "Xion s CT695", "Campus Colt A401", "Campus Crown Q40",
+                    "Glory Q5", "Campus One A354C", "Campus Nova A352E", "A43",
+                    "A42", "Q500 Millennium Ultra", "Q44", "A500",
+                    "A21", "A115", "Q455", "Q470",
+                    "Q3000", "A35k", "A125", "C7010",
+                    "C5055", "C9 Jumbo", "C7 Jumbo", "C6 Star",
+                    "C44 Duos", "C366", "C619", "C51",
+                    "C340", "C348+", "C349+", "C779",
+                    "C66+", "C44+", "A64", "A66",
+                    "A9 Dual", "A 107+", "C4040", "ARR35",
+                    "CT 7", "CT-888", "C820", "C720",
+                    "S1", "A40", "AR50", "AR40",
+                    "AR45", "A15", "C7045", "C605",
+                    "C399", "C76", "C64", "C63",
+                    "Monalisa 5", "A112", "A63", "A60",
+                    "A20", "A10", "C5050 Star", "C7030",
+                    "A105", "C349i", "C297", "C69",
+                    "C67+", "C74", "CT-910+", "A118",
+                    "A107", "A9+", "A119Q Signature HD", "A119 Signature HD",
+                    "CT-910", "A87", "A86", "A69",
+                    "A67", "A98", "A225", "C7050",
+                    "C7070", "C44 Star", "C54", "GC10",
+                    "C3333", "C356", "C355", "A75",
+                    "A59", "A220", "A27", "A79",
+                    "A83", "A77", "CT 9", "A200",
+                    "C19", "A900", "A85", "A22",
+                    "CT 2", "C52", "C9 Star", "A89",
+                    "CT 1", "C24", "C3000", "A97i",
+                    "A19", "C607", "C262", "C360",
+                    "C359", "C350", "A97", "A95",
+                    "A90", "A99+", "C770N", "C705",
+                    "C606", "C570", "C504", "C206",
+                    "C203", "C17", "C75", "i4",
+                    "A7", "A88", "C770 Dj", "C769",
+                    "C349", "C337", "C260", "C70",
+                    "C55", "A9", "A99", "C3030",
+                    "C90", "C909", "C60", "C305",
+                    "C220", "C303", "C201", "C202",
+                    "C404", "C5050", "C227", "i9",
+                    "C2010", "C207", "A1", "C609",
+                    "C102", "C77", "C100", "C555",
+                    "C205", "C44", "C101", "C33",
+                    "C550", "C66", "C339", "C10",
+                    "C770", "C20", "C369", "C88",
+                    "C2000", "C007", "C999", "C777",
+                    "C1", "C444", "C2", "C225",
+                    "C111", "C99", "C3", "C669",
+                    "C9", "C11", "C333", "C6",
+                    "C509", "C5", "C7", "C22",
+                    "C347", "C357", "C367", "C409",
+                    "C449", "C517", "C567", "C747",
+                    "C867"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "CHEA")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "A90", "JMS-110", "328", "318",
+                    "308", "228", "218", "208",
+                    "198", "188", "178", "168"
+                });
+            }
             else if (this.textBoxDeviceBrand.Text.ToString() == "COOLPAD")
             {
                 this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
@@ -554,6 +629,93 @@ namespace Device
                     "Porto S", "Torino S", "Note 3 Lite", "Roar",
                     "Note 3", "Shine", "Modena", "Porto",
                     "3632"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "DELL")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Venue 10 7000", "Venue 8 7000", "Venue 8", "Venue 7 8 GB",
+                    "Venue 7", "XPS 10", "Streak Pro D43", "Streak 10 Pro",
+                    "Streak 7", "Streak 7 Wi-Fi", "Venue", "XCD35",
+                    "XCD28", "Smoke", "Flash", "Venue Pro",
+                    "Streak", "Aero", "Mini 3i", "Mini 3iX"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "EMPORIA")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Glam", "Flip Basic", "Eco", "Click Plus",
+                    "Essence Plus", "Solid Plus", "Care Plus", "Elegance Plus",
+                    "Elegance", "Connect", "Click", "Talk Comfort Plus",
+                    "Talk Comfort", "RL1", "Talk Premium"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "ENERGIZER")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "Ultimate U620S Pop", "Ultimate U650S", "Ultimate U630S Pop", "Ultimate U620S",
+                    "Ultimate U570S", "Hardcase H591S", "Hardcase H570S", "Hardcase H501S",
+                    "Hardcase H280S", "Hardcase H241", "Hardcase H242", "Hardcase H242S",
+                    "Power Max P490S", "Power Max P490", "Hardcase H500S", "Energy E500S",
+                    "Energy E500", "Energy E11", "Energy E10+", "Power Max P20",
+                    "Power Max P16K Pro", "Hardcase H240S", "Hardcase H550S", "Power Max P600S",
+                    "Power Max P550S", "Energy S550", "Energy S500E", "Energy E520 LTE",
+                    "Energy 100 (2017)", "Energy 400 LTE", "Energy E10", "Energy E20",
+                    "Energy 500", "Energy 400", "Energy 240", "Energy 200",
+                    "Energy 100"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "ERICSSON")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "R600", "T68", "T66", "T65",
+                    "T39", "A3618", "T29s", "R520m",
+                    "T20e", "A2628", "T20s", "T36",
+                    "R380", "R320", "R310s", "A2618",
+                    "R250s PRO", "T28 World", "T28s", "T18s",
+                    "T10s", "A1018s", "I 888", "SH 888",
+                    "S 868", "GF 788e", "GF 788", "PF 768",
+                    "GF 768", "GH 688", "GA 628", "GF 388",
+                    "GH 388", "GS 337", "GF 337", "GH 337",
+                    "GA 318", "GS 18", "GO 118", "GH 218"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "ETEN")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "glofiish X610", "glofiish V900", "glofiish X900", "glofiish DX900",
+                    "glofiish M750", "glofiish M810", "glofiish X650", "glofiish M800",
+                    "glofiish X600", "glofiish X500+", "glofiish X800", "glofiish M700",
+                    "glofiish X500", "M550", "G500+", "M600+",
+                    "G500", "M600", "M500", "P300B",
+                    "P300", "P700"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "FUJITSU-SIEMENS")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "T830","T810"
+                });
+            }
+            else if (this.textBoxDeviceBrand.Text.ToString() == "GARMIN-ASUS")
+            {
+                this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
+                this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
+                {
+                    "A10", "nuvifone A50", "nuvifone M10", "nuvifone G60",
+                    "nuvifone M20"
                 });
             }
             else if (this.textBoxDeviceBrand.Text.ToString() == "HUAWEI")
