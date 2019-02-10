@@ -335,7 +335,6 @@
             this.textBoxDeviceModel.Name = "textBoxDeviceModel";
             this.textBoxDeviceModel.Size = new System.Drawing.Size(263, 20);
             this.textBoxDeviceModel.TabIndex = 8;
-            this.textBoxDeviceModel.Click += new System.EventHandler(this.textBoxDeviceModel_Click);
             this.textBoxDeviceModel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxDeviceModel_MouseClick);
             // 
             // textBoxDeviceIMEI

@@ -6,53 +6,44 @@ namespace Device
 {
     public partial class AddDeviceForm : Form
     {
+        const string SqlInsertStament = "INSERT INTO Customer (Firstname,Lastname,PhoneNumber,Email,Brand,Model,IMEI,Problem,Status,CreationDate) VALUES ({0})";
+        const string Status = "devices";
+
         public AddDeviceForm()
         {
-            InitializeComponent();
+            InitializeComponent();  
         }
 
         // Data and Static device selection list .
         private void Add_Click(object sender, EventArgs e)
         {
-            string contactFileContents = String.Empty;
-            string today = DateTime.Today.ToString("dd/MM/yyyy");
-
-            if (File.Exists("devices.dat"))
+            try
             {
-                contactFileContents = File.ReadAllText("devices.dat") + System.Environment.NewLine;
-            }      
-            contactFileContents += today + "|" +
-                                   textBoxFirstName.Text + "|" +
-                                   textBoxLastName.Text + "|" +
-                                   textBoxPhoneNumber.Text + "|" +
-                                   textBoxeMail.Text + "|" +
-                                   textBoxDeviceBrand.Text + "|" +
-                                   textBoxDeviceModel.Text + "|" +
-                                   textBoxDeviceIMEI.Text + "|" +
-                                   textBoxDeviceProblem.Text;
-            File.WriteAllText("devices.dat", contactFileContents);
-            this.Close();
+                string CustomerValues = String.Empty;
+                string today = DateTime.Today.ToString("dd/MM/yyyy");
 
-        }
+                CustomerValues = "'" + textBoxFirstName.Text + "'," +
+                                      "'" + textBoxLastName.Text + "'," +
+                                      "'" + textBoxPhoneNumber.Text + "'," +
+                                      "'" + textBoxeMail.Text + "'," +
+                                      "'" + textBoxDeviceBrand.Text + "'," +
+                                      "'" + textBoxDeviceModel.Text + "'," +
+                                      "'" + textBoxDeviceIMEI.Text + "'," +
+                                      "'" + textBoxDeviceProblem.Text + "'," +
+                                      "'" + Status + "'," +
+                                      "'" + today + "'";
 
-        private void textBoxDeviceModel_Click(object sender, EventArgs e)
-        {
-
-
+                //Create Sql Insert Command and insert the data in database
+                DatabaseAccess.fnSetConexion(string.Format(SqlInsertStament, CustomerValues)).ExecuteNonQuery();
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Error: " + Ex.Message, "Create Customer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void textBoxDeviceModel_MouseClick(object sender, MouseEventArgs e)
         {
-            //Console.WriteLine(this.textBoxDeviceBrand.Text.ToString());
-
-            //4 models of each row 
-            //Python Script get the models from html tags extracted from gsmarena
-            //import re
-            //with open('source.txt', 'r') as myfile:
-            //      s = myfile.read()
-
-            //print(re.findall(r'<strong><span>(.*?)</span></strong>', s))
-
 
             if (this.textBoxDeviceBrand.Text.ToString() == "APPLE")
             {
@@ -1033,7 +1024,7 @@ namespace Device
                 this.textBoxDeviceModel.AutoCompleteCustomSource.Clear();
                 this.textBoxDeviceModel.AutoCompleteCustomSource.AddRange(new string[]
                 {
-                    "Cloud Touch", "Cloud Q", "Chat 3G", "Mini 3G", 
+                    "Cloud Touch", "Cloud Q", "Chat 3G", "Mini 3G",
                     "iNQ1"
                 });
             }

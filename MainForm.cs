@@ -3,92 +3,114 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SQLite;
 
 namespace Device
 {
     public partial class MainForm : Form
-    {
-        int Row_N;
-        private int currentRow;
-        private bool resetRow = false;
-
+    { 
         public MainForm()
         {
             InitializeComponent();
             MainSetup();
+            // deleted out all the binding code of the grid to focus on the interesting stuff
+
             dataGridView.CellEndEdit += new DataGridViewCellEventHandler(dataGridView_CellEndEdit);
+
+            // Use the DataBindingComplete event to attack the SelectionChanged, 
+            // avoiding infinite loops and other nastiness.
             dataGridView.DataBindingComplete += new DataGridViewBindingCompleteEventHandler(dataGridView_DataBindingComplete);
         }
-        public void MainSetup()
 
+        public void MainSetup()
         {
             this.Text = "Onions Service Database - Home";
-            if (File.Exists("devices.dat"))
-            {
-                loadContacts("devices.dat");
+            loadContacts("devices");
 
-            }
-            else
-            {
-                MessageBox.Show("No File Found");
-                toolStripCompleteJOB.Enabled = false;
-                toolStripButtonRemove.Enabled = false;
-            }
-            if (File.Exists("completed.dat"))
-            {
+            //Check if record in state completed
+            if (CheckForRecordCompleted("completed"))
                 toolStripButtonCompleted.Enabled = true;
-
-            }
             else
-            {
                 toolStripButtonCompleted.Enabled = false;
-            }
         }
+
         private void toolStripButtonAdd_Click(object sender, EventArgs e)
         {
             AddDeviceForm addContactForm = new AddDeviceForm();
             addContactForm.ShowDialog();
-            loadContacts("devices.dat");
+            loadContacts("devices");
         }
+
         /// <summary>
-        /// Load from devices.dat to -> Data Grid View 
+        /// Load from SQLite to -> Data Grid View 
         /// </summary>
         private void loadContacts(string datasource)
         {
-            string[] contacts;
-            if (File.Exists(datasource))
+            try
             {
-                toolStripCompleteJOB.Enabled = true;
-                toolStripButtonRemove.Enabled = true;
-                
-                contacts = File.ReadAllLines(datasource);
-                if (contacts.Length != 0)
+                //Query to customers table
+                string SelectCustomer = string.Format("SELECT IdCustomer, CreationDate AS 'Date in Service', FirstName,LastName, PhoneNumber, Email AS 'e-Mail', Brand, Model, IMEI, Problem, Price,UpdateDate AS 'Update Date' FROM Customer WHERE Status = '{0}'", datasource);
+
+                //Run query
+                SQLiteDataAdapter objDa = new SQLiteDataAdapter(DatabaseAccess.fnSetConexion(SelectCustomer));
+                //Hire will be data
+                DataTable dtCustomer = new DataTable();
+                //Fill with data
+                objDa.Fill(dtCustomer);
+                //bind to dataGridView
+                dataGridView.DataSource = dtCustomer;
+                //check if dataGridView has rows
+                if (dataGridView.RowCount > 0)
                 {
-                    dataGridView.Rows.Clear();
-                    foreach (string contact in contacts)
-                    {
-                        string[] contactInfo = contact.Split('|');
-                        dataGridView.Rows.Add(contactInfo);
-                    }
+                    toolStripCompleteJOB.Enabled = true;
+                    toolStripButtonRemove.Enabled = true;
                 }
                 else
                 {
-                    MessageBox.Show("No Data Found!");
+                    MessageBox.Show("No Data Found!", "Select Customer", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     toolStripCompleteJOB.Enabled = false;
                     toolStripButtonRemove.Enabled = false;
-                    dataGridView.Rows.Clear();
-                    dataGridView.Refresh();
                 }
+                //Format grid
+                fnconfigDGV();
             }
-            else
+            catch (Exception Ex)
             {
-                MessageBox.Show("No File Found!");
-
-                dataGridView.Rows.Clear();
-                dataGridView.Refresh();
-                toolStripCompleteJOB.Enabled = false;
-                toolStripButtonRemove.Enabled = false;
+                MessageBox.Show("Error: " + Ex.Message, "Select Customers", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        /// <summary>
+        /// Check for records in state Completed or Device
+        /// </summary>
+        /// <param name="datasource">state Completed | Device</param>
+        /// <returns></returns>
+        private bool CheckForRecordCompleted(string datasource)
+        {
+            try
+            {
+                //Query to customers table
+                string SelectCustomer = string.Format("SELECT IdCustomer FROM Customer WHERE Status = '{0}'", datasource);
+
+                //Run query
+                SQLiteDataAdapter objDa = new SQLiteDataAdapter(DatabaseAccess.fnSetConexion(SelectCustomer));
+                //Hire will be data
+                DataTable dtCustomer = new DataTable();
+                //Fill with data
+                objDa.Fill(dtCustomer);
+                //check if datatable has rows, if has, enable buttons
+                if (dtCustomer.Rows.Count > 0)
+                    return true;
+                else
+                    return false;
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Error: " + Ex.Message, "Select Customers", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            return false;
         }
 
         private void toolStripButtonRemove_Click(object sender, EventArgs e)
@@ -98,132 +120,116 @@ namespace Device
 
         public void remove_selected()
         {
-            string contactFileData = String.Empty; //These are all the new contacts
-            string[] contacts = File.ReadAllLines("devices.dat"); //These are all the old contacts
-            if (contacts.Length !=0 )
+            try
             {
-                int index = dataGridView.SelectedRows[0].Index; //Gets the index of the deleted row
-                for (int i = 0; i < contacts.Count(); i++) 
+                //Get selected row
+                DataGridViewRow Row = dataGridView.SelectedRows[0];
+                int IdCustomer = 0;
+                //Get Id Customer by IdCustomer column
+                int.TryParse(Row.Cells["IdCustomer"].Value.ToString(), out IdCustomer);
+
+                if (IdCustomer > 0)
                 {
-                    if (index != i)
-                        contactFileData += contacts[i] + System.Environment.NewLine;
+                    //Sql delete sentence
+                    string DeleteCustomer = string.Format("DELETE FROM Customer WHERE IdCustomer = {0}", IdCustomer);
+                    //Run Sentense
+                    DatabaseAccess.fnSetConexion(DeleteCustomer).ExecuteNonQuery();
                 }
-                File.WriteAllText("devices.dat", contactFileData); //Saves the contact file without the removed contact
-                dataGridView.Rows.Remove(dataGridView.SelectedRows[0]);// get the first line back again .
+                else
+                    MessageBox.Show("No Customer Selected", "Delete Customer", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-            else
+            catch (Exception Ex)
             {
-                MessageBox.Show("No Data Found");
+                MessageBox.Show("Error: " + Ex.Message, "Delete Customer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+
+            loadContacts("devices");
         }
 
-        public void complete_selected(string cell)
-
+        public void complete_selected()
         {
-            string CompletedDevices = String.Empty; //These are all the new contacts
-            string PendingDevices = String.Empty;
-            string[] device = File.ReadAllLines("devices.dat"); //These are all the old contacts
-            if (device.Length != 0)
+            string today = DateTime.Today.ToString("dd/MM/yyyy");
+            //Get selected row
+            DataGridViewRow Row = dataGridView.SelectedRows[0];
+            int IdCustomer = 0;
+            int Price = 0;
+            //Get Id Customer by IdCustomer column
+            int.TryParse(Row.Cells["IdCustomer"].Value.ToString(), out IdCustomer);
+            //Check if IdCustomer is.
+            if (IdCustomer == 0)
+                MessageBox.Show("No Customer Selected", "Completed Job", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+
+            // Check the price cell if its stable .
+            try
             {
-                int index = dataGridView.SelectedRows[0].Index; //Gets the index of the deleted row
-                for (int i = 0; i < device.Count(); i++) // Line
-                {
-                    if (index == i)
-                    {
-                        CompletedDevices += device[i] + "|" + cell + System.Environment.NewLine;
-                    }
-                    else
-                    {
-                        PendingDevices += device[i] + System.Environment.NewLine;
-                    }
-                }
-                File.AppendAllText("completed.dat", CompletedDevices); //Saves the completed.dat file with completed device.
-                File.WriteAllText("devices.dat", PendingDevices); //Saves the devices.dat file after removed device.
-                dataGridView.Rows.Remove(dataGridView.SelectedRows[0]);// get the first line back again .
+                //Get Price
+                Price = int.Parse(Row.Cells["Price"].Value.ToString());
             }
-            else
+            catch (FormatException)
             {
-                MessageBox.Show("No Data Found");
+                MessageBox.Show("Enter Price in numbers !", "Completed Job", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
             }
+            catch (ArgumentNullException)
+            {
+                MessageBox.Show("Enter Price information !", "Completed Job", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            //Update Customer sentence
+            string UpdateCustomer = string.Format("UPDATE Customer SET Price = {0}, Status = '{1}', UpdateDate = '{2}' WHERE IdCustomer = {3}", Price, "completed", today,IdCustomer);
+            //run sentence
+            DatabaseAccess.fnSetConexion(UpdateCustomer).ExecuteNonQuery();           
         }
 
         private void toolStripButtonCompleted_Click(object sender, EventArgs e)
         {
             // show another for with data gridview
+
             this.Text = "Onions Service Database - Completed JOBS";
-            loadContacts("completed.dat");
+            loadContacts("completed");
+
             // group  disabled.
             toolStripCompleteJOB.Enabled = false;
             toolStripButtonRemove.Enabled = false;
             toolStripButtonCompleted.Enabled = false;
+
         }
 
         private void dataGridView_CellMouseUp(object sender, DataGridViewCellMouseEventArgs e)
         {   //Update the ROW ID with the mouse event 
-            int column = dataGridView.CurrentCell.ColumnIndex;
-            Row_N = dataGridView.CurrentCell.RowIndex;
+            //int column = dataGridView.CurrentCell.ColumnIndex;
+            //Row_N = dataGridView.CurrentCell.RowIndex;
         }
 
         private void toolStripCompleteJOB_Click(object sender, EventArgs e)
-        {
-            // we are checking checked items to complete.
-            // Row_N is from selected item
-            int countColumn = dataGridView.ColumnCount;
-            int countROW = dataGridView.RowCount;
-            int price;
-            string data;
-            List<string> CompletedDevices = new List<string>(); // we will save to another database
-            for (int i = 0; i < countColumn; i++)
-            {
-                data = (string)dataGridView[i, Row_N].Value;
-                CompletedDevices.Add(data);
-            }
-
-            // Check the price cell if its stable .
-            try
-            {
-                price = int.Parse(CompletedDevices[9]);
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Enter Price in numbers !");
-                return;
-            }
-            catch (ArgumentNullException)
-            {
-                MessageBox.Show("Enter Price information !");
-                return;
-            }
-            complete_selected(CompletedDevices[9]);
+        {           
+            complete_selected();
             MainSetup();
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            // Home.
-            loadContacts("devices.dat");
+            // Home.           
             this.Text = "Onions Service Database - Home";
             MainSetup();
         }
 
         private void dataGridView_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-            resetRow = true;
-            currentRow = e.RowIndex;
+            //resetRow = true;
+            //currentRow = e.RowIndex;
         }
 
         private void dataGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
-            dataGridView.SelectionChanged += new EventHandler(dataGridView_SelectionChanged);
+            //dataGridView.SelectionChanged += new EventHandler(dataGridView_SelectionChanged);
         }
 
-        private void dataGridView_SelectionChanged(object sender, EventArgs e)
+        void fnconfigDGV()
         {
-            if (resetRow)
-            {
-                resetRow = false;
-                dataGridView.CurrentCell = dataGridView.Rows[currentRow].Cells[0];
-            }
+            dataGridView.Columns["Date in Service"].Width = 110;
+            dataGridView.Columns["IdCustomer"].Visible = false;
         }
     }
 }

@@ -30,7 +30,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripHome = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
@@ -45,16 +44,6 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.Done = new System.Windows.Forms.ToolStripMenuItem();
-            this.ColumnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnFirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnLastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnPhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnBrand = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnModel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnIMEI = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnProblem = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
@@ -173,17 +162,6 @@
             this.dataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnDate,
-            this.ColumnFirstName,
-            this.ColumnLastName,
-            this.ColumnPhoneNumber,
-            this.ColumnEmail,
-            this.ColumnBrand,
-            this.ColumnModel,
-            this.ColumnIMEI,
-            this.ColumnProblem,
-            this.ColumnPrice});
             this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView.Location = new System.Drawing.Point(0, 25);
             this.dataGridView.MultiSelect = false;
@@ -193,105 +171,13 @@
             this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView.Size = new System.Drawing.Size(972, 460);
             this.dataGridView.TabIndex = 1;
-            this.dataGridView.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellEndEdit);
             this.dataGridView.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView_CellMouseUp);
             this.dataGridView.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dataGridView_DataBindingComplete);
-            this.dataGridView.SelectionChanged += new System.EventHandler(this.dataGridView_SelectionChanged);
             // 
             // Done
             // 
             this.Done.Name = "Done";
             this.Done.Size = new System.Drawing.Size(32, 19);
-            // 
-            // ColumnDate
-            // 
-            this.ColumnDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.ColumnDate.FillWeight = 150F;
-            this.ColumnDate.HeaderText = "Date in Service";
-            this.ColumnDate.Name = "ColumnDate";
-            this.ColumnDate.ReadOnly = true;
-            this.ColumnDate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ColumnDate.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.ColumnDate.Width = 115;
-            // 
-            // ColumnFirstName
-            // 
-            this.ColumnFirstName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.ColumnFirstName.FillWeight = 110F;
-            this.ColumnFirstName.HeaderText = "FirstName";
-            this.ColumnFirstName.Name = "ColumnFirstName";
-            this.ColumnFirstName.ReadOnly = true;
-            this.ColumnFirstName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.ColumnFirstName.Width = 85;
-            // 
-            // ColumnLastName
-            // 
-            this.ColumnLastName.FillWeight = 110F;
-            this.ColumnLastName.HeaderText = "LastName";
-            this.ColumnLastName.Name = "ColumnLastName";
-            this.ColumnLastName.ReadOnly = true;
-            this.ColumnLastName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.ColumnLastName.Width = 85;
-            // 
-            // ColumnPhoneNumber
-            // 
-            this.ColumnPhoneNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ColumnPhoneNumber.FillWeight = 330F;
-            this.ColumnPhoneNumber.HeaderText = "PhoneNumber";
-            this.ColumnPhoneNumber.Name = "ColumnPhoneNumber";
-            this.ColumnPhoneNumber.ReadOnly = true;
-            this.ColumnPhoneNumber.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.ColumnPhoneNumber.Width = 81;
-            // 
-            // ColumnEmail
-            // 
-            this.ColumnEmail.HeaderText = "e-Mail";
-            this.ColumnEmail.Name = "ColumnEmail";
-            this.ColumnEmail.ReadOnly = true;
-            this.ColumnEmail.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.ColumnEmail.Width = 110;
-            // 
-            // ColumnBrand
-            // 
-            this.ColumnBrand.HeaderText = "Brand";
-            this.ColumnBrand.Name = "ColumnBrand";
-            this.ColumnBrand.ReadOnly = true;
-            this.ColumnBrand.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.ColumnBrand.Width = 85;
-            // 
-            // ColumnModel
-            // 
-            this.ColumnModel.HeaderText = "Model";
-            this.ColumnModel.Name = "ColumnModel";
-            this.ColumnModel.ReadOnly = true;
-            this.ColumnModel.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.ColumnModel.Width = 80;
-            // 
-            // ColumnIMEI
-            // 
-            this.ColumnIMEI.HeaderText = "IMEI";
-            this.ColumnIMEI.Name = "ColumnIMEI";
-            this.ColumnIMEI.ReadOnly = true;
-            this.ColumnIMEI.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.ColumnIMEI.Width = 110;
-            // 
-            // ColumnProblem
-            // 
-            this.ColumnProblem.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColumnProblem.HeaderText = "Problem";
-            this.ColumnProblem.Name = "ColumnProblem";
-            this.ColumnProblem.ReadOnly = true;
-            this.ColumnProblem.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // ColumnPrice
-            // 
-            dataGridViewCellStyle1.Format = "C0";
-            dataGridViewCellStyle1.NullValue = null;
-            this.ColumnPrice.DefaultCellStyle = dataGridViewCellStyle1;
-            this.ColumnPrice.HeaderText = "Price";
-            this.ColumnPrice.Name = "ColumnPrice";
-            this.ColumnPrice.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.ColumnPrice.Width = 65;
             // 
             // MainForm
             // 
@@ -329,16 +215,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripButton toolStripHome;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnFirstName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnLastName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPhoneNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnEmail;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnBrand;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnModel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnIMEI;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnProblem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPrice;
     }
 }
 
