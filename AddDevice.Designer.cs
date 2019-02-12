@@ -32,7 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -47,18 +46,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.Add = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
+            this.picDeviceModel = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picDeviceModel)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 269F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 265F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.label6, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 7);
             this.tableLayoutPanel1.Controls.Add(this.label8, 0, 8);
@@ -73,8 +74,9 @@
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.Add, 1, 9);
             this.tableLayoutPanel1.Controls.Add(this.label9, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 5);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(221, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 10;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
@@ -87,7 +89,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(354, 283);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(354, 294);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -122,17 +124,6 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "E-Mail:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(49, 146);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 13);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Brand:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label6
             // 
@@ -172,7 +163,7 @@
             this.textBoxFirstName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxFirstName.Location = new System.Drawing.Point(93, 43);
             this.textBoxFirstName.Name = "textBoxFirstName";
-            this.textBoxFirstName.Size = new System.Drawing.Size(263, 20);
+            this.textBoxFirstName.Size = new System.Drawing.Size(259, 20);
             this.textBoxFirstName.TabIndex = 3;
             // 
             // textBoxLastName
@@ -180,7 +171,7 @@
             this.textBoxLastName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxLastName.Location = new System.Drawing.Point(93, 68);
             this.textBoxLastName.Name = "textBoxLastName";
-            this.textBoxLastName.Size = new System.Drawing.Size(263, 20);
+            this.textBoxLastName.Size = new System.Drawing.Size(259, 20);
             this.textBoxLastName.TabIndex = 4;
             // 
             // textBoxeMail
@@ -188,7 +179,7 @@
             this.textBoxeMail.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxeMail.Location = new System.Drawing.Point(93, 118);
             this.textBoxeMail.Name = "textBoxeMail";
-            this.textBoxeMail.Size = new System.Drawing.Size(263, 20);
+            this.textBoxeMail.Size = new System.Drawing.Size(259, 20);
             this.textBoxeMail.TabIndex = 6;
             // 
             // textBoxPhoneNumber
@@ -196,135 +187,19 @@
             this.textBoxPhoneNumber.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxPhoneNumber.Location = new System.Drawing.Point(93, 93);
             this.textBoxPhoneNumber.Name = "textBoxPhoneNumber";
-            this.textBoxPhoneNumber.Size = new System.Drawing.Size(263, 20);
+            this.textBoxPhoneNumber.Size = new System.Drawing.Size(259, 20);
             this.textBoxPhoneNumber.TabIndex = 5;
             // 
             // textBoxDeviceBrand
             // 
-            this.textBoxDeviceBrand.AutoCompleteCustomSource.AddRange(new string[] {
-            "ACER",
-            "ALCATEL",
-            "ALLVIEW",
-            "AMAZON",
-            "AMOI",
-            "APPLE",
-            "ARCHOS",
-            "ASUS",
-            "AT&T",
-            "BENEFON",
-            "BENQ",
-            "BENQ-SIEMENS",
-            "BIRD",
-            "BLACKBERRY",
-            "BLACKVIEW",
-            "BLU",
-            "BOSCH",
-            "BQ",
-            "CASPER",
-            "CASIO",
-            "CAT",
-            "CELKON",
-            "CHEA",
-            "COOLPAD",
-            "DELL",
-            "EMPORIA",
-            "ENERGIZER",
-            "ERICSSON",
-            "ETEN",
-            "FUJITSU SIEMENS",
-            "GARMIN-ASUS",
-            "GIGABYTE",
-            "GIONEE",
-            "GOOGLE",
-            "HAIER",
-            "HONOR",
-            "HP",
-            "HTC",
-            "HUAWEI",
-            "I-MATE",
-            "I-MOBILE",
-            "ICEMOBILE",
-            "INFINIX",
-            "INNOSTREAM",
-            "INQ",
-            "INTEX",
-            "JOLLA",
-            "KARBONN",
-            "KYOCERA",
-            "LAVA",
-            "LEECO",
-            "LENOVO",
-            "LG",
-            "MAXON",
-            "MAXWEST",
-            "MEIZU",
-            "MICROMAX",
-            "MICROSOFT",
-            "MITAC",
-            "MITSUBISHI",
-            "MODU",
-            "MOTOROLA",
-            "MWG",
-            "NEC",
-            "NEONODE",
-            "NIU",
-            "NOKIA",
-            "NVIDIA",
-            "O2",
-            "ONEPLUS",
-            "OPPO",
-            "ORANGE",
-            "PALM",
-            "PANASONIC",
-            "PANTECH",
-            "PARLA",
-            "PHILIPS",
-            "PLUM",
-            "POSH",
-            "PRESTIGIO",
-            "QMOBILE",
-            "QTEK",
-            "RAZER",
-            "REALME",
-            "SAGEM",
-            "SAMSUNG",
-            "SENDO",
-            "SEWON",
-            "SHARP",
-            "SIEMENS",
-            "SONIM",
-            "SONY",
-            "SONY ERICSSON",
-            "SPICE",
-            "T-MOBILE",
-            "TECNO",
-            "TEL.ME.",
-            "TELIT",
-            "THURAYA",
-            "TOSHIBA",
-            "TURKCELL",
-            "UNNECTO",
-            "VERTU",
-            "VERYKOOL",
-            "VIVO",
-            "VK MOBILE",
-            "VODAFONE",
-            "WIKO",
-            "WND",
-            "XCUTE",
-            "XIAOMI",
-            "XOLO",
-            "YEZZ",
-            "YOTA",
-            "YU",
-            "ZTE"});
             this.textBoxDeviceBrand.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBoxDeviceBrand.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.textBoxDeviceBrand.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxDeviceBrand.Location = new System.Drawing.Point(93, 143);
             this.textBoxDeviceBrand.Name = "textBoxDeviceBrand";
-            this.textBoxDeviceBrand.Size = new System.Drawing.Size(263, 20);
+            this.textBoxDeviceBrand.Size = new System.Drawing.Size(259, 20);
             this.textBoxDeviceBrand.TabIndex = 7;
+            this.textBoxDeviceBrand.TextChanged += new System.EventHandler(this.textBoxDeviceBrand_TextChanged);
             // 
             // textBoxDeviceModel
             // 
@@ -333,16 +208,17 @@
             this.textBoxDeviceModel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxDeviceModel.Location = new System.Drawing.Point(93, 168);
             this.textBoxDeviceModel.Name = "textBoxDeviceModel";
-            this.textBoxDeviceModel.Size = new System.Drawing.Size(263, 20);
+            this.textBoxDeviceModel.Size = new System.Drawing.Size(259, 20);
             this.textBoxDeviceModel.TabIndex = 8;
             this.textBoxDeviceModel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxDeviceModel_MouseClick);
+            this.textBoxDeviceModel.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxDeviceModel_KeyDown);
             // 
             // textBoxDeviceIMEI
             // 
             this.textBoxDeviceIMEI.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxDeviceIMEI.Location = new System.Drawing.Point(93, 193);
             this.textBoxDeviceIMEI.Name = "textBoxDeviceIMEI";
-            this.textBoxDeviceIMEI.Size = new System.Drawing.Size(263, 20);
+            this.textBoxDeviceIMEI.Size = new System.Drawing.Size(259, 20);
             this.textBoxDeviceIMEI.TabIndex = 9;
             // 
             // textBoxDeviceProblem
@@ -350,7 +226,7 @@
             this.textBoxDeviceProblem.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxDeviceProblem.Location = new System.Drawing.Point(93, 218);
             this.textBoxDeviceProblem.Name = "textBoxDeviceProblem";
-            this.textBoxDeviceProblem.Size = new System.Drawing.Size(263, 20);
+            this.textBoxDeviceProblem.Size = new System.Drawing.Size(259, 20);
             this.textBoxDeviceProblem.TabIndex = 10;
             // 
             // label3
@@ -366,12 +242,14 @@
             // 
             // Add
             // 
+            this.Add.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Add.Location = new System.Drawing.Point(93, 243);
             this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(257, 37);
+            this.Add.Size = new System.Drawing.Size(257, 48);
             this.Add.TabIndex = 11;
             this.Add.Text = "ADD";
-            this.Add.UseVisualStyleBackColor = true;
+            this.Add.UseVisualStyleBackColor = false;
             this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
             // label9
@@ -383,18 +261,40 @@
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(93, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(263, 40);
+            this.label9.Size = new System.Drawing.Size(259, 40);
             this.label9.TabIndex = 5;
             this.label9.Text = "Customer";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // picDeviceModel
+            // 
+            this.picDeviceModel.Location = new System.Drawing.Point(5, 3);
+            this.picDeviceModel.Name = "picDeviceModel";
+            this.picDeviceModel.Size = new System.Drawing.Size(212, 289);
+            this.picDeviceModel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDeviceModel.TabIndex = 1;
+            this.picDeviceModel.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Location = new System.Drawing.Point(3, 143);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(84, 19);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Brand:";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // AddDeviceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(357, 283);
+            this.ClientSize = new System.Drawing.Size(575, 294);
+            this.Controls.Add(this.picDeviceModel);
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -409,6 +309,7 @@
             this.TopMost = true;
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picDeviceModel)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -419,7 +320,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
@@ -434,5 +334,7 @@
         private System.Windows.Forms.TextBox textBoxDeviceIMEI;
         private System.Windows.Forms.TextBox textBoxDeviceProblem;
         private System.Windows.Forms.Button Add;
+        private System.Windows.Forms.PictureBox picDeviceModel;
+        private System.Windows.Forms.Button button1;
     }
 }

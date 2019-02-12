@@ -10,8 +10,6 @@ namespace Device
     /// <summary>
     /// Execute Create, read, update and delete (CRUD) operations against the database.
     /// </summary>
-    /// Andres A
-
     internal class DatabaseAccess
     {
         //Database name.

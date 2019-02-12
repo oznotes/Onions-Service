@@ -226,6 +226,15 @@ namespace Device
             //dataGridView.SelectionChanged += new EventHandler(dataGridView_SelectionChanged);
         }
 
+        private void dataGridView_SelectionChanged(object sender, EventArgs e)
+        {
+            //if (resetRow)
+            //{
+            //    resetRow = false;
+            //    dataGridView.CurrentCell = dataGridView.Rows[currentRow].Cells[0];
+            //}
+        }
+
         void fnconfigDGV()
         {
             dataGridView.Columns["Date in Service"].Width = 110;

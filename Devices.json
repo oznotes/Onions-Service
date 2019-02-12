@@ -1,0 +1,2201 @@
+[
+    {
+      "BRAND": "ACER",
+      "MODELIST": [
+        {
+          "MODEL": "Chromebook Tab 10",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-chromebook-tab-10.jpg"
+        },
+        {
+          "MODEL": "Iconia Talk S",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-talk-s.jpg"
+        },
+        {
+          "MODEL": "Liquid Z6 Plus",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-z6-plus.jpg"
+        },
+        {
+          "MODEL": "Liquid Z6",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-z6.jpg"
+        },
+        {
+          "MODEL": "Iconia Tab 10 A3-A40",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-tab-10-a3-a40.jpg"
+        },
+        {
+          "MODEL": "Liquid X2",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-x2-1.jpg"
+        },
+        {
+          "MODEL": "Liquid Jade 2",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-jade-2.jpg"
+        },
+        {
+          "MODEL": "Liquid Zest Plus",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-zest-plus-z628.jpg"
+        },
+        {
+          "MODEL": "Liquid Zest",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-zest.jpg"
+        },
+        {
+          "MODEL": "Predator 8",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-predator-8.jpg"
+        },
+        {
+          "MODEL": "Liquid Jade Primo",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-jade-primo-.jpg"
+        },
+        {
+          "MODEL": "Liquid Z330",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-z320-z330.jpg"
+        },
+        {
+          "MODEL": "Liquid Z320",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-z320-z330.jpg"
+        },
+        {
+          "MODEL": "Liquid Z630S",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-z630.jpg"
+        },
+        {
+          "MODEL": "Liquid Z630",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-z630.jpg"
+        },
+        {
+          "MODEL": "Liquid Z530S",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-z530.jpg"
+        },
+        {
+          "MODEL": "Liquid Z530",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-z530.jpg"
+        },
+        {
+          "MODEL": "Liquid M330",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-m320-m330.jpg"
+        },
+        {
+          "MODEL": "Liquid M320",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-m320-m330.jpg"
+        },
+        {
+          "MODEL": "Iconia Tab 10 A3-A30",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-tab-10-a3-a30-new.png"
+        },
+        {
+          "MODEL": "Iconia One 8 B1-820",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-one-8-b1-820.jpg"
+        },
+        {
+          "MODEL": "Iconia Tab A3-A20",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-a3-20.jpg"
+        },
+        {
+          "MODEL": "Iconia Tab A3-A20FHD",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-a3-20.jpg"
+        },
+        {
+          "MODEL": "Liquid Jade Z",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-jade-z.jpg"
+        },
+        {
+          "MODEL": "Liquid Z520",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-z520.jpg"
+        },
+        {
+          "MODEL": "Liquid Z220",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-z220.jpg"
+        },
+        {
+          "MODEL": "Liquid M220",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-m220.jpg"
+        },
+        {
+          "MODEL": "Liquid Z410",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-z410.jpg"
+        },
+        {
+          "MODEL": "Liquid Jade S",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-jade-s-s56.jpg"
+        },
+        {
+          "MODEL": "Liquid Z500",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-z5.jpg"
+        },
+        {
+          "MODEL": "Liquid X1",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-x1.jpg"
+        },
+        {
+          "MODEL": "Liquid Jade",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-jade.jpg"
+        },
+        {
+          "MODEL": "Liquid E700",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-e700.jpg"
+        },
+        {
+          "MODEL": "Liquid E600",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-e600-1.jpg"
+        },
+        {
+          "MODEL": "Liquid Z200",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-z200.jpg"
+        },
+        {
+          "MODEL": "Iconia Tab 8 A1-840FHD",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-tab-8-2014-1.jpg"
+        },
+        {
+          "MODEL": "Iconia Tab 7 A1-713",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-tab-7.jpg"
+        },
+        {
+          "MODEL": "Iconia Tab 7 A1-713HD",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-tab-7.jpg"
+        },
+        {
+          "MODEL": "Iconia One 7 B1-730",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-one-7.jpg"
+        },
+        {
+          "MODEL": "Liquid E3 Duo Plus",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-e3-plus.jpg"
+        },
+        {
+          "MODEL": "Liquid E3",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-e3-new.jpg"
+        },
+        {
+          "MODEL": "Liquid Z4",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-z4.jpg"
+        },
+        {
+          "MODEL": "Iconia B1-721",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-b1-721.jpg"
+        },
+        {
+          "MODEL": "Iconia B1-720",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-tab-b1-720.jpg"
+        },
+        {
+          "MODEL": "Iconia A1-830",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/Acer-Iconia-A1-830.jpg"
+        },
+        {
+          "MODEL": "Liquid Z5",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-z5.jpg"
+        },
+        {
+          "MODEL": "Liquid S2",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-s2.jpg"
+        },
+        {
+          "MODEL": "Liquid Z3",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-z3.jpg"
+        },
+        {
+          "MODEL": "Liquid S1",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-s1.jpg"
+        },
+        {
+          "MODEL": "Iconia Tab A3",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-a3-a10.jpg"
+        },
+        {
+          "MODEL": "Iconia Tab A1-811",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-b1-810.jpg"
+        },
+        {
+          "MODEL": "Iconia Tab A1-810",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-b1-810.jpg"
+        },
+        {
+          "MODEL": "Liquid E2",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/Acer-Liquid-E2.jpg"
+        },
+        {
+          "MODEL": "Liquid Z2",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-z2.jpg"
+        },
+        {
+          "MODEL": "Liquid C1",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-c1.jpg"
+        },
+        {
+          "MODEL": "Liquid E1",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-e1.jpg"
+        },
+        {
+          "MODEL": "Iconia Tab B1-710",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-b1-710.jpg"
+        },
+        {
+          "MODEL": "Iconia Tab B1-A71",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-b1-a71-new.jpg"
+        },
+        {
+          "MODEL": "Iconia Tab A110",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-tab-a210.jpg"
+        },
+        {
+          "MODEL": "Liquid Z110",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-z.jpg"
+        },
+        {
+          "MODEL": "Liquid Gallant E350",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-gallant-e350.jpg"
+        },
+        {
+          "MODEL": "Liquid Gallant Duo",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-gallant-duo-new.jpg"
+        },
+        {
+          "MODEL": "Liquid Glow E330",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-glow.jpg"
+        },
+        {
+          "MODEL": "CloudMobile S500",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/Acer-CloudMobile.jpg"
+        },
+        {
+          "MODEL": "Iconia Tab A210",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-tab-a200.jpg"
+        },
+        {
+          "MODEL": "Iconia Tab A200",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-tab-a200.jpg"
+        },
+        {
+          "MODEL": "Iconia Tab A701",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-tab-a700.jpg"
+        },
+        {
+          "MODEL": "Iconia Tab A700",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-tab-a700.jpg"
+        },
+        {
+          "MODEL": "Iconia Tab A511",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-tab-a510.jpg"
+        },
+        {
+          "MODEL": "Iconia Tab A510",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-tab-a510-new.jpg"
+        },
+        {
+          "MODEL": "Allegro",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-allego.jpg"
+        },
+        {
+          "MODEL": "Liquid Express E320",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-c6-liquid-express.jpg"
+        },
+        {
+          "MODEL": "Iconia Tab A501",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/Acer-IconiaTab-A500-Tablet-new.jpg"
+        },
+        {
+          "MODEL": "Iconia Smart",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-smart-new.jpg"
+        },
+        {
+          "MODEL": "Iconia Tab A500",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/Acer-IconiaTab-A500-Tablet-new.jpg"
+        },
+        {
+          "MODEL": "Iconia Tab A101",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-tab-a100.jpg"
+        },
+        {
+          "MODEL": "Iconia Tab A100",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-iconia-tab-a100.jpg"
+        },
+        {
+          "MODEL": "Liquid mini E310",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquidmini.jpg"
+        },
+        {
+          "MODEL": "beTouch E210",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-betouch-e210.jpg"
+        },
+        {
+          "MODEL": "beTouch E140",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/Acer-beTouch-E140-ofic.jpg"
+        },
+        {
+          "MODEL": "beTouch T500",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-betouch-t500.jpg"
+        },
+        {
+          "MODEL": "Liquid mt",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-metal-ofic.jpg"
+        },
+        {
+          "MODEL": "beTouch E130",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-130-ofic.jpg"
+        },
+        {
+          "MODEL": "beTouch E120",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-e120.jpg"
+        },
+        {
+          "MODEL": "Stream",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-stream-ofic.jpg"
+        },
+        {
+          "MODEL": "Liquid E",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-e-new.jpg"
+        },
+        {
+          "MODEL": "neoTouch P400",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-neotouch-p400.jpg"
+        },
+        {
+          "MODEL": "beTouch E400",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-betouch-e400.jpg"
+        },
+        {
+          "MODEL": "neoTouch P300",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-p300.jpg"
+        },
+        {
+          "MODEL": "beTouch E110",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-e110.jpg"
+        },
+        {
+          "MODEL": "Liquid",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-liquid-new.jpg"
+        },
+        {
+          "MODEL": "neoTouch",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-neo-touch-new.jpg"
+        },
+        {
+          "MODEL": "beTouch E200",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-be-touch-e200.jpg"
+        },
+        {
+          "MODEL": "beTouch E100",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-be-touch-e100.jpg"
+        },
+        {
+          "MODEL": "beTouch E101",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-be-touch-e101.jpg"
+        },
+        {
+          "MODEL": "DX650",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-dx650.jpg"
+        },
+        {
+          "MODEL": "M900",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-m900.jpg"
+        },
+        {
+          "MODEL": "F900",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-f900.jpg"
+        },
+        {
+          "MODEL": "X960",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-x960.jpg"
+        },
+        {
+          "MODEL": "DX900",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acer-dx900.jpg"
+        }
+      ]
+    },
+    {
+      "BRAND": "ALCATEL",
+      "MODELIST": [
+        {
+          "MODEL": "1x (2019)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-1x-2019.jpg"
+        },
+        {
+          "MODEL": "1c (2019)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-1c-2019.jpg"
+        },
+        {
+          "MODEL": "Tetra",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-tetra.jpg"
+        },
+        {
+          "MODEL": "7",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-7-.jpg"
+        },
+        {
+          "MODEL": "5v",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-5v.jpg"
+        },
+        {
+          "MODEL": "5",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-5-.jpg"
+        },
+        {
+          "MODEL": "3v",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-3v.jpg"
+        },
+        {
+          "MODEL": "3x",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-3x-.jpg"
+        },
+        {
+          "MODEL": "3",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-3-.jpg"
+        },
+        {
+          "MODEL": "1x",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-1x-.jpg"
+        },
+        {
+          "MODEL": "3c",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-3c-.jpg"
+        },
+        {
+          "MODEL": "1T 10",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-1t-10.jpg"
+        },
+        {
+          "MODEL": "1T 7",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-1t-7.jpg"
+        },
+        {
+          "MODEL": "Idol 5s",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-idol-5s.jpg"
+        },
+        {
+          "MODEL": "Idol 5",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-idol-5.jpg"
+        },
+        {
+          "MODEL": "A7 XL",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-a7-xl.jpg"
+        },
+        {
+          "MODEL": "A7",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-a7.jpg"
+        },
+        {
+          "MODEL": "U5 HD",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-u5-hd.jpg"
+        },
+        {
+          "MODEL": "Pulsemix",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pulsemix.jpg"
+        },
+        {
+          "MODEL": "Idol 5s (USA)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-idol-5s-.jpg"
+        },
+        {
+          "MODEL": "Flash (2017)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-flash-1.jpg"
+        },
+        {
+          "MODEL": "U5",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-u5.jpg"
+        },
+        {
+          "MODEL": "A5 LED",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-a5-led.jpg"
+        },
+        {
+          "MODEL": "A3",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-a3.jpg"
+        },
+        {
+          "MODEL": "A3 XL",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-a3-xl-new.jpg"
+        },
+        {
+          "MODEL": "Shine Lite",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-shine-lite.jpg"
+        },
+        {
+          "MODEL": "Pixi 4 Plus Power",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pixi-4-plus-power.jpg"
+        },
+        {
+          "MODEL": "Fierce 4",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-fierce-4.jpg"
+        },
+        {
+          "MODEL": "X1",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-x1.jpg"
+        },
+        {
+          "MODEL": "Pixi 4 (5)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pixi-4-5.jpg"
+        },
+        {
+          "MODEL": "Flash Plus 2",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-flash-plus-2-.jpg"
+        },
+        {
+          "MODEL": "Pop 7 LTE",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch-pop-7-lte.jpg"
+        },
+        {
+          "MODEL": "Pop 4S",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-4s.jpg"
+        },
+        {
+          "MODEL": "Pop 4+",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-4-plus.jpg"
+        },
+        {
+          "MODEL": "Pop 4",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-4-2016.jpg"
+        },
+        {
+          "MODEL": "Idol 4s Windows",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-idol-4s-windows.jpg"
+        },
+        {
+          "MODEL": "Idol 4s",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-idol-4s-.jpg"
+        },
+        {
+          "MODEL": "Idol 4",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-idol-4--.jpg"
+        },
+        {
+          "MODEL": "Fierce XL (Windows)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-fierce-xl-w.jpg"
+        },
+        {
+          "MODEL": "CareTime",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-caretime.jpg"
+        },
+        {
+          "MODEL": "Pixi 4 (7)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pixi4-70.jpg"
+        },
+        {
+          "MODEL": "Pixi 4 (6) 3G",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pixi-4-6-8050e.jpg"
+        },
+        {
+          "MODEL": "Pixi 4 (6)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pixi4-60.jpg"
+        },
+        {
+          "MODEL": "Pixi 4 (4)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pixi4-40.jpg"
+        },
+        {
+          "MODEL": "Pixi 4 (3.5)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pixi4-35.jpg"
+        },
+        {
+          "MODEL": "Pixi 3 (8) LTE",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pixi3-8-lte.jpg"
+        },
+        {
+          "MODEL": "Pop 3 (5.5)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop3-55.jpg"
+        },
+        {
+          "MODEL": "Pop 3 (5)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-3-5.jpg"
+        },
+        {
+          "MODEL": "Fierce XL",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-fierce-xl.jpg"
+        },
+        {
+          "MODEL": "Watch",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-watch.jpg"
+        },
+        {
+          "MODEL": "GO Watch",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-go-watch.jpg"
+        },
+        {
+          "MODEL": "Flash 2",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-flash2.jpg"
+        },
+        {
+          "MODEL": "10.16G",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-10-16g.jpg"
+        },
+        {
+          "MODEL": "2007",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-2007.jpg"
+        },
+        {
+          "MODEL": "Idol 3C",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-idol-3c-.jpg"
+        },
+        {
+          "MODEL": "Pixi 3 (10)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pixi-3-10.jpg"
+        },
+        {
+          "MODEL": "Pixi First",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pixi-first.jpg"
+        },
+        {
+          "MODEL": "Pop Up",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-up.jpg"
+        },
+        {
+          "MODEL": "Pop Star LTE",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-star.jpg"
+        },
+        {
+          "MODEL": "Pop Star",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-star.jpg"
+        },
+        {
+          "MODEL": "Go Play",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-go-play.jpg"
+        },
+        {
+          "MODEL": "Flash Plus",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-flash-plus1.jpg"
+        },
+        {
+          "MODEL": "Pop Astro",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch-pop-astro1.jpg"
+        },
+        {
+          "MODEL": "Flash",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-flash-2014.jpg"
+        },
+        {
+          "MODEL": "Idol 3 (5.5)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-idol-3-55-new.jpg"
+        },
+        {
+          "MODEL": "Idol 3 (4.7)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-idol-3-47-new.jpg"
+        },
+        {
+          "MODEL": "Orange Klif",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-klif.jpg"
+        },
+        {
+          "MODEL": "Pixi 3 (5.5) LTE",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pixi3-55.jpg"
+        },
+        {
+          "MODEL": "Pixi 3 (5.5)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pixi3-55.jpg"
+        },
+        {
+          "MODEL": "Pixi 3 (8) 3G",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pixi-3-8-3g.jpg"
+        },
+        {
+          "MODEL": "Pixi 3 (7) LTE",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pixi3-70.jpg"
+        },
+        {
+          "MODEL": "Pixi 3 (7) 3G",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pixi3-70.jpg"
+        },
+        {
+          "MODEL": "Pixi 3 (7)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pixi3-70.jpg"
+        },
+        {
+          "MODEL": "Pop 10",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-10.jpg"
+        },
+        {
+          "MODEL": "Pixi 3 (5)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pixi-3-5.jpg"
+        },
+        {
+          "MODEL": "Pixi 3 (4.5)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pixi-3-4.jpg"
+        },
+        {
+          "MODEL": "Pixi 3 (4)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pixi-3-4.jpg"
+        },
+        {
+          "MODEL": "Pixi 3 (3.5) Firefox",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-p335-ff.jpg"
+        },
+        {
+          "MODEL": "Pixi 3 (3.5)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pixi-3-3.jpg"
+        },
+        {
+          "MODEL": "Pop D3",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-d3.jpg"
+        },
+        {
+          "MODEL": "Pop D1",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-d1.jpg"
+        },
+        {
+          "MODEL": "Pop Icon",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-icon.jpg"
+        },
+        {
+          "MODEL": "Fire C 2G",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-fire-c-4020d.jpg"
+        },
+        {
+          "MODEL": "Pop 2 (5) Premium",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-2-5-prem.jpg"
+        },
+        {
+          "MODEL": "Pop 2 (5)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-2-5.jpg"
+        },
+        {
+          "MODEL": "Pop 2 (4)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-2-4.jpg"
+        },
+        {
+          "MODEL": "Pop 2 (4.5) Dual SIM",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-2-45.jpg"
+        },
+        {
+          "MODEL": "Pop 2 (4.5)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-2-45.jpg"
+        },
+        {
+          "MODEL": "Fierce 2",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-fierce2.jpg"
+        },
+        {
+          "MODEL": "Evolve 2",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-evolve2.jpg"
+        },
+        {
+          "MODEL": "Pop 8S",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-8s-1.jpg"
+        },
+        {
+          "MODEL": "Hero 8",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-hero-8.jpg"
+        },
+        {
+          "MODEL": "Hero 2",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-hero-2.jpg"
+        },
+        {
+          "MODEL": "Pixi 2",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/Alcatel-One-Touch-Pixi-2-1.jpg"
+        },
+        {
+          "MODEL": "Pop D5",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-d5.jpg"
+        },
+        {
+          "MODEL": "Pop C2",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-c2.jpg"
+        },
+        {
+          "MODEL": "Pixi 8",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pixi-8.jpg"
+        },
+        {
+          "MODEL": "2012",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-2012.jpg"
+        },
+        {
+          "MODEL": "2010",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-2010.jpg"
+        },
+        {
+          "MODEL": "2052",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-2052.jpg"
+        },
+        {
+          "MODEL": "2040",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-2040.jpg"
+        },
+        {
+          "MODEL": "2005",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-2005.jpg"
+        },
+        {
+          "MODEL": "Pop 7S",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-7s.jpg"
+        },
+        {
+          "MODEL": "Pixi 7",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pixi-7.jpg"
+        },
+        {
+          "MODEL": "Pop S9",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-s9-new.jpg"
+        },
+        {
+          "MODEL": "Pop S7",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-s7-new.jpg"
+        },
+        {
+          "MODEL": "Pop S3",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-s3-new.jpg"
+        },
+        {
+          "MODEL": "Fire 7",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-fire-7-new.jpg"
+        },
+        {
+          "MODEL": "Fire S",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-fire-s.jpg"
+        },
+        {
+          "MODEL": "Fire E",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-fire-e.jpg"
+        },
+        {
+          "MODEL": "Fire C",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-fire-c.jpg"
+        },
+        {
+          "MODEL": "Idol 2 S",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-2s-new.jpg"
+        },
+        {
+          "MODEL": "Idol 2",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-idol2-new.jpg"
+        },
+        {
+          "MODEL": "Idol 2 Mini S",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-idol2-mini-s-new.jpg"
+        },
+        {
+          "MODEL": "Idol 2 Mini",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-idol2-mini-new.jpg"
+        },
+        {
+          "MODEL": "Pop Fit",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-fit-new.jpg"
+        },
+        {
+          "MODEL": "2001",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-2001-new.jpg"
+        },
+        {
+          "MODEL": "2000",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-2000.jpg"
+        },
+        {
+          "MODEL": "Idol X+",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-idol-x-plus-new.jpg"
+        },
+        {
+          "MODEL": "Pop C9",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-c9-new.jpg"
+        },
+        {
+          "MODEL": "Pop 8",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop8.jpg"
+        },
+        {
+          "MODEL": "Pop 7",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop7.jpg"
+        },
+        {
+          "MODEL": "Fierce",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-one-touch-fierce.jpg"
+        },
+        {
+          "MODEL": "Evolve",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-one-touch-evolve.jpg"
+        },
+        {
+          "MODEL": "Pop C7",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-c7.jpg"
+        },
+        {
+          "MODEL": "Pop C5",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-c5.jpg"
+        },
+        {
+          "MODEL": "Pop C3",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-c3-new.jpg"
+        },
+        {
+          "MODEL": "Pop C1",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pop-c1-new.jpg"
+        },
+        {
+          "MODEL": "Idol Alpha",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-alpha-new.jpg"
+        },
+        {
+          "MODEL": "One Touch Evo 8HD",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-evo-8hd.jpg"
+        },
+        {
+          "MODEL": "Hero",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-hero-new.jpg"
+        },
+        {
+          "MODEL": "Idol S",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-idol-s-new.jpg"
+        },
+        {
+          "MODEL": "Idol Mini",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-mini-new.jpg"
+        },
+        {
+          "MODEL": "One Touch T10",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-t10.jpg"
+        },
+        {
+          "MODEL": "One Touch Snap LTE",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-snap-lte.jpg"
+        },
+        {
+          "MODEL": "One Touch Pixi",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pixi-new.jpg"
+        },
+        {
+          "MODEL": "One Touch Snap",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-snap.jpg"
+        },
+        {
+          "MODEL": "Idol X",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-idol-x-new.jpg"
+        },
+        {
+          "MODEL": "One Touch Fire",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-one-touch-fire1.jpg"
+        },
+        {
+          "MODEL": "One Touch Star",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-star-6010-silver.jpg"
+        },
+        {
+          "MODEL": "One Touch Scribe Easy",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-scribe-easy1.jpg"
+        },
+        {
+          "MODEL": "One Touch Evo 7",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-evo-7.jpg"
+        },
+        {
+          "MODEL": "One Touch Evo 7 HD",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-evo-7-hd-new.jpg"
+        },
+        {
+          "MODEL": "One Touch Tab 8 HD",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-tab-8-hd-new.jpg"
+        },
+        {
+          "MODEL": "One Touch Tab 7",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-tab-7.jpg"
+        },
+        {
+          "MODEL": "One Touch Tab 7 HD",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-tab-7-hd-new.jpg"
+        },
+        {
+          "MODEL": "One Touch Idol Ultra",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-idol-ultra.jpg"
+        },
+        {
+          "MODEL": "One Touch Idol",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-idol.jpg"
+        },
+        {
+          "MODEL": "One Touch T'Pop",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-tpop.jpg"
+        },
+        {
+          "MODEL": "One Touch S'Pop",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-spop.jpg"
+        },
+        {
+          "MODEL": "One Touch M'Pop",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-mpop.jpg"
+        },
+        {
+          "MODEL": "One Touch X'Pop",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-xpop.jpg"
+        },
+        {
+          "MODEL": "One Touch Scribe HD-LTE",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-scribe-lte.jpg"
+        },
+        {
+          "MODEL": "One Touch Scribe X",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-scribe-x.jpg"
+        },
+        {
+          "MODEL": "One Touch Scribe HD",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-scribe-hd.jpg"
+        },
+        {
+          "MODEL": "View",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-view.jpg"
+        },
+        {
+          "MODEL": "OT-983",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-983.jpg"
+        },
+        {
+          "MODEL": "OT-997D",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-997d.jpg"
+        },
+        {
+          "MODEL": "OT-997",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-997.jpg"
+        },
+        {
+          "MODEL": "OT-992D",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-992d.jpg"
+        },
+        {
+          "MODEL": "OT-978",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-one-touch-978.jpg"
+        },
+        {
+          "MODEL": "OT-988 Shockwave",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-one-touch-shockwave.jpg"
+        },
+        {
+          "MODEL": "OT-993",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot993.jpg"
+        },
+        {
+          "MODEL": "OT-903",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot903.jpg"
+        },
+        {
+          "MODEL": "OT-838",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot838.jpg"
+        },
+        {
+          "MODEL": "OT-668",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot668.jpg"
+        },
+        {
+          "MODEL": "OT-605",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot605.jpg"
+        },
+        {
+          "MODEL": "OT-986",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot986.jpg"
+        },
+        {
+          "MODEL": "OT-991",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot991.jpg"
+        },
+        {
+          "MODEL": "OT-916",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot916.jpg"
+        },
+        {
+          "MODEL": "OT-720",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot720.jpg"
+        },
+        {
+          "MODEL": "OT-902",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot902.jpg"
+        },
+        {
+          "MODEL": "OT-819 Soul",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-819-soul.jpg"
+        },
+        {
+          "MODEL": "OT-870",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot870.jpg"
+        },
+        {
+          "MODEL": "OT-595",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot595.jpg"
+        },
+        {
+          "MODEL": "OT-358",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot358.jpg"
+        },
+        {
+          "MODEL": "OT-310",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot310.jpg"
+        },
+        {
+          "MODEL": "OT-318D",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot318d.jpg"
+        },
+        {
+          "MODEL": "OT-317D",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot317d.jpg"
+        },
+        {
+          "MODEL": "OT-308",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot308.jpg"
+        },
+        {
+          "MODEL": "OT-282",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot282.jpg"
+        },
+        {
+          "MODEL": "OT-292",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot292.jpg"
+        },
+        {
+          "MODEL": "OT-228",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot228.jpg"
+        },
+        {
+          "MODEL": "OT-915",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-915.jpg"
+        },
+        {
+          "MODEL": "OT-985",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch985.jpg"
+        },
+        {
+          "MODEL": "OT-810D",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-810d.jpg"
+        },
+        {
+          "MODEL": "OT-810",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-810.jpg"
+        },
+        {
+          "MODEL": "OT-906",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-906.jpg"
+        },
+        {
+          "MODEL": "OT-995",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch995.jpg"
+        },
+        {
+          "MODEL": "OT-990",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch990.jpg"
+        },
+        {
+          "MODEL": "OT-910",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch910.jpg"
+        },
+        {
+          "MODEL": "OT-908F",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch908f.jpg"
+        },
+        {
+          "MODEL": "OT-908",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch908.jpg"
+        },
+        {
+          "MODEL": "OT-905",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch905.jpg"
+        },
+        {
+          "MODEL": "OT-900",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch900.jpg"
+        },
+        {
+          "MODEL": "OT-891 Soul",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch891.jpg"
+        },
+        {
+          "MODEL": "OT-918",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-one-touch-d918.jpg"
+        },
+        {
+          "MODEL": "OT-918D",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-one-touch-d918d.jpg"
+        },
+        {
+          "MODEL": "OT-890D",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch890.jpg"
+        },
+        {
+          "MODEL": "OT-890",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch890.jpg"
+        },
+        {
+          "MODEL": "OT-888",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch888.jpg"
+        },
+        {
+          "MODEL": "OT-818",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch818.jpg"
+        },
+        {
+          "MODEL": "OT-813F",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-813f.jpg"
+        },
+        {
+          "MODEL": "OT-807",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch807.jpg"
+        },
+        {
+          "MODEL": "OT-813D",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-813d.jpg"
+        },
+        {
+          "MODEL": "OT-803",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch803.jpg"
+        },
+        {
+          "MODEL": "OT-799 Play",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch799.jpg"
+        },
+        {
+          "MODEL": "OT-690",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch690.jpg"
+        },
+        {
+          "MODEL": "OT-665",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch665.jpg"
+        },
+        {
+          "MODEL": "OT-602",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch602.jpg"
+        },
+        {
+          "MODEL": "OT-585",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/acatel-onetouch585.jpg"
+        },
+        {
+          "MODEL": "OT-506",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch506.jpg"
+        },
+        {
+          "MODEL": "OT-385",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch385.jpg"
+        },
+        {
+          "MODEL": "OT-361",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch361.jpg"
+        },
+        {
+          "MODEL": "OT-355",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch355.jpg"
+        },
+        {
+          "MODEL": "OT-330",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch330.jpg"
+        },
+        {
+          "MODEL": "OT-306",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch306.jpg"
+        },
+        {
+          "MODEL": "OT-223",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch223.jpg"
+        },
+        {
+          "MODEL": "OT-217",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch217.jpg"
+        },
+        {
+          "MODEL": "OT-213",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch213-new.jpg"
+        },
+        {
+          "MODEL": "OT-209",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch209-new.jpg"
+        },
+        {
+          "MODEL": "OT-117",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch117.jpg"
+        },
+        {
+          "MODEL": "OT-113",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch113.jpg"
+        },
+        {
+          "MODEL": "OT-112",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch112.jpg"
+        },
+        {
+          "MODEL": "OT-109",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch109.jpg"
+        },
+        {
+          "MODEL": "OT-105",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch105-new.jpg"
+        },
+        {
+          "MODEL": "OT-706",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch706.jpg"
+        },
+        {
+          "MODEL": "Net",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/Alcatel-One-Touch-Net.jpg"
+        },
+        {
+          "MODEL": "OT-808",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-808.jpg"
+        },
+        {
+          "MODEL": "OT-606 One Touch CHAT",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-606.jpg"
+        },
+        {
+          "MODEL": "OT-255",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-255.jpg"
+        },
+        {
+          "MODEL": "OT-252",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-252.jpg"
+        },
+        {
+          "MODEL": "OT-710",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-710.jpg"
+        },
+        {
+          "MODEL": "OT-108",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-108.jpg"
+        },
+        {
+          "MODEL": "OT-216",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-216.jpg"
+        },
+        {
+          "MODEL": "OT-206",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-206.jpg"
+        },
+        {
+          "MODEL": "OT-909 One Touch MAX",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-909.jpg"
+        },
+        {
+          "MODEL": "Miss Sixty",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-miss-sixty2.jpg"
+        },
+        {
+          "MODEL": "OT-880 One Touch XTRA",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-880.jpg"
+        },
+        {
+          "MODEL": "OT-208",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-208.jpg"
+        },
+        {
+          "MODEL": "OT-301",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-300.jpg"
+        },
+        {
+          "MODEL": "OT-300",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-300.jpg"
+        },
+        {
+          "MODEL": "OT-980",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-980.jpg"
+        },
+        {
+          "MODEL": "OT-806",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-806.jpg"
+        },
+        {
+          "MODEL": "OT-802 Wave",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-one-touch-wave.jpg"
+        },
+        {
+          "MODEL": "OT-305",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-305.jpg"
+        },
+        {
+          "MODEL": "OT-380",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-380.jpg"
+        },
+        {
+          "MODEL": "OT-505",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-505.jpg"
+        },
+        {
+          "MODEL": "OT-508A",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-508a.jpg"
+        },
+        {
+          "MODEL": "OT-565",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-onetouch565.jpg"
+        },
+        {
+          "MODEL": "OT-106",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-106.jpg"
+        },
+        {
+          "MODEL": "OT-800 One Touch CHROME",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-one-touch-chrome.jpg"
+        },
+        {
+          "MODEL": "OT-800 One Touch Tribe",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-800.jpg"
+        },
+        {
+          "MODEL": "OT-708 One Touch MINI",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-708.jpg"
+        },
+        {
+          "MODEL": "OT-660",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-660.jpg"
+        },
+        {
+          "MODEL": "OT-383",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-383.jpg"
+        },
+        {
+          "MODEL": "OT-203",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-203.jpg"
+        },
+        {
+          "MODEL": "OT-103",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-103.jpg"
+        },
+        {
+          "MODEL": "OT-600",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-600.jpg"
+        },
+        {
+          "MODEL": "Crystal",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-crystal.jpg"
+        },
+        {
+          "MODEL": "Miss Sixty 2009",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-miss-sixty.jpg"
+        },
+        {
+          "MODEL": "ELLE GlamPhone",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-elle-glamphone.jpg"
+        },
+        {
+          "MODEL": "OT-363",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-363.jpg"
+        },
+        {
+          "MODEL": "Roadsign",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-rodesign.jpg"
+        },
+        {
+          "MODEL": "OT-303",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-303.jpg"
+        },
+        {
+          "MODEL": "OT-222",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-222.jpg"
+        },
+        {
+          "MODEL": "OT-280",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-280.jpg"
+        },
+        {
+          "MODEL": "OT-202",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-202.jpg"
+        },
+        {
+          "MODEL": "OT-S121",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-121.jpg"
+        },
+        {
+          "MODEL": "OT-111",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-111.jpg"
+        },
+        {
+          "MODEL": "OT-102",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-102.jpg"
+        },
+        {
+          "MODEL": "Mandarina Duck Moon",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-mandarina-duck-moon.jpg"
+        },
+        {
+          "MODEL": "Mandarina Duck",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-mandarina-duck.jpg"
+        },
+        {
+          "MODEL": "OT-I650 SPORT",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-sport.jpg"
+        },
+        {
+          "MODEL": "OT-I650 PRO",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-pro.jpg"
+        },
+        {
+          "MODEL": "OT-V770",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-v770.jpg"
+        },
+        {
+          "MODEL": "OT-V670",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-v670.jpg"
+        },
+        {
+          "MODEL": "OT-V607A",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-v607a.jpg"
+        },
+        {
+          "MODEL": "OT-V570",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-v570.jpg"
+        },
+        {
+          "MODEL": "OT-V270",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-v270.jpg"
+        },
+        {
+          "MODEL": "OT-V212",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-v212.jpg"
+        },
+        {
+          "MODEL": "OT-S626A",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-s626a.jpg"
+        },
+        {
+          "MODEL": "OT-S521A",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-s521a.jpg"
+        },
+        {
+          "MODEL": "OT-S520",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-s520.jpg"
+        },
+        {
+          "MODEL": "OT-S621",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-s621.jpg"
+        },
+        {
+          "MODEL": "OT-S920",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-s920.jpg"
+        },
+        {
+          "MODEL": "OT-S320",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-s320.jpg"
+        },
+        {
+          "MODEL": "OT-S319",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-s319.jpg"
+        },
+        {
+          "MODEL": "OT-S218",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-s218.jpg"
+        },
+        {
+          "MODEL": "OT-S215A",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-s215a.jpg"
+        },
+        {
+          "MODEL": "OT-S211",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-s211.jpg"
+        },
+        {
+          "MODEL": "OT-S210",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-s210.jpg"
+        },
+        {
+          "MODEL": "OT-S120",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-s120.jpg"
+        },
+        {
+          "MODEL": "OT-S107",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-s107.jpg"
+        },
+        {
+          "MODEL": "ELLE No 3",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-elle3.gif"
+        },
+        {
+          "MODEL": "OT-C825",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-c825.gif"
+        },
+        {
+          "MODEL": "OT-C717",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-c717.gif"
+        },
+        {
+          "MODEL": "OT-C707",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-c707.gif"
+        },
+        {
+          "MODEL": "OT-C701",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-c701.gif"
+        },
+        {
+          "MODEL": "OT-C700A",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-c700a.jpg"
+        },
+        {
+          "MODEL": "OT-C507",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-c507.gif"
+        },
+        {
+          "MODEL": "OT-E227",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-e-227.gif"
+        },
+        {
+          "MODEL": "OT-E225",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-e-225.gif"
+        },
+        {
+          "MODEL": "OT-E221",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-e-211.gif"
+        },
+        {
+          "MODEL": "OT-E207",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-e-207.gif"
+        },
+        {
+          "MODEL": "OT-E205",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-e205.gif"
+        },
+        {
+          "MODEL": "OT-E201",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-e-201.gif"
+        },
+        {
+          "MODEL": "OT-E101",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-e-101.gif"
+        },
+        {
+          "MODEL": "Lollipops",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-lollipops.gif"
+        },
+        {
+          "MODEL": "OT-E220",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-e220.gif"
+        },
+        {
+          "MODEL": "OT-E805",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-e805.gif"
+        },
+        {
+          "MODEL": "OT-E230",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-e230.gif"
+        },
+        {
+          "MODEL": "OT-C635",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-c635.gif"
+        },
+        {
+          "MODEL": "OT-C630",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-c630.gif"
+        },
+        {
+          "MODEL": "OT-E801",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-e801.gif"
+        },
+        {
+          "MODEL": "OT-E100",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-e100.gif"
+        },
+        {
+          "MODEL": "OT-C550",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-c550.gif"
+        },
+        {
+          "MODEL": "OT-E265",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-e265.gif"
+        },
+        {
+          "MODEL": "OT-E105",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-e105.gif"
+        },
+        {
+          "MODEL": "OT-E260",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-e260.gif"
+        },
+        {
+          "MODEL": "OT-C750",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-c750.gif"
+        },
+        {
+          "MODEL": "OT-S853",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-s853.gif"
+        },
+        {
+          "MODEL": "OT-S850",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-s850.gif"
+        },
+        {
+          "MODEL": "OT-C560",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-ot-c560.gif"
+        },
+        {
+          "MODEL": "OT-C555",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alotc555.gif"
+        },
+        {
+          "MODEL": "OT-C552",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-c552.gif"
+        },
+        {
+          "MODEL": "OT-C551",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alotc551.gif"
+        },
+        {
+          "MODEL": "OT-C656",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alotc656.gif"
+        },
+        {
+          "MODEL": "OT-C652",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alotc652.gif"
+        },
+        {
+          "MODEL": "OT-C651",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alotc651.gif"
+        },
+        {
+          "MODEL": "OT-E259",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-e259.gif"
+        },
+        {
+          "MODEL": "OT-E256",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alote256.gif"
+        },
+        {
+          "MODEL": "OT-E257",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-e257.gif"
+        },
+        {
+          "MODEL": "OT-E160",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-e160.gif"
+        },
+        {
+          "MODEL": "OT-E252",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcatel-e252.gif"
+        },
+        {
+          "MODEL": "OT-E159",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/ale159.gif"
+        },
+        {
+          "MODEL": "OT-E158",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/ale158.gif"
+        },
+        {
+          "MODEL": "OT-E157",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/ale157.gif"
+        },
+        {
+          "MODEL": "OT 757",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot757.gif"
+        },
+        {
+          "MODEL": "OT 355",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot355.gif"
+        },
+        {
+          "MODEL": "OT 156",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot156.gif"
+        },
+        {
+          "MODEL": "OT 155",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot155.gif"
+        },
+        {
+          "MODEL": "OT 153",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot153.gif"
+        },
+        {
+          "MODEL": "OT 756",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot756.gif"
+        },
+        {
+          "MODEL": "OT 557",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot557.gif"
+        },
+        {
+          "MODEL": "OT 565",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot565.gif"
+        },
+        {
+          "MODEL": "OT 556",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot556.gif"
+        },
+        {
+          "MODEL": "OT 835",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot835.gif"
+        },
+        {
+          "MODEL": "OT 735i",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot735.gif"
+        },
+        {
+          "MODEL": "OT 735",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot735.gif"
+        },
+        {
+          "MODEL": "OT 535",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot535.gif"
+        },
+        {
+          "MODEL": "OT 531",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot531.gif"
+        },
+        {
+          "MODEL": "OT 332",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot332.gif"
+        },
+        {
+          "MODEL": "OT 331",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot331.gif"
+        },
+        {
+          "MODEL": "OT 526",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot526.gif"
+        },
+        {
+          "MODEL": "OT 320",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot320.gif"
+        },
+        {
+          "MODEL": "OT 525",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot525.gif"
+        },
+        {
+          "MODEL": "OT 715",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot715.gif"
+        },
+        {
+          "MODEL": "OT 512",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot512.gif"
+        },
+        {
+          "MODEL": "OT 311",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot311.gif"
+        },
+        {
+          "MODEL": "OT 511",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot511.gif"
+        },
+        {
+          "MODEL": "OT 700",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot700b.gif"
+        },
+        {
+          "MODEL": "OT 500",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot500b.jpg"
+        },
+        {
+          "MODEL": "OT 300",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alot300b.jpg"
+        },
+        {
+          "MODEL": "OT View db @",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alview3b.gif"
+        },
+        {
+          "MODEL": "OT Pocket",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alpockb.gif"
+        },
+        {
+          "MODEL": "OT View db",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alview2b.gif"
+        },
+        {
+          "MODEL": "OT Max db",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/almax2b.gif"
+        },
+        {
+          "MODEL": "OT Easy db",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/aleasy2b.gif"
+        },
+        {
+          "MODEL": "OT Gum db",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/algum2b.gif"
+        },
+        {
+          "MODEL": "OT Club db",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alclub2b.gif"
+        },
+        {
+          "MODEL": "OT COM",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alcomb.gif"
+        },
+        {
+          "MODEL": "OT Pro",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alprob.gif"
+        },
+        {
+          "MODEL": "OT Easy HF",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/aleasyb.gif"
+        },
+        {
+          "MODEL": "OT Easy",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/aleasy1b.gif"
+        },
+        {
+          "MODEL": "OT Club",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alclubb.gif"
+        },
+        {
+          "MODEL": "OT Club +",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alclubpb.gif"
+        },
+        {
+          "MODEL": "OT Max",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/almaxb.gif"
+        },
+        {
+          "MODEL": "OT View",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alviewb.gif"
+        },
+        {
+          "MODEL": "HC 1000",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alh1000b.gif"
+        },
+        {
+          "MODEL": "HC 800",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/alh800b.gif"
+        }
+      ]
+    },
+    {
+      "BRAND": "APPLE",
+      "MODELIST": [
+        {
+          "MODEL": "iPad Pro 12.9 (2018)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-129-2018.jpg"
+        },
+        {
+          "MODEL": "iPad Pro 11",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-11-2018.jpg"
+        },
+        {
+          "MODEL": "iPhone XS Max",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-xs-max-new1.jpg"
+        },
+        {
+          "MODEL": "iPhone XS",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-xs-new.jpg"
+        },
+        {
+          "MODEL": "iPhone XR",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-xr-new.jpg"
+        },
+        {
+          "MODEL": "Watch Series 4",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-series-4-steel.jpg"
+        },
+        {
+          "MODEL": "Watch Series 4 Aluminum",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-series-4-aluminum.jpg"
+        },
+        {
+          "MODEL": "iPad 9.7 (2018)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-97-2018.jpg"
+        },
+        {
+          "MODEL": "iPhone X",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-x.jpg"
+        },
+        {
+          "MODEL": "iPhone 8 Plus",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-8-plus-new.jpg"
+        },
+        {
+          "MODEL": "iPhone 8",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-8-new.jpg"
+        },
+        {
+          "MODEL": "Watch Edition Series 3",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-edition-series3.jpg"
+        },
+        {
+          "MODEL": "Watch Series 3",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-series3-.jpg"
+        },
+        {
+          "MODEL": "Watch Series 3 Aluminum",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-series3-sport-.jpg"
+        },
+        {
+          "MODEL": "iPad Pro 12.9 (2017)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-129-2017.jpg"
+        },
+        {
+          "MODEL": "iPad Pro 10.5 (2017)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-105-2017.jpg"
+        },
+        {
+          "MODEL": "iPad 9.7 (2017)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-97-2017.jpg"
+        },
+        {
+          "MODEL": "Watch Edition Series 2 42mm",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch2-edition-42mm.jpg"
+        },
+        {
+          "MODEL": "Watch Series 2 42mm",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch2-s2-42mm.jpg"
+        },
+        {
+          "MODEL": "Watch Edition Series 2 38mm",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch2-s2-edition-38mm.jpg"
+        },
+        {
+          "MODEL": "Watch Series 2 38mm",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch2-s2-38mm.jpg"
+        },
+        {
+          "MODEL": "Watch Series 2 Aluminum 42mm",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch2-s2-sport-42mm.jpg"
+        },
+        {
+          "MODEL": "Watch Series 1 Aluminum 42mm",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch1-sport-42mm.jpg"
+        },
+        {
+          "MODEL": "Watch Series 2 Aluminum 38mm",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch2-s2-sport-38mm.jpg"
+        },
+        {
+          "MODEL": "Watch Series 1 Aluminum 38mm",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch2-s2-sport-38mm.jpg"
+        },
+        {
+          "MODEL": "iPhone 7 Plus",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-7-plus-r2.jpg"
+        },
+        {
+          "MODEL": "iPhone 7",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-7r4.jpg"
+        },
+        {
+          "MODEL": "iPad Pro 9.7 (2016)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-97.jpg"
+        },
+        {
+          "MODEL": "iPhone SE",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-5se-ofic.jpg"
+        },
+        {
+          "MODEL": "iPhone 6s Plus",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-6s-plus.jpg"
+        },
+        {
+          "MODEL": "iPhone 6s",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-6s1.jpg"
+        },
+        {
+          "MODEL": "iPad Pro 12.9 (2015)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-.jpg"
+        },
+        {
+          "MODEL": "iPad mini 4",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/ipad-mini-41.jpg"
+        },
+        {
+          "MODEL": "Watch Edition 42mm (1st gen)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-edition-42mm.jpg"
+        },
+        {
+          "MODEL": "Watch Edition 38mm (1st gen)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-edition-38mm.jpg"
+        },
+        {
+          "MODEL": "Watch 42mm (1st gen)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-42mm.jpg"
+        },
+        {
+          "MODEL": "Watch 38mm (1st gen)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-38mm.jpg"
+        },
+        {
+          "MODEL": "Watch Sport 42mm (1st gen)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-sport-42mm2.jpg"
+        },
+        {
+          "MODEL": "Watch Sport 38mm (1st gen)",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-sport-38mm.jpg"
+        },
+        {
+          "MODEL": "iPad Air 2",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-air-2-new.jpg"
+        },
+        {
+          "MODEL": "iPad mini 3",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-mini-3-new.jpg"
+        },
+        {
+          "MODEL": "iPhone 6 Plus",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-6-plus2.jpg"
+        },
+        {
+          "MODEL": "iPhone 6",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-6-4.jpg"
+        },
+        {
+          "MODEL": "iPad Air",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-air.jpg"
+        },
+        {
+          "MODEL": "iPad mini 2",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-mini2.jpg"
+        },
+        {
+          "MODEL": "iPhone 5s",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-5s-ofic.jpg"
+        },
+        {
+          "MODEL": "iPhone 5c",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-5c-new2.jpg"
+        },
+        {
+          "MODEL": "iPad mini Wi-Fi",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-mini-final.jpg"
+        },
+        {
+          "MODEL": "iPad mini Wi-Fi + Cellular",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-mini-final.jpg"
+        },
+        {
+          "MODEL": "iPad 4 Wi-Fi",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-3-new.jpg"
+        },
+        {
+          "MODEL": "iPad 4 Wi-Fi + Cellular",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-3-new.jpg"
+        },
+        {
+          "MODEL": "iPhone 5",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-5-ofic.jpg"
+        },
+        {
+          "MODEL": "iPad 3 Wi-Fi + Cellular",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-3-new.jpg"
+        },
+        {
+          "MODEL": "iPad 3 Wi-Fi",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-3-new.jpg"
+        },
+        {
+          "MODEL": "iPhone 4s",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-4s-new.jpg"
+        },
+        {
+          "MODEL": "iPad 2 Wi-Fi + 3G",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad2-new.jpg"
+        },
+        {
+          "MODEL": "iPad 2 Wi-Fi",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad2-new.jpg"
+        },
+        {
+          "MODEL": "iPad 2 CDMA",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad2-new.jpg"
+        },
+        {
+          "MODEL": "iPhone 4",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-4-ofic-final.jpg"
+        },
+        {
+          "MODEL": "iPhone 4 CDMA",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone4-cdma.jpg"
+        },
+        {
+          "MODEL": "iPad Wi-Fi + 3G",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-original.jpg"
+        },
+        {
+          "MODEL": "iPad Wi-Fi",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-original.jpg"
+        },
+        {
+          "MODEL": "iPhone 3GS",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-3gs-ofic.jpg"
+        },
+        {
+          "MODEL": "iPhone 3G",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone3g.jpg"
+        },
+        {
+          "MODEL": "iPhone",
+          "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone.gif"
+        }
+      ]
+    }
+  ]
