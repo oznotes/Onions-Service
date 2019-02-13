@@ -1,3 +1,3 @@
 # Onions-Service
 
-Service Records in simple Windows Forms with SQL Lite 
+Service Records in simple Windows Forms and NO Database Scheme.

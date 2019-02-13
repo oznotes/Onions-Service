@@ -46,8 +46,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.Add = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.picDeviceModel = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.picDeviceModel = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDeviceModel)).BeginInit();
             this.SuspendLayout();
@@ -266,15 +266,6 @@
             this.label9.Text = "Customer";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // picDeviceModel
-            // 
-            this.picDeviceModel.Location = new System.Drawing.Point(5, 3);
-            this.picDeviceModel.Name = "picDeviceModel";
-            this.picDeviceModel.Size = new System.Drawing.Size(212, 289);
-            this.picDeviceModel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picDeviceModel.TabIndex = 1;
-            this.picDeviceModel.TabStop = false;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
@@ -286,6 +277,16 @@
             this.button1.Text = "Brand:";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // picDeviceModel
+            // 
+            this.picDeviceModel.Image = global::Onions.Properties.Resources.test;
+            this.picDeviceModel.Location = new System.Drawing.Point(5, 3);
+            this.picDeviceModel.Name = "picDeviceModel";
+            this.picDeviceModel.Size = new System.Drawing.Size(212, 289);
+            this.picDeviceModel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDeviceModel.TabIndex = 1;
+            this.picDeviceModel.TabStop = false;
             // 
             // AddDeviceForm
             // 
