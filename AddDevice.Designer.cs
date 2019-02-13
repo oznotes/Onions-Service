@@ -218,9 +218,12 @@
             // 
             this.textBoxDeviceIMEI.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxDeviceIMEI.Location = new System.Drawing.Point(93, 193);
+            this.textBoxDeviceIMEI.MaxLength = 15;
             this.textBoxDeviceIMEI.Name = "textBoxDeviceIMEI";
             this.textBoxDeviceIMEI.Size = new System.Drawing.Size(259, 20);
             this.textBoxDeviceIMEI.TabIndex = 9;
+            this.textBoxDeviceIMEI.TextChanged += new System.EventHandler(this.textBoxDeviceIMEI_TextChanged);
+            this.textBoxDeviceIMEI.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxDeviceIMEI_KeyPress);
             // 
             // textBoxDeviceProblem
             // 

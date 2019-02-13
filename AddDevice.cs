@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.IO;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -114,5 +115,60 @@ namespace Device
                 textBoxDeviceBrand.AutoCompleteCustomSource.Add(device.BRAND);
             }
         }
+
+        public static int Mod10(string kid)
+        {
+            bool isOne = false;
+            int controlNumber = 0;
+            foreach (char number in kid.Reverse())
+            {
+                var intNumber = Int32.Parse(number.ToString());
+                var sum = isOne ? intNumber : 2 * intNumber;
+                if (sum > 9)
+                {
+                    sum = (sum % 10) + 1;
+                }
+                isOne = !isOne;
+                controlNumber += sum;
+            }
+            return (10 - (controlNumber % 10)) % 10 == 0 ? 0 : 10 - (controlNumber % 10);
+        }
+
+        private void textBoxDeviceIMEI_TextChanged(object sender, EventArgs e)
+        {
+
+            string IMEI;
+            int LuhnDigit;
+
+            IMEI = textBoxDeviceIMEI.Text.ToString();
+            if (IMEI.Length==15)
+            {
+                LuhnDigit = Mod10(IMEI.Substring(0,14));
+                var checkDigit = Int32.Parse(IMEI[IMEI.Length - 1].ToString());
+                if (LuhnDigit==checkDigit)
+                {
+                    label7.ForeColor = System.Drawing.Color.LimeGreen;
+                }
+                else
+                {
+                    label7.ForeColor = System.Drawing.Color.Red;
+                }
+            }
+            else
+            {
+                label7.ForeColor = System.Drawing.Color.Black;
+            }
+
+        }
+
+        private void textBoxDeviceIMEI_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+
+        }
+
     }
 }
