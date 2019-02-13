@@ -191,7 +191,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainForm";
-            this.ShowIcon = false;
             this.Text = "Onions";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
