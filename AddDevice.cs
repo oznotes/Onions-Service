@@ -52,6 +52,7 @@ namespace Device
         private void textBoxDeviceModel_MouseClick(object sender, MouseEventArgs e)
         {
             textBoxDeviceBrand.Enabled = false;
+            textBoxDeviceModel.AutoCompleteCustomSource.Clear();
             var Response = System.IO.File.ReadAllText(string.Concat(Environment.CurrentDirectory, @"\", "Devices.json"));
             List<string> temp = new List<string>();
             var _Devices = JsonConvert.DeserializeObject<List<BRANDLIST>>(Response);
@@ -81,8 +82,8 @@ namespace Device
         {
             if (e.KeyCode == Keys.Enter)
             {
+                //picDeviceModel.Load()
                 var Response = System.IO.File.ReadAllText(string.Concat(Environment.CurrentDirectory, @"\", "Devices.json"));
-
                 var _Devices = JsonConvert.DeserializeObject<List<BRANDLIST>>(Response);
 
                 foreach (var device in _Devices)
@@ -98,7 +99,7 @@ namespace Device
                             }
                         }
                         break;
-                    }                   
+                    }
                 }
             }
         }     
@@ -106,7 +107,6 @@ namespace Device
         void LoadDevices()
         {
             var Response = System.IO.File.ReadAllText(string.Concat(Environment.CurrentDirectory, @"\", "Devices.json"));
-
             var _Devices = JsonConvert.DeserializeObject<List<BRANDLIST>>(Response);
 
             foreach (var device in _Devices)
