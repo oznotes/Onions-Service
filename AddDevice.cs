@@ -174,6 +174,7 @@ namespace Device
         private void button1_Click(object sender, EventArgs e)
         {
             AdbServer server = new AdbServer();
+            //try -> check if tools exist.
             var result = server.StartServer(@"Tools\adb.exe", restartServerIfNewer: false);
             var device = AdbClient.Instance.GetDevices().First();
             var receiver = new ConsoleOutputReceiver();
