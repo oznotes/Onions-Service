@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using Onions;
+using SharpAdbClient;
 
 
 namespace Device
@@ -170,5 +171,33 @@ namespace Device
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AdbServer server = new AdbServer();
+            var result = server.StartServer(@"Tools\adb.exe", restartServerIfNewer: false);
+            var device = AdbClient.Instance.GetDevices().First();
+            var receiver = new ConsoleOutputReceiver();
+            //////
+            //ADB IMEI Query Samsung GT-I9507
+            //adb shell content query --uri content://settings/system --where "name='bd_setting_i'" | sed 's/[^=0-9]*//g' | sed 's/[0-9]*=//g'
+            //////
+            //Command Set for ADB
+            string imei = @"content query --uri content://settings/system --where " + '"' + "name='" + "bd_setting_i'" + '"' + " | sed '" + "s/[^=0-9]*//g' | sed 's/[0-9]*=//g'";
+            string manufacturer = @"getprop ro.product.manufacturer";
+            string model = @"getprop ro.product.model";
+
+            //Instance.ExecuteRemoteCommand is adb shell -> 
+            AdbClient.Instance.ExecuteRemoteCommand(manufacturer, device, receiver);
+            AdbClient.Instance.ExecuteRemoteCommand(model, device, receiver);
+            AdbClient.Instance.ExecuteRemoteCommand(imei, device, receiver);
+            var received = receiver.ToString().ToUpper();
+            List<string> s = new List<string>(received.Split(new string[] { "\n" }, StringSplitOptions.None));
+            textBoxDeviceIMEI.Clear();
+            textBoxDeviceBrand.Clear();
+            textBoxDeviceModel.Clear();
+            textBoxDeviceBrand.AppendText(s[0]);
+            textBoxDeviceModel.AppendText(s[1]);
+            textBoxDeviceIMEI.AppendText(s[2]);
+        }
     }
 }
