@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using System.IO;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using Newtonsoft.Json;
@@ -18,6 +17,8 @@ namespace Device
         public AddDeviceForm()
         {
             InitializeComponent();
+            circularProgressBar1.Value = 0;
+            circularProgressBar1.Enabled = false;
             LoadDevices();
         }
 
@@ -135,30 +136,42 @@ namespace Device
             return (10 - (controlNumber % 10)) % 10 == 0 ? 0 : 10 - (controlNumber % 10);
         }
 
-        private void textBoxDeviceIMEI_TextChanged(object sender, EventArgs e)
+        public void LuhnUI()
         {
-
             string IMEI;
             int LuhnDigit;
 
-            IMEI = textBoxDeviceIMEI.Text.ToString();
-            if (IMEI.Length==15)
+
+            IMEI = textBoxDeviceIMEI.Text.ToString().Trim();
+
+
+            if (IMEI.Length == 15)
             {
-                LuhnDigit = Mod10(IMEI.Substring(0,14));
+                LuhnDigit = Mod10(IMEI.Substring(0, 14));
                 var checkDigit = Int32.Parse(IMEI[IMEI.Length - 1].ToString());
-                if (LuhnDigit==checkDigit)
+                if (LuhnDigit == checkDigit)
                 {
                     label7.ForeColor = System.Drawing.Color.LimeGreen;
+
                 }
                 else
                 {
                     label7.ForeColor = System.Drawing.Color.Red;
+
                 }
             }
             else
             {
                 label7.ForeColor = System.Drawing.Color.Black;
+
             }
+
+        }
+
+        private void textBoxDeviceIMEI_TextChanged(object sender, EventArgs e)
+        {
+
+            LuhnUI();
 
         }
 
@@ -170,35 +183,67 @@ namespace Device
             }
 
         }
-
+        public void ShowOFF()
+        {
+            for (int i = 0; i < 10000; i++)
+            {
+                Math.Pow(4,i);
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             AdbServer server = new AdbServer();
+            circularProgressBar1.Enabled = true;
             //try -> check if tools exist.
-            var result = server.StartServer(@"Tools\adb.exe", restartServerIfNewer: false);
-            var device = AdbClient.Instance.GetDevices().First();
-            var receiver = new ConsoleOutputReceiver();
-            //////
-            //ADB IMEI Query Samsung GT-I9507
-            //adb shell content query --uri content://settings/system --where "name='bd_setting_i'" | sed 's/[^=0-9]*//g' | sed 's/[0-9]*=//g'
-            //////
-            //Command Set for ADB
-            string imei = @"content query --uri content://settings/system --where " + '"' + "name='" + "bd_setting_i'" + '"' + " | sed '" + "s/[^=0-9]*//g' | sed 's/[0-9]*=//g'";
-            string manufacturer = @"getprop ro.product.manufacturer";
-            string model = @"getprop ro.product.model";
+            if (System.IO.File.Exists(@"Tools\adb.exe"))
+            {
+                var result = server.StartServer(@"Tools\adb.exe", restartServerIfNewer: false);
+                try
+                {
+                    var device = AdbClient.Instance.GetDevices().FirstOrDefault();
+                    var receiver = new ConsoleOutputReceiver();
+                    for (int i = 0; i < 100; i++)
+                    {
+                        circularProgressBar1.Value += 1;
+                        circularProgressBar1.Update();
+                        ShowOFF();
+                    }
+                    //////
+                    //ADB IMEI Query Samsung GT-I9507
+                    //adb shell content query --uri content://settings/system --where "name='bd_setting_i'" | sed 's/[^=0-9]*//g' | sed 's/[0-9]*=//g'
+                    //////
+                    //Command Set for ADB
+                    string imei = @"content query --uri content://settings/system --where " + '"' + "name='" + "bd_setting_i'" + '"' + " | sed '" + "s/[^=0-9]*//g' | sed 's/[0-9]*=//g'";
+                    string manufacturer = @"getprop ro.product.manufacturer";
+                    string model = @"getprop ro.product.model";
 
-            //Instance.ExecuteRemoteCommand is adb shell -> 
-            AdbClient.Instance.ExecuteRemoteCommand(manufacturer, device, receiver);
-            AdbClient.Instance.ExecuteRemoteCommand(model, device, receiver);
-            AdbClient.Instance.ExecuteRemoteCommand(imei, device, receiver);
-            var received = receiver.ToString().ToUpper();
-            List<string> s = new List<string>(received.Split(new string[] { "\n" }, StringSplitOptions.None));
-            textBoxDeviceIMEI.Clear();
-            textBoxDeviceBrand.Clear();
-            textBoxDeviceModel.Clear();
-            textBoxDeviceBrand.AppendText(s[0]);
-            textBoxDeviceModel.AppendText(s[1]);
-            textBoxDeviceIMEI.AppendText(s[2]);
+                    //Instance.ExecuteRemoteCommand is adb shell -> 
+                    AdbClient.Instance.ExecuteRemoteCommand(manufacturer, device, receiver);
+                    AdbClient.Instance.ExecuteRemoteCommand(model, device, receiver);
+                    AdbClient.Instance.ExecuteRemoteCommand(imei, device, receiver);
+                    var received = receiver.ToString().ToUpper();
+                    List<string> s = new List<string>(received.Split(new string[] { "\n" }, StringSplitOptions.None));
+
+                    textBoxDeviceIMEI.Clear();
+                    textBoxDeviceBrand.Clear();
+                    textBoxDeviceModel.Clear();
+                    textBoxDeviceBrand.Text = s[0];
+                    textBoxDeviceModel.Text = s[1];
+                    textBoxDeviceIMEI.Text = s[2];
+                    LuhnUI();
+
+                }
+                catch (System.ArgumentNullException)
+                {
+                    circularProgressBar1.Value -= 101;
+                    circularProgressBar1.Update();
+                    if (circularProgressBar1.Value < -4)
+                    {
+                        MessageBox.Show("Error: " + "No Device Found", "ADB Device", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+
+                }
+            }
         }
     }
 }

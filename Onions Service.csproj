@@ -92,6 +92,9 @@
     <Compile Include="AddDevice.Designer.cs">
       <DependentUpon>AddDevice.cs</DependentUpon>
     </Compile>
+    <Compile Include="CircularProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DatabaseAccess.cs" />
     <Compile Include="Devices.cs" />
     <Compile Include="MainForm.cs">
