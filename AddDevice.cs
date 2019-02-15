@@ -96,8 +96,18 @@ namespace Device
                         {
                            if(model.MODEL == textBoxDeviceModel.Text)
                             {
-                                picDeviceModel.Load(model.URLIMAGE);
-                                break;
+                                try
+                                {
+                                    // try block if no internet connection
+                                    picDeviceModel.Load(model.URLIMAGE);
+                                    break;
+
+                                }
+                                catch
+                                {
+                                    break;
+                                }
+                                
                             }
                         }
                         break;
@@ -142,7 +152,7 @@ namespace Device
             int LuhnDigit;
 
 
-            IMEI = textBoxDeviceIMEI.Text.ToString().Trim();
+            IMEI = textBoxDeviceIMEI.Text.ToString();
 
 
             if (IMEI.Length == 15)
@@ -193,7 +203,13 @@ namespace Device
         private void button1_Click(object sender, EventArgs e)
         {
             AdbServer server = new AdbServer();
-            circularProgressBar1.Enabled = true;
+            textBoxDeviceIMEI.Clear();
+            textBoxDeviceBrand.Clear();
+            textBoxDeviceModel.Clear();
+            circularProgressBar1.Value = 0;
+            circularProgressBar1.ProgressColor1 = System.Drawing.Color.GreenYellow;
+            circularProgressBar1.ProgressColor2 = System.Drawing.Color.LimeGreen;
+
             //try -> check if tools exist.
             if (System.IO.File.Exists(@"Tools\adb.exe"))
             {
@@ -224,24 +240,17 @@ namespace Device
                     var received = receiver.ToString().ToUpper();
                     List<string> s = new List<string>(received.Split(new string[] { "\n" }, StringSplitOptions.None));
 
-                    textBoxDeviceIMEI.Clear();
-                    textBoxDeviceBrand.Clear();
-                    textBoxDeviceModel.Clear();
-                    textBoxDeviceBrand.Text = s[0];
-                    textBoxDeviceModel.Text = s[1];
-                    textBoxDeviceIMEI.Text = s[2];
+                    textBoxDeviceBrand.Text = s[0].Trim();
+                    textBoxDeviceModel.Text = s[1].Trim();
+                    textBoxDeviceIMEI.Text = s[2].Trim();
                     LuhnUI();
 
                 }
                 catch (System.ArgumentNullException)
                 {
-                    circularProgressBar1.Value -= 101;
+                    circularProgressBar1.ProgressColor1 = System.Drawing.Color.Red;
+                    circularProgressBar1.ProgressColor2 = System.Drawing.Color.IndianRed;
                     circularProgressBar1.Update();
-                    if (circularProgressBar1.Value < -4)
-                    {
-                        MessageBox.Show("Error: " + "No Device Found", "ADB Device", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-
                 }
             }
         }

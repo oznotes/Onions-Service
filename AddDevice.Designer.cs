@@ -45,11 +45,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.Add = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.circularProgressBar1 = new CircularProgressBar();
             this.button1 = new System.Windows.Forms.Button();
             this.textBoxDeviceBrand = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.picDeviceModel = new System.Windows.Forms.PictureBox();
+            this.circularProgressBar1 = new CircularProgressBar();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDeviceModel)).BeginInit();
             this.SuspendLayout();
@@ -250,26 +250,6 @@
             this.label9.Text = "Customer";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // circularProgressBar1
-            // 
-            this.circularProgressBar1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularProgressBar1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.circularProgressBar1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.circularProgressBar1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.circularProgressBar1.ForeColor = System.Drawing.Color.Black;
-            this.circularProgressBar1.LineColor = System.Drawing.Color.DimGray;
-            this.circularProgressBar1.Location = new System.Drawing.Point(25, 247);
-            this.circularProgressBar1.Maximum = ((long)(100));
-            this.circularProgressBar1.MinimumSize = new System.Drawing.Size(40, 40);
-            this.circularProgressBar1.Name = "circularProgressBar1";
-            this.circularProgressBar1.ProgressColor1 = System.Drawing.Color.GreenYellow;
-            this.circularProgressBar1.ProgressColor2 = System.Drawing.Color.LimeGreen;
-            this.circularProgressBar1.ProgressShape = CircularProgressBar._ProgressShape.Flat;
-            this.circularProgressBar1.Size = new System.Drawing.Size(40, 40);
-            this.circularProgressBar1.TabIndex = 13;
-            this.circularProgressBar1.Text = "circularProgressBar1";
-            this.circularProgressBar1.Value = ((long)(0));
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
@@ -314,6 +294,26 @@
             this.picDeviceModel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picDeviceModel.TabIndex = 1;
             this.picDeviceModel.TabStop = false;
+            // 
+            // circularProgressBar1
+            // 
+            this.circularProgressBar1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularProgressBar1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.circularProgressBar1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.circularProgressBar1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.circularProgressBar1.ForeColor = System.Drawing.Color.Transparent;
+            this.circularProgressBar1.LineColor = System.Drawing.Color.Transparent;
+            this.circularProgressBar1.Location = new System.Drawing.Point(25, 247);
+            this.circularProgressBar1.Maximum = ((long)(100));
+            this.circularProgressBar1.MinimumSize = new System.Drawing.Size(40, 40);
+            this.circularProgressBar1.Name = "circularProgressBar1";
+            this.circularProgressBar1.ProgressColor1 = System.Drawing.Color.GreenYellow;
+            this.circularProgressBar1.ProgressColor2 = System.Drawing.Color.LimeGreen;
+            this.circularProgressBar1.ProgressShape = CircularProgressBar._ProgressShape.Flat;
+            this.circularProgressBar1.Size = new System.Drawing.Size(40, 40);
+            this.circularProgressBar1.TabIndex = 13;
+            this.circularProgressBar1.Text = "circularProgressBar1";
+            this.circularProgressBar1.Value = ((long)(0));
             // 
             // AddDeviceForm
             // 
