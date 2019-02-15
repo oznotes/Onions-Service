@@ -14,6 +14,7 @@ namespace Device
     {
         //Database name.
         const string OrionServiceDatabase = "OrionsServiceDatabase";
+
         //Database Path.
         static string DatabasePath = string.Concat(Environment.CurrentDirectory);
 
@@ -26,13 +27,16 @@ namespace Device
         {
             //Connection String
             string DataSource = string.Format(@"Data Source={0}\{1}", DatabasePath, OrionServiceDatabase);
-           
+
             //Create database Connection
             SQLiteConnection objCnx = new SQLiteConnection(DataSource);
+
             //Create database Command
             SQLiteCommand objCmd = new SQLiteCommand(pSqlCmd, objCnx);
+
             //Open Database Connection
             objCmd.Connection.Open();
+
             //Return Command
             return objCmd;
         }

@@ -25,32 +25,59 @@ namespace Device
         // Data and Static device selection list .
         private void Add_Click(object sender, EventArgs e)
         {
-            try
+            if (!ValidateFields())
             {
-                string CustomerValues = String.Empty;
-                string today = DateTime.Today.ToString("dd/MM/yyyy");
-
-                CustomerValues = "'" + textBoxFirstName.Text + "'," +
-                                      "'" + textBoxLastName.Text + "'," +
-                                      "'" + textBoxPhoneNumber.Text + "'," +
-                                      "'" + textBoxeMail.Text + "'," +
-                                      "'" + textBoxDeviceBrand.Text + "'," +
-                                      "'" + textBoxDeviceModel.Text + "'," +
-                                      "'" + textBoxDeviceIMEI.Text + "'," +
-                                      "'" + textBoxDeviceProblem.Text + "'," +
-                                      "'" + Status + "'," +
-                                      "'" + today + "'";
-
-                //Create Sql Insert Command and insert the data in database
-                DatabaseAccess.fnSetConexion(string.Format(SqlInsertStament, CustomerValues)).ExecuteNonQuery();
-                this.Close();
+                MessageBox.Show("Error: " + "Please Complete the Form", "Create Customer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            catch (Exception Ex)
+            else
             {
-                MessageBox.Show("Error: " + Ex.Message, "Create Customer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                try
+                {
+                    string CustomerValues = String.Empty;
+                    string today = DateTime.Today.ToString("dd/MM/yyyy");
+
+                    CustomerValues = "'" + textBoxFirstName.Text + "'," +
+                                          "'" + textBoxLastName.Text + "'," +
+                                          "'" + textBoxPhoneNumber.Text + "'," +
+                                          "'" + textBoxeMail.Text + "'," +
+                                          "'" + textBoxDeviceBrand.Text + "'," +
+                                          "'" + textBoxDeviceModel.Text + "'," +
+                                          "'" + textBoxDeviceIMEI.Text + "'," +
+                                          "'" + textBoxDeviceProblem.Text + "'," +
+                                          "'" + Status + "'," +
+                                          "'" + today + "'";
+
+                    //Create Sql Insert Command and insert the data in database
+                    DatabaseAccess.fnSetConexion(string.Format(SqlInsertStament, CustomerValues)).ExecuteNonQuery();
+                    this.Close();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show("Error: " + Ex.Message, "Create Customer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
         }
 
+        public bool ValidateFields()
+        {
+            var controls = new[] 
+            {
+                textBoxFirstName,
+                textBoxLastName,
+                textBoxPhoneNumber,
+                textBoxeMail,
+                textBoxDeviceBrand,
+                textBoxDeviceModel,
+                textBoxDeviceIMEI,
+                textBoxDeviceProblem
+            };
+
+            foreach (var control in controls.Where(e => String.IsNullOrWhiteSpace(e.Text)))
+            {
+                return false;
+            }
+            return true;
+        }
 
         private void textBoxDeviceModel_MouseClick(object sender, MouseEventArgs e)
         {
@@ -71,7 +98,6 @@ namespace Device
                     textBoxDeviceModel.AutoCompleteCustomSource.AddRange(temp.ToArray());
                 }
             }
-
             textBoxDeviceBrand.Enabled = true;
         }
 
@@ -84,38 +110,10 @@ namespace Device
         {
             if (e.KeyCode == Keys.Enter)
             {
-                var Response = System.IO.File.ReadAllText(string.Concat(Environment.CurrentDirectory, @"\", "Devices.json"));
-
-                var _Devices = JsonConvert.DeserializeObject<List<BRANDLIST>>(Response);
-
-                foreach (var device in _Devices)
-                {
-                    if (device.BRAND == textBoxDeviceBrand.Text.Trim())
-                    {
-                        foreach (var model in device.MODELIST)
-                        {
-                           if(model.MODEL == textBoxDeviceModel.Text)
-                            {
-                                try
-                                {
-                                    // try block if no internet connection
-                                    picDeviceModel.Load(model.URLIMAGE);
-                                    break;
-
-                                }
-                                catch
-                                {
-                                    break;
-                                }
-                                
-                            }
-                        }
-                        break;
-                    }                   
-                }
+                LoadPictureSequence();
             }
-        }     
-  
+        }
+
         void LoadDevices()
         {
             var Response = System.IO.File.ReadAllText(string.Concat(Environment.CurrentDirectory, @"\", "Devices.json"));
@@ -125,6 +123,36 @@ namespace Device
             foreach (var device in _Devices)
             {
                 textBoxDeviceBrand.AutoCompleteCustomSource.Add(device.BRAND);
+            }
+        }
+
+        public void LoadPictureSequence()
+        {
+            var Response = System.IO.File.ReadAllText(string.Concat(Environment.CurrentDirectory, @"\", "Devices.json"));
+            var _Devices = JsonConvert.DeserializeObject<List<BRANDLIST>>(Response);
+
+            foreach (var device in _Devices)
+            {
+                if (device.BRAND == textBoxDeviceBrand.Text.Trim())
+                {
+                    foreach (var model in device.MODELIST)
+                    {
+                        if (model.MODEL == textBoxDeviceModel.Text)
+                        {
+                            try
+                            {
+                                // try block if no internet connection
+                                picDeviceModel.Load(model.URLIMAGE);
+                                break;
+                            }
+                            catch
+                            {
+                                break;
+                            }
+                        }
+                    }
+                    break;
+                }
             }
         }
 
@@ -151,9 +179,7 @@ namespace Device
             string IMEI;
             int LuhnDigit;
 
-
             IMEI = textBoxDeviceIMEI.Text.ToString();
-
 
             if (IMEI.Length == 15)
             {
@@ -162,27 +188,21 @@ namespace Device
                 if (LuhnDigit == checkDigit)
                 {
                     label7.ForeColor = System.Drawing.Color.LimeGreen;
-
                 }
                 else
                 {
                     label7.ForeColor = System.Drawing.Color.Red;
-
                 }
             }
             else
             {
                 label7.ForeColor = System.Drawing.Color.Black;
-
             }
-
         }
 
         private void textBoxDeviceIMEI_TextChanged(object sender, EventArgs e)
         {
-
             LuhnUI();
-
         }
 
         private void textBoxDeviceIMEI_KeyPress(object sender, KeyPressEventArgs e)
@@ -191,13 +211,12 @@ namespace Device
             {
                 e.Handled = true;
             }
-
         }
         public void ShowOFF()
         {
             for (int i = 0; i < 10000; i++)
             {
-                Math.Pow(4,i);
+                Math.Pow(4, i);
             }
         }
         private void button1_Click(object sender, EventArgs e)
@@ -253,6 +272,11 @@ namespace Device
                     circularProgressBar1.Update();
                 }
             }
+        }
+
+        private void textBoxDeviceModel_TextChanged(object sender, EventArgs e)
+        {
+            LoadPictureSequence();
         }
     }
 }

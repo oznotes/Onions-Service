@@ -193,7 +193,6 @@ namespace Device
             toolStripCompleteJOB.Enabled = false;
             toolStripButtonRemove.Enabled = false;
             toolStripButtonCompleted.Enabled = false;
-
         }
 
         private void dataGridView_CellMouseUp(object sender, DataGridViewCellMouseEventArgs e)
