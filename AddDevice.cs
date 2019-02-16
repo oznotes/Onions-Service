@@ -1,10 +1,15 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using Onions;
 using SharpAdbClient;
+using iMobileDevice;
+using iMobileDevice.iDevice;
+using iMobileDevice.Lockdown;
+using iMobileDevice.Plist;
 
 
 namespace Device
@@ -57,15 +62,14 @@ namespace Device
                 }
             }
         }
-
-        public bool ValidateFields()
+        // Validate form fields.
+        private bool ValidateFields()
         {
             var controls = new[] 
             {
                 textBoxFirstName,
                 textBoxLastName,
                 textBoxPhoneNumber,
-                textBoxeMail,
                 textBoxDeviceBrand,
                 textBoxDeviceModel,
                 textBoxDeviceIMEI,
@@ -78,7 +82,6 @@ namespace Device
             }
             return true;
         }
-
         private void textBoxDeviceModel_MouseClick(object sender, MouseEventArgs e)
         {
             textBoxDeviceBrand.Enabled = false;
@@ -100,12 +103,10 @@ namespace Device
             }
             textBoxDeviceBrand.Enabled = true;
         }
-
         private void textBoxDeviceBrand_TextChanged(object sender, EventArgs e)
         {
             textBoxDeviceModel.Text = string.Empty;
         }
-
         private void textBoxDeviceModel_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -113,20 +114,16 @@ namespace Device
                 LoadPictureSequence();
             }
         }
-
-        void LoadDevices()
+        private void LoadDevices()
         {
             var Response = System.IO.File.ReadAllText(string.Concat(Environment.CurrentDirectory, @"\", "Devices.json"));
-
             var _Devices = JsonConvert.DeserializeObject<List<BRANDLIST>>(Response);
-
             foreach (var device in _Devices)
             {
                 textBoxDeviceBrand.AutoCompleteCustomSource.Add(device.BRAND);
             }
         }
-
-        public void LoadPictureSequence()
+        private void LoadPictureSequence()
         {
             var Response = System.IO.File.ReadAllText(string.Concat(Environment.CurrentDirectory, @"\", "Devices.json"));
             var _Devices = JsonConvert.DeserializeObject<List<BRANDLIST>>(Response);
@@ -155,8 +152,7 @@ namespace Device
                 }
             }
         }
-
-        public static int Mod10(string kid)
+        private static int Mod10(string kid)
         {
             bool isOne = false;
             int controlNumber = 0;
@@ -173,8 +169,7 @@ namespace Device
             }
             return (10 - (controlNumber % 10)) % 10 == 0 ? 0 : 10 - (controlNumber % 10);
         }
-
-        public void LuhnUI()
+        private void LuhnUI()
         {
             string IMEI;
             int LuhnDigit;
@@ -199,12 +194,10 @@ namespace Device
                 label7.ForeColor = System.Drawing.Color.Black;
             }
         }
-
         private void textBoxDeviceIMEI_TextChanged(object sender, EventArgs e)
         {
             LuhnUI();
         }
-
         private void textBoxDeviceIMEI_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
@@ -212,42 +205,107 @@ namespace Device
                 e.Handled = true;
             }
         }
-        public void ShowOFF()
+        private void ShowOFF()
         {
             for (int i = 0; i < 10000; i++)
             {
                 Math.Pow(4, i);
             }
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void Failed()
         {
+            circularProgressBar1.Value = 0;
+            circularProgressBar1.ProgressColor1 = System.Drawing.Color.Red;
+            circularProgressBar1.ProgressColor2 = System.Drawing.Color.IndianRed;
+            circularProgressBar1.Update();
+            for (int i = 0; i < 100; i++)
+            {
+                circularProgressBar1.Value += 1;
+                circularProgressBar1.Update();
+                ShowOFF();
+            }
+        }
+        private bool iDeviceCheck()
+        {
+            circularProgressBar1.Value = 0;
+            circularProgressBar1.ProgressColor1 = System.Drawing.Color.AliceBlue;
+            circularProgressBar1.ProgressColor2 = System.Drawing.Color.Blue;
+            circularProgressBar1.Update();
+            for (int i = 0; i < 100; i++)
+            {
+                circularProgressBar1.Value += 1;
+                circularProgressBar1.Update();
+                ShowOFF();
+            }
+            NativeLibraries.Load();
+            ReadOnlyCollection<string> udids;
+            int count = 0;
+
+            var idevice = LibiMobileDevice.Instance.iDevice;
+            var lockdown = LibiMobileDevice.Instance.Lockdown;
+            var ret = idevice.idevice_get_device_list(out udids, ref count);
+            // iDevice Count == 0 
+            if (count == 0)
+            {
+                Failed();
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        private bool ADBCheck()
+        {
+            //try adb - not success 
             AdbServer server = new AdbServer();
-            textBoxDeviceIMEI.Clear();
-            textBoxDeviceBrand.Clear();
-            textBoxDeviceModel.Clear();
             circularProgressBar1.Value = 0;
             circularProgressBar1.ProgressColor1 = System.Drawing.Color.GreenYellow;
             circularProgressBar1.ProgressColor2 = System.Drawing.Color.LimeGreen;
-
+            for (int i = 0; i < 100; i++)
+            {
+                circularProgressBar1.Value += 1;
+                circularProgressBar1.Update();
+                ShowOFF();
+            }
             //try -> check if tools exist.
+            var result = server.StartServer(@"Tools\adb.exe", restartServerIfNewer: false);
+            try
+            {
+                var mydevice = AdbClient.Instance.GetDevices().FirstOrDefault();
+                var receiver = new ConsoleOutputReceiver();
+                Console.WriteLine(String.IsNullOrEmpty(mydevice.ToString()));
+                return true;
+            }
+            catch (Exception ex)
+            {
+                // There is no android adb device.
+                if ( ex is System.ArgumentNullException || ex is System.NullReferenceException )
+                {
+                    // simply pass.
+                }
+                Failed();
+                return false;
+            }
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //bool DeviceFound = false;
+            //int counter = 0;
             if (System.IO.File.Exists(@"Tools\adb.exe"))
             {
-                var result = server.StartServer(@"Tools\adb.exe", restartServerIfNewer: false);
-                try
+                if (ADBCheck() == true)
                 {
+                    textBoxDeviceIMEI.Clear();
+                    textBoxDeviceBrand.Clear();
+                    textBoxDeviceModel.Clear();
+
                     var device = AdbClient.Instance.GetDevices().FirstOrDefault();
                     var receiver = new ConsoleOutputReceiver();
-                    for (int i = 0; i < 100; i++)
-                    {
-                        circularProgressBar1.Value += 1;
-                        circularProgressBar1.Update();
-                        ShowOFF();
-                    }
-                    //////
+
                     //ADB IMEI Query Samsung GT-I9507
                     //adb shell content query --uri content://settings/system --where "name='bd_setting_i'" | sed 's/[^=0-9]*//g' | sed 's/[0-9]*=//g'
-                    //////
-                    //Command Set for ADB
+
                     string imei = @"content query --uri content://settings/system --where " + '"' + "name='" + "bd_setting_i'" + '"' + " | sed '" + "s/[^=0-9]*//g' | sed 's/[0-9]*=//g'";
                     string manufacturer = @"getprop ro.product.manufacturer";
                     string model = @"getprop ro.product.model";
@@ -256,6 +314,7 @@ namespace Device
                     AdbClient.Instance.ExecuteRemoteCommand(manufacturer, device, receiver);
                     AdbClient.Instance.ExecuteRemoteCommand(model, device, receiver);
                     AdbClient.Instance.ExecuteRemoteCommand(imei, device, receiver);
+
                     var received = receiver.ToString().ToUpper();
                     List<string> s = new List<string>(received.Split(new string[] { "\n" }, StringSplitOptions.None));
 
@@ -263,17 +322,161 @@ namespace Device
                     textBoxDeviceModel.Text = s[1].Trim();
                     textBoxDeviceIMEI.Text = s[2].Trim();
                     LuhnUI();
-
                 }
-                catch (System.ArgumentNullException)
+                else
                 {
-                    circularProgressBar1.ProgressColor1 = System.Drawing.Color.Red;
-                    circularProgressBar1.ProgressColor2 = System.Drawing.Color.IndianRed;
-                    circularProgressBar1.Update();
+                    //iDevice Check 
+                    if (iDeviceCheck())
+                    {
+                        Dictionary<string, string> data = new Dictionary<string, string>()
+                        {
+                            {"x86_64", "Simulator"},
+                            {"i386", "Simulator"},
+                            {"iPod1,1", "iPod Touch 1st Gen"},
+                            {"iPod2,1", "iPod Touch 2nd Gen"},
+                            {"iPod3,1", "iPod Touch 3rd Gen"},
+                            {"iPod4,1", "iPod Touch 4th Gen"},
+                            {"iPod5,1", "iPod Touch 5th Gen"},
+                            {"iPod7,1", "iPod Touch 6th Gen"},
+                            {"iPhone1,1", "iPhone"},
+                            {"iPhone1,2", "iPhone 3G"},
+                            {"iPhone2,1", "iPhone 3GS"},
+                            {"iPhone3,1", "iPhone 4"},
+                            {"iPhone3,2", "iPhone 4"},
+                            {"iPhone3,3", "iPhone 4"},
+                            {"iPhone4,1", "iPhone 4S"},
+                            {"iPhone5,1", "iPhone 5 model A1428"},
+                            {"iPhone5,2", "iPhone 5 model A1429"},
+                            {"iPhone5,3", "iPhone 5C"},
+                            {"iPhone5,4", "iPhone 5C"},
+                            {"iPhone6,1", "iPhone 5S"},
+                            {"iPhone6,2", "iPhone 5S"},
+                            {"iPhone7,2", "iPhone 6"},
+                            {"iPhone7,1", "iPhone 6 Plus"},
+                            {"iPhone8,1", "iPhone 6S"},
+                            {"iPhone8,2", "iPhone 6S Plus"},
+                            {"iPhone8,4", "iPhone SE"},
+                            {"iPhone9,1", "iPhone 7"},
+                            {"iPhone9,2", "iPhone 7 Plus"},
+                            {"iPhone9,3", "iPhone 7"},
+                            {"iPhone9,4", "iPhone 7 Plus"},
+                            {"iPhone10,1", "iPhone 8"},
+                            {"iPhone10,4", "iPhone 8"},
+                            {"iPhone10,2", "iPhone 8 Plus"},
+                            {"iPhone10,5", "iPhone 8 Plus"},
+                            {"iPhone10,3", "iPhone X"},
+                            {"iPhone10,6", "iPhone X"},
+                            {"iPhone11,2", "iPhone XS"},
+                            {"iPhone11,4", "iPhone XS Max"},
+                            {"iPhone11,6", "iPhone XS Max"},
+                            {"iPhone11,8", "iPhone XR"},
+                            {"iPad1,1", "iPad"},
+                            {"iPad2,1", "iPad 2"},
+                            {"iPad2,2", "iPad 2"},
+                            {"iPad2,3", "iPad 2"},
+                            {"iPad2,4", "iPad 2"},
+                            {"iPad3,1", "iPad 3rd Gen"},
+                            {"iPad3,2", "iPad 3rd Gen"},
+                            {"iPad3,3", "iPad 3rd Gen"},
+                            {"iPad3,4", "iPad 4th Gen"},
+                            {"iPad3,5", "iPad 4th Gen"},
+                            {"iPad3,6", "iPad 4th Gen"},
+                            {"iPad4,1", "iPad Air"},
+                            {"iPad4,2", "iPad Air"},
+                            {"iPad4,3", "iPad Air"},
+                            {"iPad2,5", "iPad Mini 1st Gen"},
+                            {"iPad2,6", "iPad Mini 1st Gen"},
+                            {"iPad2,7", "iPad Mini 1st Gen"},
+                            {"iPad4,4", "iPad Mini 2nd Gen"},
+                            {"iPad4,5", "iPad Mini 2nd Gen"},
+                            {"iPad4,6", "iPad Mini 2nd Gen"},
+                            {"iPad4,7", "iPad Mini 3rd Gen"},
+                            {"iPad4,8", "iPad Mini 3rd Gen"},
+                            {"iPad4,9", "iPad Mini 3rd Gen"},
+                            {"iPad5,1", "iPad Mini 4"},
+                            {"iPad5,2", "iPad Mini 4"},
+                            {"iPad5,3", "iPad Air 2"},
+                            {"iPad5,4", "iPad Air 2"},
+                            {"iPad6,3", "iPad Pro 9.7 inch"},
+                            {"iPad6,4", "iPad Pro 9.7 inch"},
+                            {"iPad6,7", "iPad Pro 12.9 inch"},
+                            {"iPad6,8", "iPad Pro 12.9 inch"},
+                            {"iPad7,1", "iPad Pro 12.9 inch 2nd Gen"},
+                            {"iPad7,2", "iPad Pro 12.9 inch 2nd Gen"},
+                            {"iPad7,3", "iPad Pro 10.5 inch"},
+                            {"iPad7,4", "iPad Pro 10.5 inch"},
+                            {"iPad8,1", "iPad Pro 11 inch"},
+                            {"iPad8,2", "iPad Pro 11 inch"},
+                            {"iPad8,3", "iPad Pro 11 inch"},
+                            {"iPad8,4", "iPad Pro 11 inch"},
+                            {"iPad8,5", "iPad Pro 12.9 inch 3rd Gen"},
+                            {"iPad8,6", "iPad Pro 12.9 inch 3rd Gen"},
+                            {"iPad8,7", "iPad Pro 12.9 inch 3rd Gen"},
+                            {"iPad8,8", "iPad Pro 12.9 inch 3rd Gen"}
+                        };
+
+                        textBoxDeviceIMEI.Clear();
+                        textBoxDeviceBrand.Clear();
+                        textBoxDeviceModel.Clear();
+
+                        NativeLibraries.Load();
+                        ReadOnlyCollection<string> udids;
+                        int count = 0;
+
+                        var idevice = LibiMobileDevice.Instance.iDevice;
+                        var lockdown = LibiMobileDevice.Instance.Lockdown;
+                        var ret = idevice.idevice_get_device_list(out udids, ref count);
+                        if (ret == iDeviceError.NoDevice)
+                        {
+                            // Not actually an error in our case
+                            return;
+                        }
+
+                        ret.ThrowOnError();
+
+                        // Get the device name
+                        foreach (var udid in udids)
+                        {
+                            string deviceName;
+                            string IMEI;
+                            string ProductType;
+
+                            PlistHandle PlistIMEI;
+                            PlistHandle PlistProductType;
+
+                            iDeviceHandle deviceHandle;
+                            idevice.idevice_new(out deviceHandle, udid).ThrowOnError();
+
+                            LockdownClientHandle lockdownHandle;
+                            lockdown.lockdownd_client_new_with_handshake(deviceHandle, out lockdownHandle, "Quamotion").ThrowOnError();
+                            lockdown.lockdownd_get_device_name(lockdownHandle, out deviceName).ThrowOnError();
+
+                            //Find serial number in plist
+                            lockdown.lockdownd_get_value(lockdownHandle, null, "InternationalMobileEquipmentIdentity", out
+                            PlistIMEI);
+
+                            //Find Product Type version in plist
+                            lockdown.lockdownd_get_value(lockdownHandle, null, "ProductType", out
+                             PlistProductType);
+
+                            //Get string values from plist
+                            PlistIMEI.Api.Plist.plist_get_string_val(PlistIMEI, out IMEI);
+                            PlistProductType.Api.Plist.plist_get_string_val(PlistProductType, out ProductType);
+
+                            //Place data in textboxes
+                            textBoxDeviceIMEI.Text = IMEI.Trim();
+                            if(data.TryGetValue(ProductType.Trim(),out string FProductType))
+                            {
+                                textBoxDeviceBrand.Text = "APPLE";
+                                textBoxDeviceModel.Text = FProductType;
+                            }
+                            deviceHandle.Dispose();
+                            lockdownHandle.Dispose();
+                        }
+                    }
                 }
             }
         }
-
         private void textBoxDeviceModel_TextChanged(object sender, EventArgs e)
         {
             LoadPictureSequence();
