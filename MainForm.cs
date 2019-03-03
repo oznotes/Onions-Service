@@ -239,5 +239,6 @@ namespace Device
             dataGridView.Columns["Date in Service"].Width = 110;
             dataGridView.Columns["IdCustomer"].Visible = false;
         }
+
     }
 }

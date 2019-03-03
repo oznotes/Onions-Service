@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Onions;
 
 namespace Device
 {
@@ -13,7 +14,7 @@ namespace Device
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new HeadForm());
         }
     }
 }
