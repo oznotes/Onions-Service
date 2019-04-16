@@ -318,21 +318,58 @@ namespace Device
                         0x00000020: 00350038 00000032                   '8.5.2...        ')
 
                      */
-                    string imei = @"service call iphonesubinfo 1";
+
+
+                    Dictionary<int, string> imei = new Dictionary<int, string>()
+                                                {
+                                                    {1, "content query --uri content://settings/system --where " + '"' + "name='" + "bd_setting_i'" + '"' + " | sed '" + "s/[^=0-9]*//g' | sed 's/[0-9]*=//g'"},
+                                                    {2, "service call iphonesubinfo 1"}
+                                                };
+                    //string imei = @"service call iphonesubinfo 1";
                     string manufacturer = @"getprop ro.product.manufacturer";
                     string model = @"getprop ro.product.model";
 
                     //Instance.ExecuteRemoteCommand is adb shell -> 
                     AdbClient.Instance.ExecuteRemoteCommand(manufacturer, device, receiver);
                     AdbClient.Instance.ExecuteRemoteCommand(model, device, receiver);
-                    AdbClient.Instance.ExecuteRemoteCommand(imei, device, receiver);
+                    AdbClient.Instance.ExecuteRemoteCommand(imei[1], device, receiver);
 
                     var received = receiver.ToString().ToUpper();
                     List<string> s = new List<string>(received.Split(new string[] { "\n" }, StringSplitOptions.None));
 
                     textBoxDeviceBrand.Text = s[0].Trim();
                     textBoxDeviceModel.Text = s[1].Trim();
-                    textBoxDeviceIMEI.Text = s[2].Trim();
+                    try
+                    {
+                        var intIMEI = Int32.Parse(s[2].Trim());
+                        textBoxDeviceIMEI.Text = s[2].Trim();
+
+                    }
+                    catch (Exception)
+                    {
+                        // New Version Android 
+                        s.Clear();
+
+                        // can i clean this shit ??
+
+                        AdbClient.Instance.ExecuteRemoteCommand(imei[2], device, receiver);
+                        received = receiver.ToString().ToUpper();
+                        s = new List<string>(received.Split(new string[] { "\n" }, StringSplitOptions.None));
+
+                        Console.WriteLine(s[0]);
+                        Console.WriteLine(s[1]);
+                        Console.WriteLine(s[2]);
+                        Console.WriteLine(s[3]);
+                        Console.WriteLine(s[4]);
+                        Console.WriteLine(s[5]);
+                        Console.WriteLine(s[6]);
+                        Console.WriteLine(s[7]);
+
+                        // 5 + 6 + 7 
+
+                        textBoxDeviceIMEI.Text = s[4].Trim();
+                    }
+
 
                     LuhnUI();
                 }
