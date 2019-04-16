@@ -306,7 +306,19 @@ namespace Device
                     //ADB IMEI Query Samsung GT-I9507
                     //adb shell content query --uri content://settings/system --where "name='bd_setting_i'" | sed 's/[^=0-9]*//g' | sed 's/[0-9]*=//g'
 
-                    string imei = @"content query --uri content://settings/system --where " + '"' + "name='" + "bd_setting_i'" + '"' + " | sed '" + "s/[^=0-9]*//g' | sed 's/[0-9]*=//g'";
+                    //string imei = @"content query --uri content://settings/system --where " + '"' + "name='" + "bd_setting_i'" + '"' + " | sed '" + "s/[^=0-9]*//g' | sed 's/[0-9]*=//g'";
+
+
+                    //G4 IMEI Query
+                    /*
+                     *  Return:
+                        Result: Parcel(
+                        0x00000000: 00000000 0000000f 00350033 00330039 '........3.5.9.3.'
+                        0x00000010: 00350034 00360030 00370031 00350035 '4.5.0.6.1.7.5.5.'
+                        0x00000020: 00350038 00000032                   '8.5.2...        ')
+
+                     */
+                    string imei = @"service call iphonesubinfo 1";
                     string manufacturer = @"getprop ro.product.manufacturer";
                     string model = @"getprop ro.product.model";
 
@@ -321,6 +333,7 @@ namespace Device
                     textBoxDeviceBrand.Text = s[0].Trim();
                     textBoxDeviceModel.Text = s[1].Trim();
                     textBoxDeviceIMEI.Text = s[2].Trim();
+
                     LuhnUI();
                 }
                 else
