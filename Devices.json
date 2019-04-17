@@ -8497,6 +8497,1087 @@
     ]
   },
   {
+    "BRAND": "HUAWEI",
+    "MODELIST": [
+      {
+        "MODEL": "P30 Pro",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-p30-pro.jpg"
+      },
+      {
+        "MODEL": "P30",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-p30.jpg"
+      },
+      {
+        "MODEL": "P30 lite",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-p30-lite-.jpg"
+      },
+      {
+        "MODEL": "nova 4e",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-nova-4e-.jpg"
+      },
+      {
+        "MODEL": "Enjoy 9e",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y6-2019-.jpg"
+      },
+      {
+        "MODEL": "Enjoy 9s",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-p-smart-plus-2019-starlight-blue.jpg"
+      },
+      {
+        "MODEL": "Y Max",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y-max-ars-l22.jpg"
+      },
+      {
+        "MODEL": "Mate X",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mate-x-.jpg"
+      },
+      {
+        "MODEL": "Y6 Pro (2019)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y6-pro-2019-.jpg"
+      },
+      {
+        "MODEL": "Y6 (2019)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y6-2019-.jpg"
+      },
+      {
+        "MODEL": "Y7 (2019)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y7-prime-2019.jpg"
+      },
+      {
+        "MODEL": "Y7 Prime (2019)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y7-prime-2019.jpg"
+      },
+      {
+        "MODEL": "Y7 Pro (2019)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y7-pro-2019-.jpg"
+      },
+      {
+        "MODEL": "Y5 lite (2018)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y5-prime-2018-.jpg"
+      },
+      {
+        "MODEL": "nova 4",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-nova-4-.jpg"
+      },
+      {
+        "MODEL": "P smart 2019",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-p-smart-2019.jpg"
+      },
+      {
+        "MODEL": "Enjoy 9",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-enjoy-9.jpg"
+      },
+      {
+        "MODEL": "Watch Magic",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/honor-watch-magic.jpg"
+      },
+      {
+        "MODEL": "Watch GT",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-watch-gt.jpg"
+      },
+      {
+        "MODEL": "Mate 20 RS Porsche Design",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mate-20-rs-porsche-design-red.jpg"
+      },
+      {
+        "MODEL": "Mate 20 X",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mate-20x-.jpg"
+      },
+      {
+        "MODEL": "Mate 20 Pro",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mate-20-pro-1.jpg"
+      },
+      {
+        "MODEL": "Mate 20",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mate-20-.jpg"
+      },
+      {
+        "MODEL": "MediaPad T5",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-t5.jpg"
+      },
+      {
+        "MODEL": "MediaPad M5 lite",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-m5-lite.jpg"
+      },
+      {
+        "MODEL": "Y9 (2019)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y9-2019-.jpg"
+      },
+      {
+        "MODEL": "Mate 20 lite",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mate-20-lite-r1.jpg"
+      },
+      {
+        "MODEL": "P Smart+ 2019",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-p-smart-plus-2019-starlight-blue.jpg"
+      },
+      {
+        "MODEL": "nova 3i",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-nova-3i.jpg"
+      },
+      {
+        "MODEL": "nova 3",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-nova3.jpg"
+      },
+      {
+        "MODEL": "Watch 2 2018",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-watch-2-2018-.jpg"
+      },
+      {
+        "MODEL": "Y5 Prime (2018)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y5-prime-2018-.jpg"
+      },
+      {
+        "MODEL": "Y3 (2018)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y3-2018.jpg"
+      },
+      {
+        "MODEL": "Y6 Prime (2018)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y6-prime-2018.jpg"
+      },
+      {
+        "MODEL": "Y6 (2018)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y6-2018.jpg"
+      },
+      {
+        "MODEL": "Mate RS Porsche Design",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mate-rs-porsche-design-1.jpg"
+      },
+      {
+        "MODEL": "P20 Pro",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-p20-pro-.jpg"
+      },
+      {
+        "MODEL": "P20",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-p20-.jpg"
+      },
+      {
+        "MODEL": "P20 lite",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-p20-lite-.jpg"
+      },
+      {
+        "MODEL": "Y7 Pro (2018)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y7-pro-2018-.jpg"
+      },
+      {
+        "MODEL": "Y7 Prime (2018)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y7-prime-2018.jpg"
+      },
+      {
+        "MODEL": "Y7 (2018)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y7-prime-2018.jpg"
+      },
+      {
+        "MODEL": "Y9 (2018)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y9-2018-.jpg"
+      },
+      {
+        "MODEL": "MediaPad M5 10 (Pro)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-m5-10.jpg"
+      },
+      {
+        "MODEL": "MediaPad M5 10",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-m5-10.jpg"
+      },
+      {
+        "MODEL": "MediaPad M5 8",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-m5-8.jpg"
+      },
+      {
+        "MODEL": "P smart",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-p-smart-.jpg"
+      },
+      {
+        "MODEL": "nova 2s",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-nova-2s.jpg"
+      },
+      {
+        "MODEL": "Mate 10 Porsche Design",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mate10-porshe-design-.jpg"
+      },
+      {
+        "MODEL": "Mate 10 Pro",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mate10-pro.jpg"
+      },
+      {
+        "MODEL": "Mate 10",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mate10-.jpg"
+      },
+      {
+        "MODEL": "Watch 2 Pro",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-watch-2-pro.jpg"
+      },
+      {
+        "MODEL": "Mate 10 Lite",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mate-10-lite.jpg"
+      },
+      {
+        "MODEL": "P9 lite mini",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y6-pro-2017-p9-lite-mini.jpg"
+      },
+      {
+        "MODEL": "Y7 Prime",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-enjoy-7-plus-new.jpg"
+      },
+      {
+        "MODEL": "MediaPad M3 Lite 8",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-m3-8-lite.jpg"
+      },
+      {
+        "MODEL": "MediaPad T3 10",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-t3-10.jpg"
+      },
+      {
+        "MODEL": "MediaPad M3 Lite 10",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-m3-10-lite.jpg"
+      },
+      {
+        "MODEL": "nova 2 plus",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-nova-2-plus.jpg"
+      },
+      {
+        "MODEL": "nova 2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-nova-2.jpg"
+      },
+      {
+        "MODEL": "Y6II Compact",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y6-ii-compact.jpg"
+      },
+      {
+        "MODEL": "MediaPad T3 8.0",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-t3-8.jpg"
+      },
+      {
+        "MODEL": "MediaPad T3 7.0",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-t3-7-.jpg"
+      },
+      {
+        "MODEL": "Y7",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y71.jpg"
+      },
+      {
+        "MODEL": "Y6 (2017)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y6-2017.jpg"
+      },
+      {
+        "MODEL": "Y5 (2017)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y5-2017.jpg"
+      },
+      {
+        "MODEL": "Y3 (2017)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y3-2017-.jpg"
+      },
+      {
+        "MODEL": "Watch 2 Classic",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-watch-2-active.jpg"
+      },
+      {
+        "MODEL": "Watch 2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-watch-2-.jpg"
+      },
+      {
+        "MODEL": "P10 Plus",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-p10-plus-r1.jpg"
+      },
+      {
+        "MODEL": "P10",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-p10-.jpg"
+      },
+      {
+        "MODEL": "P10 Lite",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-p10-lite.jpg"
+      },
+      {
+        "MODEL": "P8 Lite (2017)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-p8-lite-2017.jpg"
+      },
+      {
+        "MODEL": "Enjoy 6s",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-enjoy-6s.jpg"
+      },
+      {
+        "MODEL": "Mate 9 Pro",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mate-9-pro.jpg"
+      },
+      {
+        "MODEL": "Mate 9 Porsche Design",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mate-9-porshe-.jpg"
+      },
+      {
+        "MODEL": "Mate 9",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mate-9.jpg"
+      },
+      {
+        "MODEL": "Fit",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-fit.jpg"
+      },
+      {
+        "MODEL": "Enjoy 6",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-enjoy-6.jpg"
+      },
+      {
+        "MODEL": "MediaPad M3 8.4",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-m3.jpg"
+      },
+      {
+        "MODEL": "nova plus",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-nova-plus.jpg"
+      },
+      {
+        "MODEL": "nova",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-nova.jpg"
+      },
+      {
+        "MODEL": "MediaPad T2 10.0 Pro",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-t2-10-pro.jpg"
+      },
+      {
+        "MODEL": "MediaPad T2 7.0 Pro",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-t2-pro.jpg"
+      },
+      {
+        "MODEL": "MediaPad T2 7.0",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-t2.jpg"
+      },
+      {
+        "MODEL": "G9 Plus",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg"
+      },
+      {
+        "MODEL": "MediaPad T1 7.0 Plus",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-t1-70.jpg"
+      },
+      {
+        "MODEL": "MediaPad M2 7.0",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-m2-70.jpg"
+      },
+      {
+        "MODEL": "Y3II",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y3-2.jpg"
+      },
+      {
+        "MODEL": "Y5II",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y5-2.jpg"
+      },
+      {
+        "MODEL": "P9 lite",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-p9-lite-r1.jpg"
+      },
+      {
+        "MODEL": "P9 Plus",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-p9-plus.jpg"
+      },
+      {
+        "MODEL": "P9",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-p9r2.jpg"
+      },
+      {
+        "MODEL": "MediaPad M2 10.0",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-m2-10-.jpg"
+      },
+      {
+        "MODEL": "Watch",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-watch.jpg"
+      },
+      {
+        "MODEL": "Enjoy 5s",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-enjoy-5s.jpg"
+      },
+      {
+        "MODEL": "Mate 8",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mate-8r1.jpg"
+      },
+      {
+        "MODEL": "G7 Plus",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g7-plus.jpg"
+      },
+      {
+        "MODEL": "Y6 Pro",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-enjoy-5.jpg"
+      },
+      {
+        "MODEL": "Nexus 6P",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-nexus-6p-.jpg"
+      },
+      {
+        "MODEL": "Mate S",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mate-s--.jpg"
+      },
+      {
+        "MODEL": "Y6",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-honor-4a.jpg"
+      },
+      {
+        "MODEL": "G8",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g8-.jpg"
+      },
+      {
+        "MODEL": "MediaPad M2 8.0",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-m2.jpg"
+      },
+      {
+        "MODEL": "Y560",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y560.jpg"
+      },
+      {
+        "MODEL": "Y625",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y625.jpg"
+      },
+      {
+        "MODEL": "P8lite ALE-L04",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-p8-lite1.jpg"
+      },
+      {
+        "MODEL": "P8lite",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-p8-lite1.jpg"
+      },
+      {
+        "MODEL": "P8max",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-p8-max.jpg"
+      },
+      {
+        "MODEL": "P8",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-p8.jpg"
+      },
+      {
+        "MODEL": "SnapTo",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-snapto1.jpg"
+      },
+      {
+        "MODEL": "MediaPad X2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/Huawei-MediaPad-X2.jpg"
+      },
+      {
+        "MODEL": "Y635",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y635-0.jpg"
+      },
+      {
+        "MODEL": "Y360",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y360-.jpg"
+      },
+      {
+        "MODEL": "Ascend Y540",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-y540.jpg"
+      },
+      {
+        "MODEL": "Ascend G628",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-g628r.jpg"
+      },
+      {
+        "MODEL": "Ascend Y520",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-y520.jpg"
+      },
+      {
+        "MODEL": "Ascend Y221",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-y221.jpg"
+      },
+      {
+        "MODEL": "Ascend GX1",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-gx1.jpg"
+      },
+      {
+        "MODEL": "Ascend Mate7 Monarch",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-mate7.jpg"
+      },
+      {
+        "MODEL": "MediaPad T1 10",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-t1-10.jpg"
+      },
+      {
+        "MODEL": "MediaPad T1 8.0",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/Huawei-Honor-Tablet1.jpg"
+      },
+      {
+        "MODEL": "MediaPad T1 7.0",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-t1-70.jpg"
+      },
+      {
+        "MODEL": "Ascend G620s",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-g620s.jpg"
+      },
+      {
+        "MODEL": "Ascend Y550",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-y550.jpg"
+      },
+      {
+        "MODEL": "Ascend G7",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-g7.jpg"
+      },
+      {
+        "MODEL": "Ascend P7 Sapphire Edition",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-p7-sapphire-edition.jpg"
+      },
+      {
+        "MODEL": "Ascend Mate7",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-mate7.jpg"
+      },
+      {
+        "MODEL": "Ascend G535",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g535.jpg"
+      },
+      {
+        "MODEL": "Y300II",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y300-fire.jpg"
+      },
+      {
+        "MODEL": "Ascend G630",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-g630.jpg"
+      },
+      {
+        "MODEL": "Ascend Y330",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-y330.jpg"
+      },
+      {
+        "MODEL": "Ascend Plus",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-h881c-ascend-plus.jpg"
+      },
+      {
+        "MODEL": "Ascend P7",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-p7-new.jpg"
+      },
+      {
+        "MODEL": "Ascend P7 mini",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-p7-mini.jpg"
+      },
+      {
+        "MODEL": "Ascend G730",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g730.jpg"
+      },
+      {
+        "MODEL": "Ascend Y600",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-y600.jpg"
+      },
+      {
+        "MODEL": "MediaPad 10 Link+",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/Huawei-MediaPad-101-Link-plus.jpg"
+      },
+      {
+        "MODEL": "Ascend G6 4G",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-g6-new.jpg"
+      },
+      {
+        "MODEL": "Ascend G6",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-g6-new.jpg"
+      },
+      {
+        "MODEL": "MediaPad M1",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-m1.jpg"
+      },
+      {
+        "MODEL": "MediaPad X1",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-x1-new.jpg"
+      },
+      {
+        "MODEL": "Ascend Y530",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y530.jpg"
+      },
+      {
+        "MODEL": "MediaPad 7 Youth2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-7-youth2.jpg"
+      },
+      {
+        "MODEL": "Ascend P6 S",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-p6s.jpg"
+      },
+      {
+        "MODEL": "Ascend Mate2 4G",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-mate2.jpg"
+      },
+      {
+        "MODEL": "Ascend Y320",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-y320.jpg"
+      },
+      {
+        "MODEL": "Ascend Y220",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-y220.jpg"
+      },
+      {
+        "MODEL": "Ascend G740",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-g740.jpg"
+      },
+      {
+        "MODEL": "Ascend Y511",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-y511.jpg"
+      },
+      {
+        "MODEL": "Ascend W2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/Huawei-Ascend-W2.jpg"
+      },
+      {
+        "MODEL": "G6153",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g6153.jpg"
+      },
+      {
+        "MODEL": "G3621L",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g3621.jpg"
+      },
+      {
+        "MODEL": "Ascend G700",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-g700.jpg"
+      },
+      {
+        "MODEL": "G610s",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g610s.jpg"
+      },
+      {
+        "MODEL": "U8687 Cronos",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u8687-cronos.jpg"
+      },
+      {
+        "MODEL": "Ascend G525",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-g525.jpg"
+      },
+      {
+        "MODEL": "MediaPad 7 Youth",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-7-youth.jpg"
+      },
+      {
+        "MODEL": "MediaPad 7 Vogue",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-7-vogue.jpg"
+      },
+      {
+        "MODEL": "Ascend P6",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-p6-ofic.jpg"
+      },
+      {
+        "MODEL": "Ascend Y300",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-y300.jpg"
+      },
+      {
+        "MODEL": "Premia 4G M931",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-premia-4g.jpg"
+      },
+      {
+        "MODEL": "Ascend Y210D",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-y210d.jpg"
+      },
+      {
+        "MODEL": "Ascend P2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-p2.jpg"
+      },
+      {
+        "MODEL": "Ascend G615",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/ascend-g615.jpg"
+      },
+      {
+        "MODEL": "Ascend G526",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-g526-new.jpg"
+      },
+      {
+        "MODEL": "Ascend G350",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-g350.jpg"
+      },
+      {
+        "MODEL": "Ascend G312",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-g312-u8681-u8680.jpg"
+      },
+      {
+        "MODEL": "Ascend W1",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-w1.jpg"
+      },
+      {
+        "MODEL": "Ascend Mate",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-mate-new.jpg"
+      },
+      {
+        "MODEL": "Ascend D2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-d2-new.jpg"
+      },
+      {
+        "MODEL": "Ascend G510",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-g510-u8951.jpg"
+      },
+      {
+        "MODEL": "Ascend G500",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-g500-shine-pro-u8836d.jpg"
+      },
+      {
+        "MODEL": "Ascend Y201 Pro",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-y201-pro.jpg"
+      },
+      {
+        "MODEL": "MediaPad 10 Link",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/Huawei-MediaPad-101-Link.jpg"
+      },
+      {
+        "MODEL": "Ascend Y",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-y.jpg"
+      },
+      {
+        "MODEL": "Summit",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-summit.jpg"
+      },
+      {
+        "MODEL": "Ascend P1 LTE",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-p1-lte.jpg"
+      },
+      {
+        "MODEL": "Fusion 2 U8665",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-att-fusion-2.jpg"
+      },
+      {
+        "MODEL": "Ascend G600",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g600.jpg"
+      },
+      {
+        "MODEL": "Ascend G330",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-g330.jpg"
+      },
+      {
+        "MODEL": "MediaPad 7 Lite",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mediapad-7-lite.jpg"
+      },
+      {
+        "MODEL": "Ascend Y100",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-y100.jpg"
+      },
+      {
+        "MODEL": "Ascend Y200",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-y200.jpg"
+      },
+      {
+        "MODEL": "Ascend G330D U8825D",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-g300d-u881d5.jpg"
+      },
+      {
+        "MODEL": "Ascend G300",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-g300-u8815.jpg"
+      },
+      {
+        "MODEL": "Ascend P1 XL U9200E",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-p1-new.jpg"
+      },
+      {
+        "MODEL": "Ascend P1",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-p1-new.jpg"
+      },
+      {
+        "MODEL": "Ascend Q M5660",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-q.jpg"
+      },
+      {
+        "MODEL": "G6005",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g6005.jpg"
+      },
+      {
+        "MODEL": "G6800",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g6800.jpg"
+      },
+      {
+        "MODEL": "G6310",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g6310.jpg"
+      },
+      {
+        "MODEL": "G5000",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g5000.jpg"
+      },
+      {
+        "MODEL": "Activa 4G",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-activa-4g.jpg"
+      },
+      {
+        "MODEL": "G5520",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g5520.jpg"
+      },
+      {
+        "MODEL": "G6609",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g6609.jpg"
+      },
+      {
+        "MODEL": "Fusion U8652",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/att-fusion.jpg"
+      },
+      {
+        "MODEL": "MediaPad 10 FHD",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei_mediapad10_fhd.jpg"
+      },
+      {
+        "MODEL": "Ascend D1 XL U9500E",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-d1-xl-u9500e.jpg"
+      },
+      {
+        "MODEL": "Ascend D1",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-d1.jpg"
+      },
+      {
+        "MODEL": "Ascend D quad XL",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-d-quad-xl-new.jpg"
+      },
+      {
+        "MODEL": "Ascend D quad",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-d-quad-new.jpg"
+      },
+      {
+        "MODEL": "Ascend P1s",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-p1-new.jpg"
+      },
+      {
+        "MODEL": "M886 Mercury",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-m886-mercury.jpg"
+      },
+      {
+        "MODEL": "G7300",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g7300.jpg"
+      },
+      {
+        "MODEL": "G7005",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g7005.jpg"
+      },
+      {
+        "MODEL": "MediaPad",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/Huawei-MediaPad.jpg"
+      },
+      {
+        "MODEL": "MediaPad S7-301w",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/Huawei-MediaPad.jpg"
+      },
+      {
+        "MODEL": "D51 Discovery",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-d51-discovery.jpg"
+      },
+      {
+        "MODEL": "U8520 Duplex",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u8520.jpg"
+      },
+      {
+        "MODEL": "T8300",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-t8300.jpg"
+      },
+      {
+        "MODEL": "U8350 Boulder",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-boulder-u8350.jpg"
+      },
+      {
+        "MODEL": "Impulse 4G",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-impulse-4g.jpg"
+      },
+      {
+        "MODEL": "Pillar",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-pillar.jpg"
+      },
+      {
+        "MODEL": "U8850 Vision",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-vision-ofic.jpg"
+      },
+      {
+        "MODEL": "Ascend II",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-II.jpg"
+      },
+      {
+        "MODEL": "U8800 Pro",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u8800-pro.jpg"
+      },
+      {
+        "MODEL": "G7206",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g7206.jpg"
+      },
+      {
+        "MODEL": "U5510",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u5510.jpg"
+      },
+      {
+        "MODEL": "G5500",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g5500.jpg"
+      },
+      {
+        "MODEL": "G6620",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g6620.jpg"
+      },
+      {
+        "MODEL": "U8650 Sonic",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u8650-sonic.jpg"
+      },
+      {
+        "MODEL": "U8180 IDEOS X1",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ideos-x1.jpg"
+      },
+      {
+        "MODEL": "G6608",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g6608.jpg"
+      },
+      {
+        "MODEL": "G7010",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g7010.jpg"
+      },
+      {
+        "MODEL": "U5900s",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u5900s.jpg"
+      },
+      {
+        "MODEL": "IDEOS S7 Slim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ideos-s7-slim.jpg"
+      },
+      {
+        "MODEL": "IDEOS S7 Slim CDMA",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ideos-s7-slim.jpg"
+      },
+      {
+        "MODEL": "U9000 IDEOS X6",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ideos-x6-new-1.jpg"
+      },
+      {
+        "MODEL": "U8800 IDEOS X5",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ideos-x5-ofic-new.jpg"
+      },
+      {
+        "MODEL": "U8510 IDEOS X3",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ideos-x3.jpg"
+      },
+      {
+        "MODEL": "U8150 IDEOS",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ideos.jpg"
+      },
+      {
+        "MODEL": "U8500 IDEOS X2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u8500-new.jpg"
+      },
+      {
+        "MODEL": "U7520",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u7520.jpg"
+      },
+      {
+        "MODEL": "G6150",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g6150d.jpg"
+      },
+      {
+        "MODEL": "G7002",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/Huawei-G7002.jpg"
+      },
+      {
+        "MODEL": "U8300",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u8300.jpg"
+      },
+      {
+        "MODEL": "IDEOS S7",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-s7.jpg"
+      },
+      {
+        "MODEL": "C3200",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/Huawei-C3200.jpg"
+      },
+      {
+        "MODEL": "U3100",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u3100.jpg"
+      },
+      {
+        "MODEL": "U8110",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u8110.jpg"
+      },
+      {
+        "MODEL": "U8100",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u8100.jpg"
+      },
+      {
+        "MODEL": "U8230",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u8230.jpg"
+      },
+      {
+        "MODEL": "U8220",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u8220.jpg"
+      },
+      {
+        "MODEL": "U7510",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u7510.jpg"
+      },
+      {
+        "MODEL": "U1270",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u1270.jpg"
+      },
+      {
+        "MODEL": "U1250",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u1250.jpg"
+      },
+      {
+        "MODEL": "U9130 Compass",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u9130-compass.jpg"
+      },
+      {
+        "MODEL": "G6600 Passport",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g6600-passport.jpg"
+      },
+      {
+        "MODEL": "U7310",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u7310-new.jpg"
+      },
+      {
+        "MODEL": "U9150",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u9150.jpg"
+      },
+      {
+        "MODEL": "U121",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u121.jpg"
+      },
+      {
+        "MODEL": "U120",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u120.jpg"
+      },
+      {
+        "MODEL": "U3300",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u3300.jpg"
+      },
+      {
+        "MODEL": "U1310",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u1310.jpg"
+      },
+      {
+        "MODEL": "U1100",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u1100.jpg"
+      },
+      {
+        "MODEL": "U1000",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-u1000.jpg"
+      },
+      {
+        "MODEL": "T156",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-t156.jpg"
+      },
+      {
+        "MODEL": "T158",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-t158.jpg"
+      },
+      {
+        "MODEL": "T208",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-t208.jpg"
+      },
+      {
+        "MODEL": "T261L",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-261l.jpg"
+      },
+      {
+        "MODEL": "T211",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-t211.jpg"
+      },
+      {
+        "MODEL": "T161L",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-t161l.jpg"
+      },
+      {
+        "MODEL": "T330",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-t330.jpg"
+      },
+      {
+        "MODEL": "T201",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-t201.jpg"
+      },
+      {
+        "MODEL": "T552",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-t552.jpg"
+      },
+      {
+        "MODEL": "Ascend W3",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-ascend-w2.jpg"
+      },
+      {
+        "MODEL": "G10",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-g10-.jpg"
+      },
+      {
+        "MODEL": "Mulan",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/huawei-mulan-r.jpg"
+      }
+    ]
+  },
+  {
     "BRAND": "SAMSUNG",
     "MODELIST": [
       {
