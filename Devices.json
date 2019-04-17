@@ -7291,6 +7291,173 @@
     ]
   },
   {
+    "BRAND": "HP",
+
+    "MODELIST": [
+      {
+        "MODEL": "Elite x3",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-elite-x3-new.jpg"
+      },
+      {
+        "MODEL": "Slate 17",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-slate-17.jpg"
+      },
+      {
+        "MODEL": "Pro Slate 12",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-pro-slate-12.jpg"
+      },
+      {
+        "MODEL": "Pro Slate 10 EE G1",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-pro-slate-10-ee.jpg"
+      },
+      {
+        "MODEL": "Pro Slate 8",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-pro-slate-8-new.jpg"
+      },
+      {
+        "MODEL": "Slate6 VoiceTab II",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-slate-6-voicetab-ii.jpg"
+      },
+      {
+        "MODEL": "10 Plus",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-10-plus-2201er.jpg"
+      },
+      {
+        "MODEL": "7 VoiceTab",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-7-voicetab-1351ra.jpg"
+      },
+      {
+        "MODEL": "7 Plus",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-7-plus.jpg"
+      },
+      {
+        "MODEL": "8",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-8.jpg"
+      },
+      {
+        "MODEL": "Slate7 VoiceTab Ultra",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-slate7-voicetab-ultra.jpg"
+      },
+      {
+        "MODEL": "Slate7 VoiceTab",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/HP-Slate7-VoiceTab1.jpg"
+      },
+      {
+        "MODEL": "Slate6 VoiceTab",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/HP-Slate6-VoiceTab.jpg"
+      },
+      {
+        "MODEL": "Slate8 Pro",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-slate8-pro.jpg"
+      },
+      {
+        "MODEL": "Slate10 HD",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-slate10-hd.jpg"
+      },
+      {
+        "MODEL": "Slate7 Extreme",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-slate7-extreme.jpg"
+      },
+      {
+        "MODEL": "Slate7 Plus",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-slate7-plus.jpg"
+      },
+      {
+        "MODEL": "Slate 7",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-slate-7-new.jpg"
+      },
+      {
+        "MODEL": "TouchPad 4G",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-touchpad-4g.jpg"
+      },
+      {
+        "MODEL": "Veer 4G",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-veer-4g-new.jpg"
+      },
+      {
+        "MODEL": "Veer",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-veer-ofic.jpg"
+      },
+      {
+        "MODEL": "Pre 3 CDMA",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/palm-pre-3-ofic.jpg"
+      },
+      {
+        "MODEL": "Pre 3",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/palm-pre-3-ofic.jpg"
+      },
+      {
+        "MODEL": "TouchPad",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-touch-pad-new.jpg"
+      },
+      {
+        "MODEL": "iPAQ Glisten",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-ipaq-glisten.jpg"
+      },
+      {
+        "MODEL": "iPAQ Voice Messenger",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-ipaq-voice-messenger.jpg"
+      },
+      {
+        "MODEL": "iPAQ Data Messenger",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-ipaq-data-messenger.jpg"
+      },
+      {
+        "MODEL": "iPAQ 910c",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-910c.jpg"
+      },
+      {
+        "MODEL": "iPAQ 610c",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-ipaq600.gif"
+      },
+      {
+        "MODEL": "iPAQ 514",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-514.gif"
+      },
+      {
+        "MODEL": "iPAQ rw6815",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-rw6815.gif"
+      },
+      {
+        "MODEL": "iPAQ rw6828",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-rw6800.gif"
+      },
+      {
+        "MODEL": "iPAQ rw6818",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-rw6800.gif"
+      },
+      {
+        "MODEL": "iPAQ hw6915",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-hw6900.gif"
+      },
+      {
+        "MODEL": "iPAQ hw6910",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-hw6900.gif"
+      },
+      {
+        "MODEL": "iPAQ hw6515",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-hw6515.gif"
+      },
+      {
+        "MODEL": "iPAQ hw6510",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-hw6510.gif"
+      },
+      {
+        "MODEL": "iPAQ h6325",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-h6325.gif"
+      },
+      {
+        "MODEL": "iPAQ h6320",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-h6320.gif"
+      },
+      {
+        "MODEL": "iPAQ h6315",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hp-h6315.gif"
+      }
+    ]
+  },
+
+  {
     "BRAND": "SAMSUNG",
     "MODELIST": [
       {
