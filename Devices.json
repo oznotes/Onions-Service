@@ -7292,7 +7292,6 @@
   },
   {
     "BRAND": "HP",
-
     "MODELIST": [
       {
         "MODEL": "Elite x3",
@@ -7456,7 +7455,1047 @@
       }
     ]
   },
-
+  {
+    "BRAND": "HTC",
+    "MODELIST": [
+      {
+        "MODEL": "Desire 12s",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-12s-.jpg"
+      },
+      {
+        "MODEL": "Exodus 1",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-exodus-.jpg"
+      },
+      {
+        "MODEL": "U12 life",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-u12-life.jpg"
+      },
+      {
+        "MODEL": "U12+",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-u12-plus-.jpg"
+      },
+      {
+        "MODEL": "Desire 12+",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-12-plus.jpg"
+      },
+      {
+        "MODEL": "Desire 12",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-12.jpg"
+      },
+      {
+        "MODEL": "U11 Eyes",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-u11-eyes-.jpg"
+      },
+      {
+        "MODEL": "U11+",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-u11-plus-.jpg"
+      },
+      {
+        "MODEL": "U11 Life",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-u11-life-r1.jpg"
+      },
+      {
+        "MODEL": "U11",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-u11.jpg"
+      },
+      {
+        "MODEL": "One X10",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-x10.jpg"
+      },
+      {
+        "MODEL": "U Ultra",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-u-ultra.jpg"
+      },
+      {
+        "MODEL": "U Play",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-u-play.jpg"
+      },
+      {
+        "MODEL": "10 evo",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-10-evo.jpg"
+      },
+      {
+        "MODEL": "Desire 650",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-650.jpg"
+      },
+      {
+        "MODEL": "Desire 10 Pro",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-10-pro.jpg"
+      },
+      {
+        "MODEL": "Desire 10 Compact",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-10-compact.jpg"
+      },
+      {
+        "MODEL": "Desire 10 Lifestyle",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-10-lifestyle-new.jpg"
+      },
+      {
+        "MODEL": "One A9s",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-a9sr.jpg"
+      },
+      {
+        "MODEL": "Desire 728 Ultra",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-728-ultra-edition.jpg"
+      },
+      {
+        "MODEL": "Desire 628",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-628.jpg"
+      },
+      {
+        "MODEL": "One M9 Prime Camera",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-m9s-.jpg"
+      },
+      {
+        "MODEL": "Desire 830",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-830.jpg"
+      },
+      {
+        "MODEL": "One S9",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-s9.jpg"
+      },
+      {
+        "MODEL": "10 Lifestyle",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-10-lifestyle.jpg"
+      },
+      {
+        "MODEL": "10",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-10-r.jpg"
+      },
+      {
+        "MODEL": "Desire 825",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-a56-desire-825.jpg"
+      },
+      {
+        "MODEL": "Desire 630",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-a16-desire-530.jpg"
+      },
+      {
+        "MODEL": "Desire 530",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-a16-desire-530.jpg"
+      },
+      {
+        "MODEL": "Desire 625",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-625.jpg"
+      },
+      {
+        "MODEL": "One X9",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-x9.jpg"
+      },
+      {
+        "MODEL": "One M9s",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-m9s-.jpg"
+      },
+      {
+        "MODEL": "Desire 828 dual sim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-828w.jpg"
+      },
+      {
+        "MODEL": "Desire 728 dual sim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-728.jpg"
+      },
+      {
+        "MODEL": "One E9s dual sim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-e9s-dual-sim.jpg"
+      },
+      {
+        "MODEL": "Butterfly 3",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-butterfly-3.jpg"
+      },
+      {
+        "MODEL": "One A9",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-a9-new.jpg"
+      },
+      {
+        "MODEL": "One M9+ Supreme Camera",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-m9-plus-new.jpg"
+      },
+      {
+        "MODEL": "Desire 626 (USA)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-626s.jpg"
+      },
+      {
+        "MODEL": "Desire 626s",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-626s.jpg"
+      },
+      {
+        "MODEL": "Desire 526",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-526.jpg"
+      },
+      {
+        "MODEL": "Desire 520",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-520.jpg"
+      },
+      {
+        "MODEL": "One ME",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-me.jpg"
+      },
+      {
+        "MODEL": "Desire 820G+ dual sim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-820g-plus.jpg"
+      },
+      {
+        "MODEL": "Desire 326G dual sim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-326g.jpg"
+      },
+      {
+        "MODEL": "One M9+",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-m9-plus-new.jpg"
+      },
+      {
+        "MODEL": "One M8s",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-m8s.jpg"
+      },
+      {
+        "MODEL": "One E9+",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-e9plus.jpg"
+      },
+      {
+        "MODEL": "One E9",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-e9.jpg"
+      },
+      {
+        "MODEL": "One M9",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-m9-1.jpg"
+      },
+      {
+        "MODEL": "Desire 820s dual sim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-820q.jpg"
+      },
+      {
+        "MODEL": "Desire 626G+",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-626g-plus.jpg"
+      },
+      {
+        "MODEL": "Desire 626",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-626.jpg"
+      },
+      {
+        "MODEL": "Desire 526G+ dual sim ",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-526Gplus-dual-sim.jpg"
+      },
+      {
+        "MODEL": "Desire 826 dual sim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-826r.jpg"
+      },
+      {
+        "MODEL": "Desire 320",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-320.jpg"
+      },
+      {
+        "MODEL": "Desire 620G dual sim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-620g.jpg"
+      },
+      {
+        "MODEL": "Desire 620",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-620.jpg"
+      },
+      {
+        "MODEL": "Nexus 9",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-nexus-9.jpg"
+      },
+      {
+        "MODEL": "Desire 816G dual sim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-816-dual-sim1.jpg"
+      },
+      {
+        "MODEL": "One (M8 Eye)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-m8.jpg"
+      },
+      {
+        "MODEL": "Desire Eye",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-eye-ofic1.jpg"
+      },
+      {
+        "MODEL": "Desire 612",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-612.jpg"
+      },
+      {
+        "MODEL": "Desire 820q dual sim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-820q.jpg"
+      },
+      {
+        "MODEL": "Desire 820 dual sim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-820.jpg"
+      },
+      {
+        "MODEL": "Desire 820",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-820.jpg"
+      },
+      {
+        "MODEL": "One (E8) CDMA",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-e8-cdma.jpg"
+      },
+      {
+        "MODEL": "Desire 510",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-510-new.jpg"
+      },
+      {
+        "MODEL": "One (M8) for Windows",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-m8-windows-gsm.jpg"
+      },
+      {
+        "MODEL": "One (M8) for Windows (CDMA)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-m8-win.jpg"
+      },
+      {
+        "MODEL": "Butterfly 2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-butterfly-2-new.jpg"
+      },
+      {
+        "MODEL": "One Remix",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-remix.jpg"
+      },
+      {
+        "MODEL": "One (M8) dual sim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-m8.jpg"
+      },
+      {
+        "MODEL": "Desire 516 dual sim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-516.jpg"
+      },
+      {
+        "MODEL": "One (E8)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-e8-ace.jpg"
+      },
+      {
+        "MODEL": "One mini 2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-mini-2.jpg"
+      },
+      {
+        "MODEL": "Desire 616 dual sim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-616--dual-sim.jpg"
+      },
+      {
+        "MODEL": "Desire 210 dual sim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-210-dual-sim.jpg"
+      },
+      {
+        "MODEL": "One (M8) CDMA",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-m8.jpg"
+      },
+      {
+        "MODEL": "One (M8)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-m8.jpg"
+      },
+      {
+        "MODEL": "Desire 310 dual sim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-310-dual-sim.jpg"
+      },
+      {
+        "MODEL": "Desire 310",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-310-new.jpg"
+      },
+      {
+        "MODEL": "Desire 816 dual sim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-816-dual-sim1.jpg"
+      },
+      {
+        "MODEL": "Desire 816",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-8.jpg"
+      },
+      {
+        "MODEL": "Desire 610",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-610-new.jpg"
+      },
+      {
+        "MODEL": "Desire 501 dual sim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-501-dualsim.jpg"
+      },
+      {
+        "MODEL": "Desire 700",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-700.jpg"
+      },
+      {
+        "MODEL": "Desire 700 dual sim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-700-dual-sim.jpg"
+      },
+      {
+        "MODEL": "Desire 601 dual sim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-601-dual-sim.jpg"
+      },
+      {
+        "MODEL": "Desire 501",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-501.jpg"
+      },
+      {
+        "MODEL": "One Max",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-max.jpg"
+      },
+      {
+        "MODEL": "Desire 300",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-300.jpg"
+      },
+      {
+        "MODEL": "Desire 601",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-601.jpg"
+      },
+      {
+        "MODEL": "Desire 500",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-500.jpg"
+      },
+      {
+        "MODEL": "One mini",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-mini-ofic.jpg"
+      },
+      {
+        "MODEL": "Desire L",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-l.jpg"
+      },
+      {
+        "MODEL": "Desire P",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-p.jpg"
+      },
+      {
+        "MODEL": "Desire Q",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-q.jpg"
+      },
+      {
+        "MODEL": "8XT",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-8xt.jpg"
+      },
+      {
+        "MODEL": "Butterfly S",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-butterfly-s.jpg"
+      },
+      {
+        "MODEL": "Desire 200",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-200.jpg"
+      },
+      {
+        "MODEL": "Desire 600 dual sim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-600.jpg"
+      },
+      {
+        "MODEL": "First",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-first.jpg"
+      },
+      {
+        "MODEL": "One Dual Sim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-m7-new1.jpg"
+      },
+      {
+        "MODEL": "One",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-m7-new1.jpg"
+      },
+      {
+        "MODEL": "Desire U",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-u-t327w.jpg"
+      },
+      {
+        "MODEL": "Desire 400 dual sim",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-su.jpg"
+      },
+      {
+        "MODEL": "Butterfly",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-bitterfly.jpg"
+      },
+      {
+        "MODEL": "DROID DNA",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-droid-dna-new.jpg"
+      },
+      {
+        "MODEL": "One SV CDMA",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-sv.jpg"
+      },
+      {
+        "MODEL": "One SV",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-sv.jpg"
+      },
+      {
+        "MODEL": "Desire SV",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-sv.jpg"
+      },
+      {
+        "MODEL": "One VX",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-vx.jpg"
+      },
+      {
+        "MODEL": "One X+",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-x-plus-ofic.jpg"
+      },
+      {
+        "MODEL": "Windows Phone 8X CDMA",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-8x-cdma.jpg"
+      },
+      {
+        "MODEL": "Windows Phone 8X",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-8x.jpg"
+      },
+      {
+        "MODEL": "Windows Phone 8S",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-8s.jpg"
+      },
+      {
+        "MODEL": "One ST",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-st.jpg"
+      },
+      {
+        "MODEL": "One SC",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-sc.jpg"
+      },
+      {
+        "MODEL": "Desire X",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-x-ofic.jpg"
+      },
+      {
+        "MODEL": "Desire VT",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-vt.jpg"
+      },
+      {
+        "MODEL": "Desire XC",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-xc.jpg"
+      },
+      {
+        "MODEL": "Desire VC",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-vc.jpg"
+      },
+      {
+        "MODEL": "Desire V",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-v.jpg"
+      },
+      {
+        "MODEL": "Desire C",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-c1.jpg"
+      },
+      {
+        "MODEL": "J",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-j.jpg"
+      },
+      {
+        "MODEL": "DROID Incredible 4G LTE",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-droid-incredible-4g-lte.jpg"
+      },
+      {
+        "MODEL": "Evo 4G LTE",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-evo-4g-lte-sprint.jpg"
+      },
+      {
+        "MODEL": "One XC",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-xc.jpg"
+      },
+      {
+        "MODEL": "One X",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-x-global.jpg"
+      },
+      {
+        "MODEL": "One X AT&T",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-x-ofic.jpg"
+      },
+      {
+        "MODEL": "One XL",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-xl-global.jpg"
+      },
+      {
+        "MODEL": "One S C2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-s-new.jpg"
+      },
+      {
+        "MODEL": "One S",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-s-new.jpg"
+      },
+      {
+        "MODEL": "One V",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-v.jpg"
+      },
+      {
+        "MODEL": "Velocity 4G Vodafone",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/vodafone-velocity-4g-vodafone.jpg"
+      },
+      {
+        "MODEL": "Velocity 4G",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-velocity-4g-ofic.jpg"
+      },
+      {
+        "MODEL": "Titan II",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-titan-ii-real.jpg"
+      },
+      {
+        "MODEL": "Rezound",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-rezound-new.jpg"
+      },
+      {
+        "MODEL": "Vivid",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-vivid.jpg"
+      },
+      {
+        "MODEL": "EVO Design 4G",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-evo-design-4g.jpg"
+      },
+      {
+        "MODEL": "Sensation XL",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-runnymede.jpg"
+      },
+      {
+        "MODEL": "Explorer",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-explorer-ofic.jpg"
+      },
+      {
+        "MODEL": "Amaze 4G",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-amaze-4g-new.jpg"
+      },
+      {
+        "MODEL": "Raider 4G",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-raider-4g.jpg"
+      },
+      {
+        "MODEL": "Rhyme",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-rhyme.jpg"
+      },
+      {
+        "MODEL": "Hero S",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-hero-s.jpg"
+      },
+      {
+        "MODEL": "Rhyme CDMA",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-rhyme-cdma.jpg"
+      },
+      {
+        "MODEL": "Sensation XE",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-sensation-xe.jpg"
+      },
+      {
+        "MODEL": "Jetstream",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-jetstream.jpg"
+      },
+      {
+        "MODEL": "Lead",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-lead.jpg"
+      },
+      {
+        "MODEL": "Titan",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-titan.jpg"
+      },
+      {
+        "MODEL": "Radar",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-radar.jpg"
+      },
+      {
+        "MODEL": "Panache",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-panache.jpg"
+      },
+      {
+        "MODEL": "Glacier",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-glacier.jpg"
+      },
+      {
+        "MODEL": "Status",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-status.jpg"
+      },
+      {
+        "MODEL": "Trophy",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-trophy.jpg"
+      },
+      {
+        "MODEL": "DROID Incredible 2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-droid-incredible-2.jpg"
+      },
+      {
+        "MODEL": "Sensation 4G",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-sensation-new.jpg"
+      },
+      {
+        "MODEL": "EVO 3D",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-evo-3d-gsm.jpg"
+      },
+      {
+        "MODEL": "Sensation",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-sensation-new.jpg"
+      },
+      {
+        "MODEL": "EVO 3D CDMA",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-evo-3d.jpg"
+      },
+      {
+        "MODEL": "HD7S",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-hd7s.jpg"
+      },
+      {
+        "MODEL": "Prime",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-prime.jpg"
+      },
+      {
+        "MODEL": "Merge",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-merge-uscellular.jpg"
+      },
+      {
+        "MODEL": "Incredible S",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-incredible-s1.jpg"
+      },
+      {
+        "MODEL": "Desire S",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-wildfire-s1.jpg"
+      },
+      {
+        "MODEL": "Wildfire S",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-wildfire-s-ofic1.jpg"
+      },
+      {
+        "MODEL": "Salsa",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-salsa1.jpg"
+      },
+      {
+        "MODEL": "ChaCha",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-chacha.jpg"
+      },
+      {
+        "MODEL": "Flyer",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-flyer.jpg"
+      },
+      {
+        "MODEL": "Flyer Wi-Fi",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-flyer.jpg"
+      },
+      {
+        "MODEL": "EVO View 4G",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/HTC-EVO-View-4G.jpg"
+      },
+      {
+        "MODEL": "Inspire 4G",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-inspire-4g.jpg"
+      },
+      {
+        "MODEL": "Freestyle",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-freestyle.jpg"
+      },
+      {
+        "MODEL": "ThunderBolt 4G",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-thunderbolt-verizon.jpg"
+      },
+      {
+        "MODEL": "EVO Shift 4G",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-shift-evo4-new.jpg"
+      },
+      {
+        "MODEL": "Gratia",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-gratia-new.jpg"
+      },
+      {
+        "MODEL": "HD7",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-hd7-ofic.jpg"
+      },
+      {
+        "MODEL": "7 Pro",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-7-pro-gsm.jpg"
+      },
+      {
+        "MODEL": "7 Surround",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-7-surround.jpg"
+      },
+      {
+        "MODEL": "7 Mozart",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-mozart-ofic.jpg"
+      },
+      {
+        "MODEL": "7 Trophy",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-trophy-ofic.jpg"
+      },
+      {
+        "MODEL": "Arrive",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-7-pro.jpg"
+      },
+      {
+        "MODEL": "Desire HD",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-hd-new.jpg"
+      },
+      {
+        "MODEL": "Desire Z",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-desire-z.jpg"
+      },
+      {
+        "MODEL": "Paradise",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-paradise.jpg"
+      },
+      {
+        "MODEL": "Evo 4G+",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-evo-4g-plus.jpg"
+      },
+      {
+        "MODEL": "Aria",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-aria-new.jpg"
+      },
+      {
+        "MODEL": "Wildfire CDMA",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-wildlife-cdma.jpg"
+      },
+      {
+        "MODEL": "Wildfire",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-wildfire-ofic.jpg"
+      },
+      {
+        "MODEL": "Desire",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-bravo.jpg"
+      },
+      {
+        "MODEL": "HD mini",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-hd-mini.jpg"
+      },
+      {
+        "MODEL": "Legend",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-legend.jpg"
+      },
+      {
+        "MODEL": "Rider",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-rider-new.jpg"
+      },
+      {
+        "MODEL": "Google Nexus One",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-google-nexus-one-final.jpg"
+      },
+      {
+        "MODEL": "Smart",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-smart.jpg"
+      },
+      {
+        "MODEL": "HD2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-hd2-new.jpg"
+      },
+      {
+        "MODEL": "Evo 4G",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-evo-sprint.jpg"
+      },
+      {
+        "MODEL": "Droid Incredible",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-droid-incredible.jpg"
+      },
+      {
+        "MODEL": "DROID ERIS",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-droid-eris.jpg"
+      },
+      {
+        "MODEL": "Pure",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-pure.jpg"
+      },
+      {
+        "MODEL": "Tattoo",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-tatoo.jpg"
+      },
+      {
+        "MODEL": "Touch2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-touch2-new.jpg"
+      },
+      {
+        "MODEL": "Hero CDMA",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-hero-cdma.jpg"
+      },
+      {
+        "MODEL": "Hero",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-hero.jpg"
+      },
+      {
+        "MODEL": "Ozone",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-ozone.jpg"
+      },
+      {
+        "MODEL": "Schubert",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-schubert.jpg"
+      },
+      {
+        "MODEL": "Snap",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-snap.jpg"
+      },
+      {
+        "MODEL": "Magic",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-magic.jpg"
+      },
+      {
+        "MODEL": "Tilt2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-tilt2-new.jpg"
+      },
+      {
+        "MODEL": "Touch Pro2 CDMA",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-touch-pro2-cdma.jpg"
+      },
+      {
+        "MODEL": "Touch Pro2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-touch-pro2.jpg"
+      },
+      {
+        "MODEL": "Touch Diamond2 CDMA",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-imagio-verizon.jpg"
+      },
+      {
+        "MODEL": "Touch Diamond2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-diamond2.jpg"
+      },
+      {
+        "MODEL": "Dream",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-dream.jpg"
+      },
+      {
+        "MODEL": "Touch Cruise 09",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-touch-cruise-09.jpg"
+      },
+      {
+        "MODEL": "MAX 4G",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-max-4g.jpg"
+      },
+      {
+        "MODEL": "Touch HD T8285",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/HTC-Touch-HD-T8285-Blackstone.jpg"
+      },
+      {
+        "MODEL": "Touch HD",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-touch--hd.jpg"
+      },
+      {
+        "MODEL": "Touch 3G",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-touch--3g.jpg"
+      },
+      {
+        "MODEL": "Touch Viva",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-touch--viva.jpg"
+      },
+      {
+        "MODEL": "S740",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-s740.jpg"
+      },
+      {
+        "MODEL": "Touch Pro CDMA",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/touch-pro-cdma.jpg"
+      },
+      {
+        "MODEL": "Touch Pro",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-touch-pro.jpg"
+      },
+      {
+        "MODEL": "Touch Diamond CDMA",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-touch-diamond-CDMA.jpg"
+      },
+      {
+        "MODEL": "Touch Diamond",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-touch-diamond.jpg"
+      },
+      {
+        "MODEL": "Advantage X7510",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-x7510.jpg"
+      },
+      {
+        "MODEL": "P3470",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-p3470.jpg"
+      },
+      {
+        "MODEL": "Touch Cruise",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-touch-cruise.jpg"
+      },
+      {
+        "MODEL": "Touch Dual",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-touch-dual.gif"
+      },
+      {
+        "MODEL": "P6500",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-p6500.gif"
+      },
+      {
+        "MODEL": "S730",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-s730.jpg"
+      },
+      {
+        "MODEL": "TyTN II",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-tytn2.gif"
+      },
+      {
+        "MODEL": "S630",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-s630.gif"
+      },
+      {
+        "MODEL": "Touch",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-touch.gif"
+      },
+      {
+        "MODEL": "P6300",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-p6300.gif"
+      },
+      {
+        "MODEL": "Shift",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-shift.gif"
+      },
+      {
+        "MODEL": "Advantage X7500",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-advantage.gif"
+      },
+      {
+        "MODEL": "S710",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-s710.gif"
+      },
+      {
+        "MODEL": "P3350",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-p3350.gif"
+      },
+      {
+        "MODEL": "P3400",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-p3400.gif"
+      },
+      {
+        "MODEL": "P4350",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-p4350.gif"
+      },
+      {
+        "MODEL": "P3600i",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-p3600i.gif"
+      },
+      {
+        "MODEL": "P3600",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-p3600.gif"
+      },
+      {
+        "MODEL": "P3300",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-p3300.gif"
+      },
+      {
+        "MODEL": "S620",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-s620.gif"
+      },
+      {
+        "MODEL": "S310",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-s310.gif"
+      },
+      {
+        "MODEL": "TyTN",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-tytn.gif"
+      },
+      {
+        "MODEL": "MTeoR",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-mteor.gif"
+      },
+      {
+        "MODEL": "Ville",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/HTC-Ville.jpg"
+      },
+      {
+        "MODEL": "Zeta",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-zeta.jpg"
+      },
+      {
+        "MODEL": "A12",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc.jpg"
+      },
+      {
+        "MODEL": "Desire HD2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-sensation-new.jpg"
+      },
+      {
+        "MODEL": "Ignite",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-ignite.jpg"
+      },
+      {
+        "MODEL": "One (M8i)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-m8.jpg"
+      },
+      {
+        "MODEL": "One M8 Prime",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-one-prime-m8.jpg"
+      },
+      {
+        "MODEL": "Primo",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-primo.jpg"
+      },
+      {
+        "MODEL": "Tiara",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/htc-tiara.jpg"
+      }
+    ]
+  },
   {
     "BRAND": "SAMSUNG",
     "MODELIST": [
