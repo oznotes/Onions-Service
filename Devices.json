@@ -6475,6 +6475,601 @@
     ]
   },
   {
+    "BRAND": "GIONEE",
+    "MODELIST": [
+      {
+        "MODEL": "F205",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-f205.jpg"
+      },
+      {
+        "MODEL": "S11S",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-s11s.jpg"
+      },
+      {
+        "MODEL": "S11",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-s11.jpg"
+      },
+      {
+        "MODEL": "S11 lite",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-s11-mini-.jpg"
+      },
+      {
+        "MODEL": "M7 Plus",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-m7-plus.jpg"
+      },
+      {
+        "MODEL": "M7 Power",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-m7-power-.jpg"
+      },
+      {
+        "MODEL": "M7",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-m7.jpg"
+      },
+      {
+        "MODEL": "X1s",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-x1s.jpg"
+      },
+      {
+        "MODEL": "X1",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-x1.jpg"
+      },
+      {
+        "MODEL": "P8 Max",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-p8-max.jpg"
+      },
+      {
+        "MODEL": "A1 Lite",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-a1-lite-.jpg"
+      },
+      {
+        "MODEL": "S10",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-s10.jpg"
+      },
+      {
+        "MODEL": "S10B",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-s10b.jpg"
+      },
+      {
+        "MODEL": "S10C",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-s10c.jpg"
+      },
+      {
+        "MODEL": "M6s Plus",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-m6s-plus.jpg"
+      },
+      {
+        "MODEL": "A1 Plus",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-a1-.jpg"
+      },
+      {
+        "MODEL": "A1",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-a1.jpg"
+      },
+      {
+        "MODEL": "F5",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-f5.jpg"
+      },
+      {
+        "MODEL": "M2017",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-m2017.jpg"
+      },
+      {
+        "MODEL": "Steel 2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-steel-2.jpg"
+      },
+      {
+        "MODEL": "P7",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-p7.jpg"
+      },
+      {
+        "MODEL": "S9",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-s9.jpg"
+      },
+      {
+        "MODEL": "P7 Max",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-p7-max-r.jpg"
+      },
+      {
+        "MODEL": "F103 Pro",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-f103-pro.jpg"
+      },
+      {
+        "MODEL": "S6s",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-s6s.jpg"
+      },
+      {
+        "MODEL": "M6 Plus",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-m6-plus.jpg"
+      },
+      {
+        "MODEL": "M6",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-m6.jpg"
+      },
+      {
+        "MODEL": "S6 Pro",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-s6-pro.jpg"
+      },
+      {
+        "MODEL": "P5 Mini",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-p5-mini-.jpg"
+      },
+      {
+        "MODEL": "W909",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-w909-.jpg"
+      },
+      {
+        "MODEL": "S8",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-elife-s8.jpg"
+      },
+      {
+        "MODEL": "Marathon M5 mini",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/Gionee-M5-Mini-.jpg"
+      },
+      {
+        "MODEL": "Marathon M5 enjoy",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-marathon-m5-e.jpg"
+      },
+      {
+        "MODEL": "Marathon M5 Plus",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-m5-plus.jpg"
+      },
+      {
+        "MODEL": "Marathon M5 lite",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-marathon-m5-lite.jpg"
+      },
+      {
+        "MODEL": "Pioneer P5W",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-p5w-.jpg"
+      },
+      {
+        "MODEL": "S6",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-elife-s6.jpg"
+      },
+      {
+        "MODEL": "Elife S Plus",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-elife-s-plus-.jpg"
+      },
+      {
+        "MODEL": "F103",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-f103.jpg"
+      },
+      {
+        "MODEL": "Elife E8",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-elife-e8-new1.jpg"
+      },
+      {
+        "MODEL": "S5.1 Pro",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-s51-pro.jpg"
+      },
+      {
+        "MODEL": "Marathon M4",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-marathon-m4.jpg"
+      },
+      {
+        "MODEL": "Marathon M5",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-marathon-m5-new.jpg"
+      },
+      {
+        "MODEL": "Pioneer P4S",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-pioneer-p4.jpg"
+      },
+      {
+        "MODEL": "Elife S7",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/Gionee-Elife-S7.jpg"
+      },
+      {
+        "MODEL": "Pioneer P3S",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-pioneer-p3s.jpg"
+      },
+      {
+        "MODEL": "Pioneer P2M",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-pioneer-p2m.jpg"
+      },
+      {
+        "MODEL": "Pioneer P2S",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-pioneer-p2s.jpg"
+      },
+      {
+        "MODEL": "S96",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-s96.jpg"
+      },
+      {
+        "MODEL": "L800",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-l800.jpg"
+      },
+      {
+        "MODEL": "L700",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-l700.jpg"
+      },
+      {
+        "MODEL": "Marathon M3",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-marathon-m3.jpg"
+      },
+      {
+        "MODEL": "Elife S5.1",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-elife-s5.1.jpg"
+      },
+      {
+        "MODEL": "Pioneer P6",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-pioneer-p6.jpg"
+      },
+      {
+        "MODEL": "Pioneer P5L",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-pioneer-p5l.jpg"
+      },
+      {
+        "MODEL": "Pioneer P4",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-pioneer-p4.jpg"
+      },
+      {
+        "MODEL": "Ctrl V6L",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-ctrl-v6l.jpg"
+      },
+      {
+        "MODEL": "Ctrl V5",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-ctrl-v5.jpg"
+      },
+      {
+        "MODEL": "Elife S5.5",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-elife-s5.5.jpg"
+      },
+      {
+        "MODEL": "Elife E7 Mini",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-e7-mini.jpg"
+      },
+      {
+        "MODEL": "Elife E7",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-e7-.jpg"
+      },
+      {
+        "MODEL": "Elife E6",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-e6-.jpg"
+      },
+      {
+        "MODEL": "Elife E5",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-e5.jpg"
+      },
+      {
+        "MODEL": "Elife E3",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-e3.jpg"
+      },
+      {
+        "MODEL": "M2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-m2.jpg"
+      },
+      {
+        "MODEL": "Gpad G5",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-gpad-g5.jpg"
+      },
+      {
+        "MODEL": "Gpad G4",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-gpad-g4.jpg"
+      },
+      {
+        "MODEL": "Gpad G3",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-gpad-g3.jpg"
+      },
+      {
+        "MODEL": "Gpad G2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-gpad-g2.jpg"
+      },
+      {
+        "MODEL": "Gpad G1",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-gpad-g1.jpg"
+      },
+      {
+        "MODEL": "Pioneer P3",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-pioneer-p3.jpg"
+      },
+      {
+        "MODEL": "Pioneer P2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-pioneer-p2.jpg"
+      },
+      {
+        "MODEL": "Pioneer P1",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-pioneer-p1.jpg"
+      },
+      {
+        "MODEL": "Ctrl V1",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-ctrl-v1.jpg"
+      },
+      {
+        "MODEL": "Ctrl V2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-ctrl-v2.jpg"
+      },
+      {
+        "MODEL": "Ctrl V3",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-ctrl-v3.jpg"
+      },
+      {
+        "MODEL": "Ctrl V4s",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-ctrl-v4s.jpg"
+      },
+      {
+        "MODEL": "Ctrl V4",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-ctrl-v4.jpg"
+      },
+      {
+        "MODEL": "Dream D1",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/gionee-dream-d1.jpg"
+      }
+    ]
+  },
+  {
+    "BRAND": "GOOGLE",
+    "MODELIST": [
+      {
+        "MODEL": "Pixel 3 XL",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/google-pixel-3xl-.jpg"
+      },
+      {
+        "MODEL": "Pixel 3",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/google-pixel-3-.jpg"
+      },
+      {
+        "MODEL": "Pixel 2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/google-pixel-2.jpg"
+      },
+      {
+        "MODEL": "Pixel 2 XL",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/google-pixel-xl2-.jpg"
+      },
+      {
+        "MODEL": "Pixel XL",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/google-pixel-xl.jpg"
+      },
+      {
+        "MODEL": "Pixel",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/google-pixel.jpg"
+      },
+      {
+        "MODEL": "Pixel C",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/google-pixel-c--.jpg"
+      }
+    ]
+  },
+  {
+    "BRAND": "HAIER",
+    "MODELIST": [
+      {
+        "MODEL": "C300",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-c300.jpg"
+      },
+      {
+        "MODEL": "Hurricane",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-hurricane.jpg"
+      },
+      {
+        "MODEL": "G8",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-g8.jpg"
+      },
+      {
+        "MODEL": "L8",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-l8.jpg"
+      },
+      {
+        "MODEL": "I6",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-l6.jpg"
+      },
+      {
+        "MODEL": "L7",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-l7.jpg"
+      },
+      {
+        "MODEL": "G7",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-g7.jpg"
+      },
+      {
+        "MODEL": "G51",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-g51-.jpg"
+      },
+      {
+        "MODEL": "U69",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-u69.jpg"
+      },
+      {
+        "MODEL": "U60",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-u60.jpg"
+      },
+      {
+        "MODEL": "U56",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-u56.jpg"
+      },
+      {
+        "MODEL": "U53",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-u53.jpg"
+      },
+      {
+        "MODEL": "K3",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-k3.jpg"
+      },
+      {
+        "MODEL": "A66",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-u66.jpg"
+      },
+      {
+        "MODEL": "V730",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-v730.jpg"
+      },
+      {
+        "MODEL": "V700",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-v700.jpg"
+      },
+      {
+        "MODEL": "M320+",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-m320-plus.jpg"
+      },
+      {
+        "MODEL": "M306",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-m306.jpg"
+      },
+      {
+        "MODEL": "M300",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-m300.jpg"
+      },
+      {
+        "MODEL": "M180",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-m180.jpg"
+      },
+      {
+        "MODEL": "M160",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-m160.jpg"
+      },
+      {
+        "MODEL": "M150",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-m150.jpg"
+      },
+      {
+        "MODEL": "A7",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-haiera7.gif"
+      },
+      {
+        "MODEL": "M600 Black Pearl",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-blackpearl.gif"
+      },
+      {
+        "MODEL": "P8",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-p8.gif"
+      },
+      {
+        "MODEL": "A600",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-a600.gif"
+      },
+      {
+        "MODEL": "M2000",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-m2000.gif"
+      },
+      {
+        "MODEL": "M1200",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-m1200.gif"
+      },
+      {
+        "MODEL": "M1100",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-m1100.gif"
+      },
+      {
+        "MODEL": "M1000",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-m1000.gif"
+      },
+      {
+        "MODEL": "M80",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-m80.gif"
+      },
+      {
+        "MODEL": "M260",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-m260.gif"
+      },
+      {
+        "MODEL": "N90",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-n90.gif"
+      },
+      {
+        "MODEL": "N70",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-n70.gif"
+      },
+      {
+        "MODEL": "N60",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-n60.gif"
+      },
+      {
+        "MODEL": "T3000",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-t3000.gif"
+      },
+      {
+        "MODEL": "V280",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haier-v280.gif"
+      },
+      {
+        "MODEL": "F1100",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haf1100.gif"
+      },
+      {
+        "MODEL": "L1000",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hal1000.gif"
+      },
+      {
+        "MODEL": "P7",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hap7.gif"
+      },
+      {
+        "MODEL": "V7000",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hav7000.gif"
+      },
+      {
+        "MODEL": "V6200",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hav6200.gif"
+      },
+      {
+        "MODEL": "V6100",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hav6100.gif"
+      },
+      {
+        "MODEL": "V6000",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hav6000.gif"
+      },
+      {
+        "MODEL": "P6",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hap6.gif"
+      },
+      {
+        "MODEL": "V2000",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hav2000.gif"
+      },
+      {
+        "MODEL": "V200",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hav200.gif"
+      },
+      {
+        "MODEL": "V190",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hav190.gif"
+      },
+      {
+        "MODEL": "V160",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hav160.gif"
+      },
+      {
+        "MODEL": "V100",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hav100.gif"
+      },
+      {
+        "MODEL": "Z300",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haz300.gif"
+      },
+      {
+        "MODEL": "Z100",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haz100.gif"
+      },
+      {
+        "MODEL": "V1000",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hav1000.gif"
+      },
+      {
+        "MODEL": "P5",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/hap5.gif"
+      },
+      {
+        "MODEL": "Z7100",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haz7100.gif"
+      },
+      {
+        "MODEL": "Z7000",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haz7000.gif"
+      },
+      {
+        "MODEL": "Z3000",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haz3000.gif"
+      },
+      {
+        "MODEL": "Z8000",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/haz8000.gif"
+      },
+      {
+        "MODEL": "D6000",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/had6000.gif"
+      }
+    ]
+  },
+  {
     "BRAND": "SAMSUNG",
     "MODELIST": [
       {
@@ -7649,11 +8244,11 @@
         "MODEL": "I9505 Galaxy S4",
         "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s-4-i9500-black-mist.jpg"
       },
-	  {
+      {
         "MODEL": "I9507 Galaxy S4",
         "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s-4-i9500-black-mist.jpg"
       },
-	  {
+      {
         "MODEL": "GT-I9507V",
         "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s-4-i9500-black-mist.jpg"
       },
