@@ -303,29 +303,13 @@ namespace Device
                     var device = AdbClient.Instance.GetDevices().FirstOrDefault();
                     var receiver = new ConsoleOutputReceiver();
 
-                    //ADB IMEI Query Samsung GT-I9507
-                    //adb shell content query --uri content://settings/system --where "name='bd_setting_i'" | sed 's/[^=0-9]*//g' | sed 's/[0-9]*=//g'
-
-                    //string imei = @"content query --uri content://settings/system --where " + '"' + "name='" + "bd_setting_i'" + '"' + " | sed '" + "s/[^=0-9]*//g' | sed 's/[0-9]*=//g'";
-
-
-                    //G4 IMEI Query
-                    /*
-                     *  Return:
-                        Result: Parcel(
-                        0x00000000: 00000000 0000000f 00350033 00330039 '........3.5.9.3.'
-                        0x00000010: 00350034 00360030 00370031 00350035 '4.5.0.6.1.7.5.5.'
-                        0x00000020: 00350038 00000032                   '8.5.2...        ')
-
-                     */
-
-
+                    //ADB IMEI Methods
                     Dictionary<int, string> imei = new Dictionary<int, string>()
-                                                {
-                                                    {1, "content query --uri content://settings/system --where " + '"' + "name='" + "bd_setting_i'" + '"' + " | sed '" + "s/[^=0-9]*//g' | sed 's/[0-9]*=//g'"},
-                                                    {2, "service call iphonesubinfo 1"}
-                                                };
-                    //string imei = @"service call iphonesubinfo 1";
+                    {
+                        { 1, "content query --uri content://settings/system --where " + '"' + "name='" + "bd_setting_i'" + '"' + " | sed '" + "s/[^=0-9]*//g' | sed 's/[0-9]*=//g'"},
+                        { 2, "service call iphonesubinfo 1"}
+                    };
+
                     string manufacturer = @"getprop ro.product.manufacturer";
                     string model = @"getprop ro.product.model";
 
@@ -341,6 +325,8 @@ namespace Device
                     textBoxDeviceModel.Text = s[1].Trim();
                     try
                     {
+                        // OLD Android
+
                         var intIMEI = Int32.Parse(s[2].Trim());
                         textBoxDeviceIMEI.Text = s[2].Trim();
 
@@ -348,34 +334,19 @@ namespace Device
                     catch (Exception)
                     {
                         // New Version Android 
-                        s.Clear();
-
-                        // can i clean this shit ??
 
                         AdbClient.Instance.ExecuteRemoteCommand(imei[2], device, receiver);
                         received = receiver.ToString().ToUpper();
                         s = new List<string>(received.Split(new string[] { "\n" }, StringSplitOptions.None));
 
-                        Console.WriteLine(s[0]);
-                        Console.WriteLine(s[1]);
-                        Console.WriteLine(s[2]);
-                        Console.WriteLine(s[3]);
-                        Console.WriteLine(s[4]);
-                        Console.WriteLine(s[5]);
-                        Console.WriteLine(s[6]);
-                        Console.WriteLine(s[7]);
-
-                        // 5 + 6 + 7 
-
-                        textBoxDeviceIMEI.Text = s[4].Trim();
+                        string method1IMEI = ExtractIMEIfromMethod2(s);
+                        textBoxDeviceIMEI.Text = method1IMEI.Trim();
                     }
-
 
                     LuhnUI();
                 }
                 else
                 {
-                    //iDevice Check 
                     if (iDeviceCheck())
                     {
                         Dictionary<string, string> data = new Dictionary<string, string>()
@@ -527,6 +498,53 @@ namespace Device
                 }
             }
         }
+
+        private string ExtractIMEIfromMethod2(List<string> list)
+        {
+            //G4 IMEI Query
+            /*
+             *  Return:
+                Result: Parcel(
+                0x00000000: 00000000 0000000f 00350033 00330039 '........3.5.9.3.'
+                0x00000010: 00350034 00360030 00370031 00350035 '4.5.0.6.1.7.5.5.'
+                0x00000020: 00350038 00000032                   '8.5.2...        ')
+
+             */
+
+            var s5 = list[5].Skip(51).Take(16);
+            var s6 = list[6].Skip(51).Take(16);
+            var s7 = list[7].Skip(51).Take(16);
+
+            string part1 = "";
+            string part2 = "";
+            string part3 = "";
+
+
+            foreach (var item in s5)
+            {
+                part1 = part1 + item.ToString();
+            }
+            foreach (var item in s6)
+            {
+                part2 = part2 + item.ToString();
+            }
+            foreach (var item in s7)
+            {
+                part3 = part3 + item.ToString();
+            }
+
+            part1 = part1.Replace(".", "");
+            part1 = part1.Trim();
+            part2 = part2.Replace(".", "");
+            part2 = part2.Trim();
+            part3 = part3.Replace(".", "");
+            part3 = part3.Trim();
+
+
+            // Test and fail return -1
+            return part1 + part2 + part3;
+        }
+
         private void textBoxDeviceModel_TextChanged(object sender, EventArgs e)
         {
             LoadPictureSequence();
