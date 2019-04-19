@@ -68,7 +68,7 @@ namespace Device
                 }
                 else
                 {
-                    MessageBox.Show("No Data Found!", "Select Customer", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    //MessageBox.Show("No Data Found!", "Select Customer", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     toolStripCompleteJOB.Enabled = false;
                     toolStripButtonRemove.Enabled = false;
                 }
@@ -78,6 +78,9 @@ namespace Device
             catch (Exception Ex)
             {
                 MessageBox.Show("Error: " + Ex.Message, "Select Customers", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                toolStripCompleteJOB.Enabled = false;
+                toolStripButtonRemove.Enabled = false;
+                toolStripButtonAdd.Enabled = false;
             }
         }
 
