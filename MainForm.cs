@@ -16,17 +16,17 @@ namespace Device
             MainSetup();
             // deleted out all the binding code of the grid to focus on the interesting stuff
 
-            dataGridView.CellEndEdit += new DataGridViewCellEventHandler(dataGridView_CellEndEdit);
+            dataGridView.CellEndEdit += new DataGridViewCellEventHandler(DataGridView_CellEndEdit);
 
             // Use the DataBindingComplete event to attack the SelectionChanged, 
             // avoiding infinite loops and other nastiness.
-            dataGridView.DataBindingComplete += new DataGridViewBindingCompleteEventHandler(dataGridView_DataBindingComplete);
+            dataGridView.DataBindingComplete += new DataGridViewBindingCompleteEventHandler(DataGridView_DataBindingComplete);
         }
 
         public void MainSetup()
         {
             this.Text = "Onions Service Database - Home";
-            loadContacts("devices");
+            LoadContacts("devices");
 
             //Check if record in state completed
             if (CheckForRecordCompleted("completed"))
@@ -35,17 +35,17 @@ namespace Device
                 toolStripButtonCompleted.Enabled = false;
         }
 
-        private void toolStripButtonAdd_Click(object sender, EventArgs e)
+        private void ToolStripButtonAdd_Click(object sender, EventArgs e)
         {
             AddDeviceForm addContactForm = new AddDeviceForm();
             addContactForm.ShowDialog();
-            loadContacts("devices");
+            LoadContacts("devices");
         }
 
         /// <summary>
         /// Load from SQLite to -> Data Grid View 
         /// </summary>
-        private void loadContacts(string datasource)
+        private void LoadContacts(string datasource)
         {
             try
             {
@@ -115,20 +115,19 @@ namespace Device
             return false;
         }
 
-        private void toolStripButtonRemove_Click(object sender, EventArgs e)
+        private void ToolStripButtonRemove_Click(object sender, EventArgs e)
         {
-            remove_selected();
+            Remove_selected();
         }
 
-        public void remove_selected()
+        public void Remove_selected()
         {
             try
             {
                 //Get selected row
                 DataGridViewRow Row = dataGridView.SelectedRows[0];
-                int IdCustomer = 0;
                 //Get Id Customer by IdCustomer column
-                int.TryParse(Row.Cells["IdCustomer"].Value.ToString(), out IdCustomer);
+                int.TryParse(Row.Cells["IdCustomer"].Value.ToString(), out int IdCustomer);
 
                 if (IdCustomer > 0)
                 {
@@ -145,18 +144,17 @@ namespace Device
                 MessageBox.Show("Error: " + Ex.Message, "Delete Customer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
-            loadContacts("devices");
+            LoadContacts("devices");
         }
 
-        public void complete_selected()
+        public void Complete_selected()
         {
             string today = DateTime.Today.ToString("dd/MM/yyyy");
             //Get selected row
             DataGridViewRow Row = dataGridView.SelectedRows[0];
-            int IdCustomer = 0;
             int Price = 0;
             //Get Id Customer by IdCustomer column
-            int.TryParse(Row.Cells["IdCustomer"].Value.ToString(), out IdCustomer);
+            int.TryParse(Row.Cells["IdCustomer"].Value.ToString(), out int IdCustomer);
             //Check if IdCustomer is.
             if (IdCustomer == 0)
                 MessageBox.Show("No Customer Selected", "Completed Job", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -185,12 +183,12 @@ namespace Device
             DatabaseAccess.fnSetConexion(UpdateCustomer).ExecuteNonQuery();           
         }
 
-        private void toolStripButtonCompleted_Click(object sender, EventArgs e)
+        private void ToolStripButtonCompleted_Click(object sender, EventArgs e)
         {
             // show another for with data gridview
 
             this.Text = "Onions Service Database - Completed JOBS";
-            loadContacts("completed");
+            LoadContacts("completed");
 
             // group  disabled.
             toolStripCompleteJOB.Enabled = false;
@@ -198,36 +196,36 @@ namespace Device
             toolStripButtonCompleted.Enabled = false;
         }
 
-        private void dataGridView_CellMouseUp(object sender, DataGridViewCellMouseEventArgs e)
+        private void DataGridView_CellMouseUp(object sender, DataGridViewCellMouseEventArgs e)
         {   //Update the ROW ID with the mouse event 
             //int column = dataGridView.CurrentCell.ColumnIndex;
             //Row_N = dataGridView.CurrentCell.RowIndex;
         }
 
-        private void toolStripCompleteJOB_Click(object sender, EventArgs e)
+        private void ToolStripCompleteJOB_Click(object sender, EventArgs e)
         {           
-            complete_selected();
+            Complete_selected();
             MainSetup();
         }
 
-        private void toolStripButton1_Click(object sender, EventArgs e)
+        private void ToolStripButton1_Click(object sender, EventArgs e)
         {
             this.Text = "Onions Service Database - Home";
             MainSetup();
         }
 
-        private void dataGridView_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        private void DataGridView_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
             //resetRow = true;
             //currentRow = e.RowIndex;
         }
 
-        private void dataGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        private void DataGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
             //dataGridView.SelectionChanged += new EventHandler(dataGridView_SelectionChanged);
         }
 
-        private void dataGridView_SelectionChanged(object sender, EventArgs e)
+        private void DataGridView_SelectionChanged(object sender, EventArgs e)
         {
             //if (resetRow)
             //{

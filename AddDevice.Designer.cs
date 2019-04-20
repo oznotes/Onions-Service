@@ -191,9 +191,9 @@
             this.textBoxDeviceModel.Name = "textBoxDeviceModel";
             this.textBoxDeviceModel.Size = new System.Drawing.Size(259, 20);
             this.textBoxDeviceModel.TabIndex = 8;
-            this.textBoxDeviceModel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxDeviceModel_MouseClick);
-            this.textBoxDeviceModel.TextChanged += new System.EventHandler(this.textBoxDeviceModel_TextChanged);
-            this.textBoxDeviceModel.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxDeviceModel_KeyDown);
+            this.textBoxDeviceModel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TextBoxDeviceModel_MouseClick);
+            this.textBoxDeviceModel.TextChanged += new System.EventHandler(this.TextBoxDeviceModel_TextChanged);
+            this.textBoxDeviceModel.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxDeviceModel_KeyDown);
             // 
             // textBoxDeviceIMEI
             // 
@@ -203,8 +203,8 @@
             this.textBoxDeviceIMEI.Name = "textBoxDeviceIMEI";
             this.textBoxDeviceIMEI.Size = new System.Drawing.Size(259, 20);
             this.textBoxDeviceIMEI.TabIndex = 9;
-            this.textBoxDeviceIMEI.TextChanged += new System.EventHandler(this.textBoxDeviceIMEI_TextChanged);
-            this.textBoxDeviceIMEI.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxDeviceIMEI_KeyPress);
+            this.textBoxDeviceIMEI.TextChanged += new System.EventHandler(this.TextBoxDeviceIMEI_TextChanged);
+            this.textBoxDeviceIMEI.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxDeviceIMEI_KeyPress);
             // 
             // textBoxDeviceProblem
             // 
@@ -262,7 +262,7 @@
             this.button1.Text = "Brand:";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // textBoxDeviceBrand
             // 
@@ -273,7 +273,7 @@
             this.textBoxDeviceBrand.Name = "textBoxDeviceBrand";
             this.textBoxDeviceBrand.Size = new System.Drawing.Size(259, 20);
             this.textBoxDeviceBrand.TabIndex = 7;
-            this.textBoxDeviceBrand.TextChanged += new System.EventHandler(this.textBoxDeviceBrand_TextChanged);
+            this.textBoxDeviceBrand.TextChanged += new System.EventHandler(this.TextBoxDeviceBrand_TextChanged);
             // 
             // label2
             // 

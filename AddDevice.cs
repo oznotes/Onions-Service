@@ -82,7 +82,7 @@ namespace Device
             }
             return true;
         }
-        private void textBoxDeviceModel_MouseClick(object sender, MouseEventArgs e)
+        private void TextBoxDeviceModel_MouseClick(object sender, MouseEventArgs e)
         {
             textBoxDeviceBrand.Enabled = false;
             var Response = System.IO.File.ReadAllText(string.Concat(Environment.CurrentDirectory, @"\", "Devices.json"));
@@ -103,11 +103,11 @@ namespace Device
             }
             textBoxDeviceBrand.Enabled = true;
         }
-        private void textBoxDeviceBrand_TextChanged(object sender, EventArgs e)
+        private void TextBoxDeviceBrand_TextChanged(object sender, EventArgs e)
         {
             textBoxDeviceModel.Text = string.Empty;
         }
-        private void textBoxDeviceModel_KeyDown(object sender, KeyEventArgs e)
+        private void TextBoxDeviceModel_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
@@ -194,11 +194,11 @@ namespace Device
                 label7.ForeColor = System.Drawing.Color.Black;
             }
         }
-        private void textBoxDeviceIMEI_TextChanged(object sender, EventArgs e)
+        private void TextBoxDeviceIMEI_TextChanged(object sender, EventArgs e)
         {
             LuhnUI();
         }
-        private void textBoxDeviceIMEI_KeyPress(object sender, KeyPressEventArgs e)
+        private void TextBoxDeviceIMEI_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
@@ -238,12 +238,12 @@ namespace Device
                 ShowOFF();
             }
             NativeLibraries.Load();
-            ReadOnlyCollection<string> udids;
+            //ReadOnlyCollection<string> udids;
             int count = 0;
 
             var idevice = LibiMobileDevice.Instance.iDevice;
             var lockdown = LibiMobileDevice.Instance.Lockdown;
-            var ret = idevice.idevice_get_device_list(out udids, ref count);
+            var ret = idevice.idevice_get_device_list(out ReadOnlyCollection<string> udids, ref count);
             // iDevice Count == 0 
             if (count == 0)
             {
@@ -288,7 +288,7 @@ namespace Device
                 return false;
             }
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             //bool DeviceFound = false;
             //int counter = 0;
@@ -441,12 +441,12 @@ namespace Device
                         textBoxDeviceModel.Clear();
 
                         NativeLibraries.Load();
-                        ReadOnlyCollection<string> udids;
+
                         int count = 0;
 
                         var idevice = LibiMobileDevice.Instance.iDevice;
                         var lockdown = LibiMobileDevice.Instance.Lockdown;
-                        var ret = idevice.idevice_get_device_list(out udids, ref count);
+                        var ret = idevice.idevice_get_device_list(out ReadOnlyCollection<string> udids, ref count);
                         if (ret == iDeviceError.NoDevice)
                         {
                             // Not actually an error in our case
@@ -458,31 +458,22 @@ namespace Device
                         // Get the device name
                         foreach (var udid in udids)
                         {
-                            string deviceName;
-                            string IMEI;
-                            string ProductType;
 
-                            PlistHandle PlistIMEI;
-                            PlistHandle PlistProductType;
 
-                            iDeviceHandle deviceHandle;
-                            idevice.idevice_new(out deviceHandle, udid).ThrowOnError();
+                            idevice.idevice_new(out iDeviceHandle deviceHandle, udid).ThrowOnError();
 
-                            LockdownClientHandle lockdownHandle;
-                            lockdown.lockdownd_client_new_with_handshake(deviceHandle, out lockdownHandle, "Quamotion").ThrowOnError();
-                            lockdown.lockdownd_get_device_name(lockdownHandle, out deviceName).ThrowOnError();
+                            lockdown.lockdownd_client_new_with_handshake(deviceHandle, out LockdownClientHandle lockdownHandle, "Quamotion").ThrowOnError();
+                            lockdown.lockdownd_get_device_name(lockdownHandle, out string deviceName).ThrowOnError();
 
                             //Find serial number in plist
-                            lockdown.lockdownd_get_value(lockdownHandle, null, "InternationalMobileEquipmentIdentity", out
-                            PlistIMEI);
+                            lockdown.lockdownd_get_value(lockdownHandle, null, "InternationalMobileEquipmentIdentity", out PlistHandle PlistIMEI);
 
                             //Find Product Type version in plist
-                            lockdown.lockdownd_get_value(lockdownHandle, null, "ProductType", out
-                             PlistProductType);
+                            lockdown.lockdownd_get_value(lockdownHandle, null, "ProductType", out PlistHandle PlistProductType);
 
                             //Get string values from plist
-                            PlistIMEI.Api.Plist.plist_get_string_val(PlistIMEI, out IMEI);
-                            PlistProductType.Api.Plist.plist_get_string_val(PlistProductType, out ProductType);
+                            PlistIMEI.Api.Plist.plist_get_string_val(PlistIMEI, out string IMEI);
+                            PlistProductType.Api.Plist.plist_get_string_val(PlistProductType, out string ProductType);
 
                             //Place data in textboxes
                             textBoxDeviceIMEI.Text = IMEI.Trim();
@@ -545,7 +536,7 @@ namespace Device
             return part1 + part2 + part3;
         }
 
-        private void textBoxDeviceModel_TextChanged(object sender, EventArgs e)
+        private void TextBoxDeviceModel_TextChanged(object sender, EventArgs e)
         {
             LoadPictureSequence();
         }

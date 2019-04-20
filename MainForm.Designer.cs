@@ -118,10 +118,10 @@
             this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView.Size = new System.Drawing.Size(1096, 421);
             this.dataGridView.TabIndex = 1;
-            this.dataGridView.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellEndEdit);
-            this.dataGridView.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView_CellMouseUp);
-            this.dataGridView.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dataGridView_DataBindingComplete);
-            this.dataGridView.SelectionChanged += new System.EventHandler(this.dataGridView_SelectionChanged);
+            this.dataGridView.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellEndEdit);
+            this.dataGridView.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DataGridView_CellMouseUp);
+            this.dataGridView.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.DataGridView_DataBindingComplete);
+            this.dataGridView.SelectionChanged += new System.EventHandler(this.DataGridView_SelectionChanged);
             // 
             // Done
             // 
@@ -136,7 +136,7 @@
             this.toolStripHome.Name = "toolStripHome";
             this.toolStripHome.Size = new System.Drawing.Size(44, 22);
             this.toolStripHome.Text = "Home";
-            this.toolStripHome.Click += new System.EventHandler(this.toolStripButton1_Click);
+            this.toolStripHome.Click += new System.EventHandler(this.ToolStripButton1_Click);
             // 
             // toolStripButtonAdd
             // 
@@ -147,7 +147,7 @@
             this.toolStripButtonAdd.Name = "toolStripButtonAdd";
             this.toolStripButtonAdd.Size = new System.Drawing.Size(101, 22);
             this.toolStripButtonAdd.Text = "New Registration";
-            this.toolStripButtonAdd.Click += new System.EventHandler(this.toolStripButtonAdd_Click);
+            this.toolStripButtonAdd.Click += new System.EventHandler(this.ToolStripButtonAdd_Click);
             // 
             // toolStripButtonRemove
             // 
@@ -157,7 +157,7 @@
             this.toolStripButtonRemove.Name = "toolStripButtonRemove";
             this.toolStripButtonRemove.Size = new System.Drawing.Size(91, 22);
             this.toolStripButtonRemove.Text = "Delete Selected";
-            this.toolStripButtonRemove.Click += new System.EventHandler(this.toolStripButtonRemove_Click);
+            this.toolStripButtonRemove.Click += new System.EventHandler(this.ToolStripButtonRemove_Click);
             // 
             // toolStripButtonCompleted
             // 
@@ -167,7 +167,7 @@
             this.toolStripButtonCompleted.Name = "toolStripButtonCompleted";
             this.toolStripButtonCompleted.Size = new System.Drawing.Size(70, 22);
             this.toolStripButtonCompleted.Text = "Completed";
-            this.toolStripButtonCompleted.Click += new System.EventHandler(this.toolStripButtonCompleted_Click);
+            this.toolStripButtonCompleted.Click += new System.EventHandler(this.ToolStripButtonCompleted_Click);
             // 
             // toolStripCompleteJOB
             // 
@@ -179,7 +179,7 @@
             this.toolStripCompleteJOB.Size = new System.Drawing.Size(110, 22);
             this.toolStripCompleteJOB.Text = "Complete Selected";
             this.toolStripCompleteJOB.ToolTipText = "Complete JOBS";
-            this.toolStripCompleteJOB.Click += new System.EventHandler(this.toolStripCompleteJOB_Click);
+            this.toolStripCompleteJOB.Click += new System.EventHandler(this.ToolStripCompleteJOB_Click);
             // 
             // MainForm
             // 
