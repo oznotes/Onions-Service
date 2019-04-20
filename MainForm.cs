@@ -95,7 +95,6 @@ namespace Device
             {
                 //Query to customers table
                 string SelectCustomer = string.Format("SELECT IdCustomer FROM Customer WHERE Status = '{0}'", datasource);
-
                 //Run query
                 SQLiteDataAdapter objDa = new SQLiteDataAdapter(DatabaseAccess.fnSetConexion(SelectCustomer));
                 //Hire will be data
@@ -162,7 +161,6 @@ namespace Device
             if (IdCustomer == 0)
                 MessageBox.Show("No Customer Selected", "Completed Job", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
-
             // Check the price cell if its stable .
             try
             {
@@ -179,8 +177,10 @@ namespace Device
                 MessageBox.Show("Enter Price information !", "Completed Job", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
+
             //Update Customer sentence
             string UpdateCustomer = string.Format("UPDATE Customer SET Price = {0}, Status = '{1}', UpdateDate = '{2}' WHERE IdCustomer = {3}", Price, "completed", today,IdCustomer);
+
             //run sentence
             DatabaseAccess.fnSetConexion(UpdateCustomer).ExecuteNonQuery();           
         }
@@ -212,7 +212,6 @@ namespace Device
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            // Home.           
             this.Text = "Onions Service Database - Home";
             MainSetup();
         }
