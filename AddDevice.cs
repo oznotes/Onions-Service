@@ -340,7 +340,15 @@ namespace Device
                         s = new List<string>(received.Split(new string[] { "\n" }, StringSplitOptions.None));
 
                         string method1IMEI = ExtractIMEIfromMethod2(s);
-                        textBoxDeviceIMEI.Text = method1IMEI.Trim();
+                        if (method1IMEI!="-1")
+                        {
+                            textBoxDeviceIMEI.Text = method1IMEI.Trim();
+                        }
+                        else
+                        {
+                            textBoxDeviceIMEI.SelectAll();
+                        }
+                        
                     }
 
                     LuhnUI();
@@ -492,15 +500,6 @@ namespace Device
 
         private string ExtractIMEIfromMethod2(List<string> list)
         {
-            //G4 IMEI Query
-            /*
-             *  Return:
-                Result: Parcel(
-                0x00000000: 00000000 0000000f 00350033 00330039 '........3.5.9.3.'
-                0x00000010: 00350034 00360030 00370031 00350035 '4.5.0.6.1.7.5.5.'
-                0x00000020: 00350038 00000032                   '8.5.2...        ')
-
-             */
 
             var s5 = list[5].Skip(51).Take(16);
             var s6 = list[6].Skip(51).Take(16);
@@ -531,9 +530,18 @@ namespace Device
             part3 = part3.Replace(".", "");
             part3 = part3.Trim();
 
-
             // Test and fail return -1
-            return part1 + part2 + part3;
+            try
+            {
+                var intNumber = Int32.Parse(part1 + part2 + part3);
+                return part1 + part2 + part3;
+
+            }
+            catch
+            {
+                return "-1";
+            }
+
         }
 
         private void TextBoxDeviceModel_TextChanged(object sender, EventArgs e)
