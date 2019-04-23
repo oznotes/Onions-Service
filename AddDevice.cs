@@ -105,9 +105,8 @@ namespace Device
         }
         private void TextBoxDeviceBrand_TextChanged(object sender, EventArgs e)
         {
-            // everytime brand is change model list is cleared .
-            textBoxDeviceModel.AutoCompleteCustomSource.Clear();
             textBoxDeviceModel.Text = string.Empty;
+            textBoxDeviceModel.AutoCompleteCustomSource.Clear();
         }
         private void TextBoxDeviceModel_KeyDown(object sender, KeyEventArgs e)
         {
