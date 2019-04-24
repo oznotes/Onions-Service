@@ -240,5 +240,9 @@ namespace Device
             dataGridView.Columns["IdCustomer"].Visible = false;
         }
 
+        private void dataGridView_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Read cell appear form with this .
+        }
     }
 }
