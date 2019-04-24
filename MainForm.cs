@@ -242,6 +242,21 @@ namespace Device
 
         private void dataGridView_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            DataGridViewRow Row = dataGridView.SelectedRows[0];
+
+            Console.WriteLine(Row.Cells["IdCustomer"].Value.ToString());
+            Console.WriteLine(Row.Cells["Date in Service"].Value.ToString());
+            Console.WriteLine(Row.Cells["FirstName"].Value.ToString());
+            Console.WriteLine(Row.Cells["LastName"].Value.ToString());
+            Console.WriteLine(Row.Cells["PhoneNumber"].Value.ToString());
+            Console.WriteLine(Row.Cells["e-Mail"].Value.ToString());
+            Console.WriteLine(Row.Cells["Brand"].Value.ToString());
+            Console.WriteLine(Row.Cells["Model"].Value.ToString());
+            Console.WriteLine(Row.Cells["IMEI"].Value.ToString());
+            Console.WriteLine(Row.Cells["Problem"].Value.ToString());
+            Console.WriteLine(Row.Cells["Price"].Value.ToString());
+            Console.WriteLine(Row.Cells["Update Date"].Value.ToString());
+
             // Read cell appear form with this .
         }
     }
