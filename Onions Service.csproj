@@ -158,6 +158,7 @@
     <Content Include="AdbWinUsbApi.dll" />
     <Content Include="onion.ico" />
     <Content Include="profile_u1B_icon.ico" />
+    <None Include="Resources\icons8-print-32.png" />
     <None Include="Resources\icons8-user-32.png" />
     <None Include="Resources\icons8-settings-32.png" />
     <None Include="Resources\icons8-code-32.png" />

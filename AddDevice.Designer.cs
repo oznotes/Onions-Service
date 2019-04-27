@@ -43,12 +43,13 @@
             this.textBoxDeviceIMEI = new System.Windows.Forms.TextBox();
             this.textBoxDeviceProblem = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.Add = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textBoxDeviceBrand = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.Add = new System.Windows.Forms.Button();
             this.picDeviceModel = new System.Windows.Forms.PictureBox();
+            this.PrintButton = new System.Windows.Forms.Button();
             this.circularProgressBar1 = new CircularProgressBar();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDeviceModel)).BeginInit();
@@ -78,10 +79,11 @@
             this.tableLayoutPanel1.Controls.Add(this.textBoxDeviceBrand, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.circularProgressBar1, 0, 9);
+            this.tableLayoutPanel1.Controls.Add(this.PrintButton, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(221, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 10;
+            this.tableLayoutPanel1.RowCount = 11;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
@@ -91,8 +93,8 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(354, 294);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(354, 299);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -225,18 +227,6 @@
             this.label3.Text = "Phone Number:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // Add
-            // 
-            this.Add.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Add.Location = new System.Drawing.Point(93, 243);
-            this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(257, 48);
-            this.Add.TabIndex = 11;
-            this.Add.Text = "ADD";
-            this.Add.UseVisualStyleBackColor = false;
-            this.Add.Click += new System.EventHandler(this.Add_Click);
-            // 
             // label9
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -286,6 +276,18 @@
             this.label2.Text = "Last Name:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // Add
+            // 
+            this.Add.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Add.Location = new System.Drawing.Point(93, 243);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(259, 48);
+            this.Add.TabIndex = 11;
+            this.Add.Text = "ADD";
+            this.Add.UseVisualStyleBackColor = false;
+            this.Add.Click += new System.EventHandler(this.Add_Click);
+            // 
             // picDeviceModel
             // 
             this.picDeviceModel.Image = global::Onions.Properties.Resources.test;
@@ -295,6 +297,16 @@
             this.picDeviceModel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picDeviceModel.TabIndex = 1;
             this.picDeviceModel.TabStop = false;
+            // 
+            // PrintButton
+            // 
+            this.PrintButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PrintButton.Image = global::Onions.Properties.Resources.icons8_print_32;
+            this.PrintButton.Location = new System.Drawing.Point(31, 4);
+            this.PrintButton.Name = "PrintButton";
+            this.PrintButton.Size = new System.Drawing.Size(44, 37);
+            this.PrintButton.TabIndex = 14;
+            this.PrintButton.UseVisualStyleBackColor = true;
             // 
             // circularProgressBar1
             // 
@@ -322,7 +334,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(575, 294);
+            this.ClientSize = new System.Drawing.Size(575, 299);
             this.Controls.Add(this.picDeviceModel);
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
@@ -362,9 +374,10 @@
         private System.Windows.Forms.TextBox textBoxDeviceModel;
         private System.Windows.Forms.TextBox textBoxDeviceIMEI;
         private System.Windows.Forms.TextBox textBoxDeviceProblem;
-        private System.Windows.Forms.Button Add;
         private System.Windows.Forms.PictureBox picDeviceModel;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Add;
         private CircularProgressBar circularProgressBar1;
+        private System.Windows.Forms.Button PrintButton;
     }
 }
