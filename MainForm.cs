@@ -244,18 +244,34 @@ namespace Device
         {
             DataGridViewRow Row = dataGridView.SelectedRows[0];
 
-            Console.WriteLine(Row.Cells["IdCustomer"].Value.ToString());
-            Console.WriteLine(Row.Cells["Date in Service"].Value.ToString());
-            Console.WriteLine(Row.Cells["FirstName"].Value.ToString());
-            Console.WriteLine(Row.Cells["LastName"].Value.ToString());
-            Console.WriteLine(Row.Cells["PhoneNumber"].Value.ToString());
-            Console.WriteLine(Row.Cells["e-Mail"].Value.ToString());
-            Console.WriteLine(Row.Cells["Brand"].Value.ToString());
-            Console.WriteLine(Row.Cells["Model"].Value.ToString());
-            Console.WriteLine(Row.Cells["IMEI"].Value.ToString());
-            Console.WriteLine(Row.Cells["Problem"].Value.ToString());
-            Console.WriteLine(Row.Cells["Price"].Value.ToString());
-            Console.WriteLine(Row.Cells["Update Date"].Value.ToString());
+
+            /// edit mode 
+            
+            //Console.WriteLine(Row.Cells["IdCustomer"].Value.ToString());
+            //Console.WriteLine(Row.Cells["Date in Service"].Value.ToString());
+            //Console.WriteLine(Row.Cells["FirstName"].Value.ToString());
+            //Console.WriteLine(Row.Cells["LastName"].Value.ToString());
+            //Console.WriteLine(Row.Cells["PhoneNumber"].Value.ToString());
+            //Console.WriteLine(Row.Cells["e-Mail"].Value.ToString());
+            //Console.WriteLine(Row.Cells["Brand"].Value.ToString());
+            //Console.WriteLine(Row.Cells["Model"].Value.ToString());
+            //Console.WriteLine(Row.Cells["IMEI"].Value.ToString());
+            //Console.WriteLine(Row.Cells["Problem"].Value.ToString());
+            //Console.WriteLine(Row.Cells["Price"].Value.ToString());
+            //Console.WriteLine(Row.Cells["Update Date"].Value.ToString());
+
+            AddDeviceForm addContactForm = new AddDeviceForm();
+            addContactForm.TextBoxName = Row.Cells["FirstName"].Value.ToString();
+            addContactForm.TextBoxLastName = Row.Cells["LastName"].Value.ToString();
+            addContactForm.TextBoxPhoneNumber = Row.Cells["PhoneNumber"].Value.ToString();
+            addContactForm.TextBoxeMail = Row.Cells["e-Mail"].Value.ToString();
+            addContactForm.TextBoxBrand = Row.Cells["Brand"].Value.ToString();
+            addContactForm.TextBoxModel = Row.Cells["Model"].Value.ToString();
+            addContactForm.TextBoxIMEI = Row.Cells["IMEI"].Value.ToString();
+            addContactForm.TextBoxProblem = Row.Cells["Problem"].Value.ToString();
+            addContactForm.EditMode(true);
+
+            addContactForm.ShowDialog();
 
             // Read cell appear form with this .
         }

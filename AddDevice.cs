@@ -18,6 +18,7 @@ namespace Device
     {
         const string SqlInsertStament = "INSERT INTO Customer (Firstname,Lastname,PhoneNumber,Email,Brand,Model,IMEI,Problem,Status,CreationDate) VALUES ({0})";
         const string Status = "devices";
+        private bool editEnabled = false;
 
         public AddDeviceForm()
         {
@@ -25,6 +26,64 @@ namespace Device
             circularProgressBar1.Value = 0;
             circularProgressBar1.Enabled = false;
             LoadDevices();
+        }
+
+        public string TextBoxName
+        {
+            get { return textBoxFirstName.Text; }
+            set { textBoxFirstName.Text = value; }
+        }
+
+        public string TextBoxLastName
+        {
+            get { return textBoxLastName.Text; }
+            set { textBoxLastName.Text = value; }
+        }
+
+        public string TextBoxPhoneNumber
+        {
+            get { return textBoxPhoneNumber.Text; }
+            set { textBoxPhoneNumber.Text = value; }
+        }
+
+        public string TextBoxeMail
+        {
+            get { return textBoxeMail.Text; }
+            set { textBoxeMail.Text = value; }
+        }
+
+        public string TextBoxBrand
+        {
+            get { return textBoxDeviceBrand.Text; }
+            set { textBoxDeviceBrand.Text = value; }
+        }
+
+        public string TextBoxModel
+        {
+            get { return textBoxDeviceModel.Text; }
+            set { textBoxDeviceModel.Text = value; }
+        }
+
+        public string TextBoxIMEI
+        {
+            get { return textBoxDeviceIMEI.Text; }
+            set { textBoxDeviceIMEI.Text = value; }
+        }
+
+        public string TextBoxProblem
+        {
+            get { return textBoxDeviceProblem.Text; }
+            set { textBoxDeviceProblem.Text = value; }
+        }
+
+        public void EditMode (bool mode=false)
+        {
+            if (mode)
+            {
+                Add.Enabled = false;
+                button1.Enabled = false;
+                editEnabled = true;
+            }
         }
 
         // Data and Static device selection list .
@@ -36,29 +95,32 @@ namespace Device
             }
             else
             {
-                try
+                if (!editEnabled)
                 {
-                    string CustomerValues = String.Empty;
-                    string today = DateTime.Today.ToString("dd/MM/yyyy");
+                    try
+                    {
+                        string CustomerValues = String.Empty;
+                        string today = DateTime.Today.ToString("dd/MM/yyyy");
 
-                    CustomerValues = "'" + textBoxFirstName.Text + "'," +
-                                          "'" + textBoxLastName.Text + "'," +
-                                          "'" + textBoxPhoneNumber.Text + "'," +
-                                          "'" + textBoxeMail.Text + "'," +
-                                          "'" + textBoxDeviceBrand.Text + "'," +
-                                          "'" + textBoxDeviceModel.Text + "'," +
-                                          "'" + textBoxDeviceIMEI.Text + "'," +
-                                          "'" + textBoxDeviceProblem.Text + "'," +
-                                          "'" + Status + "'," +
-                                          "'" + today + "'";
+                        CustomerValues = "'" + textBoxFirstName.Text + "'," +
+                                              "'" + textBoxLastName.Text + "'," +
+                                              "'" + textBoxPhoneNumber.Text + "'," +
+                                              "'" + textBoxeMail.Text + "'," +
+                                              "'" + textBoxDeviceBrand.Text + "'," +
+                                              "'" + textBoxDeviceModel.Text + "'," +
+                                              "'" + textBoxDeviceIMEI.Text + "'," +
+                                              "'" + textBoxDeviceProblem.Text + "'," +
+                                              "'" + Status + "'," +
+                                              "'" + today + "'";
 
-                    //Create Sql Insert Command and insert the data in database
-                    DatabaseAccess.fnSetConexion(string.Format(SqlInsertStament, CustomerValues)).ExecuteNonQuery();
-                    this.Close();
-                }
-                catch (Exception Ex)
-                {
-                    MessageBox.Show("Error: " + Ex.Message, "Create Customer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        //Create Sql Insert Command and insert the data in database
+                        DatabaseAccess.fnSetConexion(string.Format(SqlInsertStament, CustomerValues)).ExecuteNonQuery();
+                        this.Close();
+                    }
+                    catch (Exception Ex)
+                    {
+                        MessageBox.Show("Error: " + Ex.Message, "Create Customer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
             }
         }
@@ -349,7 +411,6 @@ namespace Device
                         {
                             textBoxDeviceIMEI.SelectAll();
                         }
-                        
                     }
 
                     LuhnUI();
@@ -467,8 +528,6 @@ namespace Device
                         // Get the device name
                         foreach (var udid in udids)
                         {
-
-
                             idevice.idevice_new(out iDeviceHandle deviceHandle, udid).ThrowOnError();
 
                             lockdown.lockdownd_client_new_with_handshake(deviceHandle, out LockdownClientHandle lockdownHandle, "Quamotion").ThrowOnError();
@@ -536,13 +595,11 @@ namespace Device
             {
                 var intNumber = Int32.Parse(part1 + part2 + part3);
                 return part1 + part2 + part3;
-
             }
             catch
             {
                 return "-1";
             }
-
         }
 
         private void TextBoxDeviceModel_TextChanged(object sender, EventArgs e)
