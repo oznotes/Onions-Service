@@ -43,14 +43,14 @@
             this.textBoxDeviceIMEI = new System.Windows.Forms.TextBox();
             this.textBoxDeviceProblem = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.Add = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textBoxDeviceBrand = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.Add = new System.Windows.Forms.Button();
-            this.picDeviceModel = new System.Windows.Forms.PictureBox();
-            this.PrintButton = new System.Windows.Forms.Button();
             this.circularProgressBar1 = new CircularProgressBar();
+            this.PrintButton = new System.Windows.Forms.Button();
+            this.picDeviceModel = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDeviceModel)).BeginInit();
             this.SuspendLayout();
@@ -94,6 +94,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(354, 299);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -227,6 +228,18 @@
             this.label3.Text = "Phone Number:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // Add
+            // 
+            this.Add.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Add.Location = new System.Drawing.Point(93, 243);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(259, 48);
+            this.Add.TabIndex = 11;
+            this.Add.Text = "ADD";
+            this.Add.UseVisualStyleBackColor = false;
+            this.Add.Click += new System.EventHandler(this.Add_Click);
+            // 
             // label9
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -276,38 +289,6 @@
             this.label2.Text = "Last Name:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // Add
-            // 
-            this.Add.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Add.Location = new System.Drawing.Point(93, 243);
-            this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(259, 48);
-            this.Add.TabIndex = 11;
-            this.Add.Text = "ADD";
-            this.Add.UseVisualStyleBackColor = false;
-            this.Add.Click += new System.EventHandler(this.Add_Click);
-            // 
-            // picDeviceModel
-            // 
-            this.picDeviceModel.Image = global::Onions.Properties.Resources.test;
-            this.picDeviceModel.Location = new System.Drawing.Point(5, 3);
-            this.picDeviceModel.Name = "picDeviceModel";
-            this.picDeviceModel.Size = new System.Drawing.Size(212, 289);
-            this.picDeviceModel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picDeviceModel.TabIndex = 1;
-            this.picDeviceModel.TabStop = false;
-            // 
-            // PrintButton
-            // 
-            this.PrintButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.PrintButton.Image = global::Onions.Properties.Resources.icons8_print_32;
-            this.PrintButton.Location = new System.Drawing.Point(31, 4);
-            this.PrintButton.Name = "PrintButton";
-            this.PrintButton.Size = new System.Drawing.Size(44, 37);
-            this.PrintButton.TabIndex = 14;
-            this.PrintButton.UseVisualStyleBackColor = true;
-            // 
             // circularProgressBar1
             // 
             this.circularProgressBar1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -316,7 +297,7 @@
             this.circularProgressBar1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.circularProgressBar1.ForeColor = System.Drawing.Color.Transparent;
             this.circularProgressBar1.LineColor = System.Drawing.Color.Transparent;
-            this.circularProgressBar1.Location = new System.Drawing.Point(25, 247);
+            this.circularProgressBar1.Location = new System.Drawing.Point(25, 265);
             this.circularProgressBar1.Maximum = ((long)(100));
             this.circularProgressBar1.MinimumSize = new System.Drawing.Size(40, 40);
             this.circularProgressBar1.Name = "circularProgressBar1";
@@ -327,6 +308,26 @@
             this.circularProgressBar1.TabIndex = 13;
             this.circularProgressBar1.Text = "circularProgressBar1";
             this.circularProgressBar1.Value = ((long)(0));
+            // 
+            // PrintButton
+            // 
+            this.PrintButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PrintButton.Image = global::Onions.Properties.Resources.icons8_print_32;
+            this.PrintButton.Location = new System.Drawing.Point(3, 3);
+            this.PrintButton.Name = "PrintButton";
+            this.PrintButton.Size = new System.Drawing.Size(44, 34);
+            this.PrintButton.TabIndex = 14;
+            this.PrintButton.UseVisualStyleBackColor = true;
+            // 
+            // picDeviceModel
+            // 
+            this.picDeviceModel.Image = global::Onions.Properties.Resources.test;
+            this.picDeviceModel.Location = new System.Drawing.Point(5, 3);
+            this.picDeviceModel.Name = "picDeviceModel";
+            this.picDeviceModel.Size = new System.Drawing.Size(212, 289);
+            this.picDeviceModel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDeviceModel.TabIndex = 1;
+            this.picDeviceModel.TabStop = false;
             // 
             // AddDeviceForm
             // 
