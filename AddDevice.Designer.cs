@@ -315,9 +315,10 @@
             this.PrintButton.Image = global::Onions.Properties.Resources.icons8_print_32;
             this.PrintButton.Location = new System.Drawing.Point(3, 3);
             this.PrintButton.Name = "PrintButton";
-            this.PrintButton.Size = new System.Drawing.Size(44, 34);
+            this.PrintButton.Size = new System.Drawing.Size(84, 34);
             this.PrintButton.TabIndex = 14;
             this.PrintButton.UseVisualStyleBackColor = true;
+            this.PrintButton.Visible = false;
             // 
             // picDeviceModel
             // 

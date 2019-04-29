@@ -19,6 +19,7 @@ namespace Device
         const string SqlInsertStament = "INSERT INTO Customer (Firstname,Lastname,PhoneNumber,Email,Brand,Model,IMEI,Problem,Status,CreationDate) VALUES ({0})";
         const string Status = "devices";
         private bool editEnabled = false;
+        
 
         public AddDeviceForm()
         {
@@ -83,6 +84,7 @@ namespace Device
                 Add.Enabled = false;
                 button1.Enabled = false;
                 editEnabled = true;
+                PrintButton.Visible = true;
             }
         }
 
