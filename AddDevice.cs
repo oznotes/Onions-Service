@@ -17,8 +17,16 @@ namespace Device
     public partial class AddDeviceForm : Form
     {
         const string SqlInsertStament = "INSERT INTO Customer (Firstname,Lastname,PhoneNumber,Email,Brand,Model,IMEI,Problem,Status,CreationDate) VALUES ({0})";
+        //const string SqlUpdateStatement = "UPDATE Customer";
+        /*"UPDATE Customer SET Address = @add, City = @cit Where FirstName = @fn AND LastName = @ln";
+         *  UPDATE Customers
+            SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
+            WHERE CustomerID = 1;
+         */
+
         const string Status = "devices";
         private bool editEnabled = false;
+        public int customerID;
         
 
         public AddDeviceForm()
@@ -77,11 +85,17 @@ namespace Device
             set { textBoxDeviceProblem.Text = value; }
         }
 
+        public int CustomerID
+        {
+            get { return customerID; }
+            set { customerID = value; }
+        }
+
         public void EditMode (bool mode=false)
         {
             if (mode)
             {
-                Add.Enabled = false;
+                Add.Text = "UPDATE";
                 button1.Enabled = false;
                 editEnabled = true;
                 PrintButton.Visible = true;
@@ -123,6 +137,10 @@ namespace Device
                     {
                         MessageBox.Show("Error: " + Ex.Message, "Create Customer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
+                }
+                else
+                {
+                    // editmode ..
                 }
             }
         }

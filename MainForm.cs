@@ -247,10 +247,6 @@ namespace Device
 
             /// edit mode 
 
-            //Console.WriteLine(Row.Cells["IdCustomer"].Value.ToString());
-            // 
-
-
             AddDeviceForm addContactForm = new AddDeviceForm
             {
                 TextBoxName = Row.Cells["FirstName"].Value.ToString(),
@@ -260,7 +256,8 @@ namespace Device
                 TextBoxBrand = Row.Cells["Brand"].Value.ToString(),
                 TextBoxModel = Row.Cells["Model"].Value.ToString(),
                 TextBoxIMEI = Row.Cells["IMEI"].Value.ToString(),
-                TextBoxProblem = Row.Cells["Problem"].Value.ToString()
+                TextBoxProblem = Row.Cells["Problem"].Value.ToString(),
+                CustomerID = int.Parse(Row.Cells["IdCustomer"].Value.ToString())
             };
             addContactForm.EditMode(true);
             // send ID.
