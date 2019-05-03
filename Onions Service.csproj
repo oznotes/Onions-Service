@@ -78,7 +78,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SQLite, Version=1.0.109.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Assembly\System.Data.SQLite.dll</HintPath>
+      <HintPath>Assembly\System.Data.SQLite.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -135,6 +135,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Database\Devices.json" />
+    <None Include="Database\OrionsServiceDatabase" />
     <None Include="Devices.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -156,6 +158,8 @@
     <Content Include="adb.exe" />
     <Content Include="AdbWinApi.dll" />
     <Content Include="AdbWinUsbApi.dll" />
+    <Content Include="Assembly\Newtonsoft.Json.dll" />
+    <Content Include="Assembly\System.Data.SQLite.dll" />
     <Content Include="onion.ico" />
     <Content Include="profile_u1B_icon.ico" />
     <None Include="Resources\icons8-print-32.png" />
