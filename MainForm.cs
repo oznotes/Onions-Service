@@ -242,29 +242,7 @@ namespace Device
 
         private void dataGridView_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            //DataGridViewRow Row = dataGridView.SelectedRows[0];
-
-
-            ///// edit mode 
-
-            //AddDeviceForm addContactForm = new AddDeviceForm
-            //{
-            //    TextBoxName = Row.Cells["FirstName"].Value.ToString(),
-            //    TextBoxLastName = Row.Cells["LastName"].Value.ToString(),
-            //    TextBoxPhoneNumber = Row.Cells["PhoneNumber"].Value.ToString(),
-            //    TextBoxeMail = Row.Cells["e-Mail"].Value.ToString(),
-            //    TextBoxBrand = Row.Cells["Brand"].Value.ToString(),
-            //    TextBoxModel = Row.Cells["Model"].Value.ToString(),
-            //    TextBoxIMEI = Row.Cells["IMEI"].Value.ToString(),
-            //    TextBoxProblem = Row.Cells["Problem"].Value.ToString(),
-            //    CustomerID = int.Parse(Row.Cells["IdCustomer"].Value.ToString())
-            //};
-            //addContactForm.EditMode(true);
-            //// send ID.
-
-            //addContactForm.ShowDialog();
-
-            // Read cell appear form with this .
+            //No More Double Click
         }
 
         private void dataGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)

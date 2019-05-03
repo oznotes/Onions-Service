@@ -593,7 +593,6 @@ namespace Device
 
         private string ExtractIMEIfromMethod2(List<string> list)
         {
-
             var s5 = list[5].Skip(51).Take(16);
             var s6 = list[6].Skip(51).Take(16);
             var s7 = list[7].Skip(51).Take(16);
@@ -601,7 +600,6 @@ namespace Device
             string part1 = "";
             string part2 = "";
             string part3 = "";
-
 
             foreach (var item in s5)
             {
@@ -626,7 +624,7 @@ namespace Device
             // Test and fail return -1
             try
             {
-                var intNumber = Int32.Parse(part1 + part2 + part3);
+                var intNumber = Int64.Parse(String.Concat(part1, part2, part3));
                 return part1 + part2 + part3;
             }
             catch
