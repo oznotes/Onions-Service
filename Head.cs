@@ -56,5 +56,31 @@ namespace Onions
             }
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (SettingsBox.Visible)
+            {
+                SettingsBox.Visible = false;
+                SettingsBox.Enabled = false;
+            }
+
+            LoginBox.Visible = true;
+            LoginBox.Enabled = true;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (LoginBox.Visible)
+            {
+                LoginBox.Visible = false;
+                LoginBox.Enabled = false;
+
+            }
+
+            SettingsBox.Visible = true;
+            SettingsBox.Enabled = true;
+
+        }
     }
 }

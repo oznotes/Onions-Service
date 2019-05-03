@@ -280,5 +280,12 @@ namespace Device
 
             LoadContacts("devices");
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            Onions.HeadForm headform = new Onions.HeadForm();
+            headform.Show();
+
+        }
     }
 }
