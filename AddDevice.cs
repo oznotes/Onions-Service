@@ -403,11 +403,13 @@ namespace Device
                     Dictionary<int, string> imei = new Dictionary<int, string>()
                     {
                         { 1, "content query --uri content://settings/system --where " + '"' + "name='" + "bd_setting_i'" + '"' + " | sed '" + "s/[^=0-9]*//g' | sed 's/[0-9]*=//g'"},
-                        { 2, "service call iphonesubinfo 1"}
+                        { 2, "service call iphonesubinfo 1"},
+                        { 3, "getprop persist.radio.device.imei"}
                     };
 
                     string manufacturer = @"getprop ro.product.manufacturer";
                     string model = @"getprop ro.product.model";
+
 
                     //Instance.ExecuteRemoteCommand is adb shell -> 
                     AdbClient.Instance.ExecuteRemoteCommand(manufacturer, device, receiver);
@@ -442,7 +444,12 @@ namespace Device
                         }
                         else
                         {
-                            textBoxDeviceIMEI.SelectAll();
+                            //ASUS ZENFONE
+                            //AdbClient.Instance.ExecuteRemoteCommand(imei[3], device, receiver);
+                            //received = receiver.ToString().ToUpper();
+                            //s = new List<string>(received.Split(new string[] { "\n" }, StringSplitOptions.None));
+                            //string method2IMEI = ExtractIMEIfromMethod2(s);
+                            //textBoxDeviceIMEI.SelectAll();
                         }
                     }
 
