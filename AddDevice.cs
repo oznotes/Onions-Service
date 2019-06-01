@@ -445,11 +445,7 @@ namespace Device
                         else
                         {
                             //ASUS ZENFONE
-                            //AdbClient.Instance.ExecuteRemoteCommand(imei[3], device, receiver);
-                            //received = receiver.ToString().ToUpper();
-                            //s = new List<string>(received.Split(new string[] { "\n" }, StringSplitOptions.None));
-                            //string method2IMEI = ExtractIMEIfromMethod2(s);
-                            //textBoxDeviceIMEI.SelectAll();
+
                         }
                     }
 
