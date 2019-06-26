@@ -197,9 +197,8 @@ namespace Device
         }
 
         private void DataGridView_CellMouseUp(object sender, DataGridViewCellMouseEventArgs e)
-        {   //Update the ROW ID with the mouse event 
-            //int column = dataGridView.CurrentCell.ColumnIndex;
-            //Row_N = dataGridView.CurrentCell.RowIndex;
+        {   
+
         }
 
         private void ToolStripCompleteJOB_Click(object sender, EventArgs e)
@@ -227,11 +226,7 @@ namespace Device
 
         private void DataGridView_SelectionChanged(object sender, EventArgs e)
         {
-            //if (resetRow)
-            //{
-            //    resetRow = false;
-            //    dataGridView.CurrentCell = dataGridView.Rows[currentRow].Cells[0];
-            //}
+
         }
 
         void fnconfigDGV()
