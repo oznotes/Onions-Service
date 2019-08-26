@@ -28,11 +28,10 @@ namespace Onions
 
         private void Button1_Click(object sender, EventArgs e)
         {
-
             Point Loc = this.Location;
             Loc.Y = Loc.Y + 100;
 
-            if (!mainfrm.Visible)
+            if (mainfrm.Visible==true)
             {
                 mainfrm.StartPosition = FormStartPosition.Manual;
                 mainfrm.Location = Loc;
@@ -44,7 +43,7 @@ namespace Onions
             }
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void StartAddDevice(object sender, EventArgs e)
         {
             if (!addfrm.Visible)
             {
@@ -54,7 +53,6 @@ namespace Onions
             {
                 addfrm.BringToFront();
             }
-
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -64,7 +62,6 @@ namespace Onions
                 SettingsBox.Visible = false;
                 SettingsBox.Enabled = false;
             }
-
             LoginBox.Visible = true;
             LoginBox.Enabled = true;
         }
@@ -75,12 +72,10 @@ namespace Onions
             {
                 LoginBox.Visible = false;
                 LoginBox.Enabled = false;
-
             }
-
             SettingsBox.Visible = true;
             SettingsBox.Enabled = true;
-
         }
+
     }
 }

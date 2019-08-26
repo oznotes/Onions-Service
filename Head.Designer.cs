@@ -35,12 +35,12 @@
             this.Home_form_btn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.LoginBox = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.LoginButton = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SettingsBox = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SettingsOK = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.LoginBox.SuspendLayout();
             this.SettingsBox.SuspendLayout();
@@ -87,7 +87,7 @@
             this.Add_device_btn.Size = new System.Drawing.Size(32, 32);
             this.Add_device_btn.TabIndex = 1;
             this.Add_device_btn.UseVisualStyleBackColor = false;
-            this.Add_device_btn.Click += new System.EventHandler(this.Button2_Click);
+            this.Add_device_btn.Click += new System.EventHandler(this.StartAddDevice);
             // 
             // Home_form_btn
             // 
@@ -124,6 +124,13 @@
             this.LoginBox.Text = "Login:";
             this.LoginBox.Visible = false;
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(6, 45);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(172, 20);
+            this.textBox2.TabIndex = 2;
+            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(6, 19);
@@ -140,13 +147,6 @@
             this.LoginButton.Text = "OK";
             this.LoginButton.UseVisualStyleBackColor = true;
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(6, 45);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(172, 20);
-            this.textBox2.TabIndex = 2;
-            // 
             // SettingsBox
             // 
             this.SettingsBox.Controls.Add(this.SettingsOK);
@@ -160,14 +160,6 @@
             this.SettingsBox.Text = "Settings";
             this.SettingsBox.Visible = false;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(5, 30);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(171, 21);
-            this.comboBox1.TabIndex = 0;
-            // 
             // SettingsOK
             // 
             this.SettingsOK.Location = new System.Drawing.Point(6, 77);
@@ -176,6 +168,14 @@
             this.SettingsOK.TabIndex = 1;
             this.SettingsOK.Text = "OK";
             this.SettingsOK.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(5, 30);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(171, 21);
+            this.comboBox1.TabIndex = 0;
             // 
             // HeadForm
             // 
