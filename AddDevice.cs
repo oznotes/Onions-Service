@@ -16,8 +16,8 @@ namespace Device
 {
     public partial class AddDeviceForm : Form
     {
-        const string SqlInsertStament = "INSERT INTO Customer (Firstname,Lastname,PhoneNumber,Email,Brand,Model,IMEI,Problem,Status,CreationDate) VALUES ({0})";
-        const string SqlUpdateStament = "UPDATE Customer SET Firstname = '{0}', Lastname = '{1}',PhoneNumber = '{2}',Email = '{3}',Brand = '{4}',Model = '{5}',IMEI = '{6}',Problem = '{7}',Status = '{8}',UpdateDate = '{9}' WHERE IdCustomer = {10}";
+        const string SqlInsertStament = "INSERT INTO Customer (Firstname,Lastname,PhoneNumber,Email,Brand,Model,IMEI,Problem,Price,Status,CreationDate) VALUES ({0})";
+        const string SqlUpdateStament = "UPDATE Customer SET Firstname = '{0}', Lastname = '{1}',PhoneNumber = '{2}',Email = '{3}',Brand = '{4}',Model = '{5}',IMEI = '{6}',Problem = '{7}',Price = '{8}',Status = '{9}',UpdateDate = '{10}' WHERE IdCustomer = {11}";
 
         const string Status = "devices";
         private bool editEnabled = false;
@@ -80,6 +80,12 @@ namespace Device
             set { textBoxDeviceProblem.Text = value; }
         }
 
+        public string TextBoxPrice
+        {
+            get { return textBoxPrice.Text; }
+            set { textBoxPrice.Text = value; }
+        }
+
         public int CustomerID
         {
             get { return customerID; }
@@ -121,6 +127,7 @@ namespace Device
                                               "'" + textBoxDeviceModel.Text + "'," +
                                               "'" + textBoxDeviceIMEI.Text + "'," +
                                               "'" + textBoxDeviceProblem.Text + "'," +
+                                              "'" + textBoxPrice.Text + "'," +
                                               "'" + Status + "'," +
                                               "'" + today + "'";
 
@@ -140,7 +147,7 @@ namespace Device
                         string today = DateTime.Today.ToString("dd/MM/yyyy");                   
 
                         //Create Sql Insert Command and insert the data in database
-                        DatabaseAccess.fnSetConexion(string.Format(SqlUpdateStament, textBoxFirstName.Text,textBoxLastName.Text, textBoxPhoneNumber.Text, textBoxeMail.Text, textBoxDeviceBrand.Text, textBoxDeviceModel.Text, textBoxDeviceIMEI.Text, textBoxDeviceProblem.Text, Status, today, CustomerID)).ExecuteNonQuery();
+                        DatabaseAccess.fnSetConexion(string.Format(SqlUpdateStament, textBoxFirstName.Text,textBoxLastName.Text, textBoxPhoneNumber.Text, textBoxeMail.Text, textBoxDeviceBrand.Text, textBoxDeviceModel.Text, textBoxDeviceIMEI.Text, textBoxDeviceProblem.Text, textBoxPrice.Text, Status, today, CustomerID)).ExecuteNonQuery();
                         this.Close();
                     }
                     catch (Exception Ex)

@@ -267,6 +267,8 @@ namespace Device
                 TextBoxModel = Row.Cells["Model"].Value.ToString(),
                 TextBoxIMEI = Row.Cells["IMEI"].Value.ToString(),
                 TextBoxProblem = Row.Cells["Problem"].Value.ToString(),
+                TextBoxPrice = Row.Cells["Price"].Value.ToString(),
+
                 CustomerID = int.Parse(Row.Cells["IdCustomer"].Value.ToString())
             };
             addContactForm.EditMode(true);

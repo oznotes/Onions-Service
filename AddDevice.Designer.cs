@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddDeviceForm));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBoxPrice = new System.Windows.Forms.TextBox();
+            this.PriceLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -43,16 +45,14 @@
             this.textBoxDeviceIMEI = new System.Windows.Forms.TextBox();
             this.textBoxDeviceProblem = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.Add = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textBoxDeviceBrand = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.circularProgressBar1 = new CircularProgressBar();
             this.PrintButton = new System.Windows.Forms.Button();
+            this.Add = new System.Windows.Forms.Button();
+            this.circularProgressBar1 = new CircularProgressBar();
             this.picDeviceModel = new System.Windows.Forms.PictureBox();
-            this.PriceLabel = new System.Windows.Forms.Label();
-            this.textBoxPrice = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDeviceModel)).BeginInit();
             this.SuspendLayout();
@@ -102,6 +102,25 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(354, 321);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // textBoxPrice
+            // 
+            this.textBoxPrice.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxPrice.Location = new System.Drawing.Point(93, 243);
+            this.textBoxPrice.Name = "textBoxPrice";
+            this.textBoxPrice.Size = new System.Drawing.Size(259, 20);
+            this.textBoxPrice.TabIndex = 16;
+            // 
+            // PriceLabel
+            // 
+            this.PriceLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.PriceLabel.AutoSize = true;
+            this.PriceLabel.Location = new System.Drawing.Point(53, 246);
+            this.PriceLabel.Name = "PriceLabel";
+            this.PriceLabel.Size = new System.Drawing.Size(34, 13);
+            this.PriceLabel.TabIndex = 15;
+            this.PriceLabel.Text = "Price:";
+            this.PriceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label1
             // 
@@ -233,18 +252,6 @@
             this.label3.Text = "Phone Number:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // Add
-            // 
-            this.Add.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Add.Location = new System.Drawing.Point(93, 268);
-            this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(259, 48);
-            this.Add.TabIndex = 11;
-            this.Add.Text = "ADD";
-            this.Add.UseVisualStyleBackColor = false;
-            this.Add.Click += new System.EventHandler(this.Add_Click);
-            // 
             // label9
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -294,6 +301,29 @@
             this.label2.Text = "Last Name:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // PrintButton
+            // 
+            this.PrintButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PrintButton.Image = global::Onions.Properties.Resources.icons8_print_32;
+            this.PrintButton.Location = new System.Drawing.Point(3, 3);
+            this.PrintButton.Name = "PrintButton";
+            this.PrintButton.Size = new System.Drawing.Size(84, 34);
+            this.PrintButton.TabIndex = 14;
+            this.PrintButton.UseVisualStyleBackColor = true;
+            this.PrintButton.Visible = false;
+            // 
+            // Add
+            // 
+            this.Add.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Add.Location = new System.Drawing.Point(93, 268);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(259, 48);
+            this.Add.TabIndex = 11;
+            this.Add.Text = "ADD";
+            this.Add.UseVisualStyleBackColor = false;
+            this.Add.Click += new System.EventHandler(this.Add_Click);
+            // 
             // circularProgressBar1
             // 
             this.circularProgressBar1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -315,17 +345,6 @@
             this.circularProgressBar1.Text = "circularProgressBar1";
             this.circularProgressBar1.Value = ((long)(0));
             // 
-            // PrintButton
-            // 
-            this.PrintButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.PrintButton.Image = global::Onions.Properties.Resources.icons8_print_32;
-            this.PrintButton.Location = new System.Drawing.Point(3, 3);
-            this.PrintButton.Name = "PrintButton";
-            this.PrintButton.Size = new System.Drawing.Size(84, 34);
-            this.PrintButton.TabIndex = 14;
-            this.PrintButton.UseVisualStyleBackColor = true;
-            this.PrintButton.Visible = false;
-            // 
             // picDeviceModel
             // 
             this.picDeviceModel.Image = global::Onions.Properties.Resources.test;
@@ -335,25 +354,6 @@
             this.picDeviceModel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picDeviceModel.TabIndex = 1;
             this.picDeviceModel.TabStop = false;
-            // 
-            // PriceLabel
-            // 
-            this.PriceLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.PriceLabel.AutoSize = true;
-            this.PriceLabel.Location = new System.Drawing.Point(53, 246);
-            this.PriceLabel.Name = "PriceLabel";
-            this.PriceLabel.Size = new System.Drawing.Size(34, 13);
-            this.PriceLabel.TabIndex = 15;
-            this.PriceLabel.Text = "Price:";
-            this.PriceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // textBoxPrice
-            // 
-            this.textBoxPrice.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxPrice.Location = new System.Drawing.Point(93, 243);
-            this.textBoxPrice.Name = "textBoxPrice";
-            this.textBoxPrice.Size = new System.Drawing.Size(259, 20);
-            this.textBoxPrice.TabIndex = 16;
             // 
             // AddDeviceForm
             // 
