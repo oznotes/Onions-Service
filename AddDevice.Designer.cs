@@ -51,6 +51,8 @@
             this.circularProgressBar1 = new CircularProgressBar();
             this.PrintButton = new System.Windows.Forms.Button();
             this.picDeviceModel = new System.Windows.Forms.PictureBox();
+            this.PriceLabel = new System.Windows.Forms.Label();
+            this.textBoxPrice = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDeviceModel)).BeginInit();
             this.SuspendLayout();
@@ -60,6 +62,8 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 265F));
+            this.tableLayoutPanel1.Controls.Add(this.textBoxPrice, 1, 9);
+            this.tableLayoutPanel1.Controls.Add(this.PriceLabel, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label6, 0, 6);
@@ -73,13 +77,13 @@
             this.tableLayoutPanel1.Controls.Add(this.textBoxDeviceIMEI, 1, 7);
             this.tableLayoutPanel1.Controls.Add(this.textBoxDeviceProblem, 1, 8);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.Add, 1, 9);
             this.tableLayoutPanel1.Controls.Add(this.label9, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.button1, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.textBoxDeviceBrand, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.circularProgressBar1, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.PrintButton, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.Add, 1, 10);
+            this.tableLayoutPanel1.Controls.Add(this.circularProgressBar1, 0, 10);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(221, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -93,9 +97,10 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(354, 299);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(354, 321);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -232,7 +237,7 @@
             // 
             this.Add.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Add.Location = new System.Drawing.Point(93, 243);
+            this.Add.Location = new System.Drawing.Point(93, 268);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(259, 48);
             this.Add.TabIndex = 11;
@@ -297,7 +302,8 @@
             this.circularProgressBar1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.circularProgressBar1.ForeColor = System.Drawing.Color.Transparent;
             this.circularProgressBar1.LineColor = System.Drawing.Color.Transparent;
-            this.circularProgressBar1.Location = new System.Drawing.Point(25, 265);
+            this.circularProgressBar1.Location = new System.Drawing.Point(25, 275);
+            this.circularProgressBar1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 33);
             this.circularProgressBar1.Maximum = ((long)(100));
             this.circularProgressBar1.MinimumSize = new System.Drawing.Size(40, 40);
             this.circularProgressBar1.Name = "circularProgressBar1";
@@ -330,13 +336,32 @@
             this.picDeviceModel.TabIndex = 1;
             this.picDeviceModel.TabStop = false;
             // 
+            // PriceLabel
+            // 
+            this.PriceLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.PriceLabel.AutoSize = true;
+            this.PriceLabel.Location = new System.Drawing.Point(53, 246);
+            this.PriceLabel.Name = "PriceLabel";
+            this.PriceLabel.Size = new System.Drawing.Size(34, 13);
+            this.PriceLabel.TabIndex = 15;
+            this.PriceLabel.Text = "Price:";
+            this.PriceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // textBoxPrice
+            // 
+            this.textBoxPrice.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxPrice.Location = new System.Drawing.Point(93, 243);
+            this.textBoxPrice.Name = "textBoxPrice";
+            this.textBoxPrice.Size = new System.Drawing.Size(259, 20);
+            this.textBoxPrice.TabIndex = 16;
+            // 
             // AddDeviceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(575, 299);
+            this.ClientSize = new System.Drawing.Size(575, 321);
             this.Controls.Add(this.picDeviceModel);
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
@@ -381,5 +406,7 @@
         private System.Windows.Forms.Button Add;
         private CircularProgressBar circularProgressBar1;
         private System.Windows.Forms.Button PrintButton;
+        private System.Windows.Forms.TextBox textBoxPrice;
+        private System.Windows.Forms.Label PriceLabel;
     }
 }

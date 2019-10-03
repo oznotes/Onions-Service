@@ -238,6 +238,7 @@ namespace Device
         private void dataGridView_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             //No More Double Click
+            //Make edit event.
         }
 
         private void dataGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
