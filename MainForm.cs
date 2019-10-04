@@ -8,18 +8,17 @@ using System.Data.SQLite;
 
 namespace Device
 {
+
     public partial class MainForm : Form
     {
         public int DevicesInService
         {
             get { return GiveMeTheCount("devices"); }
-            //set { textBoxFirstName.Text = value; }
         }
 
         public int CompletedDevices
         {
             get { return GiveMeTheCount("completed"); }
-            //set { textBoxLastName.Text = value; }
         }
 
         public MainForm()
@@ -40,13 +39,13 @@ namespace Device
 
             this.Text = "Onions Service Database - Home";
             LoadContacts("devices");
-            GiveMeTheCount("devices");
 
             //Check if record in state completed
             if (CheckForRecordCompleted("completed"))
                 toolStripButtonCompleted.Enabled = true;
             else
                 toolStripButtonCompleted.Enabled = false;
+
         }
 
         private void ToolStripButtonAdd_Click(object sender, EventArgs e)
@@ -95,6 +94,8 @@ namespace Device
                 toolStripButtonRemove.Enabled = false;
                 toolStripButtonAdd.Enabled = false;
             }
+            
+
         }
 
         /// <summary>

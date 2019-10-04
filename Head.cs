@@ -23,19 +23,22 @@ namespace Onions
         public HeadForm()
         {
             InitializeComponent();
-            //label1.Text = ;
-            //label2.Text = string.Format("{0} Devices Completed", mainfrm.CompletedDevices.ToString());
+            WhatsMyStatus();
+
+        }
+
+        public void WhatsMyStatus()
+        {
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.Rows.Add(string.Format("  {0} Devices in Service", mainfrm.DevicesInService.ToString()));
             dataGridView1.Rows.Add(string.Format("  {0} Devices in Completed", mainfrm.CompletedDevices.ToString()));
-
         }
 
 
         private void Button1_Click(object sender, EventArgs e)
         {
             Point Loc = this.Location;
-            Loc.Y = Loc.Y + 100;
+            Loc.Y += 100;
 
             if (mainfrm.Visible==true)
             {
@@ -85,6 +88,7 @@ namespace Onions
 
         private void Button3_Click(object sender, EventArgs e)
         {
+            // check if already visible
             mainfrm.Visible = true;
         }
     }
