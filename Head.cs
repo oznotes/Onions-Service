@@ -23,6 +23,12 @@ namespace Onions
         public HeadForm()
         {
             InitializeComponent();
+            //label1.Text = ;
+            //label2.Text = string.Format("{0} Devices Completed", mainfrm.CompletedDevices.ToString());
+            dataGridView1.RowHeadersVisible = false;
+            dataGridView1.Rows.Add(string.Format("  {0} Devices in Service", mainfrm.DevicesInService.ToString()));
+            dataGridView1.Rows.Add(string.Format("  {0} Devices in Completed", mainfrm.CompletedDevices.ToString()));
+
         }
 
 
@@ -77,5 +83,9 @@ namespace Onions
             SettingsBox.Enabled = true;
         }
 
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            mainfrm.Visible = true;
+        }
     }
 }

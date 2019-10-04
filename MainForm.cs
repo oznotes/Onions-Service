@@ -9,7 +9,19 @@ using System.Data.SQLite;
 namespace Device
 {
     public partial class MainForm : Form
-    { 
+    {
+        public int DevicesInService
+        {
+            get { return GiveMeTheCount("devices"); }
+            //set { textBoxFirstName.Text = value; }
+        }
+
+        public int CompletedDevices
+        {
+            get { return GiveMeTheCount("completed"); }
+            //set { textBoxLastName.Text = value; }
+        }
+
         public MainForm()
         {
             InitializeComponent();
@@ -25,8 +37,10 @@ namespace Device
 
         public void MainSetup()
         {
+
             this.Text = "Onions Service Database - Home";
             LoadContacts("devices");
+            GiveMeTheCount("devices");
 
             //Check if record in state completed
             if (CheckForRecordCompleted("completed"))
@@ -51,7 +65,6 @@ namespace Device
             {
                 //Query to customers table
                 string SelectCustomer = string.Format("SELECT IdCustomer, CreationDate AS 'Date in Service', FirstName,LastName, PhoneNumber, Email AS 'e-Mail', Brand, Model, IMEI, Problem, Price,UpdateDate AS 'Update Date' FROM Customer WHERE Status = '{0}'", datasource);
-
                 //Run query
                 SQLiteDataAdapter objDa = new SQLiteDataAdapter(DatabaseAccess.fnSetConexion(SelectCustomer));
                 //Hire will be data
@@ -284,6 +297,21 @@ namespace Device
             Onions.HeadForm headform = new Onions.HeadForm();
             headform.Show();
 
+        }
+
+        private int GiveMeTheCount(string datasource)
+
+        {
+            //Query to customers table
+            string SelectCustomer = string.Format("SELECT IdCustomer FROM Customer WHERE Status = '{0}'", datasource);
+            //Run query
+            SQLiteDataAdapter objDa = new SQLiteDataAdapter(DatabaseAccess.fnSetConexion(SelectCustomer));
+            //Hire will be data
+            DataTable dtCustomer = new DataTable();
+            //Fill with data
+            objDa.Fill(dtCustomer);
+            Int32 count = dtCustomer.Rows.Count;
+            return count;
         }
 
     }
