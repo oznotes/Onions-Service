@@ -184,7 +184,6 @@
             this.SettingsOK.TabIndex = 1;
             this.SettingsOK.Text = "OK";
             this.SettingsOK.UseVisualStyleBackColor = true;
-            this.SettingsOK.Click += new System.EventHandler(this.SettingsOK_Click);
             // 
             // comboBox1
             // 

@@ -302,5 +302,10 @@ namespace Onions
             headForm.WhatsMyStatus(DevicesInService, CompletedDevices);
         }
 
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Visible = false;
+            this.Hide();
+        }
     }
 }

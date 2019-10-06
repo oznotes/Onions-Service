@@ -14,7 +14,8 @@ namespace Onions
     public partial class HeadForm : Form
     {
 
-        MainForm mainfrm = new MainForm();
+        //MainForm mainfrm = new MainForm();
+        MainForm mainForm = new MainForm();
         AddDeviceForm addfrm = new AddDeviceForm();
 
         public string stDeviceInService { get; set; }
@@ -23,7 +24,6 @@ namespace Onions
         {
             InitializeComponent();           
 
-            MainForm mainForm = new MainForm();
             mainForm.Show();
 
             dataGridView1.RowHeadersVisible = false;
@@ -47,15 +47,15 @@ namespace Onions
             Point Loc = this.Location;
             Loc.Y += 100;
 
-            if (mainfrm.Visible==true)
+            if (mainForm.Visible==true)
             {
-                mainfrm.StartPosition = FormStartPosition.Manual;
-                mainfrm.Location = Loc;
-                mainfrm.ShowDialog();
+                mainForm.StartPosition = FormStartPosition.Manual;
+                mainForm.Location = Loc;
+                mainForm.ShowDialog();
             }
             else
             {
-                mainfrm.BringToFront();
+                mainForm.BringToFront();
             }
         }
 
@@ -95,16 +95,16 @@ namespace Onions
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            if (mainfrm.Visible == true)
+            if (!mainForm.Visible)
             {
-
+                MainForm mainForm = new MainForm();
+                mainForm.Show();
             }
             else
-            { 
-                mainfrm.Visible = false;
+            {
+                mainForm.BringToFront();
             }
 
-                        
         }
 
         private void SettingsOK_Click(object sender, EventArgs e)

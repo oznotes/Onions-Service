@@ -228,6 +228,7 @@
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "Onions";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
