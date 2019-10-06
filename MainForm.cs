@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SQLite;
 
-namespace Device
+namespace Onions
 {
 
     public partial class MainForm : Form
@@ -31,7 +31,7 @@ namespace Device
 
             // Use the DataBindingComplete event to attack the SelectionChanged, 
             // avoiding infinite loops and other nastiness.
-            dataGridView.DataBindingComplete += new DataGridViewBindingCompleteEventHandler(DataGridView_DataBindingComplete);
+            dataGridView.DataBindingComplete += new DataGridViewBindingCompleteEventHandler(DataGridView_DataBindingComplete);            
         }
 
         public void MainSetup()
@@ -53,6 +53,7 @@ namespace Device
             AddDeviceForm addContactForm = new AddDeviceForm();
             addContactForm.ShowDialog();
             LoadContacts("devices");
+            UpdateHeadStatus();
         }
 
         /// <summary>
@@ -219,6 +220,7 @@ namespace Device
         {           
             Complete_selected();
             MainSetup();
+            UpdateHeadStatus();
         }
 
         private void ToolStripButton1_Click(object sender, EventArgs e)
@@ -295,9 +297,8 @@ namespace Device
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            Onions.HeadForm headform = new Onions.HeadForm();
-            headform.Show();
-
+            //Onions.HeadForm headform = new Onions.HeadForm();
+            //headform.Show();         
         }
 
         private int GiveMeTheCount(string datasource)
@@ -313,6 +314,12 @@ namespace Device
             objDa.Fill(dtCustomer);
             Int32 count = dtCustomer.Rows.Count;
             return count;
+        }
+
+        void UpdateHeadStatus()
+        {
+            HeadForm headForm = (HeadForm)Application.OpenForms["HeadForm"];
+            headForm.WhatsMyStatus(DevicesInService, CompletedDevices);
         }
 
     }

@@ -1,4 +1,4 @@
-﻿namespace Device
+﻿namespace Onions
 {
     partial class MainForm
     {

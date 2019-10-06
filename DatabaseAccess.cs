@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Device
+namespace Onions
 {
     /// <summary>
     /// Execute Create, read, update and delete (CRUD) operations against the database.

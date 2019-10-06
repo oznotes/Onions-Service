@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Device;
-
 
 namespace Onions
 {
@@ -19,17 +17,31 @@ namespace Onions
         MainForm mainfrm = new MainForm();
         AddDeviceForm addfrm = new AddDeviceForm();
 
+        public string stDeviceInService { get; set; }
 
         public HeadForm()
         {
-            InitializeComponent();
-            WhatsMyStatus();
+            InitializeComponent();           
 
+            MainForm mainForm = new MainForm();
+            mainForm.Show();
+
+            dataGridView1.RowHeadersVisible = false;
+            WhatsMyStatus();
+        }
+               
+
+        public void WhatsMyStatus(int Service, int Completed)
+        {
+            if (dataGridView1.RowCount > 0)
+                dataGridView1.Rows.Clear();
+
+            dataGridView1.Rows.Add(string.Format("  {0} Devices in Service", Service));
+            dataGridView1.Rows.Add(string.Format("  {0} Devices in Completed", Completed));
         }
 
         public void WhatsMyStatus()
-        {
-            dataGridView1.RowHeadersVisible = false;
+        {          
             dataGridView1.Rows.Add(string.Format("  {0} Devices in Service", mainfrm.DevicesInService.ToString()));
             dataGridView1.Rows.Add(string.Format("  {0} Devices in Completed", mainfrm.CompletedDevices.ToString()));
         }
@@ -90,6 +102,11 @@ namespace Onions
         {
             // check if already visible
             mainfrm.Visible = true;
+        }
+
+        private void SettingsOK_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

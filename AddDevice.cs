@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows.Forms;
 using Newtonsoft.Json;
-using Onions;
 using SharpAdbClient;
 using iMobileDevice;
 using iMobileDevice.iDevice;
@@ -12,7 +11,7 @@ using iMobileDevice.Lockdown;
 using iMobileDevice.Plist;
 
 
-namespace Device
+namespace Onions
 {
     public partial class AddDeviceForm : Form
     {
