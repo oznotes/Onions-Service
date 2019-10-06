@@ -100,8 +100,16 @@ namespace Onions
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            // check if already visible
-            mainfrm.Visible = true;
+            if (mainfrm.Visible == true)
+            {
+
+            }
+            else
+            { 
+                mainfrm.Visible = false;
+            }
+
+                        
         }
 
         private void SettingsOK_Click(object sender, EventArgs e)
