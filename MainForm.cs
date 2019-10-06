@@ -21,15 +21,19 @@ namespace Onions
             get { return GiveMeTheCount("completed"); }
         }
 
+
         public MainForm()
         {
+            MainFormVisible.IsVisible = true;
             InitializeComponent();
             MainSetup();
 
-
             // Use the DataBindingComplete event to attack the SelectionChanged, 
             // avoiding infinite loops and other nastiness.
-            dataGridView.DataBindingComplete += new DataGridViewBindingCompleteEventHandler(DataGridView_DataBindingComplete);            
+            dataGridView.DataBindingComplete += new DataGridViewBindingCompleteEventHandler(DataGridView_DataBindingComplete);
+
+            
+
         }
 
         public void MainSetup()
@@ -282,7 +286,6 @@ namespace Onions
         }
 
         private int GiveMeTheCount(string datasource)
-
         {
             //Query to customers table
             string SelectCustomer = string.Format("SELECT IdCustomer FROM Customer WHERE Status = '{0}'", datasource);
@@ -304,8 +307,8 @@ namespace Onions
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Visible = false;
-            this.Hide();
+            MainFormVisible.IsVisible = false;
+            this.Dispose();
         }
     }
 }

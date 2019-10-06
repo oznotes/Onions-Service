@@ -57,7 +57,7 @@
             this.button5.Size = new System.Drawing.Size(32, 32);
             this.button5.TabIndex = 4;
             this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Click += new System.EventHandler(this.AccountsButtonClick);
             // 
             // button4
             // 
@@ -68,7 +68,7 @@
             this.button4.Size = new System.Drawing.Size(32, 32);
             this.button4.TabIndex = 3;
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.SettingsButtonClick);
             // 
             // button3
             // 

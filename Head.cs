@@ -14,18 +14,17 @@ namespace Onions
     public partial class HeadForm : Form
     {
 
-        //MainForm mainfrm = new MainForm();
         MainForm mainForm = new MainForm();
         AddDeviceForm addfrm = new AddDeviceForm();
+
+ 
 
         public string stDeviceInService { get; set; }
 
         public HeadForm()
         {
             InitializeComponent();           
-
             mainForm.Show();
-
             dataGridView1.RowHeadersVisible = false;
             WhatsMyStatus(mainForm.DevicesInService, mainForm.CompletedDevices);
         }
@@ -47,7 +46,7 @@ namespace Onions
             Point Loc = this.Location;
             Loc.Y += 100;
 
-            if (mainForm.Visible==true)
+            if (mainForm.Visible==false)
             {
                 mainForm.StartPosition = FormStartPosition.Manual;
                 mainForm.Location = Loc;
@@ -71,7 +70,7 @@ namespace Onions
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void AccountsButtonClick(object sender, EventArgs e)
         {
             if (SettingsBox.Visible)
             {
@@ -82,7 +81,7 @@ namespace Onions
             LoginBox.Enabled = true;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void SettingsButtonClick(object sender, EventArgs e)
         {
             if (LoginBox.Visible)
             {
@@ -95,10 +94,22 @@ namespace Onions
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            if (!mainForm.Visible)
+
+            Point Loc = this.Location;
+            Loc.X += 230;
+
+
+            if (!MainFormVisible.IsVisible)
             {
-                MainForm mainForm = new MainForm();
+
+                MainForm mainForm = new MainForm
+                {
+                    StartPosition = FormStartPosition.Manual,
+                    Location = Loc,
+                };
+
                 mainForm.Show();
+                MainFormVisible.IsVisible = true;
             }
             else
             {
@@ -107,9 +118,5 @@ namespace Onions
 
         }
 
-        private void SettingsOK_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -17,4 +17,11 @@ namespace Onions
         public string BRAND { get; set; }      
         public List<MODELIST> MODELIST { get; set; }
     }
+
+    public static class MainFormVisible
+    {
+
+        public static bool IsVisible { get; set; }
+
+    }
 }
