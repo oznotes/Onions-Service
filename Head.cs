@@ -27,7 +27,7 @@ namespace Onions
             mainForm.Show();
 
             dataGridView1.RowHeadersVisible = false;
-            WhatsMyStatus();
+            WhatsMyStatus(mainForm.DevicesInService, mainForm.CompletedDevices);
         }
                
 
@@ -40,11 +40,6 @@ namespace Onions
             dataGridView1.Rows.Add(string.Format("  {0} Devices in Completed", Completed));
         }
 
-        public void WhatsMyStatus()
-        {          
-            dataGridView1.Rows.Add(string.Format("  {0} Devices in Service", mainfrm.DevicesInService.ToString()));
-            dataGridView1.Rows.Add(string.Format("  {0} Devices in Completed", mainfrm.CompletedDevices.ToString()));
-        }
 
 
         private void Button1_Click(object sender, EventArgs e)

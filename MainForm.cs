@@ -25,9 +25,7 @@ namespace Onions
         {
             InitializeComponent();
             MainSetup();
-            // deleted out all the binding code of the grid to focus on the interesting stuff
 
-            dataGridView.CellEndEdit += new DataGridViewCellEventHandler(DataGridView_CellEndEdit);
 
             // Use the DataBindingComplete event to attack the SelectionChanged, 
             // avoiding infinite loops and other nastiness.
@@ -229,15 +227,9 @@ namespace Onions
             MainSetup();
         }
 
-        private void DataGridView_CellEndEdit(object sender, DataGridViewCellEventArgs e)
-        {
-            //resetRow = true;
-            //currentRow = e.RowIndex;
-        }
-
         private void DataGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
-            //dataGridView.SelectionChanged += new EventHandler(dataGridView_SelectionChanged);
+            
         }
 
         private void DataGridView_SelectionChanged(object sender, EventArgs e)
@@ -251,11 +243,6 @@ namespace Onions
             dataGridView.Columns["IdCustomer"].Visible = false;
         }
 
-        private void dataGridView_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            //No More Double Click
-            //Make edit event.
-        }
 
         private void dataGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
@@ -289,16 +276,9 @@ namespace Onions
             };
             addContactForm.EditMode(true);
             // send ID.
-
             addContactForm.ShowDialog();
 
             LoadContacts("devices");
-        }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-            //Onions.HeadForm headform = new Onions.HeadForm();
-            //headform.Show();         
         }
 
         private int GiveMeTheCount(string datasource)
