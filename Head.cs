@@ -41,21 +41,21 @@ namespace Onions
 
 
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void HomeButton_Click(object sender, EventArgs e)
         {
-            Point Loc = this.Location;
-            Loc.Y += 100;
+            //Point Loc = this.Location;
+            //Loc.Y += 100;
 
-            if (mainForm.Visible==false)
-            {
-                mainForm.StartPosition = FormStartPosition.Manual;
-                mainForm.Location = Loc;
-                mainForm.ShowDialog();
-            }
-            else
-            {
-                mainForm.BringToFront();
-            }
+            //if (mainForm.Visible==false)
+            //{
+            //    mainForm.StartPosition = FormStartPosition.Manual;
+            //    mainForm.Location = Loc;
+            //    mainForm.ShowDialog();
+            //}
+            //else
+            //{
+            //    mainForm.BringToFront();
+            //}
         }
 
         private void StartAddDevice(object sender, EventArgs e)

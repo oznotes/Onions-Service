@@ -101,7 +101,7 @@
             this.Home_form_btn.Size = new System.Drawing.Size(32, 32);
             this.Home_form_btn.TabIndex = 0;
             this.Home_form_btn.UseVisualStyleBackColor = false;
-            this.Home_form_btn.Click += new System.EventHandler(this.Button1_Click);
+            this.Home_form_btn.Click += new System.EventHandler(this.HomeButton_Click);
             // 
             // dataGridView1
             // 
