@@ -248,7 +248,7 @@ namespace Onions
         }
 
 
-        private void dataGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        private void DataGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             if(e.Button == MouseButtons.Right)
             {

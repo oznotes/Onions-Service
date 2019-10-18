@@ -605,15 +605,15 @@ namespace Onions
 
             foreach (var item in s5)
             {
-                part1 = part1 + item.ToString();
+                part1 += item.ToString();
             }
             foreach (var item in s6)
             {
-                part2 = part2 + item.ToString();
+                part2 += item.ToString();
             }
             foreach (var item in s7)
             {
-                part3 = part3 + item.ToString();
+                part3 += item.ToString();
             }
 
             part1 = part1.Replace(".", "");

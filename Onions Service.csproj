@@ -163,6 +163,9 @@
     <Content Include="Assembly\System.Data.SQLite.dll" />
     <Content Include="onion.ico" />
     <Content Include="profile_u1B_icon.ico" />
+    <None Include="Resources\iconfinder_tick-outline_216430.png" />
+    <None Include="Resources\iconfinder_080_Trash_183208.png" />
+    <None Include="Resources\iconfinder_081_Pen_183209.png" />
     <None Include="Resources\icons8-print-32.png" />
     <None Include="Resources\icons8-user-32.png" />
     <None Include="Resources\icons8-settings-32.png" />
