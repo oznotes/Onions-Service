@@ -63,6 +63,16 @@ namespace Onions.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_013_MagnifyingGlass_183520 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_013_MagnifyingGlass_183520", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_080_Trash_183208 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_080_Trash_183208", resourceCulture);

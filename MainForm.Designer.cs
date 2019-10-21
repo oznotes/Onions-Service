@@ -34,21 +34,23 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButtonRemove = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripCompleteJOB = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.Done = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripHome = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonAdd = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonRemove = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonCompleted = new System.Windows.Forms.ToolStripButton();
-            this.toolStripCompleteJOB = new System.Windows.Forms.ToolStripButton();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.completeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -85,6 +87,15 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
+            // toolStripButtonRemove
+            // 
+            this.toolStripButtonRemove.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButtonRemove.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonRemove.Name = "toolStripButtonRemove";
+            this.toolStripButtonRemove.Size = new System.Drawing.Size(91, 22);
+            this.toolStripButtonRemove.Text = "Delete Selected";
+            this.toolStripButtonRemove.Click += new System.EventHandler(this.ToolStripButtonRemove_Click);
+            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
@@ -100,6 +111,17 @@
             this.toolStripSeparator4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripCompleteJOB
+            // 
+            this.toolStripCompleteJOB.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripCompleteJOB.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripCompleteJOB.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripCompleteJOB.Name = "toolStripCompleteJOB";
+            this.toolStripCompleteJOB.Size = new System.Drawing.Size(110, 22);
+            this.toolStripCompleteJOB.Text = "Complete Selected";
+            this.toolStripCompleteJOB.ToolTipText = "Complete JOBS";
+            this.toolStripCompleteJOB.Click += new System.EventHandler(this.ToolStripCompleteJOB_Click);
             // 
             // toolStripSeparator5
             // 
@@ -139,10 +161,11 @@
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editToolStripMenuItem,
+            this.searchToolStripMenuItem,
             this.deleteToolStripMenuItem,
             this.completeToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(127, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(127, 92);
             // 
             // toolStripHome
             // 
@@ -165,15 +188,6 @@
             this.toolStripButtonAdd.Text = "New Registration";
             this.toolStripButtonAdd.Click += new System.EventHandler(this.ToolStripButtonAdd_Click);
             // 
-            // toolStripButtonRemove
-            // 
-            this.toolStripButtonRemove.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButtonRemove.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonRemove.Name = "toolStripButtonRemove";
-            this.toolStripButtonRemove.Size = new System.Drawing.Size(91, 22);
-            this.toolStripButtonRemove.Text = "Delete Selected";
-            this.toolStripButtonRemove.Click += new System.EventHandler(this.ToolStripButtonRemove_Click);
-            // 
             // toolStripButtonCompleted
             // 
             this.toolStripButtonCompleted.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
@@ -184,38 +198,39 @@
             this.toolStripButtonCompleted.Text = "Completed";
             this.toolStripButtonCompleted.Click += new System.EventHandler(this.ToolStripButtonCompleted_Click);
             // 
-            // toolStripCompleteJOB
-            // 
-            this.toolStripCompleteJOB.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripCompleteJOB.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripCompleteJOB.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripCompleteJOB.Name = "toolStripCompleteJOB";
-            this.toolStripCompleteJOB.Size = new System.Drawing.Size(110, 22);
-            this.toolStripCompleteJOB.Text = "Complete Selected";
-            this.toolStripCompleteJOB.ToolTipText = "Complete JOBS";
-            this.toolStripCompleteJOB.Click += new System.EventHandler(this.ToolStripCompleteJOB_Click);
-            // 
             // editToolStripMenuItem
             // 
-            this.editToolStripMenuItem.Image = global::Onions.Properties.Resources.iconfinder_081_Pen_183209;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.editToolStripMenuItem.Text = "Edit";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
             // 
+            // searchToolStripMenuItem
+            // 
+            this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.searchToolStripMenuItem.Text = "Search";
+            // 
             // deleteToolStripMenuItem
             // 
-            this.deleteToolStripMenuItem.Image = global::Onions.Properties.Resources.iconfinder_080_Trash_183208;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
             this.deleteToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // completeToolStripMenuItem
             // 
-            this.completeToolStripMenuItem.Image = global::Onions.Properties.Resources.iconfinder_tick_outline_216430;
             this.completeToolStripMenuItem.Name = "completeToolStripMenuItem";
             this.completeToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.completeToolStripMenuItem.Text = "Complete";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "toolStripButton1";
             // 
             // MainForm
             // 
@@ -259,6 +274,8 @@
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem completeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
     }
 }
 
