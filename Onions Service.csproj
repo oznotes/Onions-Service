@@ -116,6 +116,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="searchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchDialog.Designer.cs">
+      <DependentUpon>searchDialog.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddDevice.resx">
       <DependentUpon>AddDevice.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +135,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchDialog.resx">
+      <DependentUpon>searchDialog.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Database\Devices.json" />
     <None Include="Database\OrionsServiceDatabase" />

@@ -310,5 +310,12 @@ namespace Onions
             MainFormVisible.IsVisible = false;
             this.Dispose();
         }
+
+        private void toolStripSearch_Click(object sender, EventArgs e)
+        {
+            // pop up Search criteria dialog 
+            // Check if grid has any data ..
+            // Search 
+        }
     }
 }
