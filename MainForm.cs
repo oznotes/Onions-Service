@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 using System.Data.SQLite;
 
@@ -311,14 +312,29 @@ namespace Onions
             this.Dispose();
         }
 
-        private void toolStripSearch_Click(object sender, EventArgs e)
+        private void ToolStripSearch_Click(object sender, EventArgs e)
         {
             searchDialog searchDialogForm = new searchDialog();
             searchDialogForm.Show();
-
-           
+            
             // Check if grid has any data ..
             // Search 
         }
+        public static void SearchDialogVisibleChanged()
+        {
+            var OpenForms = Application.OpenForms;
+
+            if (SearchDialogVisible.IsThisVisible == true)
+            {
+               OpenForms[0].Enabled = false;
+            }
+            else
+            {
+                OpenForms[0].Enabled = true;
+            }
+
+        }
+
     }
+
 }

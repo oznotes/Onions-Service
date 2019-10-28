@@ -15,11 +15,13 @@ namespace Onions
         public searchDialog()
         {
             InitializeComponent();
+            SearchDialogVisible.IsThisVisible = true;
         }
 
         private void searchDialog_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Hide();
+            SearchDialogVisible.IsThisVisible = false;
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)

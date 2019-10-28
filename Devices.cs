@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Onions
 {
+
     public class MODELIST
     {
         public string MODEL { get; set; }
@@ -22,6 +24,23 @@ namespace Onions
     {
 
         public static bool IsVisible { get; set; }
+
+    }
+
+    public static class SearchDialogVisible 
+    {
+        private static bool IsAvailable;
+
+        public static bool IsThisVisible
+        {
+            
+            get{return IsAvailable; }
+            set
+            {
+                IsAvailable = value;
+                MainForm.SearchDialogVisibleChanged();
+            }
+        }
 
     }
 }
