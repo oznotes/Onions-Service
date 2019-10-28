@@ -313,7 +313,10 @@ namespace Onions
 
         private void toolStripSearch_Click(object sender, EventArgs e)
         {
-            // pop up Search criteria dialog 
+            searchDialog searchDialogForm = new searchDialog();
+            searchDialogForm.Show();
+
+           
             // Check if grid has any data ..
             // Search 
         }

@@ -16,5 +16,16 @@ namespace Onions
         {
             InitializeComponent();
         }
+
+        private void searchDialog_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // each key event part of search ..
+            // pre enter will hide
+        }
     }
 }

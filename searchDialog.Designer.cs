@@ -37,6 +37,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(240, 20);
             this.textBox1.TabIndex = 0;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // searchDialog
             // 
@@ -45,8 +46,12 @@
             this.ClientSize = new System.Drawing.Size(266, 44);
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "searchDialog";
-            this.Text = "searchDialog";
+            this.ShowIcon = false;
+            this.Text = "search";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.searchDialog_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

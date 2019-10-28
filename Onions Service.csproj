@@ -139,6 +139,7 @@
     <EmbeddedResource Include="searchDialog.resx">
       <DependentUpon>searchDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include=".editorconfig" />
     <None Include="Database\Devices.json" />
     <None Include="Database\OrionsServiceDatabase" />
     <None Include="Devices.json">
