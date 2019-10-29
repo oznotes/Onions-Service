@@ -50,6 +50,7 @@
             this.MinimizeBox = false;
             this.Name = "searchDialog";
             this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "search";
             this.TopMost = true;

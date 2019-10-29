@@ -315,7 +315,7 @@ namespace Onions
         private void ToolStripSearch_Click(object sender, EventArgs e)
         {
             searchDialog searchDialogForm = new searchDialog();
-            searchDialogForm.Show();
+            searchDialogForm.ShowDialog(this);
             
             // Check if grid has any data ..
             // Search 

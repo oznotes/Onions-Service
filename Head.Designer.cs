@@ -209,6 +209,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "HeadForm";
             this.Text = "Onions Service";
+            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.LoginBox.ResumeLayout(false);
             this.LoginBox.PerformLayout();
