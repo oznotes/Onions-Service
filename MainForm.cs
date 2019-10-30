@@ -22,6 +22,8 @@ namespace Onions
             get { return GiveMeTheCount("completed"); }
         }
 
+        string searchKeyword { get; set; }
+
 
         public MainForm()
         {
@@ -29,11 +31,13 @@ namespace Onions
             InitializeComponent();
             MainSetup();
 
+            this.Text = "";
+
             // Use the DataBindingComplete event to attack the SelectionChanged, 
             // avoiding infinite loops and other nastiness.
             dataGridView.DataBindingComplete += new DataGridViewBindingCompleteEventHandler(DataGridView_DataBindingComplete);
 
-            
+
 
         }
 
@@ -62,12 +66,18 @@ namespace Onions
         /// <summary>
         /// Load from SQLite to -> Data Grid View 
         /// </summary>
-        private void LoadContacts(string datasource)
+        private void LoadContacts(string datasource, string keyword = "")
         {
             try
             {
                 //Query to customers table
                 string SelectCustomer = string.Format("SELECT IdCustomer, CreationDate AS 'Date in Service', FirstName,LastName, PhoneNumber, Email AS 'e-Mail', Brand, Model, IMEI, Problem, Price,UpdateDate AS 'Update Date' FROM Customer WHERE Status = '{0}'", datasource);
+
+                if(!string.IsNullOrWhiteSpace(keyword))
+                {
+                    SelectCustomer = string.Format("SELECT IdCustomer, CreationDate AS 'Date in Service', FirstName,LastName, PhoneNumber, Email AS 'e-Mail', Brand, Model, IMEI, Problem, Price,UpdateDate AS 'Update Date' FROM Customer WHERE Status = '{0}' AND (CreationDate LIKE '%{1}%' OR FirstName LIKE '%{1}%' OR LastName LIKE '%{1}%' OR PhoneNumber LIKE '%{1}%' OR Email LIKE '%{1}%' OR Brand LIKE '%{1}%' OR Model LIKE '%{1}%' OR IMEI LIKE '%{1}%' OR Problem LIKE '%{1}%' OR Price LIKE '%{1}%')", datasource, keyword);
+                }
+
                 //Run query
                 SQLiteDataAdapter objDa = new SQLiteDataAdapter(DatabaseAccess.fnSetConexion(SelectCustomer));
                 //Hire will be data
@@ -98,7 +108,7 @@ namespace Onions
                 toolStripButtonRemove.Enabled = false;
                 toolStripButtonAdd.Enabled = false;
             }
-            
+
 
         }
 
@@ -195,10 +205,10 @@ namespace Onions
             }
 
             //Update Customer sentence
-            string UpdateCustomer = string.Format("UPDATE Customer SET Price = {0}, Status = '{1}', UpdateDate = '{2}' WHERE IdCustomer = {3}", Price, "completed", today,IdCustomer);
+            string UpdateCustomer = string.Format("UPDATE Customer SET Price = {0}, Status = '{1}', UpdateDate = '{2}' WHERE IdCustomer = {3}", Price, "completed", today, IdCustomer);
 
             //run sentence
-            DatabaseAccess.fnSetConexion(UpdateCustomer).ExecuteNonQuery();           
+            DatabaseAccess.fnSetConexion(UpdateCustomer).ExecuteNonQuery();
         }
 
         private void ToolStripButtonCompleted_Click(object sender, EventArgs e)
@@ -215,12 +225,12 @@ namespace Onions
         }
 
         private void DataGridView_CellMouseUp(object sender, DataGridViewCellMouseEventArgs e)
-        {   
+        {
 
         }
 
         private void ToolStripCompleteJOB_Click(object sender, EventArgs e)
-        {           
+        {
             Complete_selected();
             MainSetup();
             UpdateHeadStatus();
@@ -234,7 +244,7 @@ namespace Onions
 
         private void DataGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
-            
+
         }
 
         private void DataGridView_SelectionChanged(object sender, EventArgs e)
@@ -251,13 +261,13 @@ namespace Onions
 
         private void DataGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            if(e.Button == MouseButtons.Right)
+            if (e.Button == MouseButtons.Right)
             {
-                dataGridView.Rows[e.RowIndex].Selected = true;               
+                dataGridView.Rows[e.RowIndex].Selected = true;
                 contextMenuStrip1.Show(Cursor.Position.X, Cursor.Position.Y);
             }
         }
-       
+
 
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -316,17 +326,26 @@ namespace Onions
         {
             searchDialog searchDialogForm = new searchDialog();
             searchDialogForm.ShowDialog(this);
-            
+
             // Check if grid has any data ..
             // Search 
         }
+
+        public void SearchByKeyStroke(string letter)
+        {
+            searchKeyword = letter;
+            txtSearchKey.Text = searchKeyword;
+            LoadContacts("devices", txtSearchKey.Text);
+            //MessageBox.Show(letter);
+        }
+
         public static void SearchDialogVisibleChanged()
         {
             var OpenForms = Application.OpenForms;
 
             if (SearchDialogVisible.IsThisVisible == true)
             {
-               OpenForms[0].Enabled = false;
+                OpenForms[0].Enabled = false;
             }
             else
             {

@@ -24,10 +24,15 @@ namespace Onions
             SearchDialogVisible.IsThisVisible = false;
         }
 
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        private void textBox1_KeyUp(object sender, KeyEventArgs e)
         {
-            // each key event part of search ..
-            // pre enter will hide
+            if (e.KeyCode != Keys.Enter)
+            {
+                MainForm frmMainForm = (MainForm)Application.OpenForms["MainForm"];
+                frmMainForm.SearchByKeyStroke(textBox1.Text);
+            }
+            else
+                Close();
         }
     }
 }
