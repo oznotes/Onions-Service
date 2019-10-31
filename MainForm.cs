@@ -354,6 +354,19 @@ namespace Onions
 
         }
 
+        private void dataGridView_KeyUp(object sender, KeyEventArgs e)
+        {
+            // Press ESC will load data and main setup.
+            if (e.KeyCode != Keys.Escape)
+            {
+
+            }
+            else
+            {
+                MainSetup();
+            }
+
+        }
     }
 
 }
