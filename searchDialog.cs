@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Resources;
+using System.Configuration;
 using System.Windows.Forms;
 
 namespace Onions
@@ -16,6 +18,28 @@ namespace Onions
         {
             InitializeComponent();
             SearchDialogVisible.IsThisVisible = true;
+
+            string Language = string.Empty;
+
+            try
+            {
+                Language = string.Format(@".\Resources\Languages\{0}.resx", ConfigurationManager.AppSettings["Language"].ToString());
+            }
+            catch { }
+
+            //Languages Spanish
+
+            try
+            {
+                if (!string.IsNullOrWhiteSpace(Language))
+                {
+                    using (ResXResourceSet x = new ResXResourceSet(Language))
+                    {
+                        this.Text = x.GetString("Search");                       
+                    }
+                }
+            }
+            catch { }
         }
 
         private void searchDialog_FormClosing(object sender, FormClosingEventArgs e)
@@ -26,7 +50,7 @@ namespace Onions
 
         private void textBox1_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode != Keys.Enter)
+            if (e.KeyCode != Keys.Enter && e.KeyCode != Keys.Escape)
             {
                 MainForm frmMainForm = (MainForm)Application.OpenForms["MainForm"];
                 frmMainForm.SearchByKeyStroke(textBox1.Text);

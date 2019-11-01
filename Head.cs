@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Resources;
+using System.Configuration;
 using System.Windows.Forms;
 
 namespace Onions
@@ -17,13 +19,44 @@ namespace Onions
         MainForm mainForm = new MainForm();
         AddDeviceForm addfrm = new AddDeviceForm();
 
- 
+        string DevicesInService { get; set; } = "Devices in Service";
+        string DevicesInCompleted { get; set; } = "Devices in Completed";
+       
+
+
 
         public string stDeviceInService { get; set; }
 
         public HeadForm()
         {
-            InitializeComponent();           
+            InitializeComponent();
+
+            string Language = string.Empty;
+
+            try
+            {
+                Language = string.Format(@".\Resources\Languages\{0}.resx", ConfigurationManager.AppSettings["Language"].ToString());
+            }
+            catch { }
+
+            //Languages Spanish
+
+            try
+            {
+                if (!string.IsNullOrWhiteSpace(Language))
+                {
+                    using (ResXResourceSet x = new ResXResourceSet(Language))
+                    {                       
+                        DevicesInService = x.GetString("DevicesInService");
+                        DevicesInCompleted = x.GetString("DevicesInCompleted");
+                        dataGridView1.Columns["Column1"].HeaderText = x.GetString("Summary");
+                        SettingsBox.Text = x.GetString("Setting");
+
+                    }
+                }
+            }
+            catch { }
+
             mainForm.Show();
             dataGridView1.RowHeadersVisible = false;
             WhatsMyStatus(mainForm.DevicesInService, mainForm.CompletedDevices);
@@ -31,12 +64,12 @@ namespace Onions
                
 
         public void WhatsMyStatus(int Service, int Completed)
-        {
+        { 
             if (dataGridView1.RowCount > 0)
                 dataGridView1.Rows.Clear();
 
-            dataGridView1.Rows.Add(string.Format("  {0} Devices in Service", Service));
-            dataGridView1.Rows.Add(string.Format("  {0} Devices in Completed", Completed));
+            dataGridView1.Rows.Add(string.Format("  {0} {1}", Service, DevicesInService));
+            dataGridView1.Rows.Add(string.Format("  {0} {1}", Completed, DevicesInCompleted));
         }
 
 

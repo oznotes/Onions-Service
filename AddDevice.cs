@@ -3,6 +3,8 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows.Forms;
+using System.Resources;
+using System.Configuration;
 using Newtonsoft.Json;
 using SharpAdbClient;
 using iMobileDevice;
@@ -21,11 +23,52 @@ namespace Onions
         const string Status = "devices";
         private bool editEnabled = false;
         public int customerID;
-        
+
+        string UpdateOption { get; set; } = "Update";
+        string CompleteForm { get; set; } = "Complete Form";
+        string CreateCustomer { get; set; } = "Create Customer";
+        string UpdateCustomer { get; set; } = "Update Customer";
 
         public AddDeviceForm()
-        {
+        {  
             InitializeComponent();
+
+            string Language = string.Empty;            
+
+            try
+            {
+                Language = string.Format(@".\Resources\Languages\{0}.resx", ConfigurationManager.AppSettings["Language"].ToString());
+            }
+            catch { }
+
+            //Languages Spanish
+
+            try
+            {
+                if (!string.IsNullOrWhiteSpace(Language))
+                {
+                    using (ResXResourceSet x = new ResXResourceSet(Language))
+                    {
+                        label1.Text = x.GetString("FirstName") + ":";
+                        label2.Text = x.GetString("LastName") + ":";
+                        label3.Text = x.GetString("PhoneNumber") + ":";
+                        label4.Text = x.GetString("Email") + ":";
+                        button1.Text = x.GetString("Brand") + ":";
+                        label6.Text = x.GetString("Model") + ":";
+                        label7.Text = x.GetString("IMEI") + ":";
+                        label8.Text = x.GetString("Problem") + ":";
+                        PriceLabel.Text = x.GetString("Price") + ":";
+                        label9.Text = x.GetString("Customer");       
+                        Add.Text = x.GetString("Add");
+                        this.Text = x.GetString("AddDeviceFormTitle");
+                        UpdateOption = x.GetString("UpdateOption");
+                        CompleteForm = x.GetString("CompleteForm");
+                        
+                    }
+                }
+            }
+            catch { }
+
             circularProgressBar1.Value = 0;
             circularProgressBar1.Enabled = false;
             LoadDevices();
@@ -95,7 +138,7 @@ namespace Onions
         {
             if (mode)
             {
-                Add.Text = "UPDATE";
+                Add.Text = UpdateOption;
                 button1.Enabled = false;
                 editEnabled = true;
                 PrintButton.Visible = true;
@@ -107,7 +150,7 @@ namespace Onions
         {
             if (!ValidateFields())
             {
-                MessageBox.Show("Error: " + "Please Complete the Form", "Create Customer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Error: " + CompleteForm, CreateCustomer, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -136,7 +179,7 @@ namespace Onions
                     }
                     catch (Exception Ex)
                     {
-                        MessageBox.Show("Error: " + Ex.Message, "Create Customer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Error: " + Ex.Message, CreateCustomer, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else
@@ -151,7 +194,7 @@ namespace Onions
                     }
                     catch (Exception Ex)
                     {
-                        MessageBox.Show("Error: " + Ex.Message, "Update Customer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Error: " + Ex.Message, UpdateCustomer, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Windows.Forms;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Resources;
+using System.Configuration;
 using System.Data;
 using System.Data.SQLite;
 
@@ -12,6 +14,25 @@ namespace Onions
 
     public partial class MainForm : Form
     {
+        string MainFormTitle { get; set; } = "Orion Database Service";
+        string SelectCustomers { get; set; } = "Select Customers";
+        string NoCustomerSelected { get; set; } = "No Customer Selected";
+        string DeleteCustomer { get; set; } = "Delete Customer";
+        string CompletedJob { get; set; } = "Job";
+        string EnterPriceNumbers { get; set; } = "Enter Price is a Number";
+        string EnterPriceinformation { get; set; } = "Enter Price Information";
+        string Home { get; set; } = "Home";
+
+        string CreationDate { get; set; } = "Date in Service";
+        string FirstName { get; set; } = "First Name";
+        string LastName { get; set; } = "Last Name";
+        string PhoneNumber { get; set; } = "PhoneNumber";       
+        string Brand { get; set; } = "Brand";
+        string Model { get; set; } = "Model";      
+        string Problem { get; set; } = "Problem";
+        string Price { get; set; } = "Price";
+        string UpdateDate { get; set; } = "Update Date";
+
         public int DevicesInService
         {
             get { return GiveMeTheCount("devices"); }
@@ -29,6 +50,52 @@ namespace Onions
         {
             MainFormVisible.IsVisible = true;
             InitializeComponent();
+
+            string Language = string.Empty;
+
+            try
+            {
+                Language = string.Format(@".\Resources\Languages\{0}.resx", ConfigurationManager.AppSettings["Language"].ToString());
+            }
+            catch { }
+
+            //Languages Spanish
+
+            try
+            {
+                if (!string.IsNullOrWhiteSpace(Language))
+                {
+                    using (ResXResourceSet x = new ResXResourceSet(Language))
+                    {
+                        toolStripHome.Text = x.GetString("Home");
+                        toolStripButtonAdd.Text = x.GetString("NewRegistration");
+                        toolStripButtonRemove.Text = x.GetString("DeleteSelected");
+                        toolStripButtonCompleted.Text = x.GetString("Completed");                       
+                        toolStripSearch.Text = x.GetString("Search");
+                        toolStripCompleteJOB.Text = x.GetString("CompletedSelected");
+                        MainFormTitle = x.GetString("MainFormTitle");
+                        SelectCustomers = x.GetString("SelectCustomers");
+                        NoCustomerSelected = x.GetString("NoCustomerSelected");
+                        DeleteCustomer = x.GetString("DeleteCustomer");
+                        CompletedJob = x.GetString("CompletedJob");
+                        EnterPriceNumbers = x.GetString("EnterPriceNumbers");
+                        EnterPriceinformation = x.GetString("EnterPriceinformation");
+                        Home = x.GetString("Home");
+
+                        CreationDate = x.GetString("CreationDate");
+                        FirstName = x.GetString("FirstName");
+                        LastName = x.GetString("LastName");
+                        PhoneNumber = x.GetString("PhoneNumber");                      
+                        Brand = x.GetString("Brand");
+                        Model = x.GetString("Model");                       
+                        Problem = x.GetString("Problem");
+                        Price = x.GetString("Price");
+                        UpdateDate = x.GetString("UpdateDate");
+                    }
+                }
+            }
+            catch { }
+
             MainSetup();
 
             this.Text = "";
@@ -36,15 +103,12 @@ namespace Onions
             // Use the DataBindingComplete event to attack the SelectionChanged, 
             // avoiding infinite loops and other nastiness.
             dataGridView.DataBindingComplete += new DataGridViewBindingCompleteEventHandler(DataGridView_DataBindingComplete);
-
-
-
         }
 
         public void MainSetup()
         {
 
-            this.Text = "Onions Service Database - Home";
+            this.Text = string.Format("{0} - {1}",MainFormTitle, Home);
             LoadContacts("devices");
 
             //Check if record in state completed
@@ -98,12 +162,25 @@ namespace Onions
                     toolStripCompleteJOB.Enabled = false;
                     toolStripButtonRemove.Enabled = false;
                 }
+
+                //change Header text
+                dataGridView.Columns["Date in Service"].HeaderText = CreationDate;
+                dataGridView.Columns["FirstName"].HeaderText = FirstName;
+                dataGridView.Columns["LastName"].HeaderText = LastName;
+                dataGridView.Columns["PhoneNumber"].HeaderText = PhoneNumber;             
+                dataGridView.Columns["Brand"].HeaderText = Brand;
+                dataGridView.Columns["Model"].HeaderText = Model;
+                dataGridView.Columns["Problem"].HeaderText = Problem;
+                dataGridView.Columns["Price"].HeaderText = Price;
+                dataGridView.Columns["Update Date"].HeaderText = UpdateDate;             
+
+
                 //Format grid
                 fnconfigDGV();
             }
             catch (Exception Ex)
             {
-                MessageBox.Show("Error: " + Ex.Message, "Select Customers", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Error: " + Ex.Message, SelectCustomers, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 toolStripCompleteJOB.Enabled = false;
                 toolStripButtonRemove.Enabled = false;
                 toolStripButtonAdd.Enabled = false;
@@ -137,7 +214,7 @@ namespace Onions
             }
             catch (Exception Ex)
             {
-                MessageBox.Show("Error: " + Ex.Message, "Select Customers", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Error: " + Ex.Message, SelectCustomers, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
             return false;
@@ -165,11 +242,11 @@ namespace Onions
                     DatabaseAccess.fnSetConexion(DeleteCustomer).ExecuteNonQuery();
                 }
                 else
-                    MessageBox.Show("No Customer Selected", "Delete Customer", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show(NoCustomerSelected, DeleteCustomer, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             catch (Exception Ex)
             {
-                MessageBox.Show("Error: " + Ex.Message, "Delete Customer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Error: " + Ex.Message, DeleteCustomer, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
             LoadContacts("devices");
@@ -185,7 +262,7 @@ namespace Onions
             int.TryParse(Row.Cells["IdCustomer"].Value.ToString(), out int IdCustomer);
             //Check if IdCustomer is.
             if (IdCustomer == 0)
-                MessageBox.Show("No Customer Selected", "Completed Job", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(NoCustomerSelected, CompletedJob, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
             // Check the price cell if its stable .
             try
@@ -195,12 +272,12 @@ namespace Onions
             }
             catch (FormatException)
             {
-                MessageBox.Show("Enter Price in numbers !", "Completed Job", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(EnterPriceNumbers + " !", CompletedJob, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
             catch (ArgumentNullException)
             {
-                MessageBox.Show("Enter Price information !", "Completed Job", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(EnterPriceinformation + " !", CompletedJob, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
 
@@ -215,7 +292,7 @@ namespace Onions
         {
             // show another for with data gridview
 
-            this.Text = "Onions Service Database - Completed JOBS";
+            this.Text = this.Text = string.Format("{0} - {1}", MainFormTitle, CompletedJob);
             LoadContacts("completed");
 
             // group  disabled.
@@ -238,7 +315,7 @@ namespace Onions
 
         private void ToolStripButton1_Click(object sender, EventArgs e)
         {
-            this.Text = "Onions Service Database - Home";
+            this.Text = this.Text = string.Format("{0} - {1}", MainFormTitle, Home);
             MainSetup();
         }
 
@@ -354,19 +431,6 @@ namespace Onions
 
         }
 
-        private void dataGridView_KeyUp(object sender, KeyEventArgs e)
-        {
-            // Press ESC will load data and main setup.
-            if (e.KeyCode != Keys.Escape)
-            {
-
-            }
-            else
-            {
-                MainSetup();
-            }
-
-        }
     }
 
 }
