@@ -23,7 +23,7 @@ namespace Onions
 
             try
             {
-                Language = string.Format(@".\Resources\Languages\{0}.resx", ConfigurationManager.AppSettings["English"].ToString());
+                Language = string.Format(@".\Resources\Languages\{0}.resx", ConfigurationManager.AppSettings[WhatLanguageIsActivate.ThisLanguage].ToString());
             }
             catch { }
 

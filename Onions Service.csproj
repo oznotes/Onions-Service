@@ -152,6 +152,9 @@
       <DependentUpon>searchDialog.cs</DependentUpon>
     </EmbeddedResource>
     <None Include=".editorconfig" />
+    <None Include="config.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Database\Devices.json" />
     <None Include="Database\OrionsServiceDatabase" />
     <None Include="Devices.json">

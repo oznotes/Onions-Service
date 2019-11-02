@@ -35,7 +35,7 @@ namespace Onions
 
             try
             {
-                Language = string.Format(@".\Resources\Languages\{0}.resx", ConfigurationManager.AppSettings["English"].ToString());
+                Language = string.Format(@".\Resources\Languages\{0}.resx", ConfigurationManager.AppSettings[WhatLanguageIsActivate.ThisLanguage].ToString());
             }
             catch { }
 
@@ -154,7 +154,13 @@ namespace Onions
 
         private void SettingsOK_Click(object sender, EventArgs e)
         {
-            //
+            WhatLanguageIsActivate.ThisLanguage = comboBox1.SelectedItem.ToString();
+            
+            // check if same language no need to restart .
+
+            System.Diagnostics.Process.Start(Application.ExecutablePath); 
+            this.Close(); 
+
         }
     }
 }
