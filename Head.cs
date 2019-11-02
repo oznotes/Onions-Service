@@ -35,7 +35,7 @@ namespace Onions
 
             try
             {
-                Language = string.Format(@".\Resources\Languages\{0}.resx", ConfigurationManager.AppSettings["Language"].ToString());
+                Language = string.Format(@".\Resources\Languages\{0}.resx", ConfigurationManager.AppSettings["English"].ToString());
             }
             catch { }
 
@@ -115,14 +115,11 @@ namespace Onions
 
         private void Button3_Click(object sender, EventArgs e)
         {
-
             Point Loc = this.Location;
             Loc.X += 230;
 
-
             if (!MainFormVisible.IsVisible)
             {
-
                 MainForm mainForm = new MainForm
                 {
                     StartPosition = FormStartPosition.Manual,
@@ -136,8 +133,28 @@ namespace Onions
             {
                 mainForm.BringToFront();
             }
-
         }
 
+        private void HeadForm_Load(object sender, EventArgs e)
+        {
+            var AvailableLanguages = ConfigurationManager.AppSettings;
+
+            if (AvailableLanguages.Count == 0)
+            {
+
+            }
+            else
+            {
+                foreach (var key in AvailableLanguages.AllKeys)
+                {
+                    comboBox1.Items.Add(key);
+                }
+            }
+        }
+
+        private void SettingsOK_Click(object sender, EventArgs e)
+        {
+            //
+        }
     }
 }
