@@ -154,12 +154,21 @@ namespace Onions
 
         private void SettingsOK_Click(object sender, EventArgs e)
         {
-            WhatLanguageIsActivate.ThisLanguage = comboBox1.SelectedItem.ToString();
-            
             // check if same language no need to restart .
+            if (comboBox1.SelectedItem.ToString() != WhatLanguageIsActivate.ThisLanguage)
+            {
+                WhatLanguageIsActivate.ThisLanguage = comboBox1.SelectedItem.ToString();
+                // yes No .
+                System.Diagnostics.Process.Start(Application.ExecutablePath);
+                this.Close();
 
-            System.Diagnostics.Process.Start(Application.ExecutablePath); 
-            this.Close(); 
+            }
+            else
+            {
+                // return safe .
+
+            }
+
 
         }
     }
