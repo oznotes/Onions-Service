@@ -409,7 +409,6 @@ namespace Onions
             searchKeyword = letter;
             txtSearchKey.Text = searchKeyword;
             LoadContacts("devices", txtSearchKey.Text);
-            //MessageBox.Show(letter);
         }
 
         public static void SearchDialogVisibleChanged()
@@ -424,7 +423,6 @@ namespace Onions
             {
                 OpenForms[0].Enabled = true;
             }
-
         }
 
         private void SearchToolStripMenuItem_Click(object sender, EventArgs e)
@@ -435,7 +433,6 @@ namespace Onions
         private void SearchDialogShow()
         {
             // Check if grid has any data ..
-            // Search 
 
             searchDialog searchDialogForm = new searchDialog();
             searchDialogForm.ShowDialog(this);
