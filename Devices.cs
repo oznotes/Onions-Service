@@ -23,9 +23,7 @@ namespace Onions
 
     public static class MainFormVisible
     {
-
         public static bool IsVisible { get; set; }
-
     }
 
     public static class SearchDialogVisible 
