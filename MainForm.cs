@@ -401,11 +401,7 @@ namespace Onions
 
         private void ToolStripSearch_Click(object sender, EventArgs e)
         {
-            searchDialog searchDialogForm = new searchDialog();
-            searchDialogForm.ShowDialog(this);
-
-            // Check if grid has any data ..
-            // Search 
+            SearchDialogShow();
         }
 
         public void SearchByKeyStroke(string letter)
@@ -431,8 +427,16 @@ namespace Onions
 
         }
 
-        private void searchToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SearchToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            SearchDialogShow();
+        }
+
+        private void SearchDialogShow()
+        {
+            // Check if grid has any data ..
+            // Search 
+
             searchDialog searchDialogForm = new searchDialog();
             searchDialogForm.ShowDialog(this);
         }
