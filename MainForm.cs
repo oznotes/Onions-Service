@@ -431,6 +431,11 @@ namespace Onions
 
         }
 
+        private void searchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            searchDialog searchDialogForm = new searchDialog();
+            searchDialogForm.ShowDialog(this);
+        }
     }
 
 }

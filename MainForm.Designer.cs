@@ -217,13 +217,13 @@
             this.deleteToolStripMenuItem,
             this.completeToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(127, 92);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 114);
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Image = global::Onions.Properties.Resources.iconfinder_081_Pen_183209;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.editToolStripMenuItem.Text = "Edit";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
             // 
@@ -231,21 +231,22 @@
             // 
             this.searchToolStripMenuItem.Image = global::Onions.Properties.Resources.iconfinder_013_MagnifyingGlass_183520;
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.searchToolStripMenuItem.Text = "Search";
+            this.searchToolStripMenuItem.Click += new System.EventHandler(this.searchToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Image = global::Onions.Properties.Resources.iconfinder_080_Trash_183208;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // completeToolStripMenuItem
             // 
             this.completeToolStripMenuItem.Image = global::Onions.Properties.Resources.iconfinder_tick_outline_216430;
             this.completeToolStripMenuItem.Name = "completeToolStripMenuItem";
-            this.completeToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.completeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.completeToolStripMenuItem.Text = "Complete";
             // 
             // toolStripButton1
