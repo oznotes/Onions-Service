@@ -437,6 +437,19 @@ namespace Onions
             searchDialog searchDialogForm = new searchDialog();
             searchDialogForm.ShowDialog(this);
         }
+
+        private void completeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Complete_selected();
+            MainSetup();
+            UpdateHeadStatus();
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Remove_selected();
+
+        }
     }
 
 }
