@@ -157,18 +157,26 @@ namespace Onions
             // check if same language no need to restart .
             if (comboBox1.SelectedItem.ToString() != WhatLanguageIsActivate.ThisLanguage)
             {
-                WhatLanguageIsActivate.ThisLanguage = comboBox1.SelectedItem.ToString();
-                // yes No .
-                System.Diagnostics.Process.Start(Application.ExecutablePath);
-                this.Close();
+                DialogResult dialogResult = MessageBox.Show("Software must restart for these changes to take effect or you can choose no for restarting later", "Restart for Language Update", MessageBoxButtons.YesNoCancel);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    WhatLanguageIsActivate.ThisLanguage = comboBox1.SelectedItem.ToString();
+                    System.Diagnostics.Process.Start(Application.ExecutablePath);
+                    this.Close();
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+                    WhatLanguageIsActivate.ThisLanguage = comboBox1.SelectedItem.ToString();
+                }
+                else if (dialogResult == DialogResult.Cancel)
+                {
 
+                }
             }
             else
             {
-                // return safe .
 
             }
-
 
         }
     }
