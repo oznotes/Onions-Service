@@ -109,7 +109,7 @@
             this.textBoxPrice.Location = new System.Drawing.Point(93, 243);
             this.textBoxPrice.Name = "textBoxPrice";
             this.textBoxPrice.Size = new System.Drawing.Size(259, 20);
-            this.textBoxPrice.TabIndex = 16;
+            this.textBoxPrice.TabIndex = 11;
             // 
             // PriceLabel
             // 
@@ -273,7 +273,7 @@
             this.button1.Location = new System.Drawing.Point(3, 143);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 19);
-            this.button1.TabIndex = 12;
+            this.button1.TabIndex = 13;
             this.button1.Text = "Brand:";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.button1.UseVisualStyleBackColor = false;
@@ -319,7 +319,7 @@
             this.Add.Location = new System.Drawing.Point(93, 268);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(259, 48);
-            this.Add.TabIndex = 11;
+            this.Add.TabIndex = 12;
             this.Add.Text = "ADD";
             this.Add.UseVisualStyleBackColor = false;
             this.Add.Click += new System.EventHandler(this.Add_Click);
