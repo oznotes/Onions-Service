@@ -233,7 +233,7 @@
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
             this.searchToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.searchToolStripMenuItem.Text = "Search";
-            this.searchToolStripMenuItem.Click += new System.EventHandler(this.SearchToolStripMenuItem_Click);
+            this.searchToolStripMenuItem.Click += new System.EventHandler(this.SearchRightClickAction);
             // 
             // deleteToolStripMenuItem
             // 
@@ -241,7 +241,7 @@
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
             this.deleteToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.deleteToolStripMenuItem.Text = "Delete";
-            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.DeleteRightClickAction);
             // 
             // completeToolStripMenuItem
             // 
@@ -249,7 +249,7 @@
             this.completeToolStripMenuItem.Name = "completeToolStripMenuItem";
             this.completeToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.completeToolStripMenuItem.Text = "Complete";
-            this.completeToolStripMenuItem.Click += new System.EventHandler(this.completeToolStripMenuItem_Click);
+            this.completeToolStripMenuItem.Click += new System.EventHandler(this.CompleteRightClickAction);
             // 
             // toolStripButton1
             // 
