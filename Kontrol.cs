@@ -11,7 +11,6 @@ namespace Onions
     {
         public static bool IsVisible { get; set; }
     }
-
     public static class SearchDialogVisible
     {
         private static bool IsAvailable;

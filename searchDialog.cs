@@ -18,7 +18,6 @@ namespace Onions
         {
             InitializeComponent();
             SearchDialogVisible.IsThisVisible = true;
-
             string Language = string.Empty;
 
             try
@@ -26,8 +25,6 @@ namespace Onions
                 Language = string.Format(@".\Resources\Languages\{0}.resx", ConfigurationManager.AppSettings[WhatLanguageIsActivate.ThisLanguage].ToString());
             }
             catch { }
-
-            //Languages Spanish
 
             try
             {

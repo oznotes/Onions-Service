@@ -15,15 +15,12 @@ namespace Onions
 
     public partial class HeadForm : Form
     {
-
         MainForm mainForm = new MainForm();
         AddDeviceForm addfrm = new AddDeviceForm();
 
         string DevicesInService { get; set; } = "Devices in Service";
         string DevicesInCompleted { get; set; } = "Devices in Completed";
        
-
-
 
         public string stDeviceInService { get; set; }
 
@@ -39,8 +36,6 @@ namespace Onions
             }
             catch { }
 
-            //Languages Spanish
-
             try
             {
                 if (!string.IsNullOrWhiteSpace(Language))
@@ -51,7 +46,6 @@ namespace Onions
                         DevicesInCompleted = x.GetString("DevicesInCompleted");
                         dataGridView1.Columns["Column1"].HeaderText = x.GetString("Summary");
                         SettingsBox.Text = x.GetString("Setting");
-
                     }
                 }
             }
@@ -62,7 +56,6 @@ namespace Onions
             WhatsMyStatus(mainForm.DevicesInService, mainForm.CompletedDevices);
         }
                
-
         public void WhatsMyStatus(int Service, int Completed)
         { 
             if (dataGridView1.RowCount > 0)
@@ -71,8 +64,6 @@ namespace Onions
             dataGridView1.Rows.Add(string.Format("  {0} {1}", Service, DevicesInService));
             dataGridView1.Rows.Add(string.Format("  {0} {1}", Completed, DevicesInCompleted));
         }
-
-
 
         private void HomeButton_Click(object sender, EventArgs e)
         {
@@ -139,16 +130,16 @@ namespace Onions
         {
             var AvailableLanguages = ConfigurationManager.AppSettings;
 
-            if (AvailableLanguages.Count == 0)
-            {
-
-            }
-            else
+            if (AvailableLanguages.Count != 0)
             {
                 foreach (var key in AvailableLanguages.AllKeys)
                 {
                     comboBox1.Items.Add(key);
                 }
+            }
+            else
+            {
+
             }
         }
 
@@ -157,7 +148,7 @@ namespace Onions
             // check if same language no need to restart .
             if (comboBox1.SelectedItem.ToString() != WhatLanguageIsActivate.ThisLanguage)
             {
-                DialogResult dialogResult = MessageBox.Show("Software must restart for these changes to take effect or you can choose no for restarting later", "Restart for Language Update", MessageBoxButtons.YesNoCancel);
+                DialogResult dialogResult = MessageBox.Show("Software must restart for these changes to take effect or you can choose 'NO' to take effect in your next start", "Restart for Language Update", MessageBoxButtons.YesNoCancel);
                 if (dialogResult == DialogResult.Yes)
                 {
                     WhatLanguageIsActivate.ThisLanguage = comboBox1.SelectedItem.ToString();
@@ -177,7 +168,6 @@ namespace Onions
             {
 
             }
-
         }
     }
 }

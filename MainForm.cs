@@ -11,7 +11,6 @@ using System.Data.SQLite;
 
 namespace Onions
 {
-
     public partial class MainForm : Form
     {
         string MainFormTitle { get; set; } = "Orion Database Service";
@@ -44,7 +43,6 @@ namespace Onions
         }
 
         string searchKeyword { get; set; }
-
 
         public MainForm()
         {
@@ -107,7 +105,6 @@ namespace Onions
 
         public void MainSetup()
         {
-
             this.Text = string.Format("{0} - {1}",MainFormTitle, Home);
             LoadContacts("devices");
 
@@ -116,7 +113,6 @@ namespace Onions
                 toolStripButtonCompleted.Enabled = true;
             else
                 toolStripButtonCompleted.Enabled = false;
-
         }
 
         private void ToolStripButtonAdd_Click(object sender, EventArgs e)
@@ -174,7 +170,6 @@ namespace Onions
                 dataGridView.Columns["Price"].HeaderText = Price;
                 dataGridView.Columns["Update Date"].HeaderText = UpdateDate;             
 
-
                 //Format grid
                 fnconfigDGV();
             }
@@ -185,8 +180,6 @@ namespace Onions
                 toolStripButtonRemove.Enabled = false;
                 toolStripButtonAdd.Enabled = false;
             }
-
-
         }
 
         /// <summary>
@@ -251,7 +244,6 @@ namespace Onions
 
             LoadContacts("devices");
         }
-
         public void Complete_selected()
         {
             string today = DateTime.Today.ToString("dd/MM/yyyy");
@@ -335,7 +327,6 @@ namespace Onions
             dataGridView.Columns["IdCustomer"].Visible = false;
         }
 
-
         private void DataGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
@@ -344,7 +335,6 @@ namespace Onions
                 contextMenuStrip1.Show(Cursor.Position.X, Cursor.Position.Y);
             }
         }
-
 
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -363,16 +353,13 @@ namespace Onions
                 TextBoxIMEI = Row.Cells["IMEI"].Value.ToString(),
                 TextBoxProblem = Row.Cells["Problem"].Value.ToString(),
                 TextBoxPrice = Row.Cells["Price"].Value.ToString(),
-
                 CustomerID = int.Parse(Row.Cells["IdCustomer"].Value.ToString())
             };
             addContactForm.EditMode(true);
             // send ID.
             addContactForm.ShowDialog();
-
             LoadContacts("devices");
         }
-
         private int GiveMeTheCount(string datasource)
         {
             //Query to customers table
@@ -386,31 +373,26 @@ namespace Onions
             Int32 count = dtCustomer.Rows.Count;
             return count;
         }
-
         void UpdateHeadStatus()
         {
             HeadForm headForm = (HeadForm)Application.OpenForms["HeadForm"];
             headForm.WhatsMyStatus(DevicesInService, CompletedDevices);
         }
-
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             MainFormVisible.IsVisible = false;
             this.Dispose();
         }
-
         private void ToolStripSearch_Click(object sender, EventArgs e)
         {
             SearchDialogShow();
         }
-
         public void SearchByKeyStroke(string letter)
         {
             searchKeyword = letter;
             txtSearchKey.Text = searchKeyword;
             LoadContacts("devices", txtSearchKey.Text);
         }
-
         public static void SearchDialogVisibleChanged()
         {
             var OpenForms = Application.OpenForms;
@@ -424,12 +406,10 @@ namespace Onions
                 OpenForms[0].Enabled = true;
             }
         }
-
         private void SearchRightClickAction(object sender, EventArgs e)
         {
             SearchDialogShow();
         }
-
         private void SearchDialogShow()
         {
             // Check if grid has any data ..
@@ -437,14 +417,12 @@ namespace Onions
             searchDialog searchDialogForm = new searchDialog();
             searchDialogForm.ShowDialog(this);
         }
-
         private void CompleteRightClickAction(object sender, EventArgs e)
         {
             Complete_selected();
             MainSetup();
             UpdateHeadStatus();
         }
-
         private void DeleteRightClickAction(object sender, EventArgs e)
         {
             Remove_selected();
