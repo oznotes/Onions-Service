@@ -124,6 +124,11 @@
       <DependentUpon>Spanish.resx</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
+    <Compile Include="Resources\Languages\Turkish.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Turkish.resx</DependentUpon>
+    </Compile>
     <Compile Include="searchDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +153,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Spanish.Designer.cs</LastGenOutput>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Languages\Turkish.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Turkish.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="searchDialog.resx">
       <DependentUpon>searchDialog.cs</DependentUpon>

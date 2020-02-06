@@ -20,8 +20,6 @@ namespace Onions
 
         string DevicesInService { get; set; } = "Devices in Service";
         string DevicesInCompleted { get; set; } = "Devices in Completed";
-       
-
         public string stDeviceInService { get; set; }
 
         public HeadForm()
@@ -141,6 +139,10 @@ namespace Onions
             {
 
             }
+            this.WindowState  = FormWindowState.Minimized;
+            this.Visible = false;
+            this.ShowInTaskbar = false;
+
         }
 
         private void SettingsOK_Click(object sender, EventArgs e)
@@ -168,6 +170,34 @@ namespace Onions
             {
 
             }
+        }
+
+        private void HeadForm_Resize(object sender, EventArgs e)
+        {
+            NotificationIcon.BalloonTipTitle = "Onions";
+            NotificationIcon.BalloonTipText = "Service Database is working";
+            if (FormWindowState.Minimized == this.WindowState)
+            {
+                NotificationIcon.Visible = true;
+                NotificationIcon.ShowBalloonTip(500);
+                this.ShowInTaskbar = false;
+                this.Hide();
+            }
+            else if (FormWindowState.Normal == this.WindowState)
+            {
+                NotificationIcon.Visible = false;
+            }
+        }
+
+        private void NotificationIconDoubleClick(object sender, MouseEventArgs e)
+        {
+            this.Show();
+            this.WindowState = FormWindowState.Normal;
+            this.ShowInTaskbar = true;
+            // Back in game
+            WhatsMyStatus(mainForm.DevicesInService, mainForm.CompletedDevices);
+
+
         }
     }
 }

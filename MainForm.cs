@@ -376,7 +376,11 @@ namespace Onions
         void UpdateHeadStatus()
         {
             HeadForm headForm = (HeadForm)Application.OpenForms["HeadForm"];
-            headForm.WhatsMyStatus(DevicesInService, CompletedDevices);
+            if (headForm != null)
+            {
+                headForm.WhatsMyStatus(DevicesInService, CompletedDevices);
+            }
+
         }
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
