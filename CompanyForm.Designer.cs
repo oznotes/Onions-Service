@@ -1,6 +1,6 @@
 ﻿namespace Onions
 {
-    partial class Form1
+    partial class CompanyForm
     {
         /// <summary>
         /// Required designer variable.
@@ -125,7 +125,7 @@
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // CompanyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -141,7 +141,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "CompanyForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "Company Details";
