@@ -105,6 +105,7 @@ namespace Onions
 
         private void Button3_Click(object sender, EventArgs e)
         {
+            this.TopMost = false;
             Point Loc = this.Location;
             Loc.X += 230;
 
@@ -231,6 +232,11 @@ namespace Onions
         private void label1_Click(object sender, EventArgs e)
         {
             cmpForm.ShowDialog();
+        }
+
+        private void HeadForm_Activated(object sender, EventArgs e)
+        {
+            TopMost = true;
         }
     }
 }

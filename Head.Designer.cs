@@ -234,6 +234,7 @@
             this.Name = "HeadForm";
             this.Text = "Onions Service";
             this.TopMost = true;
+            this.Activated += new System.EventHandler(this.HeadForm_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HeadForm_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.HeadForm_FormClosed);
             this.Load += new System.EventHandler(this.HeadForm_Load);
