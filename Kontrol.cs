@@ -48,8 +48,24 @@ namespace Onions
         {
             get
             {
+                string path = AppDomain.CurrentDomain.BaseDirectory + "company.ini";
+                if (!File.Exists(path))
+                    // if there is no company.ini
+                {
+                    File.CreateText(path);
+                    //File.
+                    // make one .
+                    // open file is busy here we need to solve this as well .
+                }
                 string[] lines = File.ReadAllLines(@"company.ini");
-                return lines.ToString();
+                StringBuilder builder = new StringBuilder();
+                foreach (string value in lines)
+                {
+                    builder.Append(value);
+                    builder.Append('\n');
+                }
+                return builder.ToString();
+                //return lines.ToString();
             }
             set
             {

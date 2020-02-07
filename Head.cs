@@ -16,6 +16,7 @@ namespace Onions
     public partial class HeadForm : Form
     {
         MainForm mainForm = new MainForm();
+        CompanyForm cmpForm = new CompanyForm();
         AddDeviceForm addfrm = new AddDeviceForm();
 
         string DevicesInService { get; set; } = "Devices in Service";
@@ -138,6 +139,13 @@ namespace Onions
             {
 
             }
+            if (CorporateDetails.ThisCompany.Length!=0)
+            {
+                var companyRegistered = CorporateDetails.ThisCompany.Split('\n');
+                label1.Text = companyRegistered[0];
+                //label1.Enabled = false;
+            }
+
             this.WindowState  = FormWindowState.Minimized;
             this.Visible = false;
             this.ShowInTaskbar = false;
@@ -195,6 +203,12 @@ namespace Onions
             this.ShowInTaskbar = true;
             // Back in game
             WhatsMyStatus(mainForm.DevicesInService, mainForm.CompletedDevices);
+            if (CorporateDetails.ThisCompany.Length != 0)
+            {
+                var companyRegistered = CorporateDetails.ThisCompany.Split('\n');
+                label1.Text = companyRegistered[0];
+                //label1.Enabled = false;
+            }
         }
 
         private void LoginButton_Click(object sender, EventArgs e)
@@ -204,17 +218,19 @@ namespace Onions
 
         private void HeadForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-
             NotificationIcon.Visible = false;
             NotificationIcon.Dispose();
-
         }
 
         private void HeadForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             NotificationIcon.Visible = false;
             NotificationIcon.Dispose();
+        }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+            cmpForm.ShowDialog();
         }
     }
 }
