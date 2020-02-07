@@ -27,6 +27,19 @@ namespace Onions
                 cmpAddress.Text = CompanyDetails[1];
                 cmpPhoneNumber.Text = CompanyDetails[2];
                 cmpLogo.Text = CompanyDetails[3];
+                Bitmap img = new Bitmap(CompanyDetails[3]);
+                var imageHeight = img.Height;
+                var imageWidth = img.Width;
+                if (imageHeight > 128)
+                {
+                    pictureBox1.Image = img;
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                }
+                else
+                {
+                    pictureBox1.Image = img;
+                    pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+                }
                 DisableFormItems();
             }
         }
@@ -45,14 +58,30 @@ namespace Onions
         private void cmpLogo_DoubleClick(object sender, EventArgs e)
         {
             cmpLogo.Text = "";
+            openFileDialog1.Filter = "Picture (*.jpg)| *.jpg; |Image File (*.png) | *.png; |All files(*.*) | *.*";
+            openFileDialog1.FileName = "";
+            openFileDialog1.Title  = "Select your company Logo or icon";
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 string directoryPath = Path.GetDirectoryName(openFileDialog1.FileName);
                 cmpLogo.Text = openFileDialog1.FileName;
+                Bitmap img = new Bitmap(openFileDialog1.FileName);
+                var imageHeight = img.Height;
+                var imageWidth = img.Width;
+                if (imageHeight>128)
+                {
+                    pictureBox1.Image = img;
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+
+                }
+                else
+                {
+                    pictureBox1.Image = img;
+                    pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+                }
+                Console.WriteLine(imageHeight.ToString());
+                Console.WriteLine(imageWidth.ToString());
             }
-            // do something with the picture 
-            // resize and save to working directory .. with a name that won't have lots of files .
-            // if the picture is in the folder already ? lots of code.
         }
 
         private void CompanyForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -112,12 +141,30 @@ namespace Onions
             if (CorporateDetails.ThisCompany.Length != 0)
             {
                 var CompanyDetails = CorporateDetails.ThisCompany.Split('\n');
-                cmpName.Text = CompanyDetails[0];
-                cmpAddress.Text = CompanyDetails[1];
-                cmpPhoneNumber.Text = CompanyDetails[2];
-                cmpLogo.Text = CompanyDetails[3];
-                DisableFormItems();
+                try
+                {
+                    //think about some even and connect this event... 
+                    //cmpName.Text = CompanyDetails[0];
+                    //cmpAddress.Text = CompanyDetails[1];
+                    //cmpPhoneNumber.Text = CompanyDetails[2];
+                    //cmpLogo.Text = CompanyDetails[3];
+                    //pictureBox1.ImageLocation = CompanyDetails[3];
+                    //pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+
+                }
+                catch (Exception ex)
+                {
+                    string message = "Company Details Error.\nMessage : " + ex.ToString();
+                    string title = "Error Message: ";
+                    MessageBoxButtons buttons = MessageBoxButtons.OK;
+
+                    MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                //DisableFormItems();
             }
         }
+
     }
 }

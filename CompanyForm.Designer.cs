@@ -42,13 +42,15 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 205);
+            this.label1.Location = new System.Drawing.Point(79, 165);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(467, 13);
             this.label1.TabIndex = 0;
@@ -57,15 +59,15 @@
             // 
             // cmpName
             // 
-            this.cmpName.Location = new System.Drawing.Point(71, 36);
+            this.cmpName.Location = new System.Drawing.Point(253, 18);
             this.cmpName.Name = "cmpName";
-            this.cmpName.Size = new System.Drawing.Size(311, 20);
+            this.cmpName.Size = new System.Drawing.Size(240, 20);
             this.cmpName.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 39);
+            this.label2.Location = new System.Drawing.Point(190, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 13);
             this.label2.TabIndex = 2;
@@ -74,7 +76,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 65);
+            this.label3.Location = new System.Drawing.Point(190, 47);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 13);
             this.label3.TabIndex = 4;
@@ -82,16 +84,16 @@
             // 
             // cmpAddress
             // 
-            this.cmpAddress.Location = new System.Drawing.Point(71, 62);
+            this.cmpAddress.Location = new System.Drawing.Point(253, 44);
             this.cmpAddress.Multiline = true;
             this.cmpAddress.Name = "cmpAddress";
-            this.cmpAddress.Size = new System.Drawing.Size(311, 54);
+            this.cmpAddress.Size = new System.Drawing.Size(240, 54);
             this.cmpAddress.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 125);
+            this.label4.Location = new System.Drawing.Point(190, 107);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 13);
             this.label4.TabIndex = 6;
@@ -99,15 +101,15 @@
             // 
             // cmpPhoneNumber
             // 
-            this.cmpPhoneNumber.Location = new System.Drawing.Point(71, 122);
+            this.cmpPhoneNumber.Location = new System.Drawing.Point(253, 104);
             this.cmpPhoneNumber.Name = "cmpPhoneNumber";
-            this.cmpPhoneNumber.Size = new System.Drawing.Size(311, 20);
+            this.cmpPhoneNumber.Size = new System.Drawing.Size(240, 20);
             this.cmpPhoneNumber.TabIndex = 5;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(8, 151);
+            this.label5.Location = new System.Drawing.Point(190, 133);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 13);
             this.label5.TabIndex = 8;
@@ -115,16 +117,16 @@
             // 
             // cmpLogo
             // 
-            this.cmpLogo.Location = new System.Drawing.Point(71, 148);
+            this.cmpLogo.Location = new System.Drawing.Point(253, 130);
             this.cmpLogo.Name = "cmpLogo";
-            this.cmpLogo.Size = new System.Drawing.Size(311, 20);
+            this.cmpLogo.Size = new System.Drawing.Size(240, 20);
             this.cmpLogo.TabIndex = 7;
             this.cmpLogo.Text = "Double click to select";
             this.cmpLogo.DoubleClick += new System.EventHandler(this.cmpLogo_DoubleClick);
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(400, 36);
+            this.saveButton.Location = new System.Drawing.Point(510, 18);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(75, 132);
             this.saveButton.TabIndex = 9;
@@ -150,11 +152,20 @@
             this.toolStripMenuItem1.Text = "Unlock";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(12, 18);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(160, 120);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // CompanyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(486, 255);
+            this.ClientSize = new System.Drawing.Size(603, 197);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cmpLogo);
@@ -176,6 +187,7 @@
             this.Load += new System.EventHandler(this.CompanyForm_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CompanyForm_MouseDown);
             this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,5 +208,6 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
