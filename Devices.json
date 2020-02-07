@@ -2773,6 +2773,271 @@
     ]
   },
   {
+    "BRAND": "APPLE",
+    "MODELIST": [
+      {
+        "MODEL": "iPad Pro 12.9 (2018)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-129-2018.jpg"
+      },
+      {
+        "MODEL": "iPad Pro 11",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-11-2018.jpg"
+      },
+      {
+        "MODEL": "iPhone XS Max",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-xs-max-new1.jpg"
+      },
+      {
+        "MODEL": "iPhone XS",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-xs-new.jpg"
+      },
+      {
+        "MODEL": "iPhone XR",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-xr-new.jpg"
+      },
+      {
+        "MODEL": "Watch Series 4",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-series-4-steel.jpg"
+      },
+      {
+        "MODEL": "Watch Series 4 Aluminum",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-series-4-aluminum.jpg"
+      },
+      {
+        "MODEL": "iPad 9.7 (2018)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-97-2018.jpg"
+      },
+      {
+        "MODEL": "iPhone X",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-x.jpg"
+      },
+      {
+        "MODEL": "iPhone 8 Plus",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-8-plus-new.jpg"
+      },
+      {
+        "MODEL": "iPhone 8",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-8-new.jpg"
+      },
+      {
+        "MODEL": "Watch Edition Series 3",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-edition-series3.jpg"
+      },
+      {
+        "MODEL": "Watch Series 3",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-series3-.jpg"
+      },
+      {
+        "MODEL": "Watch Series 3 Aluminum",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-series3-sport-.jpg"
+      },
+      {
+        "MODEL": "iPad Pro 12.9 (2017)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-129-2017.jpg"
+      },
+      {
+        "MODEL": "iPad Pro 10.5 (2017)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-105-2017.jpg"
+      },
+      {
+        "MODEL": "iPad 9.7 (2017)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-97-2017.jpg"
+      },
+      {
+        "MODEL": "Watch Edition Series 2 42mm",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch2-edition-42mm.jpg"
+      },
+      {
+        "MODEL": "Watch Series 2 42mm",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch2-s2-42mm.jpg"
+      },
+      {
+        "MODEL": "Watch Edition Series 2 38mm",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch2-s2-edition-38mm.jpg"
+      },
+      {
+        "MODEL": "Watch Series 2 38mm",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch2-s2-38mm.jpg"
+      },
+      {
+        "MODEL": "Watch Series 2 Aluminum 42mm",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch2-s2-sport-42mm.jpg"
+      },
+      {
+        "MODEL": "Watch Series 1 Aluminum 42mm",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch1-sport-42mm.jpg"
+      },
+      {
+        "MODEL": "Watch Series 2 Aluminum 38mm",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch2-s2-sport-38mm.jpg"
+      },
+      {
+        "MODEL": "Watch Series 1 Aluminum 38mm",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch2-s2-sport-38mm.jpg"
+      },
+      {
+        "MODEL": "iPhone 7 Plus",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-7-plus-r2.jpg"
+      },
+      {
+        "MODEL": "iPhone 7",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-7r4.jpg"
+      },
+      {
+        "MODEL": "iPad Pro 9.7 (2016)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-97.jpg"
+      },
+      {
+        "MODEL": "iPhone SE",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-5se-ofic.jpg"
+      },
+      {
+        "MODEL": "iPhone 6s Plus",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-6s-plus.jpg"
+      },
+      {
+        "MODEL": "iPhone 6s",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-6s1.jpg"
+      },
+      {
+        "MODEL": "iPad Pro 12.9 (2015)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-.jpg"
+      },
+      {
+        "MODEL": "iPad mini 4",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/ipad-mini-41.jpg"
+      },
+      {
+        "MODEL": "Watch Edition 42mm (1st gen)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-edition-42mm.jpg"
+      },
+      {
+        "MODEL": "Watch Edition 38mm (1st gen)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-edition-38mm.jpg"
+      },
+      {
+        "MODEL": "Watch 42mm (1st gen)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-42mm.jpg"
+      },
+      {
+        "MODEL": "Watch 38mm (1st gen)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-38mm.jpg"
+      },
+      {
+        "MODEL": "Watch Sport 42mm (1st gen)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-sport-42mm2.jpg"
+      },
+      {
+        "MODEL": "Watch Sport 38mm (1st gen)",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-sport-38mm.jpg"
+      },
+      {
+        "MODEL": "iPad Air 2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-air-2-new.jpg"
+      },
+      {
+        "MODEL": "iPad mini 3",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-mini-3-new.jpg"
+      },
+      {
+        "MODEL": "iPhone 6 Plus",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-6-plus2.jpg"
+      },
+      {
+        "MODEL": "iPhone 6",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-6-4.jpg"
+      },
+      {
+        "MODEL": "iPad Air",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-air.jpg"
+      },
+      {
+        "MODEL": "iPad mini 2",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-mini2.jpg"
+      },
+      {
+        "MODEL": "iPhone 5s",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-5s-ofic.jpg"
+      },
+      {
+        "MODEL": "iPhone 5c",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-5c-new2.jpg"
+      },
+      {
+        "MODEL": "iPad mini Wi-Fi",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-mini-final.jpg"
+      },
+      {
+        "MODEL": "iPad mini Wi-Fi + Cellular",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-mini-final.jpg"
+      },
+      {
+        "MODEL": "iPad 4 Wi-Fi",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-3-new.jpg"
+      },
+      {
+        "MODEL": "iPad 4 Wi-Fi + Cellular",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-3-new.jpg"
+      },
+      {
+        "MODEL": "iPhone 5",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-5-ofic.jpg"
+      },
+      {
+        "MODEL": "iPad 3 Wi-Fi + Cellular",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-3-new.jpg"
+      },
+      {
+        "MODEL": "iPad 3 Wi-Fi",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-3-new.jpg"
+      },
+      {
+        "MODEL": "iPhone 4s",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-4s-new.jpg"
+      },
+      {
+        "MODEL": "iPad 2 Wi-Fi + 3G",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad2-new.jpg"
+      },
+      {
+        "MODEL": "iPad 2 Wi-Fi",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad2-new.jpg"
+      },
+      {
+        "MODEL": "iPad 2 CDMA",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad2-new.jpg"
+      },
+      {
+        "MODEL": "iPhone 4",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-4-ofic-final.jpg"
+      },
+      {
+        "MODEL": "iPhone 4 CDMA",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone4-cdma.jpg"
+      },
+      {
+        "MODEL": "iPad Wi-Fi + 3G",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-original.jpg"
+      },
+      {
+        "MODEL": "iPad Wi-Fi",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-original.jpg"
+      },
+      {
+        "MODEL": "iPhone 3GS",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-3gs-ofic.jpg"
+      },
+      {
+        "MODEL": "iPhone 3G",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone3g.jpg"
+      },
+      {
+        "MODEL": "iPhone",
+        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone.gif"
+      }
+    ]
+  },
+  {
     "BRAND": "ARCHOS",
     "MODELIST": [
       {
@@ -3627,271 +3892,6 @@
       {
         "MODEL": "Zenfone Pegasus 3s",
         "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/asus-zenfone-pegasus-3.jpg"
-      }
-    ]
-  },
-  {
-    "BRAND": "APPLE",
-    "MODELIST": [
-      {
-        "MODEL": "iPad Pro 12.9 (2018)",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-129-2018.jpg"
-      },
-      {
-        "MODEL": "iPad Pro 11",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-11-2018.jpg"
-      },
-      {
-        "MODEL": "iPhone XS Max",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-xs-max-new1.jpg"
-      },
-      {
-        "MODEL": "iPhone XS",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-xs-new.jpg"
-      },
-      {
-        "MODEL": "iPhone XR",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-xr-new.jpg"
-      },
-      {
-        "MODEL": "Watch Series 4",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-series-4-steel.jpg"
-      },
-      {
-        "MODEL": "Watch Series 4 Aluminum",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-series-4-aluminum.jpg"
-      },
-      {
-        "MODEL": "iPad 9.7 (2018)",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-97-2018.jpg"
-      },
-      {
-        "MODEL": "iPhone X",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-x.jpg"
-      },
-      {
-        "MODEL": "iPhone 8 Plus",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-8-plus-new.jpg"
-      },
-      {
-        "MODEL": "iPhone 8",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-8-new.jpg"
-      },
-      {
-        "MODEL": "Watch Edition Series 3",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-edition-series3.jpg"
-      },
-      {
-        "MODEL": "Watch Series 3",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-series3-.jpg"
-      },
-      {
-        "MODEL": "Watch Series 3 Aluminum",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-series3-sport-.jpg"
-      },
-      {
-        "MODEL": "iPad Pro 12.9 (2017)",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-129-2017.jpg"
-      },
-      {
-        "MODEL": "iPad Pro 10.5 (2017)",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-105-2017.jpg"
-      },
-      {
-        "MODEL": "iPad 9.7 (2017)",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-97-2017.jpg"
-      },
-      {
-        "MODEL": "Watch Edition Series 2 42mm",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch2-edition-42mm.jpg"
-      },
-      {
-        "MODEL": "Watch Series 2 42mm",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch2-s2-42mm.jpg"
-      },
-      {
-        "MODEL": "Watch Edition Series 2 38mm",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch2-s2-edition-38mm.jpg"
-      },
-      {
-        "MODEL": "Watch Series 2 38mm",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch2-s2-38mm.jpg"
-      },
-      {
-        "MODEL": "Watch Series 2 Aluminum 42mm",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch2-s2-sport-42mm.jpg"
-      },
-      {
-        "MODEL": "Watch Series 1 Aluminum 42mm",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch1-sport-42mm.jpg"
-      },
-      {
-        "MODEL": "Watch Series 2 Aluminum 38mm",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch2-s2-sport-38mm.jpg"
-      },
-      {
-        "MODEL": "Watch Series 1 Aluminum 38mm",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch2-s2-sport-38mm.jpg"
-      },
-      {
-        "MODEL": "iPhone 7 Plus",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-7-plus-r2.jpg"
-      },
-      {
-        "MODEL": "iPhone 7",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-7r4.jpg"
-      },
-      {
-        "MODEL": "iPad Pro 9.7 (2016)",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-97.jpg"
-      },
-      {
-        "MODEL": "iPhone SE",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-5se-ofic.jpg"
-      },
-      {
-        "MODEL": "iPhone 6s Plus",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-6s-plus.jpg"
-      },
-      {
-        "MODEL": "iPhone 6s",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-6s1.jpg"
-      },
-      {
-        "MODEL": "iPad Pro 12.9 (2015)",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-.jpg"
-      },
-      {
-        "MODEL": "iPad mini 4",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/ipad-mini-41.jpg"
-      },
-      {
-        "MODEL": "Watch Edition 42mm (1st gen)",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-edition-42mm.jpg"
-      },
-      {
-        "MODEL": "Watch Edition 38mm (1st gen)",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-edition-38mm.jpg"
-      },
-      {
-        "MODEL": "Watch 42mm (1st gen)",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-42mm.jpg"
-      },
-      {
-        "MODEL": "Watch 38mm (1st gen)",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-38mm.jpg"
-      },
-      {
-        "MODEL": "Watch Sport 42mm (1st gen)",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-sport-42mm2.jpg"
-      },
-      {
-        "MODEL": "Watch Sport 38mm (1st gen)",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-watch-sport-38mm.jpg"
-      },
-      {
-        "MODEL": "iPad Air 2",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-air-2-new.jpg"
-      },
-      {
-        "MODEL": "iPad mini 3",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-mini-3-new.jpg"
-      },
-      {
-        "MODEL": "iPhone 6 Plus",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-6-plus2.jpg"
-      },
-      {
-        "MODEL": "iPhone 6",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-6-4.jpg"
-      },
-      {
-        "MODEL": "iPad Air",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-air.jpg"
-      },
-      {
-        "MODEL": "iPad mini 2",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-mini2.jpg"
-      },
-      {
-        "MODEL": "iPhone 5s",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-5s-ofic.jpg"
-      },
-      {
-        "MODEL": "iPhone 5c",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-5c-new2.jpg"
-      },
-      {
-        "MODEL": "iPad mini Wi-Fi",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-mini-final.jpg"
-      },
-      {
-        "MODEL": "iPad mini Wi-Fi + Cellular",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-mini-final.jpg"
-      },
-      {
-        "MODEL": "iPad 4 Wi-Fi",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-3-new.jpg"
-      },
-      {
-        "MODEL": "iPad 4 Wi-Fi + Cellular",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-3-new.jpg"
-      },
-      {
-        "MODEL": "iPhone 5",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-5-ofic.jpg"
-      },
-      {
-        "MODEL": "iPad 3 Wi-Fi + Cellular",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-3-new.jpg"
-      },
-      {
-        "MODEL": "iPad 3 Wi-Fi",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-3-new.jpg"
-      },
-      {
-        "MODEL": "iPhone 4s",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-4s-new.jpg"
-      },
-      {
-        "MODEL": "iPad 2 Wi-Fi + 3G",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad2-new.jpg"
-      },
-      {
-        "MODEL": "iPad 2 Wi-Fi",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad2-new.jpg"
-      },
-      {
-        "MODEL": "iPad 2 CDMA",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad2-new.jpg"
-      },
-      {
-        "MODEL": "iPhone 4",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-4-ofic-final.jpg"
-      },
-      {
-        "MODEL": "iPhone 4 CDMA",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone4-cdma.jpg"
-      },
-      {
-        "MODEL": "iPad Wi-Fi + 3G",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-original.jpg"
-      },
-      {
-        "MODEL": "iPad Wi-Fi",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-ipad-original.jpg"
-      },
-      {
-        "MODEL": "iPhone 3GS",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone-3gs-ofic.jpg"
-      },
-      {
-        "MODEL": "iPhone 3G",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone3g.jpg"
-      },
-      {
-        "MODEL": "iPhone",
-        "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/apple-iphone.gif"
       }
     ]
   },
@@ -27974,6 +27974,1028 @@
       {
         "MODEL": "i115",
         "URLIMAGE": "https://cdn2.gsmarena.com/vv/bigpic/verykool-i115.jpg"
+      }
+    ]
+  },
+  {
+    "BRAND": "VIVO",
+    "MODELIST": [
+      {
+        "MODEL": "X30 Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x30-pro.jpg"
+      },
+      {
+        "MODEL": "X30",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x30.jpg"
+      },
+      {
+        "MODEL": "V17 (India)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v17-india.jpg"
+      },
+      {
+        "MODEL": "iQOO Neo 855 Racing",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-iqoo-neo-855-racing.jpg"
+      },
+      {
+        "MODEL": "Y9s",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y9s.jpg"
+      },
+      {
+        "MODEL": "Z5i",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-z5i.jpg"
+      },
+      {
+        "MODEL": "V17 (China)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v17.jpg"
+      },
+      {
+        "MODEL": "S1 Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-s1-pro-global.jpg"
+      },
+      {
+        "MODEL": "S5",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-s5.jpg"
+      },
+      {
+        "MODEL": "U20",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-u20.jpg"
+      },
+      {
+        "MODEL": "Y3 Standard",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y3-standard.jpg"
+      },
+      {
+        "MODEL": "Y5s",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y5s.jpg"
+      },
+      {
+        "MODEL": "Y19",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y19.jpg"
+      },
+      {
+        "MODEL": "iQOO Neo 855",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-iqoo-neo-855.jpg"
+      },
+      {
+        "MODEL": "Y11 (2019)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y11-2019.jpg"
+      },
+      {
+        "MODEL": "U3",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-u3.jpg"
+      },
+      {
+        "MODEL": "U10",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-u10-.jpg"
+      },
+      {
+        "MODEL": "Y3 (4GB+64GB)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y3-64-4.jpg"
+      },
+      {
+        "MODEL": "Y3",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-u10-.jpg"
+      },
+      {
+        "MODEL": "NEX 3 5G",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-nex3-5g.jpg"
+      },
+      {
+        "MODEL": "V17 Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v17-pro-r.jpg"
+      },
+      {
+        "MODEL": "NEX 3",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-nex3.jpg"
+      },
+      {
+        "MODEL": "Z1x",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-z1x.jpg"
+      },
+      {
+        "MODEL": "iQOO Pro 5G",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-iqoo-pro-5g.jpg"
+      },
+      {
+        "MODEL": "iQOO Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-iqoo-pro.jpg"
+      },
+      {
+        "MODEL": "Y90",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y90.jpg"
+      },
+      {
+        "MODEL": "V17 Neo",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v17-neo.jpg"
+      },
+      {
+        "MODEL": "Z5",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-z5.jpg"
+      },
+      {
+        "MODEL": "S1",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-s1-v1907.jpg"
+      },
+      {
+        "MODEL": "Z1Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-z5x.jpg"
+      },
+      {
+        "MODEL": "iQOO Neo",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-iqoo-neo.jpg"
+      },
+      {
+        "MODEL": "Z5x",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-z5x.jpg"
+      },
+      {
+        "MODEL": "S1 Pro (China)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-s1-pro.jpg"
+      },
+      {
+        "MODEL": "Z3x",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-z3x.jpg"
+      },
+      {
+        "MODEL": "Y17",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y17.jpg"
+      },
+      {
+        "MODEL": "Y15",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y15-new.jpg"
+      },
+      {
+        "MODEL": "Y12",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y12.jpg"
+      },
+      {
+        "MODEL": "X27 Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x27-pro.jpg"
+      },
+      {
+        "MODEL": "S1 (China)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-s1.jpg"
+      },
+      {
+        "MODEL": "X27",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x27-.jpg"
+      },
+      {
+        "MODEL": "V15",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v15.jpg"
+      },
+      {
+        "MODEL": "iQOO",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-iqoo.jpg"
+      },
+      {
+        "MODEL": "V15 Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v15-pro.jpg"
+      },
+      {
+        "MODEL": "Y89",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y89.jpg"
+      },
+      {
+        "MODEL": "NEX Dual Display",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-nex2-.jpg"
+      },
+      {
+        "MODEL": "Y93 (Mediatek)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y93-india.jpg"
+      },
+      {
+        "MODEL": "Y93s",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y93.jpg"
+      },
+      {
+        "MODEL": "Y95",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y95-.jpg"
+      },
+      {
+        "MODEL": "Z1 Lite",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-z1-lite-.jpg"
+      },
+      {
+        "MODEL": "Y91i",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y91i-dual-camera.jpg"
+      },
+      {
+        "MODEL": "Y93",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y93.jpg"
+      },
+      {
+        "MODEL": "Y91i (India)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y91i-.jpg"
+      },
+      {
+        "MODEL": "Y91 (Mediatek)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y91.jpg"
+      },
+      {
+        "MODEL": "Y91",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y91.jpg"
+      },
+      {
+        "MODEL": "Y81i",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y81i.jpg"
+      },
+      {
+        "MODEL": "Z3",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-z3.jpg"
+      },
+      {
+        "MODEL": "Z3i",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-z3i.jpg"
+      },
+      {
+        "MODEL": "Y71i",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y71-.jpg"
+      },
+      {
+        "MODEL": "V11i",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v11i-.jpg"
+      },
+      {
+        "MODEL": "Y97",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y97.jpg"
+      },
+      {
+        "MODEL": "X23",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x23.jpg"
+      },
+      {
+        "MODEL": "V11 (V11 Pro)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v11-pro-2.jpg"
+      },
+      {
+        "MODEL": "Y83 Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y83-pro.jpg"
+      },
+      {
+        "MODEL": "V9 6GB",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v9-.jpg"
+      },
+      {
+        "MODEL": "Z1i",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-z1i-.jpg"
+      },
+      {
+        "MODEL": "NEX S",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-nex-s.jpg"
+      },
+      {
+        "MODEL": "NEX A",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-nex-r1.jpg"
+      },
+      {
+        "MODEL": "Z1",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-z1a.jpg"
+      },
+      {
+        "MODEL": "Y83",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y83-new.jpg"
+      },
+      {
+        "MODEL": "Y81",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y81.jpg"
+      },
+      {
+        "MODEL": "X21i",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x21i-.jpg"
+      },
+      {
+        "MODEL": "Y53i",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y53i-.jpg"
+      },
+      {
+        "MODEL": "Y71",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y71-.jpg"
+      },
+      {
+        "MODEL": "V9 Youth",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v9-.jpg"
+      },
+      {
+        "MODEL": "V9",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v9-.jpg"
+      },
+      {
+        "MODEL": "X21 UD",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x21ud.jpg"
+      },
+      {
+        "MODEL": "X21",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x21.jpg"
+      },
+      {
+        "MODEL": "V7",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v7.jpg"
+      },
+      {
+        "MODEL": "X20 Plus",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x20-plus.jpg"
+      },
+      {
+        "MODEL": "X20 Plus UD",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x20-plus-ud.jpg"
+      },
+      {
+        "MODEL": "X20",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x20.jpg"
+      },
+      {
+        "MODEL": "V7+",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v7-plus.jpg"
+      },
+      {
+        "MODEL": "Y65",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y65.jpg"
+      },
+      {
+        "MODEL": "Y69",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y69.jpg"
+      },
+      {
+        "MODEL": "Y53",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y53.jpg"
+      },
+      {
+        "MODEL": "X9s Plus",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x9s-plus-r.jpg"
+      },
+      {
+        "MODEL": "X9s",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x9s-plus-r.jpg"
+      },
+      {
+        "MODEL": "V5s",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v5s.jpg"
+      },
+      {
+        "MODEL": "Y25",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y25.jpg"
+      },
+      {
+        "MODEL": "Y55L (vivo 1603)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y55l-1603.jpg"
+      },
+      {
+        "MODEL": "Y55s",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y55s.jpg"
+      },
+      {
+        "MODEL": "V5 Lite (vivo 1609)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v5-lite.jpg"
+      },
+      {
+        "MODEL": "V5 Plus",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v5-plus.jpg"
+      },
+      {
+        "MODEL": "Y67",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y67.jpg"
+      },
+      {
+        "MODEL": "Xplay6",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-xplay6.jpg"
+      },
+      {
+        "MODEL": "X9 Plus",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x9-plus.jpg"
+      },
+      {
+        "MODEL": "X9",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x9-.jpg"
+      },
+      {
+        "MODEL": "V5",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v5.jpg"
+      },
+      {
+        "MODEL": "X7 Plus",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x7-plus.jpg"
+      },
+      {
+        "MODEL": "X7",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x7.jpg"
+      },
+      {
+        "MODEL": "V3Max",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v3.jpg"
+      },
+      {
+        "MODEL": "V3",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v3.jpg"
+      },
+      {
+        "MODEL": "X6S Plus",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x6s-plus.jpg"
+      },
+      {
+        "MODEL": "X6S",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x6-.jpg"
+      },
+      {
+        "MODEL": "Xplay5 Elite",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-xplay5-elite.jpg"
+      },
+      {
+        "MODEL": "Xplay5",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-xplay5.jpg"
+      },
+      {
+        "MODEL": "Y51",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y51.jpg"
+      },
+      {
+        "MODEL": "X6",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x6-.jpg"
+      },
+      {
+        "MODEL": "X6Plus",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x6-.jpg"
+      },
+      {
+        "MODEL": "Y15S (2015)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y15s.jpg"
+      },
+      {
+        "MODEL": "V1",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v1.jpg"
+      },
+      {
+        "MODEL": "V1 Max",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v1-max.jpg"
+      },
+      {
+        "MODEL": "Y31",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y31.jpg"
+      },
+      {
+        "MODEL": "Y35",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y35.jpg"
+      },
+      {
+        "MODEL": "Y37",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y37.jpg"
+      },
+      {
+        "MODEL": "X5Max Platinum Edition",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x5-max-platinum-edition.jpg"
+      },
+      {
+        "MODEL": "X5Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x5-pro.jpg"
+      },
+      {
+        "MODEL": "X5Max+",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-max-plus.jpg"
+      },
+      {
+        "MODEL": "X5Max",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x5-max.jpg"
+      },
+      {
+        "MODEL": "Y11",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y11.jpg"
+      },
+      {
+        "MODEL": "X5",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x5v.jpg"
+      },
+      {
+        "MODEL": "Xplay3S",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-xplay-3s.jpg"
+      },
+      {
+        "MODEL": "Xshot",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-xshot.jpg"
+      },
+      {
+        "MODEL": "X3S",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x3s.jpg"
+      },
+      {
+        "MODEL": "Y28",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y28.jpg"
+      },
+      {
+        "MODEL": "Y27",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y27.jpg"
+      },
+      {
+        "MODEL": "Y22",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y22.jpg"
+      },
+      {
+        "MODEL": "Y15 (2013)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y15.jpg"
+      },
+      {
+        "MODEL": "Xplay7",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/vivo-xplay-7-r.jpg"
+      }
+    ]
+  },
+  {
+    "BRAND": "VIVO",
+    "MODELIST": [
+      {
+        "MODEL": "Poco X2",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-x2.jpg"
+      },
+      {
+        "MODEL": "Redmi K30",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k30.jpg"
+      },
+      {
+        "MODEL": "Redmi K30 5G",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k30-5g.jpg"
+      },
+      {
+        "MODEL": "Redmi Note 8T",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-8t.jpg"
+      },
+      {
+        "MODEL": "Mi Note 10 Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-note10-.jpg"
+      },
+      {
+        "MODEL": "Mi Note 10",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-note10-.jpg"
+      },
+      {
+        "MODEL": "Mi CC9 Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-cc9-pro-.jpg"
+      },
+      {
+        "MODEL": "Watch Color",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-watch-color-.jpg"
+      },
+      {
+        "MODEL": "Mi Watch",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-watch-.jpg"
+      },
+      {
+        "MODEL": "Redmi 8",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-8.jpg"
+      },
+      {
+        "MODEL": "Redmi 8A",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-8a.jpg"
+      },
+      {
+        "MODEL": "Mi Mix Alpha",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-mix-alpha.jpg"
+      },
+      {
+        "MODEL": "Mi 9 Pro 5G",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-9-pro-5g.jpg"
+      },
+      {
+        "MODEL": "Mi 9 Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-9-pro.jpg"
+      },
+      {
+        "MODEL": "Redmi K20 Pro Premium",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k20pro-.jpg"
+      },
+      {
+        "MODEL": "Mi 9 Lite",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-cc9-.jpg"
+      },
+      {
+        "MODEL": "Redmi Note 8 Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-8-pro-.jpg"
+      },
+      {
+        "MODEL": "Black Shark 2 Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-black-shark2-pro-.jpg"
+      },
+      {
+        "MODEL": "Mi A3",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-a3.jpg"
+      },
+      {
+        "MODEL": "Redmi 7A",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-7a-mzb8008in.jpg"
+      },
+      {
+        "MODEL": "Mi CC9",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-cc9-.jpg"
+      },
+      {
+        "MODEL": "Mi CC9e",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-cc9e-.jpg"
+      },
+      {
+        "MODEL": "Redmi Note 8",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-8-1.jpg"
+      },
+      {
+        "MODEL": "Mi 9T Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-9t.jpg"
+      },
+      {
+        "MODEL": "Mi 9T",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-9t.jpg"
+      },
+      {
+        "MODEL": "Redmi K20",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k20pro-.jpg"
+      },
+      {
+        "MODEL": "Redmi K20 Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k20pro-.jpg"
+      },
+      {
+        "MODEL": "Redmi Note 7S",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-7s.jpg"
+      },
+      {
+        "MODEL": "Redmi Y3",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-y3.jpg"
+      },
+      {
+        "MODEL": "Black Shark 2",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-black-shark-2.jpg"
+      },
+      {
+        "MODEL": "Redmi 7",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-7.jpg"
+      },
+      {
+        "MODEL": "Redmi Note 7 Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-7-pro.jpg"
+      },
+      {
+        "MODEL": "Mi Mix 3 5G",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-mix3.jpg"
+      },
+      {
+        "MODEL": "Mi 9 Explorer",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-9-explore.jpg"
+      },
+      {
+        "MODEL": "Mi 9 SE",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-9-se.jpg"
+      },
+      {
+        "MODEL": "Mi 9",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-9-.jpg"
+      },
+      {
+        "MODEL": "Redmi Go",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-go.jpg"
+      },
+      {
+        "MODEL": "Redmi Note 7",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-7.jpg"
+      },
+      {
+        "MODEL": "Mi Play",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-miplay.jpg"
+      },
+      {
+        "MODEL": "Black Shark Helo",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-black-shark2.jpg"
+      },
+      {
+        "MODEL": "Mi Mix 3",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-mix3.jpg"
+      },
+      {
+        "MODEL": "Redmi Note 6 Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-6-pro-r.jpg"
+      },
+      {
+        "MODEL": "Mi 8 Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-8-pro-.jpg"
+      },
+      {
+        "MODEL": "Mi 8 Lite",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-8-lite-.jpg"
+      },
+      {
+        "MODEL": "Pocophone F1",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-pocophone-f1-.jpg"
+      },
+      {
+        "MODEL": "Mi A2 (Mi 6X)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-a2-.jpg"
+      },
+      {
+        "MODEL": "Mi A2 Lite (Redmi 6 Pro)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-a2-lite.jpg"
+      },
+      {
+        "MODEL": "Mi Max 3",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-max3-.jpg"
+      },
+      {
+        "MODEL": "Mi Pad 4",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-pad-4.jpg"
+      },
+      {
+        "MODEL": "Mi Pad 4 Plus",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-pad-4-plus.jpg"
+      },
+      {
+        "MODEL": "Redmi 6",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-6.jpg"
+      },
+      {
+        "MODEL": "Redmi 6A",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-6a.jpg"
+      },
+      {
+        "MODEL": "Mi 8 Explorer",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi8-explore-.jpg"
+      },
+      {
+        "MODEL": "Mi 8",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi8.jpg"
+      },
+      {
+        "MODEL": "Mi 8 SE",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi8-se.jpg"
+      },
+      {
+        "MODEL": "Redmi S2 (Redmi Y2)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-s2-.jpg"
+      },
+      {
+        "MODEL": "Mi Mix 2S",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-mix-2s.jpg"
+      },
+      {
+        "MODEL": "Redmi Note 5 AI Dual Camera",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-5-ai-dual-camera.jpg"
+      },
+      {
+        "MODEL": "Redmi Note 5 Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-5-pro.jpg"
+      },
+      {
+        "MODEL": "Black Shark",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-black-shark.jpg"
+      },
+      {
+        "MODEL": "Redmi 5 Plus (Redmi Note 5)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-5-plus.jpg"
+      },
+      {
+        "MODEL": "Redmi 5",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-5.jpg"
+      },
+      {
+        "MODEL": "Redmi 5A",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-5a.jpg"
+      },
+      {
+        "MODEL": "Redmi Y1 (Note 5A)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-5a.jpg"
+      },
+      {
+        "MODEL": "Redmi Y1 Lite",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-5as.jpg"
+      },
+      {
+        "MODEL": "Mi Note 3",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-note3-.jpg"
+      },
+      {
+        "MODEL": "Mi Mix 2",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-mix2-new.jpg"
+      },
+      {
+        "MODEL": "Mi A1 (Mi 5X)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-a1.jpg"
+      },
+      {
+        "MODEL": "Mi Max 2",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-max2.jpg"
+      },
+      {
+        "MODEL": "Redmi 4 (4X)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-4x.jpg"
+      },
+      {
+        "MODEL": "Mi 6",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-6.jpg"
+      },
+      {
+        "MODEL": "Mi Pad 3",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-pad-3-1.jpg"
+      },
+      {
+        "MODEL": "Mi 5c",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-5c.jpg"
+      },
+      {
+        "MODEL": "Redmi Note 4X",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-4x.jpg"
+      },
+      {
+        "MODEL": "Redmi Note 4",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-4-sn.jpg"
+      },
+      {
+        "MODEL": "Redmi 4A",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-4a-.jpg"
+      },
+      {
+        "MODEL": "Redmi 4 (China)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-4-prime-.jpg"
+      },
+      {
+        "MODEL": "Redmi 4 Prime",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-4-prime-new.jpg"
+      },
+      {
+        "MODEL": "Mi 6 Plus",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-6-plus.jpg"
+      },
+      {
+        "MODEL": "Mi Mix",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mix-.jpg"
+      },
+      {
+        "MODEL": "Mi Note 2",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-note2-.jpg"
+      },
+      {
+        "MODEL": "Mi 5s Plus",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-5s-plus.jpg"
+      },
+      {
+        "MODEL": "Mi 5s",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-5s1.jpg"
+      },
+      {
+        "MODEL": "Redmi Note 4 (MediaTek)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-4.jpg"
+      },
+      {
+        "MODEL": "Redmi Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-pro.jpg"
+      },
+      {
+        "MODEL": "Redmi 3x",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-3x.jpg"
+      },
+      {
+        "MODEL": "Redmi 3s Prime",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-3-pro-.jpg"
+      },
+      {
+        "MODEL": "Redmi 3s",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-3s.jpg"
+      },
+      {
+        "MODEL": "Redmi 3 Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-3-pro-.jpg"
+      },
+      {
+        "MODEL": "Mi 5",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-5.jpg"
+      },
+      {
+        "MODEL": "Mi Max",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-max-.jpg"
+      },
+      {
+        "MODEL": "Mi 4s",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-4s.jpg"
+      },
+      {
+        "MODEL": "Redmi Note 3",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-3.jpg"
+      },
+      {
+        "MODEL": "Redmi 3",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-3-.jpg"
+      },
+      {
+        "MODEL": "Redmi Note Prime",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-prime-.jpg"
+      },
+      {
+        "MODEL": "Mi Pad 2",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-pad-2.jpg"
+      },
+      {
+        "MODEL": "Redmi Note 3 (MediaTek)",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-3.jpg"
+      },
+      {
+        "MODEL": "Mi 4c",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-4c.jpg"
+      },
+      {
+        "MODEL": "Redmi Note 2",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-2--.jpg"
+      },
+      {
+        "MODEL": "Redmi 2 Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-2-prime-.jpg"
+      },
+      {
+        "MODEL": "Redmi 2 Prime",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-2-prime-.jpg"
+      },
+      {
+        "MODEL": "Mi 4i",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi4i.jpg"
+      },
+      {
+        "MODEL": "Mi Note Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-note-pro2.jpg"
+      },
+      {
+        "MODEL": "Mi Note",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-note-2015.jpg"
+      },
+      {
+        "MODEL": "Redmi 2A",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-2.jpg"
+      },
+      {
+        "MODEL": "Redmi 2",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-2.jpg"
+      },
+      {
+        "MODEL": "Mi 4 LTE",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-4-lte.jpg"
+      },
+      {
+        "MODEL": "Redmi Note 4G",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-4g.jpg"
+      },
+      {
+        "MODEL": "Mi 4",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-4.jpg"
+      },
+      {
+        "MODEL": "Mi Pad 7.9",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-pad-79.jpg"
+      },
+      {
+        "MODEL": "Redmi Note",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-new.jpg"
+      },
+      {
+        "MODEL": "Mi 3",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi3.jpg"
+      },
+      {
+        "MODEL": "Redmi 1S",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/Xiaomi-Hongmi-Redmi-1s.jpg"
+      },
+      {
+        "MODEL": "Redmi",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-hongmi.jpg"
+      },
+      {
+        "MODEL": "Mi 2A",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi2a.jpg"
+      },
+      {
+        "MODEL": "Mi 2S",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi2s.jpg"
+      },
+      {
+        "MODEL": "Mi 2",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi2.jpg"
+      },
+      {
+        "MODEL": "Mi 1S",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi1.jpg"
+      },
+      {
+        "MODEL": "Mi 6c",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/smartphone.jpg"
+      },
+      {
+        "MODEL": "Mi 9X",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mi-9-.jpg"
+      },
+      {
+        "MODEL": "Mi Max 4",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/smartphone.jpg"
+      },
+      {
+        "MODEL": "Mi Max 4 Pro",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/smartphone.jpg"
+      },
+      {
+        "MODEL": "Mi Note Plus",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/smartphone.jpg"
+      },
+      {
+        "MODEL": "Redmi Pro 2",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-pro-2-r1.jpg"
       }
     ]
   }
