@@ -114,7 +114,6 @@ namespace Onions
                     StartPosition = FormStartPosition.Manual,
                     Location = Loc,
                 };
-
                 mainForm.Show();
                 MainFormVisible.IsVisible = true;
             }
@@ -196,7 +195,25 @@ namespace Onions
             this.ShowInTaskbar = true;
             // Back in game
             WhatsMyStatus(mainForm.DevicesInService, mainForm.CompletedDevices);
+        }
 
+        private void LoginButton_Click(object sender, EventArgs e)
+        {
+            // fill the form save the company .
+        }
+
+        private void HeadForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+            NotificationIcon.Visible = false;
+            NotificationIcon.Dispose();
+
+        }
+
+        private void HeadForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            NotificationIcon.Visible = false;
+            NotificationIcon.Dispose();
 
         }
     }

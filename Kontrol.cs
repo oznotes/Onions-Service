@@ -42,5 +42,23 @@ namespace Onions
             }
         }
     }
+    public static class CorporateDetails
+    {
+        public static string ThisCompany
+        {
+            get
+            {
+                string[] lines = File.ReadAllLines(@"company.ini");
+                return lines.ToString();
+            }
+            set
+            {
+                using (StreamWriter writetext = new StreamWriter(@"company.ini"))
+                {
+                    writetext.Write(value);
+                }
+            }
+        }
+    }
 }
 

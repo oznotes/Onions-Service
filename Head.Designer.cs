@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HeadForm));
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -43,6 +43,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.LoginButton = new System.Windows.Forms.Button();
             this.SettingsBox = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SettingsOK = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.NotificationIcon = new System.Windows.Forms.NotifyIcon(this.components);
@@ -122,9 +123,9 @@
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column1.HeaderText = "Summary";
             this.Column1.Name = "Column1";
             this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -165,9 +166,11 @@
             this.LoginButton.TabIndex = 0;
             this.LoginButton.Text = "OK";
             this.LoginButton.UseVisualStyleBackColor = true;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // SettingsBox
             // 
+            this.SettingsBox.Controls.Add(this.label1);
             this.SettingsBox.Controls.Add(this.SettingsOK);
             this.SettingsBox.Controls.Add(this.comboBox1);
             this.SettingsBox.Enabled = false;
@@ -178,6 +181,15 @@
             this.SettingsBox.TabStop = false;
             this.SettingsBox.Text = "Settings";
             this.SettingsBox.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "NotRegistered";
             // 
             // SettingsOK
             // 
@@ -192,14 +204,14 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(5, 30);
+            this.comboBox1.Location = new System.Drawing.Point(5, 42);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(171, 21);
             this.comboBox1.TabIndex = 0;
             // 
-            // notifyIcon1
+            // NotificationIcon
             // 
-            this.NotificationIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.NotificationIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("NotificationIcon.Icon")));
             this.NotificationIcon.Text = "notifyIcon1";
             this.NotificationIcon.Visible = true;
             this.NotificationIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.NotificationIconDoubleClick);
@@ -221,12 +233,15 @@
             this.Name = "HeadForm";
             this.Text = "Onions Service";
             this.TopMost = true;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HeadForm_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.HeadForm_FormClosed);
             this.Load += new System.EventHandler(this.HeadForm_Load);
             this.Resize += new System.EventHandler(this.HeadForm_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.LoginBox.ResumeLayout(false);
             this.LoginBox.PerformLayout();
             this.SettingsBox.ResumeLayout(false);
+            this.SettingsBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -248,5 +263,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.NotifyIcon NotificationIcon;
+        private System.Windows.Forms.Label label1;
     }
 }
