@@ -28998,5 +28998,335 @@
         "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-pro-2-r1.jpg"
       }
     ]
+  },
+  {
+    "BRAND": "XOLO",
+
+    "MODELIST": [
+
+      {
+        "MODEL": "Era 2X",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/lava-xolo-2x.jpg"
+      },
+      {
+        "MODEL": "Era 2",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-era-2.jpg"
+      },
+      {
+        "MODEL": "Era 1X",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-era-1x.jpg"
+      },
+      {
+        "MODEL": "Era X",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-era-x.jpg"
+      },
+      {
+        "MODEL": "Era 4K",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-era-4k.jpg"
+      },
+      {
+        "MODEL": "Era 4G",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-era-4g-.jpg"
+      },
+      {
+        "MODEL": "One HD",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-one-hd.jpg"
+      },
+      {
+        "MODEL": "Black 3GB",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-black-3gb.jpg"
+      },
+      {
+        "MODEL": "Black 1X",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-black-1x.jpg"
+      },
+      {
+        "MODEL": "Black",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-black-2015.jpg"
+      },
+      {
+        "MODEL": "Era",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-era.jpg"
+      },
+      {
+        "MODEL": "Cube 5.0",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-cube-5.jpg"
+      },
+      {
+        "MODEL": "Prime",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-prime.jpg"
+      },
+      {
+        "MODEL": "LT2000",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-2000.jpg"
+      },
+      {
+        "MODEL": "A1010",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-1010.jpg"
+      },
+      {
+        "MODEL": "Win Q1000",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q1000.jpg"
+      },
+      {
+        "MODEL": "8X-1020",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-8x-1020.jpg"
+      },
+      {
+        "MODEL": "Q700 Club",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-700.jpg"
+      },
+      {
+        "MODEL": "Q520s",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-520s.jpg"
+      },
+      {
+        "MODEL": "Q900s Plus",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q900s-plus.jpg"
+      },
+      {
+        "MODEL": "Omega 5.5",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-omega-55.jpg"
+      },
+      {
+        "MODEL": "Omega 5.0",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-omega-5.jpg"
+      },
+      {
+        "MODEL": "Opus 3",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-opus-3.jpg"
+      },
+      {
+        "MODEL": "Q710s",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q710s.jpg"
+      },
+      {
+        "MODEL": "Q1020",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q1020.jpg"
+      },
+      {
+        "MODEL": "One",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-one.jpg"
+      },
+      {
+        "MODEL": "Q2100",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q2100.jpg"
+      },
+      {
+        "MODEL": "Opus HD",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-opus-hd.jpg"
+      },
+      {
+        "MODEL": "Play 8X-1100",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-8x-1100.jpg"
+      },
+      {
+        "MODEL": "Q510s",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q510s.jpg"
+      },
+      {
+        "MODEL": "Q700s plus",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q700s-plus.jpg"
+      },
+      {
+        "MODEL": "Q1000s plus",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q1000s-plus.jpg"
+      },
+      {
+        "MODEL": "Q610s",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q610s.jpg"
+      },
+      {
+        "MODEL": "A1000s",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-a1000s.jpg"
+      },
+      {
+        "MODEL": "Play 8X-1200",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-8x-1200.jpg"
+      },
+      {
+        "MODEL": "Hive 8X-1000",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/XOLO-8X-1000.jpg"
+      },
+      {
+        "MODEL": "A550S IPS",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-a550s.jpg"
+      },
+      {
+        "MODEL": "Q900s",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q900s.jpg"
+      },
+      {
+        "MODEL": "Q500s IPS",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q500s.jpg"
+      },
+      {
+        "MODEL": "A700s",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-a700s.jpg"
+      },
+      {
+        "MODEL": "Play 6X-1000",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-play-1000.jpg"
+      },
+      {
+        "MODEL": "Q2000L",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q2000l.jpg"
+      },
+      {
+        "MODEL": "Win Q900s",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q900s-win.jpg"
+      },
+      {
+        "MODEL": "Q1000 Opus2",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q1000-opus2-new.jpg"
+      },
+      {
+        "MODEL": "Q1011",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q1011.jpg"
+      },
+      {
+        "MODEL": "Q1200",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q1200.jpg"
+      },
+      {
+        "MODEL": "Q600s",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q600s.jpg"
+      },
+      {
+        "MODEL": "A500S Lite",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-a500s-lite.jpg"
+      },
+      {
+        "MODEL": "Q900T",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q900t.jpg"
+      },
+      {
+        "MODEL": "Q1010i",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q1010i.jpg"
+      },
+      {
+        "MODEL": "A510s",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-a510s.jpg"
+      },
+      {
+        "MODEL": "Q2500",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q2500.jpg"
+      },
+      {
+        "MODEL": "A500 Club",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-a500.jpg"
+      },
+      {
+        "MODEL": "Q1010",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q1010.jpg"
+      },
+      {
+        "MODEL": "Q1100",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/lava-xolo-q1100.jpg"
+      },
+      {
+        "MODEL": "Q700s",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q700s.jpg"
+      },
+      {
+        "MODEL": "Q3000",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q3000.jpg"
+      },
+      {
+        "MODEL": "Q1000 Opus",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q1000-opus.jpg"
+      },
+      {
+        "MODEL": "LT900",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-lt900.jpg"
+      },
+      {
+        "MODEL": "Play Tegra Note",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-tegra.jpg"
+      },
+      {
+        "MODEL": "Q500",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q500.jpg"
+      },
+      {
+        "MODEL": "Q800 X-Edition",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q800x.jpg"
+      },
+      {
+        "MODEL": "A500S IPS",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/lava-xolo-a500s.jpg"
+      },
+      {
+        "MODEL": "Q2000",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/lava-xolo-q2000.jpg"
+      },
+      {
+        "MODEL": "Q900",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q900.jpg"
+      },
+      {
+        "MODEL": "A600",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-a600.jpg"
+      },
+      {
+        "MODEL": "A500L",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-a500l.jpg"
+      },
+      {
+        "MODEL": "Q700i",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q700i.jpg"
+      },
+      {
+        "MODEL": "Play Tab 7.0",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-play-tab.jpg"
+      },
+      {
+        "MODEL": "Tab",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-tab-1.jpg"
+      },
+      {
+        "MODEL": "Q1000s",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-q1000s.jpg"
+      },
+      {
+        "MODEL": "A500S",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-a500s.jpg"
+      },
+      {
+        "MODEL": "Play",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/xolo-play.jpg"
+      },
+      {
+        "MODEL": "Q600",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/lava-xolo-q600.jpg"
+      },
+      {
+        "MODEL": "X1000",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/lava-x1000.jpg"
+      },
+      {
+        "MODEL": "X910",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/lava-x910.jpg"
+      },
+      {
+        "MODEL": "X500",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/lava-x500.jpg"
+      },
+      {
+        "MODEL": "Q1000",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/lava-q1000.jpg"
+      },
+      {
+        "MODEL": "Q800",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/lava-q800.jpg"
+      },
+      {
+        "MODEL": "Q700",
+        "URLIMAGE": "https://fdn2.gsmarena.com/vv/bigpic/lava-q700.jpg"
+      }
+
+
+    ]
   }
+
 ]
