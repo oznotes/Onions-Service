@@ -74,15 +74,56 @@ namespace Onions
             }
         }
 
+        private bool ValidateFields()
+        {
+            var controls = new[]
+            {
+                cmpName,
+                cmpAddress,
+                cmpPhoneNumber,
+                cmpLogo,
+            };
+
+            foreach (var control in controls.Where(e => String.IsNullOrWhiteSpace(e.Text)))
+            {
+                ShakeIT(control);
+                return false;
+            }
+            return true;
+        }
+
+        private void ShakeIT(TextBox control)
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                Point one = new Point(control.Location.X + 3, control.Location.Y);
+                control.Location = one;
+                control.Update();
+                System.Threading.Thread.Sleep(25);
+                Point two = new Point(control.Location.X - 6, control.Location.Y);
+                control.Location = two;
+                control.Update();
+                System.Threading.Thread.Sleep(25);
+                Point three = new Point(control.Location.X + 3, control.Location.Y);
+                control.Location = three;
+                control.Update();
+                System.Threading.Thread.Sleep(25);
+            }
+        }
+
         private void saveButton_Click(object sender, EventArgs e)
         {
-            var CompanyDetails =  cmpName.Text + '\n' + cmpAddress.Text + '\n' + cmpPhoneNumber.Text + '\n' + cmpLogo.Text;
-            
-            //checked the form elements
-
-            CorporateDetails.ThisCompany = CompanyDetails;
-            DisableFormItems();
-            this.Hide();
+            if (!ValidateFields())
+            {
+             
+            }
+            else
+            {
+                var CompanyDetails = cmpName.Text + '\n' + cmpAddress.Text + '\n' + cmpPhoneNumber.Text + '\n' + cmpLogo.Text;
+                CorporateDetails.ThisCompany = CompanyDetails;
+                DisableFormItems();
+                this.Hide();
+            }
         }
 
         private void cmpLogo_DoubleClick(object sender, EventArgs e)
@@ -148,7 +189,6 @@ namespace Onions
                         }
                     }
                 }
-
             }
 
             cmpLogo.ForeColor = Color.Black;
