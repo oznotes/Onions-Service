@@ -69,7 +69,6 @@ namespace Onions
                     return;
                 }
                 cmpLogo.ForeColor = Color.Black;
-
                 DisableFormItems();
             }
         }
@@ -171,12 +170,11 @@ namespace Onions
                 else
                 {
                     // no file selected so ?
-                    // this is not handled here .
                 }
             }
             else
             {
-                // dialog click cancel.
+                ShakeIT(cmpLogo);
                 Bitmap bm = new Bitmap(pictureBox1.Width, pictureBox1.Height);
                 using (Graphics g = Graphics.FromImage(bm))
                 {
@@ -275,6 +273,5 @@ namespace Onions
                 //DisableFormItems();
             }
         }
-
     }
 }
