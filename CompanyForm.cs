@@ -134,7 +134,7 @@ namespace Onions
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 string directoryPath = Path.GetDirectoryName(openFileDialog1.FileName);
-                string destFile = AppDomain.CurrentDomain.BaseDirectory + "Companylogo.jpg";
+                string destFile = AppDomain.CurrentDomain.BaseDirectory + openFileDialog1.SafeFileName;
                 if (openFileDialog1.FileName.Length != 0)
                 {
                     try
