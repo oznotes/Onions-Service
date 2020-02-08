@@ -134,7 +134,7 @@ namespace Onions
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 string directoryPath = Path.GetDirectoryName(openFileDialog1.FileName);
-                cmpLogo.Text = openFileDialog1.FileName;
+                string destFile = AppDomain.CurrentDomain.BaseDirectory + "Companylogo.jpg";
                 if (openFileDialog1.FileName.Length != 0)
                 {
                     try
@@ -153,6 +153,8 @@ namespace Onions
                             pictureBox1.Image = img;
                             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
                         }
+                        File.Copy(openFileDialog1.FileName, destFile, true);
+                        cmpLogo.Text = destFile;
                     }
                     catch (Exception ex)
                     {
