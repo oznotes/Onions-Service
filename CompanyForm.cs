@@ -27,19 +27,49 @@ namespace Onions
                 cmpAddress.Text = CompanyDetails[1];
                 cmpPhoneNumber.Text = CompanyDetails[2];
                 cmpLogo.Text = CompanyDetails[3];
-                Bitmap img = new Bitmap(CompanyDetails[3]);
-                var imageHeight = img.Height;
-                var imageWidth = img.Width;
-                if (imageHeight > 128)
+                try
                 {
-                    pictureBox1.Image = img;
-                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    Bitmap img = new Bitmap(CompanyDetails[3]);
+                    var imageHeight = img.Height;
+                    var imageWidth = img.Width;
+                    if (imageHeight > 128)
+                    {
+                        pictureBox1.Image = img;
+                        pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    }
+                    else
+                    {
+                        pictureBox1.Image = img;
+                        pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+                    }
+
                 }
-                else
+                catch(Exception ex)
                 {
-                    pictureBox1.Image = img;
-                    pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+                    cmpLogo.ForeColor = Color.OrangeRed;
+                    cmpLogo.Text = "Double Click to select the Logo";
+                    Bitmap bm = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+                    using (Graphics g = Graphics.FromImage(bm))
+                    {
+                        using (SolidBrush myBrush = new SolidBrush(Color.Black))
+                        {
+                            using (Font myFont = new Font("Arial", 14))
+                            {
+                                g.DrawString("Company \n Logo.", myFont, myBrush, 10, 10);
+                                pictureBox1.Image = bm;
+                            }
+                        }
+                    }
+
+                    string message = "Load picture error\nMessage : " + ex.ToString();
+                    string title = "Error Message: ";
+                    MessageBoxButtons buttons = MessageBoxButtons.OK;
+
+                    MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning);
+                    return;
                 }
+                cmpLogo.ForeColor = Color.Black;
+
                 DisableFormItems();
             }
         }
@@ -65,23 +95,63 @@ namespace Onions
             {
                 string directoryPath = Path.GetDirectoryName(openFileDialog1.FileName);
                 cmpLogo.Text = openFileDialog1.FileName;
-                Bitmap img = new Bitmap(openFileDialog1.FileName);
-                var imageHeight = img.Height;
-                var imageWidth = img.Width;
-                if (imageHeight>128)
+                if (openFileDialog1.FileName.Length != 0)
                 {
-                    pictureBox1.Image = img;
-                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    try
+                    {
+                        Bitmap img = new Bitmap(openFileDialog1.FileName);
+                        var imageHeight = img.Height;
+                        var imageWidth = img.Width;
+                        if (imageHeight > 128)
+                        {
+                            pictureBox1.Image = img;
+                            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+
+                        }
+                        else
+                        {
+                            pictureBox1.Image = img;
+                            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        cmpLogo.ForeColor = Color.OrangeRed;
+                        cmpLogo.Text = "Double Click to select the Logo";
+                        string message = "Load picture error\nMessage : " + ex.ToString();
+                        string title = "Error Message: ";
+                        MessageBoxButtons buttons = MessageBoxButtons.OK;
+
+                        MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning);
+                        return;
+                    }
 
                 }
                 else
                 {
-                    pictureBox1.Image = img;
-                    pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+                    // no file selected so ?
+                    // this is not handled here .
                 }
-                Console.WriteLine(imageHeight.ToString());
-                Console.WriteLine(imageWidth.ToString());
             }
+            else
+            {
+                // dialog click cancel.
+                Bitmap bm = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+                using (Graphics g = Graphics.FromImage(bm))
+                {
+                    using (SolidBrush myBrush = new SolidBrush(Color.Black))
+                    {
+                        using (Font myFont = new Font("Arial", 14))
+                        {
+                            g.DrawString("Company \n Logo.", myFont, myBrush, 10, 10);
+                            pictureBox1.Image = bm;
+                        }
+                    }
+                }
+
+            }
+
+            cmpLogo.ForeColor = Color.Black;
         }
 
         private void CompanyForm_FormClosing(object sender, FormClosingEventArgs e)
