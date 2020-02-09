@@ -11,7 +11,7 @@ using iMobileDevice;
 using iMobileDevice.iDevice;
 using iMobileDevice.Lockdown;
 using iMobileDevice.Plist;
-
+using System.Drawing;
 
 namespace Onions
 {
@@ -134,6 +134,25 @@ namespace Onions
             set { customerID = value; }
         }
 
+        private void ShakeIT(TextBox control)
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                Point one = new Point(control.Location.X + 3, control.Location.Y);
+                control.Location = one;
+                control.Update();
+                System.Threading.Thread.Sleep(25);
+                Point two = new Point(control.Location.X - 6, control.Location.Y);
+                control.Location = two;
+                control.Update();
+                System.Threading.Thread.Sleep(25);
+                Point three = new Point(control.Location.X + 3, control.Location.Y);
+                control.Location = three;
+                control.Update();
+                System.Threading.Thread.Sleep(25);
+            }
+        }
+
         public void EditMode (bool mode=false)
         {
             if (mode)
@@ -142,6 +161,7 @@ namespace Onions
                 button1.Enabled = false;
                 editEnabled = true;
                 PrintButton.Visible = true;
+                label5.Text = customerID.ToString().PadLeft(8, '0');
             }
         }
 
@@ -215,6 +235,7 @@ namespace Onions
 
             foreach (var control in controls.Where(e => String.IsNullOrWhiteSpace(e.Text)))
             {
+                ShakeIT(control);
                 return false;
             }
             return true;
@@ -681,6 +702,70 @@ namespace Onions
         private void TextBoxDeviceModel_TextChanged(object sender, EventArgs e)
         {
             LoadPictureSequence();
+        }
+
+        private void PrintButton_Click(object sender, EventArgs e)
+        {
+            TopMost = false;
+            printDialog1.Document = printDocument1;
+            if (printDialog1.ShowDialog()==DialogResult.OK)
+            {
+                printDocument1.Print();
+            }
+        }
+        #region Fonts
+        private Font _titleFont = new Font(FontFamily.GenericSansSerif, 18, FontStyle.Bold);
+        public Font TitleFont => _titleFont;
+
+        private Font _headerFont = new Font(FontFamily.GenericSansSerif, 12, FontStyle.Regular);
+        public Font HeaderFont => _headerFont;
+
+        private Font _regularFont = new Font(FontFamily.GenericSansSerif, 10, FontStyle.Regular);
+        public Font RegularFont => _regularFont;
+
+        private Font _boldFont = new Font(FontFamily.GenericSansSerif, 10, FontStyle.Bold);
+        public Font BoldFont => _boldFont;
+
+        #endregion
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            var CompanyDetails = CorporateDetails.ThisCompany.Split('\n');
+            var cmpName = CompanyDetails[0];
+            var cmpAddress = CompanyDetails[1];
+            var cmpPhoneNumber = CompanyDetails[2];
+            var cmpLogo = CompanyDetails[3];
+
+            Image i = Image.FromFile(cmpLogo);
+
+            string today = DateTime.Today.ToString("dd/MM/yyyy");
+
+
+
+            #region printing
+            // in order to make language i need to use all variables .
+
+            e.Graphics.DrawString("Service Receipt", TitleFont, Brushes.Black, new RectangleF(0, 20, e.PageBounds.Width, 40), new StringFormat() { Alignment = StringAlignment.Center });
+            e.Graphics.DrawImage(i, 40, 10, 110, 110);
+            e.Graphics.DrawString(cmpName, HeaderFont, Brushes.Black, new RectangleF(0, 60, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Center });
+            e.Graphics.DrawString(cmpAddress + " " + cmpPhoneNumber, RegularFont, Brushes.Black, new RectangleF(0, 80, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Center });
+            e.Graphics.DrawLine(new Pen(Color.Gray, 1), new Point(20, 100), new Point(800, 100));
+            e.Graphics.DrawString("Receipt No: ", HeaderFont, Brushes.Black, new RectangleF(40, 130, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString(customerID.ToString().PadLeft(8, '0'), RegularFont, Brushes.DimGray, new RectangleF(150, 130, e.PageBounds.Width, 30), new StringFormat() { Alignment = StringAlignment.Near }); ;
+            e.Graphics.DrawString("Customer : " , RegularFont, Brushes.Black, new RectangleF(240, 130, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString(textBoxFirstName.Text + " " + textBoxLastName.Text, RegularFont, Brushes.Black, new RectangleF(240, 150, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString(textBoxPhoneNumber.Text, RegularFont, Brushes.Black, new RectangleF(240, 170, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString("Device Details : " , RegularFont, Brushes.Black, new RectangleF(440, 130, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString("Device : " + textBoxDeviceBrand.Text + " " + textBoxDeviceModel.Text, RegularFont, Brushes.Black, new RectangleF(440, 150, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString("IMEI : " + textBoxDeviceIMEI.Text , RegularFont, Brushes.Black, new RectangleF(440, 170, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString("Problem : " + textBoxDeviceProblem.Text, RegularFont, Brushes.Black, new RectangleF(440, 190, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString("Price : ", RegularFont, Brushes.Black, new RectangleF(440, 210, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString(textBoxPrice.Text, RegularFont, Brushes.DimGray, new RectangleF(520, 210, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString(today, HeaderFont, Brushes.Black, new RectangleF(680, 130, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawLine(new Pen(Color.Gray, 1), new Point(20, 250), new Point(800, 250));
+
+            #endregion
+
         }
     }
 }

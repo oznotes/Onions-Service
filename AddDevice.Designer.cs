@@ -51,8 +51,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.PrintButton = new System.Windows.Forms.Button();
             this.Add = new System.Windows.Forms.Button();
-            this.circularProgressBar1 = new CircularProgressBar();
             this.picDeviceModel = new System.Windows.Forms.PictureBox();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.circularProgressBar1 = new CircularProgressBar();
+            this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDeviceModel)).BeginInit();
             this.SuspendLayout();
@@ -184,6 +187,7 @@
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(259, 20);
             this.textBoxFirstName.TabIndex = 3;
+            this.textBoxFirstName.Text = "        ";
             // 
             // textBoxLastName
             // 
@@ -311,6 +315,7 @@
             this.PrintButton.TabIndex = 14;
             this.PrintButton.UseVisualStyleBackColor = true;
             this.PrintButton.Visible = false;
+            this.PrintButton.Click += new System.EventHandler(this.PrintButton_Click);
             // 
             // Add
             // 
@@ -323,6 +328,24 @@
             this.Add.Text = "ADD";
             this.Add.UseVisualStyleBackColor = false;
             this.Add.Click += new System.EventHandler(this.Add_Click);
+            // 
+            // picDeviceModel
+            // 
+            this.picDeviceModel.Image = global::Onions.Properties.Resources.test;
+            this.picDeviceModel.Location = new System.Drawing.Point(5, 3);
+            this.picDeviceModel.Name = "picDeviceModel";
+            this.picDeviceModel.Size = new System.Drawing.Size(212, 289);
+            this.picDeviceModel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDeviceModel.TabIndex = 1;
+            this.picDeviceModel.TabStop = false;
+            // 
+            // printDialog1
+            // 
+            this.printDialog1.UseEXDialog = true;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
             // circularProgressBar1
             // 
@@ -345,15 +368,13 @@
             this.circularProgressBar1.Text = "circularProgressBar1";
             this.circularProgressBar1.Value = ((long)(0));
             // 
-            // picDeviceModel
+            // label5
             // 
-            this.picDeviceModel.Image = global::Onions.Properties.Resources.test;
-            this.picDeviceModel.Location = new System.Drawing.Point(5, 3);
-            this.picDeviceModel.Name = "picDeviceModel";
-            this.picDeviceModel.Size = new System.Drawing.Size(212, 289);
-            this.picDeviceModel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picDeviceModel.TabIndex = 1;
-            this.picDeviceModel.TabStop = false;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(82, 299);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 13);
+            this.label5.TabIndex = 2;
             // 
             // AddDeviceForm
             // 
@@ -362,6 +383,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(575, 321);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.picDeviceModel);
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
@@ -379,6 +401,7 @@
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDeviceModel)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -408,5 +431,8 @@
         private System.Windows.Forms.Button PrintButton;
         private System.Windows.Forms.TextBox textBoxPrice;
         private System.Windows.Forms.Label PriceLabel;
+        private System.Windows.Forms.PrintDialog printDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.Label label5;
     }
 }
