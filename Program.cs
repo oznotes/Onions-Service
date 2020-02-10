@@ -16,7 +16,9 @@ namespace Onions
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HeadForm());
+            SingleInstance.SingleApplication.Run(new HeadForm());
+
+            //Application.Run(new HeadForm());
         }
     }
 }

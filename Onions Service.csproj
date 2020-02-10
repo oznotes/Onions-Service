@@ -141,6 +141,7 @@
     <Compile Include="searchDialog.Designer.cs">
       <DependentUpon>searchDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="SingleApplication.cs" />
     <EmbeddedResource Include="AddDevice.resx">
       <DependentUpon>AddDevice.cs</DependentUpon>
     </EmbeddedResource>
