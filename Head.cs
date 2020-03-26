@@ -1,26 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Resources;
 using System.Configuration;
+using System.Drawing;
+using System.Resources;
 using System.Windows.Forms;
 
 namespace Onions
 {
-
     public partial class HeadForm : Form
     {
-        MainForm mainForm = new MainForm();
-        CompanyForm cmpForm = new CompanyForm();
-        AddDeviceForm addfrm = new AddDeviceForm();
+        private MainForm mainForm = new MainForm();
+        private CompanyForm cmpForm = new CompanyForm();
+        private AddDeviceForm addfrm = new AddDeviceForm();
 
-        string DevicesInService { get; set; } = "Devices in Service";
-        string DevicesInCompleted { get; set; } = "Devices in Completed";
+        private string DevicesInService { get; set; } = "Devices in Service";
+        private string DevicesInCompleted { get; set; } = "Devices in Completed";
         public string stDeviceInService { get; set; }
 
         public HeadForm()
@@ -40,7 +33,7 @@ namespace Onions
                 if (!string.IsNullOrWhiteSpace(Language))
                 {
                     using (ResXResourceSet x = new ResXResourceSet(Language))
-                    {                       
+                    {
                         DevicesInService = x.GetString("DevicesInService");
                         DevicesInCompleted = x.GetString("DevicesInCompleted");
                         dataGridView1.Columns["Column1"].HeaderText = x.GetString("Summary");
@@ -54,9 +47,9 @@ namespace Onions
             dataGridView1.RowHeadersVisible = false;
             WhatsMyStatus(mainForm.DevicesInService, mainForm.CompletedDevices);
         }
-               
+
         public void WhatsMyStatus(int Service, int Completed)
-        { 
+        {
             if (dataGridView1.RowCount > 0)
                 dataGridView1.Rows.Clear();
 
@@ -66,7 +59,6 @@ namespace Onions
 
         private void HomeButton_Click(object sender, EventArgs e)
         {
-
         }
 
         private void StartAddDevice(object sender, EventArgs e)
@@ -138,19 +130,17 @@ namespace Onions
             }
             else
             {
-
             }
-            if (CorporateDetails.ThisCompany.Length!=0)
+            if (CorporateDetails.ThisCompany.Length != 0)
             {
                 var companyRegistered = CorporateDetails.ThisCompany.Split('\n');
                 label1.Text = companyRegistered[0];
                 //label1.Enabled = false;
             }
 
-            this.WindowState  = FormWindowState.Minimized;
+            this.WindowState = FormWindowState.Minimized;
             this.Visible = false;
             this.ShowInTaskbar = false;
-
         }
 
         private void SettingsOK_Click(object sender, EventArgs e)
@@ -171,12 +161,10 @@ namespace Onions
                 }
                 else if (dialogResult == DialogResult.Cancel)
                 {
-
                 }
             }
             else
             {
-
             }
         }
 

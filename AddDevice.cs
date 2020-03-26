@@ -1,39 +1,39 @@
-﻿using System;
-using System.Linq;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Windows.Forms;
-using System.Resources;
-using System.Configuration;
-using Newtonsoft.Json;
-using SharpAdbClient;
-using iMobileDevice;
+﻿using iMobileDevice;
 using iMobileDevice.iDevice;
 using iMobileDevice.Lockdown;
 using iMobileDevice.Plist;
+using Newtonsoft.Json;
+using SharpAdbClient;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Configuration;
 using System.Drawing;
+using System.Linq;
+using System.Resources;
+using System.Windows.Forms;
 
 namespace Onions
 {
     public partial class AddDeviceForm : Form
     {
-        const string SqlInsertStament = "INSERT INTO Customer (Firstname,Lastname,PhoneNumber,Email,Brand,Model,IMEI,Problem,Price,Status,CreationDate) VALUES ({0})";
-        const string SqlUpdateStament = "UPDATE Customer SET Firstname = '{0}', Lastname = '{1}',PhoneNumber = '{2}',Email = '{3}',Brand = '{4}',Model = '{5}',IMEI = '{6}',Problem = '{7}',Price = '{8}',Status = '{9}',UpdateDate = '{10}' WHERE IdCustomer = {11}";
+        private const string SqlInsertStament = "INSERT INTO Customer (Firstname,Lastname,PhoneNumber,Email,Brand,Model,IMEI,Problem,Price,Status,CreationDate) VALUES ({0})";
+        private const string SqlUpdateStament = "UPDATE Customer SET Firstname = '{0}', Lastname = '{1}',PhoneNumber = '{2}',Email = '{3}',Brand = '{4}',Model = '{5}',IMEI = '{6}',Problem = '{7}',Price = '{8}',Status = '{9}',UpdateDate = '{10}' WHERE IdCustomer = {11}";
 
-        const string Status = "devices";
+        private const string Status = "devices";
         private bool editEnabled = false;
         public int customerID;
 
-        string UpdateOption { get; set; } = "Update";
-        string CompleteForm { get; set; } = "Complete Form";
-        string CreateCustomer { get; set; } = "Create Customer";
-        string UpdateCustomer { get; set; } = "Update Customer";
+        private string UpdateOption { get; set; } = "Update";
+        private string CompleteForm { get; set; } = "Complete Form";
+        private string CreateCustomer { get; set; } = "Create Customer";
+        private string UpdateCustomer { get; set; } = "Update Customer";
 
         public AddDeviceForm()
-        {  
+        {
             InitializeComponent();
 
-            string Language = string.Empty;            
+            string Language = string.Empty;
 
             try
             {
@@ -58,12 +58,11 @@ namespace Onions
                         label7.Text = x.GetString("IMEI") + ":";
                         label8.Text = x.GetString("Problem") + ":";
                         PriceLabel.Text = x.GetString("Price") + ":";
-                        label9.Text = x.GetString("Customer");       
+                        label9.Text = x.GetString("Customer");
                         Add.Text = x.GetString("Add");
                         this.Text = x.GetString("AddDeviceFormTitle");
                         UpdateOption = x.GetString("UpdateOption");
                         CompleteForm = x.GetString("CompleteForm");
-                        
                     }
                 }
             }
@@ -153,7 +152,7 @@ namespace Onions
             }
         }
 
-        public void EditMode (bool mode=false)
+        public void EditMode(bool mode = false)
         {
             if (mode)
             {
@@ -205,11 +204,11 @@ namespace Onions
                 else
                 {
                     try
-                    {                       
-                        string today = DateTime.Today.ToString("dd/MM/yyyy");                   
+                    {
+                        string today = DateTime.Today.ToString("dd/MM/yyyy");
 
                         //Create Sql Insert Command and insert the data in database
-                        DatabaseAccess.fnSetConexion(string.Format(SqlUpdateStament, textBoxFirstName.Text,textBoxLastName.Text, textBoxPhoneNumber.Text, textBoxeMail.Text, textBoxDeviceBrand.Text, textBoxDeviceModel.Text, textBoxDeviceIMEI.Text, textBoxDeviceProblem.Text, textBoxPrice.Text, Status, today, CustomerID)).ExecuteNonQuery();
+                        DatabaseAccess.fnSetConexion(string.Format(SqlUpdateStament, textBoxFirstName.Text, textBoxLastName.Text, textBoxPhoneNumber.Text, textBoxeMail.Text, textBoxDeviceBrand.Text, textBoxDeviceModel.Text, textBoxDeviceIMEI.Text, textBoxDeviceProblem.Text, textBoxPrice.Text, Status, today, CustomerID)).ExecuteNonQuery();
                         this.Close();
                     }
                     catch (Exception Ex)
@@ -219,10 +218,11 @@ namespace Onions
                 }
             }
         }
+
         // Validate form fields.
         private bool ValidateFields()
         {
-            var controls = new[] 
+            var controls = new[]
             {
                 textBoxFirstName,
                 textBoxLastName,
@@ -240,6 +240,7 @@ namespace Onions
             }
             return true;
         }
+
         private void TextBoxDeviceModel_MouseClick(object sender, MouseEventArgs e)
         {
             textBoxDeviceBrand.Enabled = false;
@@ -261,11 +262,13 @@ namespace Onions
             }
             textBoxDeviceBrand.Enabled = true;
         }
+
         private void TextBoxDeviceBrand_TextChanged(object sender, EventArgs e)
         {
             textBoxDeviceModel.Text = string.Empty;
             textBoxDeviceModel.AutoCompleteCustomSource.Clear();
         }
+
         private void TextBoxDeviceModel_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -273,6 +276,7 @@ namespace Onions
                 LoadPictureSequence();
             }
         }
+
         private void LoadDevices()
         {
             var Response = System.IO.File.ReadAllText(string.Concat(Environment.CurrentDirectory, @"\", "Devices.json"));
@@ -282,6 +286,7 @@ namespace Onions
                 textBoxDeviceBrand.AutoCompleteCustomSource.Add(device.BRAND);
             }
         }
+
         private void LoadPictureSequence()
         {
             var Response = System.IO.File.ReadAllText(string.Concat(Environment.CurrentDirectory, @"\", "Devices.json"));
@@ -311,6 +316,7 @@ namespace Onions
                 }
             }
         }
+
         private static int Mod10(string kid)
         {
             bool isOne = false;
@@ -328,6 +334,7 @@ namespace Onions
             }
             return (10 - (controlNumber % 10)) % 10 == 0 ? 0 : 10 - (controlNumber % 10);
         }
+
         private void LuhnUI()
         {
             string IMEI;
@@ -353,10 +360,12 @@ namespace Onions
                 label7.ForeColor = System.Drawing.Color.Black;
             }
         }
+
         private void TextBoxDeviceIMEI_TextChanged(object sender, EventArgs e)
         {
             LuhnUI();
         }
+
         private void TextBoxDeviceIMEI_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
@@ -364,6 +373,7 @@ namespace Onions
                 e.Handled = true;
             }
         }
+
         private void ShowOFF()
         {
             for (int i = 0; i < 10000; i++)
@@ -371,6 +381,7 @@ namespace Onions
                 Math.Pow(4, i);
             }
         }
+
         private void Failed()
         {
             circularProgressBar1.Value = 0;
@@ -384,6 +395,7 @@ namespace Onions
                 ShowOFF();
             }
         }
+
         private bool iDeviceCheck()
         {
             circularProgressBar1.Value = 0;
@@ -403,7 +415,7 @@ namespace Onions
             var idevice = LibiMobileDevice.Instance.iDevice;
             var lockdown = LibiMobileDevice.Instance.Lockdown;
             var ret = idevice.idevice_get_device_list(out ReadOnlyCollection<string> udids, ref count);
-            // iDevice Count == 0 
+            // iDevice Count == 0
             if (count == 0)
             {
                 Failed();
@@ -414,9 +426,10 @@ namespace Onions
                 return true;
             }
         }
+
         private bool ADBCheck()
         {
-            //try adb - not success 
+            //try adb - not success
             AdbServer server = new AdbServer();
             circularProgressBar1.Value = 0;
             circularProgressBar1.ProgressColor1 = System.Drawing.Color.GreenYellow;
@@ -439,7 +452,7 @@ namespace Onions
             catch (Exception ex)
             {
                 // There is no android adb device.
-                if ( ex is System.ArgumentNullException || ex is System.NullReferenceException )
+                if (ex is System.ArgumentNullException || ex is System.NullReferenceException)
                 {
                     // simply pass.
                 }
@@ -447,6 +460,7 @@ namespace Onions
                 return false;
             }
         }
+
         private void Button1_Click(object sender, EventArgs e)
         {
             //bool DeviceFound = false;
@@ -473,8 +487,7 @@ namespace Onions
                     string manufacturer = @"getprop ro.product.manufacturer";
                     string model = @"getprop ro.product.model";
 
-
-                    //Instance.ExecuteRemoteCommand is adb shell -> 
+                    //Instance.ExecuteRemoteCommand is adb shell ->
                     AdbClient.Instance.ExecuteRemoteCommand(manufacturer, device, receiver);
                     AdbClient.Instance.ExecuteRemoteCommand(model, device, receiver);
                     AdbClient.Instance.ExecuteRemoteCommand(imei[1], device, receiver);
@@ -490,25 +503,23 @@ namespace Onions
 
                         var intIMEI = Int32.Parse(s[2].Trim());
                         textBoxDeviceIMEI.Text = s[2].Trim();
-
                     }
                     catch (Exception)
                     {
-                        // New Version Android 
+                        // New Version Android
 
                         AdbClient.Instance.ExecuteRemoteCommand(imei[2], device, receiver);
                         received = receiver.ToString().ToUpper();
                         s = new List<string>(received.Split(new string[] { "\n" }, StringSplitOptions.None));
 
                         string method1IMEI = ExtractIMEIfromMethod2(s);
-                        if (method1IMEI!="-1")
+                        if (method1IMEI != "-1")
                         {
                             textBoxDeviceIMEI.Text = method1IMEI.Trim();
                         }
                         else
                         {
                             //ASUS ZENFONE
-
                         }
                     }
 
@@ -644,7 +655,7 @@ namespace Onions
 
                             //Place data in textboxes
                             textBoxDeviceIMEI.Text = IMEI.Trim();
-                            if(data.TryGetValue(ProductType.Trim(),out string FProductType))
+                            if (data.TryGetValue(ProductType.Trim(), out string FProductType))
                             {
                                 textBoxDeviceBrand.Text = "APPLE";
                                 textBoxDeviceModel.Text = FProductType;
@@ -708,12 +719,14 @@ namespace Onions
         {
             TopMost = false;
             printDialog1.Document = printDocument1;
-            if (printDialog1.ShowDialog()==DialogResult.OK)
+            if (printDialog1.ShowDialog() == DialogResult.OK)
             {
                 printDocument1.Print();
             }
         }
+
         #region Fonts
+
         private Font _titleFont = new Font(FontFamily.GenericSansSerif, 18, FontStyle.Bold);
         public Font TitleFont => _titleFont;
 
@@ -726,7 +739,7 @@ namespace Onions
         private Font _boldFont = new Font(FontFamily.GenericSansSerif, 10, FontStyle.Bold);
         public Font BoldFont => _boldFont;
 
-        #endregion
+        #endregion Fonts
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
@@ -740,9 +753,8 @@ namespace Onions
 
             string today = DateTime.Today.ToString("dd/MM/yyyy");
 
-
-
             #region printing
+
             // in order to make language i need to use all variables .
 
             e.Graphics.DrawString("Service Receipt", TitleFont, Brushes.Black, new RectangleF(0, 20, e.PageBounds.Width, 40), new StringFormat() { Alignment = StringAlignment.Center });
@@ -752,20 +764,19 @@ namespace Onions
             e.Graphics.DrawLine(new Pen(Color.Gray, 1), new Point(20, 100), new Point(800, 100));
             e.Graphics.DrawString("Receipt No: ", HeaderFont, Brushes.Black, new RectangleF(40, 130, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
             e.Graphics.DrawString(customerID.ToString().PadLeft(8, '0'), RegularFont, Brushes.DimGray, new RectangleF(150, 130, e.PageBounds.Width, 30), new StringFormat() { Alignment = StringAlignment.Near }); ;
-            e.Graphics.DrawString("Customer : " , RegularFont, Brushes.Black, new RectangleF(240, 130, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString("Customer : ", RegularFont, Brushes.Black, new RectangleF(240, 130, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
             e.Graphics.DrawString(textBoxFirstName.Text + " " + textBoxLastName.Text, RegularFont, Brushes.Black, new RectangleF(240, 150, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
             e.Graphics.DrawString(textBoxPhoneNumber.Text, RegularFont, Brushes.Black, new RectangleF(240, 170, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
-            e.Graphics.DrawString("Device Details : " , RegularFont, Brushes.Black, new RectangleF(440, 130, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString("Device Details : ", RegularFont, Brushes.Black, new RectangleF(440, 130, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
             e.Graphics.DrawString("Device : " + textBoxDeviceBrand.Text + " " + textBoxDeviceModel.Text, RegularFont, Brushes.Black, new RectangleF(440, 150, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
-            e.Graphics.DrawString("IMEI : " + textBoxDeviceIMEI.Text , RegularFont, Brushes.Black, new RectangleF(440, 170, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString("IMEI : " + textBoxDeviceIMEI.Text, RegularFont, Brushes.Black, new RectangleF(440, 170, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
             e.Graphics.DrawString("Problem : " + textBoxDeviceProblem.Text, RegularFont, Brushes.Black, new RectangleF(440, 190, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
             e.Graphics.DrawString("Price : ", RegularFont, Brushes.Black, new RectangleF(440, 210, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
             e.Graphics.DrawString(textBoxPrice.Text, RegularFont, Brushes.DimGray, new RectangleF(520, 210, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
             e.Graphics.DrawString(today, HeaderFont, Brushes.Black, new RectangleF(680, 130, e.PageBounds.Width, 20), new StringFormat() { Alignment = StringAlignment.Near });
             e.Graphics.DrawLine(new Pen(Color.Gray, 1), new Point(20, 250), new Point(800, 250));
 
-            #endregion
-
+            #endregion printing
         }
     }
 }

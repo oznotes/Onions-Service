@@ -1,36 +1,32 @@
 ﻿using System;
-using System.IO;
-using System.Linq;
-using System.Windows.Forms;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Resources;
 using System.Configuration;
 using System.Data;
 using System.Data.SQLite;
+using System.Resources;
+using System.Windows.Forms;
 
 namespace Onions
 {
     public partial class MainForm : Form
     {
-        string MainFormTitle { get; set; } = "Orion Database Service";
-        string SelectCustomers { get; set; } = "Select Customers";
-        string NoCustomerSelected { get; set; } = "No Customer Selected";
-        string DeleteCustomer { get; set; } = "Delete Customer";
-        string CompletedJob { get; set; } = "Job";
-        string EnterPriceNumbers { get; set; } = "Enter Price is a Number";
-        string EnterPriceinformation { get; set; } = "Enter Price Information";
-        string Home { get; set; } = "Home";
+        private string MainFormTitle { get; set; } = "Orion Database Service";
+        private string SelectCustomers { get; set; } = "Select Customers";
+        private string NoCustomerSelected { get; set; } = "No Customer Selected";
+        private string DeleteCustomer { get; set; } = "Delete Customer";
+        private string CompletedJob { get; set; } = "Job";
+        private string EnterPriceNumbers { get; set; } = "Enter Price is a Number";
+        private string EnterPriceinformation { get; set; } = "Enter Price Information";
+        private string Home { get; set; } = "Home";
 
-        string CreationDate { get; set; } = "Date in Service";
-        string FirstName { get; set; } = "First Name";
-        string LastName { get; set; } = "Last Name";
-        string PhoneNumber { get; set; } = "PhoneNumber";       
-        string Brand { get; set; } = "Brand";
-        string Model { get; set; } = "Model";      
-        string Problem { get; set; } = "Problem";
-        string Price { get; set; } = "Price";
-        string UpdateDate { get; set; } = "Update Date";
+        private string CreationDate { get; set; } = "Date in Service";
+        private string FirstName { get; set; } = "First Name";
+        private string LastName { get; set; } = "Last Name";
+        private string PhoneNumber { get; set; } = "PhoneNumber";
+        private string Brand { get; set; } = "Brand";
+        private string Model { get; set; } = "Model";
+        private string Problem { get; set; } = "Problem";
+        private string Price { get; set; } = "Price";
+        private string UpdateDate { get; set; } = "Update Date";
 
         public int DevicesInService
         {
@@ -42,7 +38,7 @@ namespace Onions
             get { return GiveMeTheCount("completed"); }
         }
 
-        string searchKeyword { get; set; }
+        private string searchKeyword { get; set; }
 
         public MainForm()
         {
@@ -68,7 +64,7 @@ namespace Onions
                         toolStripHome.Text = x.GetString("Home");
                         toolStripButtonAdd.Text = x.GetString("NewRegistration");
                         toolStripButtonRemove.Text = x.GetString("DeleteSelected");
-                        toolStripButtonCompleted.Text = x.GetString("Completed");                       
+                        toolStripButtonCompleted.Text = x.GetString("Completed");
                         toolStripSearch.Text = x.GetString("Search");
                         toolStripCompleteJOB.Text = x.GetString("CompletedSelected");
                         MainFormTitle = x.GetString("MainFormTitle");
@@ -83,9 +79,9 @@ namespace Onions
                         CreationDate = x.GetString("CreationDate");
                         FirstName = x.GetString("FirstName");
                         LastName = x.GetString("LastName");
-                        PhoneNumber = x.GetString("PhoneNumber");                      
+                        PhoneNumber = x.GetString("PhoneNumber");
                         Brand = x.GetString("Brand");
-                        Model = x.GetString("Model");                       
+                        Model = x.GetString("Model");
                         Problem = x.GetString("Problem");
                         Price = x.GetString("Price");
                         UpdateDate = x.GetString("UpdateDate");
@@ -98,14 +94,14 @@ namespace Onions
 
             this.Text = "";
 
-            // Use the DataBindingComplete event to attack the SelectionChanged, 
+            // Use the DataBindingComplete event to attack the SelectionChanged,
             // avoiding infinite loops and other nastiness.
             dataGridView.DataBindingComplete += new DataGridViewBindingCompleteEventHandler(DataGridView_DataBindingComplete);
         }
 
         public void MainSetup()
         {
-            this.Text = string.Format("{0} - {1}",MainFormTitle, Home);
+            this.Text = string.Format("{0} - {1}", MainFormTitle, Home);
             LoadContacts("devices");
 
             //Check if record in state completed
@@ -124,7 +120,7 @@ namespace Onions
         }
 
         /// <summary>
-        /// Load from SQLite to -> Data Grid View 
+        /// Load from SQLite to -> Data Grid View
         /// </summary>
         private void LoadContacts(string datasource, string keyword = "")
         {
@@ -133,7 +129,7 @@ namespace Onions
                 //Query to customers table
                 string SelectCustomer = string.Format("SELECT IdCustomer, CreationDate AS 'Date in Service', FirstName,LastName, PhoneNumber, Email AS 'e-Mail', Brand, Model, IMEI, Problem, Price,UpdateDate AS 'Update Date' FROM Customer WHERE Status = '{0}'", datasource);
 
-                if(!string.IsNullOrWhiteSpace(keyword))
+                if (!string.IsNullOrWhiteSpace(keyword))
                 {
                     SelectCustomer = string.Format("SELECT IdCustomer, CreationDate AS 'Date in Service', FirstName,LastName, PhoneNumber, Email AS 'e-Mail', Brand, Model, IMEI, Problem, Price,UpdateDate AS 'Update Date' FROM Customer WHERE Status = '{0}' AND (CreationDate LIKE '%{1}%' OR FirstName LIKE '%{1}%' OR LastName LIKE '%{1}%' OR PhoneNumber LIKE '%{1}%' OR Email LIKE '%{1}%' OR Brand LIKE '%{1}%' OR Model LIKE '%{1}%' OR IMEI LIKE '%{1}%' OR Problem LIKE '%{1}%' OR Price LIKE '%{1}%')", datasource, keyword);
                 }
@@ -163,12 +159,12 @@ namespace Onions
                 dataGridView.Columns["Date in Service"].HeaderText = CreationDate;
                 dataGridView.Columns["FirstName"].HeaderText = FirstName;
                 dataGridView.Columns["LastName"].HeaderText = LastName;
-                dataGridView.Columns["PhoneNumber"].HeaderText = PhoneNumber;             
+                dataGridView.Columns["PhoneNumber"].HeaderText = PhoneNumber;
                 dataGridView.Columns["Brand"].HeaderText = Brand;
                 dataGridView.Columns["Model"].HeaderText = Model;
                 dataGridView.Columns["Problem"].HeaderText = Problem;
                 dataGridView.Columns["Price"].HeaderText = Price;
-                dataGridView.Columns["Update Date"].HeaderText = UpdateDate;             
+                dataGridView.Columns["Update Date"].HeaderText = UpdateDate;
 
                 //Format grid
                 fnconfigDGV();
@@ -244,6 +240,7 @@ namespace Onions
 
             LoadContacts("devices");
         }
+
         public void Complete_selected()
         {
             string today = DateTime.Today.ToString("dd/MM/yyyy");
@@ -295,7 +292,6 @@ namespace Onions
 
         private void DataGridView_CellMouseUp(object sender, DataGridViewCellMouseEventArgs e)
         {
-
         }
 
         private void ToolStripCompleteJOB_Click(object sender, EventArgs e)
@@ -313,15 +309,13 @@ namespace Onions
 
         private void DataGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
-
         }
 
         private void DataGridView_SelectionChanged(object sender, EventArgs e)
         {
-
         }
 
-        void fnconfigDGV()
+        private void fnconfigDGV()
         {
             dataGridView.Columns["Date in Service"].Width = 110;
             dataGridView.Columns["IdCustomer"].Visible = false;
@@ -340,7 +334,7 @@ namespace Onions
         {
             DataGridViewRow Row = dataGridView.SelectedRows[0];
 
-            /// edit mode 
+            /// edit mode
 
             AddDeviceForm addContactForm = new AddDeviceForm
             {
@@ -361,6 +355,7 @@ namespace Onions
             addContactForm.ShowDialog();
             LoadContacts("devices");
         }
+
         private int GiveMeTheCount(string datasource)
         {
             //Query to customers table
@@ -374,30 +369,34 @@ namespace Onions
             Int32 count = dtCustomer.Rows.Count;
             return count;
         }
-        void UpdateHeadStatus()
+
+        private void UpdateHeadStatus()
         {
             HeadForm headForm = (HeadForm)Application.OpenForms["HeadForm"];
             if (headForm != null)
             {
                 headForm.WhatsMyStatus(DevicesInService, CompletedDevices);
             }
-
         }
+
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             MainFormVisible.IsVisible = false;
             this.Dispose();
         }
+
         private void ToolStripSearch_Click(object sender, EventArgs e)
         {
             SearchDialogShow();
         }
+
         public void SearchByKeyStroke(string letter)
         {
             searchKeyword = letter;
             txtSearchKey.Text = searchKeyword;
             LoadContacts("devices", txtSearchKey.Text);
         }
+
         public static void SearchDialogVisibleChanged()
         {
             var OpenForms = Application.OpenForms;
@@ -411,10 +410,12 @@ namespace Onions
                 OpenForms[0].Enabled = true;
             }
         }
+
         private void SearchRightClickAction(object sender, EventArgs e)
         {
             SearchDialogShow();
         }
+
         private void SearchDialogShow()
         {
             // Check if grid has any data ..
@@ -422,16 +423,17 @@ namespace Onions
             searchDialog searchDialogForm = new searchDialog();
             searchDialogForm.ShowDialog(this);
         }
+
         private void CompleteRightClickAction(object sender, EventArgs e)
         {
             Complete_selected();
             MainSetup();
             UpdateHeadStatus();
         }
+
         private void DeleteRightClickAction(object sender, EventArgs e)
         {
             Remove_selected();
         }
     }
-
 }
