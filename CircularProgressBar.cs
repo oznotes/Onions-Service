@@ -18,7 +18,7 @@ public class CircularProgressBar : Control
         Flat
     }
 
-    #endregion
+    #endregion Enums
 
     #region Variables
 
@@ -29,7 +29,7 @@ public class CircularProgressBar : Control
     private Color _LineColor = Color.Silver;
     private _ProgressShape ProgressShapeVal;
 
-    #endregion
+    #endregion Variables
 
     #region Custom Properties
 
@@ -97,7 +97,7 @@ public class CircularProgressBar : Control
         }
     }
 
-    #endregion
+    #endregion Custom Properties
 
     #region EventArgs
 
@@ -118,9 +118,10 @@ public class CircularProgressBar : Control
         base.OnPaintBackground(p);
     }
 
-    #endregion
+    #endregion EventArgs
 
     #region Methods
+
     public CircularProgressBar()
     {
         Size = new Size(130, 130);
@@ -149,9 +150,11 @@ public class CircularProgressBar : Control
         this._Value -= Val;
         Invalidate();
     }
-    #endregion
+
+    #endregion Methods
 
     #region Events
+
     protected override void OnPaint(PaintEventArgs e)
     {
         base.OnPaint(e);
@@ -200,5 +203,6 @@ public class CircularProgressBar : Control
             }
         }
     }
-    #endregion
+
+    #endregion Events
 }
