@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Onions
@@ -42,9 +38,8 @@ namespace Onions
                         pictureBox1.Image = img;
                         pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
                     }
-
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     cmpLogo.ForeColor = Color.OrangeRed;
                     cmpLogo.Text = "Double Click to select the Logo";
@@ -114,7 +109,6 @@ namespace Onions
         {
             if (!ValidateFields())
             {
-             
             }
             else
             {
@@ -130,7 +124,7 @@ namespace Onions
             cmpLogo.Text = "";
             openFileDialog1.Filter = "Picture (*.jpg)| *.jpg; |Image File (*.png) | *.png; |All files(*.*) | *.*";
             openFileDialog1.FileName = "";
-            openFileDialog1.Title  = "Select your company Logo or icon";
+            openFileDialog1.Title = "Select your company Logo or icon";
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 string directoryPath = Path.GetDirectoryName(openFileDialog1.FileName);
@@ -146,7 +140,6 @@ namespace Onions
                         {
                             pictureBox1.Image = img;
                             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-
                         }
                         else
                         {
@@ -167,7 +160,6 @@ namespace Onions
                         MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning);
                         return;
                     }
-
                 }
                 else
                 {
@@ -216,6 +208,7 @@ namespace Onions
                 "This information will be used to interact with your customers." +
                 "";
         }
+
         private void DisableFormItems()
         {
             saveButton.Visible = false;
@@ -253,14 +246,13 @@ namespace Onions
                 var CompanyDetails = CorporateDetails.ThisCompany.Split('\n');
                 try
                 {
-                    //think about some even and connect this event... 
+                    //think about some even and connect this event...
                     //cmpName.Text = CompanyDetails[0];
                     //cmpAddress.Text = CompanyDetails[1];
                     //cmpPhoneNumber.Text = CompanyDetails[2];
                     //cmpLogo.Text = CompanyDetails[3];
                     //pictureBox1.ImageLocation = CompanyDetails[3];
                     //pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-
                 }
                 catch (Exception ex)
                 {
