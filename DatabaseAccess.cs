@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.SQLite;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Onions
 {
@@ -13,17 +9,17 @@ namespace Onions
     internal class DatabaseAccess
     {
         //Database name.
-        const string OrionServiceDatabase = "OrionsServiceDatabase";
+        private const string OrionServiceDatabase = "OrionsServiceDatabase";
 
         //Database Path.
-        static string DatabasePath = string.Concat(Environment.CurrentDirectory);
+        private static string DatabasePath = string.Concat(Environment.CurrentDirectory);
 
         /// <summary>
         /// Create a Connection and a Command.
         /// </summary>
         /// <param name="pSqlCmd">SQL- Command</param>
         /// <returns></returns>
-       internal static SQLiteCommand fnSetConexion(string pSqlCmd)
+        internal static SQLiteCommand fnSetConexion(string pSqlCmd)
         {
             //Connection String
             string DataSource = string.Format(@"Data Source={0}\{1}", DatabasePath, OrionServiceDatabase);
