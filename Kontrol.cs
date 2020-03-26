@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Onions
 {
@@ -11,9 +8,11 @@ namespace Onions
     {
         public static bool IsVisible { get; set; }
     }
+
     public static class SearchDialogVisible
     {
         private static bool IsAvailable;
+
         public static bool IsThisVisible
         {
             get { return IsAvailable; }
@@ -24,6 +23,7 @@ namespace Onions
             }
         }
     }
+
     public static class WhatLanguageIsActivate
     {
         public static string ThisLanguage
@@ -42,6 +42,7 @@ namespace Onions
             }
         }
     }
+
     public static class CorporateDetails
     {
         public static string ThisCompany
@@ -72,4 +73,3 @@ namespace Onions
         }
     }
 }
-

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
 
-
 namespace Onions
 {
     internal static class Program
@@ -13,7 +12,6 @@ namespace Onions
         [STAThread]
         private static void Main()
         {
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             SingleInstance.SingleApplication.Run(new HeadForm());

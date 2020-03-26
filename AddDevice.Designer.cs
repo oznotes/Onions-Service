@@ -51,10 +51,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.PrintButton = new System.Windows.Forms.Button();
             this.Add = new System.Windows.Forms.Button();
+            this.circularProgressBar1 = new CircularProgressBar();
             this.picDeviceModel = new System.Windows.Forms.PictureBox();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.circularProgressBar1 = new CircularProgressBar();
             this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDeviceModel)).BeginInit();
@@ -329,24 +329,6 @@
             this.Add.UseVisualStyleBackColor = false;
             this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
-            // picDeviceModel
-            // 
-            this.picDeviceModel.Image = global::Onions.Properties.Resources.test;
-            this.picDeviceModel.Location = new System.Drawing.Point(5, 3);
-            this.picDeviceModel.Name = "picDeviceModel";
-            this.picDeviceModel.Size = new System.Drawing.Size(212, 289);
-            this.picDeviceModel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picDeviceModel.TabIndex = 1;
-            this.picDeviceModel.TabStop = false;
-            // 
-            // printDialog1
-            // 
-            this.printDialog1.UseEXDialog = true;
-            // 
-            // printDocument1
-            // 
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
-            // 
             // circularProgressBar1
             // 
             this.circularProgressBar1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -367,6 +349,24 @@
             this.circularProgressBar1.TabIndex = 13;
             this.circularProgressBar1.Text = "circularProgressBar1";
             this.circularProgressBar1.Value = ((long)(0));
+            // 
+            // picDeviceModel
+            // 
+            this.picDeviceModel.Image = global::Onions.Properties.Resources.test;
+            this.picDeviceModel.Location = new System.Drawing.Point(5, 3);
+            this.picDeviceModel.Name = "picDeviceModel";
+            this.picDeviceModel.Size = new System.Drawing.Size(212, 289);
+            this.picDeviceModel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDeviceModel.TabIndex = 1;
+            this.picDeviceModel.TabStop = false;
+            // 
+            // printDialog1
+            // 
+            this.printDialog1.UseEXDialog = true;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
             // label5
             // 
