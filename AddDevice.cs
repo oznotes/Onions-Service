@@ -539,6 +539,7 @@ namespace Onions
                             {"iPod4,1", "iPod Touch 4th Gen"},
                             {"iPod5,1", "iPod Touch 5th Gen"},
                             {"iPod7,1", "iPod Touch 6th Gen"},
+                            {"iPod9,1", "iPod Touch 7th Gen"},
                             {"iPhone1,1", "iPhone"},
                             {"iPhone1,2", "iPhone 3G"},
                             {"iPhone2,1", "iPhone 3GS"},
@@ -571,6 +572,9 @@ namespace Onions
                             {"iPhone11,4", "iPhone XS Max"},
                             {"iPhone11,6", "iPhone XS Max"},
                             {"iPhone11,8", "iPhone XR"},
+                            {"iPhone12,1", "iPhone 11"},
+                            {"iPhone12,3", "iPhone 11 Pro"},
+                            {"iPhone12,5", "iPhone 11 Pro Max"},
                             {"iPad1,1", "iPad"},
                             {"iPad2,1", "iPad 2"},
                             {"iPad2,2", "iPad 2"},
@@ -613,7 +617,11 @@ namespace Onions
                             {"iPad8,5", "iPad Pro 12.9 inch 3rd Gen"},
                             {"iPad8,6", "iPad Pro 12.9 inch 3rd Gen"},
                             {"iPad8,7", "iPad Pro 12.9 inch 3rd Gen"},
-                            {"iPad8,8", "iPad Pro 12.9 inch 3rd Gen"}
+                            {"iPad8,8", "iPad Pro 12.9 inch 3rd Gen"},
+                            {"iPad11,1", "iPad mini 5th Gen(WiFi)"},
+                            {"iPad11,2", "iPad mini 5th Gen"},
+                            {"iPad11,3", "iPad Air 3rd Gen(WiFi)" },
+                            {"iPad11,4", "iPad Air 3rd Gen" }
                         };
 
                         textBoxDeviceIMEI.Clear();
